@@ -1,0 +1,2336 @@
+{
+  "_meta": {
+    "generated_at": "2026-06-11T18:11:41.789Z",
+    "scoring": "EPC 25%, Rate 20%, EPC×Rate 15%, Approved 15%, Traffic Flex 10%, Trending 10%, Multi-list 5%",
+    "stats": {
+      "total_scored": 2040,
+      "approved": 576,
+      "trending": 2037,
+      "epc": {
+        "median": 0.3563,
+        "p75": 0.4,
+        "p90": 0.5347,
+        "max": 9.2211
+      },
+      "rate": {
+        "median": 12,
+        "p75": 40,
+        "p90": 75,
+        "max": 1125
+      }
+    }
+  },
+  "top_50": [
+    {
+      "rank": 1,
+      "id": 31644,
+      "name": "Viviomd - GLP-1 - CPS (US)",
+      "composite_score": 0.9694,
+      "epc": 0.9375,
+      "rate": 187.5,
+      "rate_type": "$ per lead",
+      "rate_text": "$187.50 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "Diet & Nutrition"
+      ],
+      "traffic_allowed": [
+        "incentive",
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "brand_bid",
+        "display"
+      ],
+      "traffic_blocked": [],
+      "landing_page": "https://viviomd.com/landing-new",
+      "description": "Viviomd is a Delaware-based digital intake and marketing platform founded in 2024 that connects patients with licensed medical providers for GLP-1 weight loss treatments.\nConverts on sale.\nTargeting: The primary audience includes adults aged 25 to 60 seeking medical weight loss solutions, particularly those interested in alternatives to traditional injectables, such as Oral Disintegrating Tablets (ODTs) and liquid formulas.\nRestrictions: Marketing must not target patients with Type 1 diabetes, history of pancreatitis, active cancer, eating disorders, or those who are pregnant/breastfeeding. A personal or family history of Medullary Thyroid Cancer or MEN2 is a strict exclusion. Affiliates must not refer to Viviomd as a \"medical provider\" or \"pharmacy,\" as it is strictly a marketing and intake platform.",
+      "score_breakdown": {
+        "epc_pct": 0.9549,
+        "rate_pct": 0.9819,
+        "product_pct": 0.9789,
+        "traffic_flex": 1,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 2,
+      "id": 32072,
+      "name": "Gala - GLP-1 - CPS (US)",
+      "composite_score": 0.9623,
+      "epc": 0.9149,
+      "rate": 225,
+      "rate_type": "$ per lead",
+      "rate_text": "$225.00 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new",
+        "top"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "Diet & Nutrition"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://galaglp1.com/",
+      "description": "Gala is a direct-to-consumer telehealth platform providing compounded GLP-1 and GIP (Tirzepatide) medications. They are currently the most competitive provider in the US market, offering monthly plans starting at $179 for all dosages, which includes the physician consultation and prescription.\nConverts on Subscription Purchase.\nTargeting: Primarily women (70% of the core audience) aged 27–60. Focus on budget-conscious weight loss seekers who are frustrated by the high cost or \"out-of-stock\" status of brand-name Ozempic or Mounjaro. The $179 price point is the strongest hook for those looking for the cheapest legal access to compounded Tirzepatide.\nRestrictions: Strict FTC Compliance. No misleading claims, fake doctor endorsements, or unauthorized \"before and after\" photos. You must not claim these are \"generic\" versions of brand-name drugs; they must be referred to as \"compounded.\" No brand bidding on pharmaceutical trademarks.",
+      "score_breakdown": {
+        "epc_pct": 0.951,
+        "rate_pct": 0.9858,
+        "product_pct": 0.9828,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 1
+      }
+    },
+    {
+      "rank": 3,
+      "id": 31973,
+      "name": "TrimRX - Telehealth Weight Management - CPS (US)",
+      "composite_score": 0.9594,
+      "epc": 0.9375,
+      "rate": 187.5,
+      "rate_type": "$ per lead",
+      "rate_text": "$187.50 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "General Wellness"
+      ],
+      "traffic_allowed": [
+        "incentive",
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "brand_bid"
+      ],
+      "landing_page": "https://trimrx.com/glp1",
+      "description": "TrimRX is a streamlined telehealth platform providing medically supervised access to GLP-1 weight-management medications, including Semaglutide and Tirzepatide, via a 3-minute online assessment.\nConverts on a completed purchase of a monthly weight-management program.\nTargeting: US-based adults (Ages 25-65+) struggling with obesity or weight-related health issues, specifically those seeking accessible GLP-1 prescriptions and medically managed weight loss.\nRestrictions: No incentivized traffic, brand bidding, or misleading medical claims; all creative must adhere to US telehealth and pharmaceutical advertising guidelines.\nCreatives to be made for approval",
+      "score_breakdown": {
+        "epc_pct": 0.9549,
+        "rate_pct": 0.9819,
+        "product_pct": 0.9789,
+        "traffic_flex": 0.9,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 4,
+      "id": 29358,
+      "name": "Kahlon - Men’s Tailored Suits - CPS (US)",
+      "composite_score": 0.9494,
+      "epc": 0.9375,
+      "rate": 187.5,
+      "rate_type": "$ per lead",
+      "rate_text": "$187.50 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Shopping & E-Commerce",
+        "Consumer Goods & Gadgets"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://billionairesuit.com/pages/mb2025",
+      "description": "Kahlon offers premium men’s tailored suits, combining classic craftsmanship with modern design for a perfect fit.\nConverts on a completed purchase.\nTargeting: Men seeking high-quality tailored suits for business, formal events, or everyday elegance.\nRestrictions: No adult, incentive or gambling traffic.\nCreatives to be made by approval.",
+      "score_breakdown": {
+        "epc_pct": 0.9549,
+        "rate_pct": 0.9819,
+        "product_pct": 0.9789,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 5,
+      "id": 30785,
+      "name": "Quit with Jones - Nicotine To Quit Vaping - CPS (US)",
+      "composite_score": 0.9441,
+      "epc": 2.7603,
+      "rate": 75,
+      "rate_type": "% of sale",
+      "rate_text": "75% of sale",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new",
+        "top"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "General Wellness"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "search",
+        "brand_bid"
+      ],
+      "landing_page": "https://quitwithjones.com/",
+      "description": "Jones offers an FDA-approved, judgment-free journey to a vapeless life through nicotine replacement therapy (NRT) mints paired with a behavioral support app and SMS coaching. The program is designed to help users gradually reduce dependency with 2mg and 4mg lozenges housed in a discrete, chic travel tin. FSA/HSA available\nConverts on sale.\nTargeting: Gen Z and Millennial vapers (ages 25-34) Focus on \"Modern Quitters\" and \"Vape Users\" seeking a stigma-free, non-medical-looking solution.who are health-conscious, active on social platforms, and seeking a non-stigmatized, lifestyle-aligned solution to nicotine dependency.\nRestrictions: No Search, Brand bidding, or paid social ads. No incentivized traffic, coupon or extension bar placements. Cashback only is okay. Marketing must state that users must be 18+ and that products ship only within the United States. All Search, Social, SMS, or Email require approval, no solo emails.",
+      "score_breakdown": {
+        "epc_pct": 0.9907,
+        "rate_pct": 0.8946,
+        "product_pct": 0.9833,
+        "traffic_flex": 0.7,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 1
+      }
+    },
+    {
+      "rank": 6,
+      "id": 31456,
+      "name": "Home Fi - Wireless High Speed Internet - CPS (US)",
+      "composite_score": 0.9343,
+      "epc": 0.9443,
+      "rate": 65,
+      "rate_type": "$ per lead",
+      "rate_text": "$65.00 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new",
+        "top"
+      ],
+      "categories": [
+        "Shopping & E-Commerce",
+        "Services"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://homefi.info/",
+      "description": "Home Fi provides high-speed wireless internet solutions designed for rural residents, digital nomads, and households underserved by traditional fiber or cable infrastructure.\nConverts on sale of service. Conversions are held\nTargeting: Rural homeowners with limited ISP options, RV enthusiasts, digital nomads, and low-credit consumers seeking contract-free broadband alternatives.\nRestrictions: No incentive traffic, SMS marketing, or unauthorized brand-name bidding on search engines is permitted.",
+      "score_breakdown": {
+        "epc_pct": 0.9568,
+        "rate_pct": 0.8661,
+        "product_pct": 0.9461,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 1
+      }
+    },
+    {
+      "rank": 7,
+      "id": 31617,
+      "name": "CardioNEX - Glucose Management - CPS (CA,IE,CH)",
+      "composite_score": 0.9302,
+      "epc": 0.6,
+      "rate": 120,
+      "rate_type": "$ per lead",
+      "rate_text": "$120.00 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "Diet & Nutrition"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://thedominex.com/offer/dominex_capsules/ca-v1/index.html?",
+      "description": "CardioNEX is a premium dietary supplement formulated to support healthy blood sugar levels and optimize cardiovascular function through natural metabolic support. This offer targets the high-demand health and wellness vertical, focusing on consumers seeking non-pharmaceutical interventions for glucose stability and long-term heart health.\nConverts on a completed initial credit card purchase.\nTargeting: Men and women aged 45+ interested in diabetes management, holistic health, and cardiovascular wellness across Canada, Ireland, and Switzerland.\nRestrictions: No incentivized traffic, brand bidding, or unauthorized medical claims; strictly no SMS or automated calling.",
+      "score_breakdown": {
+        "epc_pct": 0.9127,
+        "rate_pct": 0.9583,
+        "product_pct": 0.9524,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 8,
+      "id": 31613,
+      "name": "JumpKETO - Keto Weight Loss Gummies - CPS (CA)",
+      "composite_score": 0.9302,
+      "epc": 0.6,
+      "rate": 120,
+      "rate_type": "$ per lead",
+      "rate_text": "$120.00 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "General Wellness"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://tryjumpketo.com/offer/jumpketobhb_gummies/ca-v2-p/index.html?",
+      "description": "JumpKETO Gummies are a high-demand dietary supplement formulated to help users achieve ketosis faster and maintain metabolic energy during weight loss journeys. These gummies offer a convenient alternative to traditional capsules, targeting the growing market of consumers seeking effective, palatable weight management solutions.\nConverts on a completed product purchase and successful credit card transaction.\nTargeting: Canadian adults aged 25-55 interested in keto diets, fitness, weight loss supplements, and holistic wellness.\nRestrictions: No incentivized traffic, brand bidding on trademarked terms, or misleading medical claims. All traffic must comply with Canadian advertising standards for dietary supplements.",
+      "score_breakdown": {
+        "epc_pct": 0.9127,
+        "rate_pct": 0.9583,
+        "product_pct": 0.9524,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 9,
+      "id": 31618,
+      "name": "21KETO - Keto Gummies - CPS (CA)",
+      "composite_score": 0.9302,
+      "epc": 0.6,
+      "rate": 120,
+      "rate_type": "$ per lead",
+      "rate_text": "$120.00 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "Diet & Nutrition"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://21ketogummies.com/offer/21ketobhb_gummies/ca-v1-p/index.html?",
+      "description": "21KETO Gummies is a premium dietary supplement designed to support metabolic health and weight management for the Canadian market. These gummies provide a convenient, flavorful alternative to traditional pills, helping users maintain ketosis and improve energy levels throughout the day.\nConverts on a successful credit card purchase completion.\nTargeting: Health-conscious adults aged 25-55 in Canada interested in the ketogenic lifestyle, weight loss supplements, and holistic wellness trends.\nRestrictions: No incentivized traffic, brand bidding, or misleading health claims are permitted. All marketing materials must adhere to standard compliance guidelines for the health and wellness vertical.",
+      "score_breakdown": {
+        "epc_pct": 0.9127,
+        "rate_pct": 0.9583,
+        "product_pct": 0.9524,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 10,
+      "id": 31081,
+      "name": "Strut Health - Sermorelin Peptide for Men - CPS (US)",
+      "composite_score": 0.9283,
+      "epc": 0.565,
+      "rate": 113,
+      "rate_type": "$ per lead",
+      "rate_text": "$113.00 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "Diet & Nutrition"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://www.struthealth.com/mens-weight-loss/oral-sermorelin?",
+      "description": "Strut’s Oral Sermorelin Peptide Therapy is a prescription treatment that helps the body naturally boost its own growth hormone by stimulating the pituitary gland. It may improve sleep quality, recovery, mental clarity, fat metabolism, lean muscle mass, energy, mood, and overall metabolic health.\nConverts on sale.\nTargeting: Men in their 30s to 60s who are noticing age-related declines in energy, recovery, and body composition, and who are interested in a science-backed, anti-aging wellness strategy. Good ad-targeting would include people interested in “peptides for wellness,” “growth hormone therapy,” “biohacking metabolism,” “natural hormone optimization,” and “anti-aging injection therapy.”\nRates may vary depending on the products purchased.",
+      "score_breakdown": {
+        "epc_pct": 0.9093,
+        "rate_pct": 0.9559,
+        "product_pct": 0.949,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 11,
+      "id": 28939,
+      "name": "TopSweepsCasino - CPA (US)",
+      "composite_score": 0.9269,
+      "epc": 0.56,
+      "rate": 112,
+      "rate_type": "$ per lead",
+      "rate_text": "$112.00 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Sweepstakes & Contests",
+        "Freebies"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://sweepscasinobonus.com/",
+      "description": "TopSweepsCasino offers online casino games like slots and table games without wagering real money. Players use virtual currencies like Gold Coins for fun and Sweeps Coins to win prizes. Users can enjoy free-to-play casino-style games with daily logins, promotions, or social media contests.\nConverts on deposit the min deposit of 10$. Non-engaged accounts are subject to reversals.\nBonus Program: Publishers who average 2 FTDs per day over minimum period of 1 week get a $18.75 bonus per FTD, any pub averaging 5+ per day will get an additional $37.50 per FTD\nTargeting: Ages 21+, US residents outside restricted states.\nRestrictions: Incentive forbidden. This offer is unavailable in the following states: WA, ID, KY, GA, AL, MI, NV, MT, LA, DE.\nVideo Creatives: https://www.dropbox.com/scl/fo/qbyurunag8mt9l6vu5wyc/ANodNDvI68q_IkiyVk7HKEw?rlkey=lyytmzeoc81dad8t8zwrw7asl&dl=0",
+      "score_breakdown": {
+        "epc_pct": 0.9073,
+        "rate_pct": 0.9529,
+        "product_pct": 0.9465,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 12,
+      "id": 29604,
+      "name": "Telo X Nano - World's First DNA Multi-Vitamin - CPS (US,CA)",
+      "composite_score": 0.9217,
+      "epc": 0.525,
+      "rate": 105,
+      "rate_type": "$ per lead",
+      "rate_text": "$105.00 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "Diet & Nutrition"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://partners.primalforce.net/sp/3x-vsl-tah/",
+      "description": "Telo X Nano is the world's first DNA-based multivitamin, engineered to support cellular health, longevity, and overall wellness. Formulated using cutting-edge genomic science and nano-delivery technology, this supplement targets individual needs at the genetic level to promote optimal health.\nConverts on sale.\nTargeting: Health-conscious consumers in the US and Canada interested in personalized wellness, anti-aging, and DNA-based supplements.\nRestrictions: No incentivized traffic and no brand bidding. No unauthorized health claims or medical guarantees.",
+      "score_breakdown": {
+        "epc_pct": 0.896,
+        "rate_pct": 0.9475,
+        "product_pct": 0.9377,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 13,
+      "id": 31080,
+      "name": "Strut Health - Men's Wellness and Longevity - NAD+ Therapy - CPS (US)",
+      "composite_score": 0.921,
+      "epc": 0.515,
+      "rate": 103,
+      "rate_type": "$ per lead",
+      "rate_text": "$103.00 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "General Wellness"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://www.struthealth.com/mens-wellness-longevity/mens-nad-therapy",
+      "description": "Strut’s NAD+ Therapy is a prescription-strength, compounded injection designed to restore levels of the coenzyme NAD+, which naturally decline with age. The therapy aims to support better cellular energy, clearer mental focus, healthier aging via DNA repair, and improved recovery and physical performance.\nConverts on sale.\nTargeting: Men ages 30–65 who are interested in long-term wellness, anti-aging, and enhancing vitality. This likely includes professionals, biohackers, or men who feel their energy and focus declining with age. Target individuals who search or engage with topics like “anti aging therapy,” “cellular energy supplement,” “mitochondrial health,” “longevity medicine,” “age-related fatigue,” and “wellness injections.”\nRates may vary depending on the products purchased.",
+      "score_breakdown": {
+        "epc_pct": 0.895,
+        "rate_pct": 0.947,
+        "product_pct": 0.9358,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 14,
+      "id": 31071,
+      "name": "Strut Health - Men's Sexual Health - CPS (US)",
+      "composite_score": 0.91,
+      "epc": 0.505,
+      "rate": 101,
+      "rate_type": "$ per lead",
+      "rate_text": "$101.00 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "General Wellness"
+      ],
+      "traffic_allowed": [
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "email",
+        "brand_bid"
+      ],
+      "landing_page": "https://www.struthealth.com/mens-sexual-health/strut-mojo?",
+      "description": "Strut’s Men’s Sexual Health page offers discreet, physician-prescribed telemedicine treatments for common male sexual issues like erectile dysfunction (ED), premature ejaculation (PE), and low libido. Customers start with a telehealth consultation and an at-home testosterone test, and a 30-day supply begins at $79/month.\nOffer converts on sale.\nTargeting: Men ages 30–55, who are experiencing low energy, low libido, or reduced performance. People searching for “low T symptoms,” “fatigue in men,” “low sex drive,” or “ED help.” Active or health-conscious men looking to maintain vitality\nGym-goers, wellness-focused men, biohackers, or men trying to optimize energy, mood, and muscle recovery. Men dealing with stress-related sexual issues. Professionals with high-pressure jobs, dads balancing work/family, or men who feel “burnt out.”\nPayouts will vary based on product purchased.",
+      "score_breakdown": {
+        "epc_pct": 0.8931,
+        "rate_pct": 0.9456,
+        "product_pct": 0.9343,
+        "traffic_flex": 0.7,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 15,
+      "id": 29640,
+      "name": "Focus IQ - Brain Health - CPS (US,CA)",
+      "composite_score": 0.8843,
+      "epc": 0.4125,
+      "rate": 82.5,
+      "rate_type": "$ per lead",
+      "rate_text": "$82.50 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "General Wellness"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://partners.primalforce.net/sp/tesla-vsl-summit/",
+      "description": "Telo X Nano is the world's first DNA-based multivitamin, engineered to support cellular health, longevity, and overall wellness. Formulated using cutting-edge genomic science and nano-delivery technology, this supplement targets individual needs at the genetic level to promote optimal health.\nConverts on sale.\nTargeting: Health-conscious consumers in the US and Canada interested in personalized wellness, anti-aging, and DNA-based supplements.\nRestrictions: No incentivized traffic and no brand bidding. No unauthorized health claims or medical guarantees.",
+      "score_breakdown": {
+        "epc_pct": 0.7783,
+        "rate_pct": 0.9289,
+        "product_pct": 0.9098,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 16,
+      "id": 31910,
+      "name": "LuckyOnes - Online Casino - CPA (CA)",
+      "composite_score": 0.8834,
+      "epc": 0.554,
+      "rate": 75,
+      "rate_type": "$ per lead",
+      "rate_text": "$75.00 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new",
+        "top"
+      ],
+      "categories": [
+        "Gambling",
+        "Casino Games"
+      ],
+      "traffic_allowed": [
+        "email",
+        "social_media",
+        "desktop",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "contextual",
+        "search",
+        "mobile",
+        "native",
+        "brand_bid"
+      ],
+      "landing_page": "https://www.luckyones.com/en-CA/entry",
+      "description": "LuckyOnes is a premium online casino platform , offering over 14,000 games including slots, live dealer tables, and specialty \"LuckyOne Originals\". The platform distinguishes itself with a luxury-themed interface and a high-value welcome journey that includes massive deposit matches and hundreds of free spins.\nConverts on $20 Deposit and Wager.\nTargeting: CAN-only. Users must be 21+.\nRestrictions: No Brand Bidding on \"LuckyOnes\" or related trademarked terms. Marketing is strictly prohibited in states where real-money online gambling is illegal, including CA, NY, and NV. Affiliates must not use \"guaranteed win\" or \"get rich quick\" hooks, as these violate both FTC and state-level gaming commission standards.",
+      "score_breakdown": {
+        "epc_pct": 0.9049,
+        "rate_pct": 0.8946,
+        "product_pct": 0.922,
+        "traffic_flex": 0.4,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 1
+      }
+    },
+    {
+      "rank": 17,
+      "id": 32356,
+      "name": "LegalNature - Legal Documents & Forms - RevShare (US)",
+      "composite_score": 0.8721,
+      "epc": 0.4875,
+      "rate": 48.75,
+      "rate_type": "$ per lead",
+      "rate_text": "$48.75 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Legal Services",
+        "Other"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://www.legalnature.com/?",
+      "description": "LegalNature provides a comprehensive library of professional legal documents and automated forms designed for individuals, landlords, and small business owners.\nConverts on a successful subscription purchase or individual document sale.\nTargeting: Small business owners, entrepreneurs, and individuals aged 25-65 seeking affordable, DIY legal solutions for personal or professional protection.\nRestrictions: Incentivized traffic and trademark bidding on brand terms are strictly prohibited. All marketing materials must comply with standard legal advertising regulations.",
+      "score_breakdown": {
+        "epc_pct": 0.8744,
+        "rate_pct": 0.7901,
+        "product_pct": 0.8534,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 18,
+      "id": 26642,
+      "name": "Money Pup Loans - Loans up to $50k - RevShare (US)",
+      "composite_score": 0.8713,
+      "epc": 0.4,
+      "rate": 80,
+      "rate_type": "% of sale",
+      "rate_text": "80% of sale",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Financial",
+        "Loans"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://www.moneypuploans.com/?",
+      "description": "Money Pup Loans connects users with personal loan lenders that can help them get out of a short-term financial bind. They offer loans up to $50k.\nOffer converts on valid lead submit (sold to lender)\nRestrictions: No New York. Checking account only. No military. Must be 20 to 65, Monthly Income $1200-$10,000. Filter out leads where work phone = home phone, leads with address that contains PO BOX, leads where employer is government agency like: military, attorney general, air reserve, air force, army, reserve, usmc, rotc, student, temp, unemployed, unemployment. Next Pay date cannot be a Saturday or Sunday. Next pay date cannot be a bank holiday: Christmas, New Years Eve, MLK day, July 4th, Labor Day.",
+      "score_breakdown": {
+        "epc_pct": 0.7445,
+        "rate_pct": 0.9142,
+        "product_pct": 0.899,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 19,
+      "id": 28072,
+      "name": "Strut Health - Men's Dutasteride Hair Loss Treatments - CPS (US)",
+      "composite_score": 0.8701,
+      "epc": 0.395,
+      "rate": 79,
+      "rate_type": "$ per lead",
+      "rate_text": "$79.00 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "General Wellness"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://www.struthealth.com/dutasteride",
+      "description": "Strut’s Dutasteride offers customized, prescription-strength hair loss treatments in both oral capsules and 5-in-1 topical formulas. The treatment works by blocking DHT — a hormone linked to male-pattern hair loss — and is compounded for more personalized dosing.\nOffer converts on sale.\nTargeting: Men ages 20–50 experiencing male-pattern hair loss, especially those noticing early thinning or a receding hairline and looking for a stronger, prescription-level solution. Top keyword searches that align with this demographic include “hair loss treatment,” “DHT blocker,” “receding hairline,” “dutasteride,” and “hair regrowth.”\nRates will vary depending on the products purchased.\nSales are locked 27 days after the end of the month they are tracked.",
+      "score_breakdown": {
+        "epc_pct": 0.741,
+        "rate_pct": 0.9137,
+        "product_pct": 0.8975,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 20,
+      "id": 27848,
+      "name": "Altroconsumo - Offerta Prova - €2 trial - CPS (IT)",
+      "composite_score": 0.8657,
+      "epc": 0.8013,
+      "rate": 23.32,
+      "rate_type": "$ per lead",
+      "rate_text": "$23.32 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new",
+        "top"
+      ],
+      "categories": [
+        "Sweepstakes & Contests",
+        "Giveaways"
+      ],
+      "traffic_allowed": [
+        "incentive",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "email",
+        "brand_bid"
+      ],
+      "landing_page": "https://offerta.altroconsumo.it/mg-2026/home",
+      "description": "Altroconsumo a well-known brand to every well-informed consumer, a company with over 25 years of experience. Users get a welcome gift + free print magazines - subscribers pay only 2€ / 2 months + 50% discount during 12 months\nConverts on €2 trial sign up.\nCustom creatives must be approved by the advertiser. This includes pre-landers and the creation of a landing page, prior to its publication.\nForbidden terms: Assessoria, Consultoria, Jurídico, Gratuito.\nNO BRANDED TERMS may be used to promote this offer. SEO brand-bidding is forbidden. Incentive with with points allowed\nNo Email traffic\nBest practices: https://www.dropbox.com/scl/fi/ifidi4l8dj52lqc6jc1y5/Best-Practices_PT_2023.pdf?rlkey=j7c3trzzandp5vn6ne895d2jh&dl=0",
+      "score_breakdown": {
+        "epc_pct": 0.9426,
+        "rate_pct": 0.6503,
+        "product_pct": 0.7999,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 1
+      }
+    },
+    {
+      "rank": 21,
+      "id": 31464,
+      "name": "Credit Resources - Subprime Lender Network - CPS (CA)",
+      "composite_score": 0.862,
+      "epc": 1.9696,
+      "rate": 10.5,
+      "rate_type": "$ per lead",
+      "rate_text": "$10.50 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new",
+        "top"
+      ],
+      "categories": [
+        "Financial",
+        "Loans"
+      ],
+      "traffic_allowed": [
+        "incentive",
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "brand_bid",
+        "display"
+      ],
+      "traffic_blocked": [],
+      "landing_page": "https://yourcreditvault.com/membership",
+      "description": "Canadian financial lead-generation platform designed for individuals who have been rejected by traditional banks due to low credit scores. The service connects users with a network of exclusive subprime lenders, prioritizing identity verification and initial matching without a hard credit check. We offer 1 on 1 debt relief, dispute portal where they can challenge items on their credit report, they get access to their full credit report and score, access to our mortgage partner, AI assistant & credit score simulator. Avg customer stays for 9 weeks.\nConverts on membership purchase - $20/week. CR is at 16% elsewhere!\nTargeting: Canadian residents aged 25–55 seeking alternative financing, emergency loans, or debt consolidation. Appeals to individuals searching for \"guaranteed approval,\" \"no hard credit check,\" or \"bad credit loans.\" High resonance with users who have recently faced loan denials and are looking for specialized lenders willing to work with non-traditional credit profiles.",
+      "score_breakdown": {
+        "epc_pct": 0.9863,
+        "rate_pct": 0.4571,
+        "product_pct": 0.8269,
+        "traffic_flex": 1,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 1
+      }
+    },
+    {
+      "rank": 22,
+      "id": 28316,
+      "name": "Winona - Hormone Replacement Therapy - CPS (US)",
+      "composite_score": 0.8598,
+      "epc": 0.3937,
+      "rate": 78.75,
+      "rate_type": "$ per lead",
+      "rate_text": "$78.75 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "General Wellness"
+      ],
+      "traffic_allowed": [
+        "email",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "contextual",
+        "brand_bid"
+      ],
+      "landing_page": "https://bywinona.com/",
+      "description": "Winona offers bioidentical hormone replacement therapy (HRT) to help relieve menopause, perimenopause, and postmenopause symptoms. With board-certified doctors and a telemedicine platform, Winona provides plant-based treatments shipped directly to your door. Over 80% of women experience relief from menopause symptoms in just 90 days, with some seeing results even sooner. Winona's compassionate care focuses on regenerative and preventive solutions to help women feel their best.\nOffer converts on online sale.\nTargeting: Ages 35-55+, primarily women experiencing menopause symptoms and seeking hormone replacement therapy.\nRestrictions: No Incent, No Adult traffic, No TM or brand bidding. No Coupon.",
+      "score_breakdown": {
+        "epc_pct": 0.7406,
+        "rate_pct": 0.9132,
+        "product_pct": 0.897,
+        "traffic_flex": 0.7,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 23,
+      "id": 30154,
+      "name": "CreditNLending.com - Loans up to $100k - RevShare (US)",
+      "composite_score": 0.8598,
+      "epc": 0.3778,
+      "rate": 68,
+      "rate_type": "% of sale",
+      "rate_text": "68% of sale",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Financial",
+        "Loans"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://creditnlending.com/",
+      "description": "CreditNLending.com connects qualified applicants with a network of trusted personal loan lenders. The platform intelligently matches users based on drive high-quality, fundable leads.\nConverts on ACCEPTED or SOLD lead\nTargeting:\nGeo: US (excluding NY)\nAge Targeting: 20–65\nIncome Range: $1,200 – $10,000/month\nDevices: Mobile + Desktop\nTop Performers: Payday, personal loan, and subprime traffic\nRestrictions: No traffic from New York. No military personnel. Leads must not use a work phone that matches a home phone, include a PO BOX in the address, or list employment as student, temp, unemployed, or unemployment. Next pay date cannot fall on a Saturday, Sunday, or U.S. bank holiday (Christmas, New Year's Eve, MLK Day, July 4th, Labor Day).",
+      "score_breakdown": {
+        "epc_pct": 0.7342,
+        "rate_pct": 0.8887,
+        "product_pct": 0.8735,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 24,
+      "id": 24645,
+      "name": "Bark - Parental Controls for Families - CPS (US,AU,ZA,GU)",
+      "composite_score": 0.8598,
+      "epc": 0.3806,
+      "rate": 67.5,
+      "rate_type": "$ per lead",
+      "rate_text": "$67.50 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new",
+        "top"
+      ],
+      "categories": [
+        "Shopping & E-Commerce",
+        "Subscriptions & Memberships"
+      ],
+      "traffic_allowed": [
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "email",
+        "brand_bid"
+      ],
+      "landing_page": "https://www.bark.us/learn/ps-bark-phone-starter-plan-main/?",
+      "description": "Bark provides families with all the tools they need to raise kids in the digital age. Their comprehensive service lets users monitor content, manage screen time, and filter websites while their child is online.\nOffer converts on all valid subscription and/or orders .\nTargeting: Age 30-50. Parents and guardians of children and teenagers, especially those concerned about online safety and digital wellbeing.\nRestrictions: No incent, no coupon, no loyalty sites.\nIMPORTANT: Referring domains MUST be passed in S2.",
+      "score_breakdown": {
+        "epc_pct": 0.7366,
+        "rate_pct": 0.8735,
+        "product_pct": 0.873,
+        "traffic_flex": 0.7,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 1
+      }
+    },
+    {
+      "rank": 25,
+      "id": 20484,
+      "name": "SuperMoney - Personal Credit Cards - RevShare (US)",
+      "composite_score": 0.8563,
+      "epc": 0.48,
+      "rate": 48,
+      "rate_type": "% of sale",
+      "rate_text": "48% of sale",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new",
+        "top"
+      ],
+      "categories": [
+        "Financial",
+        "Credit Cards"
+      ],
+      "traffic_allowed": [
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "email",
+        "contextual",
+        "brand_bid"
+      ],
+      "landing_page": "https://www.supermoney.com/reviews/personal-credit-cards",
+      "description": "SuperMoney Personal Credit Cards helps users find the right credit card for them.\nOffer converts on user going to final site and filling out lead to get approved.\nTargeting: Users interested in new credit cards, want best rates. M/F 18+\nRestrictions: No path traffic.",
+      "score_breakdown": {
+        "epc_pct": 0.8578,
+        "rate_pct": 0.7769,
+        "product_pct": 0.8436,
+        "traffic_flex": 0.6,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 1
+      }
+    },
+    {
+      "rank": 26,
+      "id": 32298,
+      "name": "Nielsen Pulse - Survey App - CPI (US)",
+      "composite_score": 0.8495,
+      "epc": 3.5113,
+      "rate": 16.5,
+      "rate_type": "$ per lead",
+      "rate_text": "$16.50 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Surveys",
+        "Survey Taken"
+      ],
+      "traffic_allowed": [
+        "contextual",
+        "search",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "email",
+        "social_media",
+        "brand_bid"
+      ],
+      "landing_page": "https://nielsenpulse.com/",
+      "description": "Nielsen Pulse is an official market research application that allows users to earn passive rewards simply by sharing their digital usage habits. The app runs securely in the background of mobile devices, measuring internet activity to help shape the future of online products and services.\nConverts on full registration through the web flow, installs the app and goes all the way through the app flow until landing on the app's dashboard page.\nTargeting: US residents aged 18-65 who are interested in passive income, rewards programs, and technology, with a primary optimization focus on iOS device users.\nRestrictions: No fraudulent or bot traffic, and misleading creatives promising unrealistic payouts are strictly prohibited. Only US-based traffic on supported iOS and Android operating systems will be credited.\nCreatives to be made for approval.",
+      "score_breakdown": {
+        "epc_pct": 0.9946,
+        "rate_pct": 0.5591,
+        "product_pct": 0.9436,
+        "traffic_flex": 0.6,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 27,
+      "id": 27337,
+      "name": "Spynger - Monitoring Tool - CPS (WW)",
+      "composite_score": 0.8443,
+      "epc": 0.4834,
+      "rate": 33.75,
+      "rate_type": "$ per lead",
+      "rate_text": "$33.75 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new",
+        "top"
+      ],
+      "categories": [
+        "Background Check & ID Protection",
+        "Monitoring"
+      ],
+      "traffic_allowed": [
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "email",
+        "brand_bid"
+      ],
+      "landing_page": "https://spynger.com/",
+      "description": "Spynger helps customers get the answers they need to put an end to the drama in their relationship and to find out if their partner is cheating.\nOffer converts on a sale.\nTargeting: Open to worldwide traffic outside of Russia and China. Top converting geos are the following:\nUS, FR, TR, IT , DE , gender - female 50,1% and male - 49.9%\nRestrictions: No incentive\n14-day locking period. Refunds and chargebacks are subject to reversals",
+      "score_breakdown": {
+        "epc_pct": 0.871,
+        "rate_pct": 0.6994,
+        "product_pct": 0.7778,
+        "traffic_flex": 0.7,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 1
+      }
+    },
+    {
+      "rank": 28,
+      "id": 30557,
+      "name": "Wildgrain - Bread Pasta Pastry Subscription - CPA (US)",
+      "composite_score": 0.8364,
+      "epc": 0.9857,
+      "rate": 15,
+      "rate_type": "$ per lead",
+      "rate_text": "$15.00 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new",
+        "top"
+      ],
+      "categories": [
+        "Shopping & E-Commerce",
+        "Services"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://wildgrain.com/",
+      "description": "Wildgrain is the first subscription box that delivers bake-from-frozen breads, pastas, and artisan pastries directly to the consumer's door. Customizable boxes include a range of options that are baked within 25 minutes, requiring no thawing beforehand.\nConverts on valid subscription purchase\nTargeting: Consumers interested in convenient, high-quality artisanal baked goods and gourmet foods delivered on a subscription basis. This audience values clean ingredients and ease of preparation.\nRestrictions: No coupon traffic, incentive traffic, or branded search traffic is permitted. Affiliates are prohibited from bidding on brand terms, misspellings, or branded terms combined with generic terms.\nPromo Code: BOUNTY30-$30 off your first order.\nPromo codes that lead to $0 payouts",
+      "score_breakdown": {
+        "epc_pct": 0.9598,
+        "rate_pct": 0.5145,
+        "product_pct": 0.7572,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 1
+      }
+    },
+    {
+      "rank": 29,
+      "id": 32132,
+      "name": "RH Fitness App  - Calisthenics for Women - CPS (US)",
+      "composite_score": 0.8308,
+      "epc": 0.45,
+      "rate": 45,
+      "rate_type": "$ per lead",
+      "rate_text": "$45.00 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "Fitness & Exercise"
+      ],
+      "traffic_allowed": [
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "email",
+        "brand_bid"
+      ],
+      "landing_page": "https://tour.reverse.health/rhwc-calisthenics-2602a",
+      "description": "Reverse Health’s Tai Chi is a gentle, low-impact digital program specifically designed for women over 40 seeking improved balance, mobility, and calm energy. The program features 10–15 minute daily routines that are joint-friendly and require no equipment, focusing on core strength and sustainable weight loss.\nConverts on a completed subscription purchase.\nTargeting: Women aged 40+ interested in holistic wellness, mobility, low-impact exercise, and sustainable weight loss solutions.\nRestrictions: No incentivized traffic or fraudulent leads allowed. Standard brand bidding restrictions apply.",
+      "score_breakdown": {
+        "epc_pct": 0.797,
+        "rate_pct": 0.7612,
+        "product_pct": 0.8122,
+        "traffic_flex": 0.7,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 30,
+      "id": 30427,
+      "name": "Ultra Accel Q - Natural Supplement - CPS (US,CA)",
+      "composite_score": 0.825,
+      "epc": 0.375,
+      "rate": 90,
+      "rate_type": "$ per lead",
+      "rate_text": "$90.00 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new",
+        "top"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "General Wellness"
+      ],
+      "traffic_allowed": [
+        "email",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "contextual",
+        "brand_bid"
+      ],
+      "landing_page": "https://partners.primalforce.net/sp/vsl-uaq-reclaim-energy/",
+      "description": "Ultra Accel Q is a best-selling natural supplement formulated to restore energy, sharpen memory, and revitalize vitality.\nConverts on sale.\nTargeting: Adults in the US and CA seeking natural solutions for energy, cognitive support, and overall wellness.\nRestrictions: No incentivized traffic or misleading health claims.",
+      "score_breakdown": {
+        "epc_pct": 0.5253,
+        "rate_pct": 0.9362,
+        "product_pct": 0.9093,
+        "traffic_flex": 0.7,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 1
+      }
+    },
+    {
+      "rank": 31,
+      "id": 26732,
+      "name": "Faye - Travel Insurance - CPA (US)",
+      "composite_score": 0.8208,
+      "epc": 0.45,
+      "rate": 45,
+      "rate_type": "$ per lead",
+      "rate_text": "$45.00 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Insurance",
+        "Life"
+      ],
+      "traffic_allowed": [
+        "contextual",
+        "search",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "email",
+        "social_media",
+        "brand_bid"
+      ],
+      "landing_page": "https://www.withfaye.com/?",
+      "description": "Faye is the first 100% digital, consumer-centric travel insurance for Americans enabling smarter, faster assistance and claims resolutions with 24/7 immediate support from anywhere in the world. Voted a must-download app by Fodor’s travel.\nConverts on form submit.\nTargeting: US residents, 21+, who are avid travellers internationally and domestically.\nRestrictions: No incentivized traffic. All traffic generated from incentivized sources, such as (discounts, promotions, cashback, bonuses, gift cards, rewards, etc.) will not be paid. Faye can not be showcased in Adult, sex, gaming or gambling, political sites, etc. No Coupon traffic at all.\nPartners must include a concise disclaimer indicating sponsorship and compensation.\nNOTE: Email and Social promotions will require further approval from the advertiser.",
+      "score_breakdown": {
+        "epc_pct": 0.797,
+        "rate_pct": 0.7612,
+        "product_pct": 0.8122,
+        "traffic_flex": 0.6,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 32,
+      "id": 29093,
+      "name": "Wallester - Business Payment Solutions - CPS (US,UK,DE,AT + more)",
+      "composite_score": 0.8184,
+      "epc": 0.375,
+      "rate": 81,
+      "rate_type": "$ per lead",
+      "rate_text": "$81.00 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "B2B",
+        "Financial Services"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://wallester.com/business",
+      "description": "Wallester provides innovative business payment solutions, offering virtual and physical corporate cards, expense management, and real-time transaction tracking. Designed for businesses seeking streamlined financial operations with advanced security features.\nConverts on new Wallester Business signed contract.\nTargeting: Business owners, finance managers, and corporate decision-makers looking for modern payment solutions.\nRestrictions: No incentivized traffic, no misleading claims, no brand bidding. Businesses from countries where VISA cards do not work are prohibited. Traffic restrictions include no coupon/cashback/discount traffic, no emailing without prior approval, no intrusive ad formats or spam, and no content sites related to adult, gaming, or betting topics.\nBrand Info",
+      "score_breakdown": {
+        "epc_pct": 0.5253,
+        "rate_pct": 0.9264,
+        "product_pct": 0.895,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 33,
+      "id": 29265,
+      "name": "Wallester - 2 Step - CPL (US,UK,DE,AT + more)",
+      "composite_score": 0.8184,
+      "epc": 0.375,
+      "rate": 81,
+      "rate_type": "$ per lead",
+      "rate_text": "$81.00 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "B2B",
+        "Business Services"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://wallester.com/join",
+      "description": "Wallester provides innovative business payment solutions, offering virtual and physical corporate cards, expense management, and real-time transaction tracking. These solutions are designed for businesses seeking streamlined financial operations with advanced security features.\nConverts on new Wallester Business signed contract and after €500 Spent.\nTargeting: Business owners, finance managers, and corporate decision-makers looking for modern payment solutions.\nRestrictions: No incentivized traffic, no misleading claims, no brand bidding. Businesses from countries where VISA cards do not work are prohibited. Traffic restrictions include no coupon/cashback/discount traffic, no emailing without prior approval, no intrusive ad formats or spam, and no content sites related to adult, gaming, or betting topics.\nBrand Info",
+      "score_breakdown": {
+        "epc_pct": 0.5253,
+        "rate_pct": 0.9264,
+        "product_pct": 0.895,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 34,
+      "id": 29920,
+      "name": "MooMoo - Trading Platform - CPA (CA)",
+      "composite_score": 0.818,
+      "epc": 0.374,
+      "rate": 81.75,
+      "rate_type": "$ per lead",
+      "rate_text": "$81.75 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Financial",
+        "Investments"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://www.moomoo.com/ca/events/welcomebonus",
+      "description": "MooMoo offers a smarter trading experience with $0 commission and zero contract fees on equity options for US residents. New users can now receive up to $1,000 in NVDA stock and earn 8.1% APY on uninvested cash. Rewards are based on deposit amount, ranging from $20 in stock for a $100 deposit up to $1,000 in stock for a $50,000 deposit. MooMoo also supports crypto trading and offers paper trading, premium research, and advanced tools to improve investment strategies while minimizing fees. Join a global community of over 24 million users.\nConverts on new open and funded account.\nTargeting: Age 18+, individuals interested in stock trading, cryptocurrency, investment strategies, and personal finance.\nRestrictions: No incentivized traffic, adult content, misleading information, or sensitive content. Must comply with MooMoo’s promotional guidelines. Custom creatives require advertiser approval.",
+      "score_breakdown": {
+        "epc_pct": 0.5223,
+        "rate_pct": 0.9274,
+        "product_pct": 0.896,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 35,
+      "id": 32337,
+      "name": "Lovable - AI App Builder - CPS (WW)",
+      "composite_score": 0.8178,
+      "epc": 9.2211,
+      "rate": 112,
+      "rate_type": "$ per lead",
+      "rate_text": "$112.00 per lead",
+      "status": "By Request",
+      "approval": "Approval Required",
+      "sources": [
+        "trending",
+        "new",
+        "top"
+      ],
+      "categories": [
+        "Software & Downloads",
+        "General Software"
+      ],
+      "traffic_allowed": [
+        "incentive",
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "brand_bid"
+      ],
+      "landing_page": "https://lovable.dev/",
+      "description": "Lovable is an advanced AI-powered app builder that allows creators, entrepreneurs, and developers to build full-stack web applications using natural language. Users can generate code, deploy instantly, and edit their apps in real-time through an intuitive chat interface.\nConverts on Paid subscription\nTargeting: Entrepreneurs, product managers, software developers, and tech enthusiasts aged 20-55 who want to build and launch MVPs quickly without deep coding knowledge.\nRestrictions: No search arbitrage, no trademark bidding, and no misleading claims regarding AI capabilities.",
+      "score_breakdown": {
+        "epc_pct": 1,
+        "rate_pct": 0.9529,
+        "product_pct": 0.998,
+        "traffic_flex": 0.9,
+        "approved": 0,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 36,
+      "id": 29207,
+      "name": "Willow - Weightloss GLP-1 - CPS (US)",
+      "composite_score": 0.8138,
+      "epc": 1.5209,
+      "rate": 150,
+      "rate_type": "$ per lead",
+      "rate_text": "$150.00 per lead",
+      "status": "By Request",
+      "approval": "Approval Required",
+      "sources": [
+        "trending",
+        "new",
+        "top"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "Diet & Nutrition"
+      ],
+      "traffic_allowed": [
+        "incentive",
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "brand_bid"
+      ],
+      "landing_page": "https://www.startwillow.com/",
+      "description": "Willlow offers a science-backed weight loss program that leverages GLP-1 medications like semaglutide (the active ingredient in Ozempic) to help individuals achieve sustainable results. The program combines FDA-approved treatments with medical oversight and lifestyle coaching, tailored for long-term weight management.\nConverts on sale\nTargeting: Adults aged 25–65 seeking medically supervised weight loss solutions using GLP-1 medications.\nRestrictions: No misleading health claims, no reference to celebrity endorsements unless approved.\nCreatives to be made by approval.",
+      "score_breakdown": {
+        "epc_pct": 0.9789,
+        "rate_pct": 0.9691,
+        "product_pct": 0.9853,
+        "traffic_flex": 0.9,
+        "approved": 0,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 37,
+      "id": 32176,
+      "name": "Ding.com - Mobile Top-Up and Gift Cards - CPS (UAE, KSA, QA)",
+      "composite_score": 0.8129,
+      "epc": 0.8835,
+      "rate": 11.25,
+      "rate_type": "$ per lead",
+      "rate_text": "$11.25 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new",
+        "top"
+      ],
+      "categories": [
+        "Shopping & E-Commerce",
+        "Services"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://www.ding.com/?",
+      "description": "Ding.com is a global mobile recharge platform that lets users instantly send prepaid mobile top-ups to phones in over 150 countries worldwide. Users can recharge their own phone or send credit to friends and family abroad, supporting major carriers.\nConverts on first purchase.\nTargeting: Aged 18–65 who need international mobile recharge services. Ideal for immigrants, expats, international students, travelers, and users supporting family or friends abroad. Appeals to cost-conscious consumers looking for fast, trusted, and convenient global top-up solutions.\nRestrictions: No misleading pricing claims, no false guarantees of discounts or bonuses, and no deceptive messaging around delivery times. No brand bidding or unauthorized use of Ding trademarks. Must use approved coupon codes only.\nPromo Codes: DingIt10 for Mobile (10% off) and GiftDing20 for Giftcard (20% off)",
+      "score_breakdown": {
+        "epc_pct": 0.948,
+        "rate_pct": 0.464,
+        "product_pct": 0.6876,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 1
+      }
+    },
+    {
+      "rank": 38,
+      "id": 25474,
+      "name": "ZoogVPN - RevShare (WW)",
+      "composite_score": 0.8121,
+      "epc": 0.375,
+      "rate": 75,
+      "rate_type": "% of sale",
+      "rate_text": "75% of sale",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new",
+        "top"
+      ],
+      "categories": [
+        "Shopping & E-Commerce",
+        "Consumer Goods & Gadgets"
+      ],
+      "traffic_allowed": [
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "email",
+        "brand_bid"
+      ],
+      "landing_page": "https://zoogvpn.com/mb/",
+      "description": "ZoogVPN is a robust solution for internet users who value their online privacy and freedom. It provides encrypted connections, anonymous browsing, and access to geo-restricted content, offering users a more open and secure internet experience.\nOffer converts on a sale.\nTargeting: Age 18-65, internet users seeking privacy and security, individuals wanting access to geo-restricted content, tech enthusiasts, online streamers.",
+      "score_breakdown": {
+        "epc_pct": 0.5253,
+        "rate_pct": 0.8946,
+        "product_pct": 0.8789,
+        "traffic_flex": 0.7,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 1
+      }
+    },
+    {
+      "rank": 39,
+      "id": 30833,
+      "name": "Total Bowel Release - Digestive Supplement - CPS (US,CA)",
+      "composite_score": 0.8113,
+      "epc": 4.125,
+      "rate": 165,
+      "rate_type": "$ per lead",
+      "rate_text": "$165.00 per lead",
+      "status": "By Request",
+      "approval": "Approval Required",
+      "sources": [
+        "trending",
+        "new",
+        "top"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "General Wellness"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://pages.revivalpoint.com/vsl/clearbowels",
+      "description": "Total Bowel Release is a natural digestive health supplement formulated to promote regularity and assist consumers in managing chronic constipation or digestive discomfort. The product is positioned as a gentle, effective way to support optimal bowel function and overall digestive wellness.\nConverts on customer purchase\nTargeting: Consumers actively seeking natural, non-prescription remedies and supplements to support healthy bowel movements, relieve constipation, and improve general digestive comfort.\nRestrictions: No incentive traffic or Brand Bidding is permitted. Affiliates must not make unsubstantiated medical claims or position the product as a cure for any disease. All claims must adhere strictly to supplement advertising guidelines.\nCreatives to be made by request",
+      "score_breakdown": {
+        "epc_pct": 0.9956,
+        "rate_pct": 0.9769,
+        "product_pct": 0.9971,
+        "traffic_flex": 0.8,
+        "approved": 0,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 40,
+      "id": 28149,
+      "name": "JustAnswer - Expert Consultation - CPS (US,CA,AU,UK + more)",
+      "composite_score": 0.8096,
+      "epc": 0.4782,
+      "rate": 22.5,
+      "rate_type": "$ per lead",
+      "rate_text": "$22.50 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new",
+        "top"
+      ],
+      "categories": [
+        "Shopping & E-Commerce",
+        "Consumer Goods & Gadgets"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "search",
+        "brand_bid"
+      ],
+      "landing_page": "https://www.askanexpertonline.com",
+      "description": "JustAnswer allows individuals to consult with experts from various fields online. Users can ask questions, seek advice, and receive professional guidance on a wide range of topics. It offers a convenient platform to connect with experts and get answers to specific queries.\nConverts on sale of a consultation with an expert.\nTargeting: Individuals seeking online expert consultations across various fields, looking for specific advice and guidance from professionals.\nRestrictions: Absolutely no PPC traffic allowed. Leads will be paid $0 if the user was initially acquired by JustAnswers' own PPC efforts . No brand bidding on other channels\nPrepop chat text in S3",
+      "score_breakdown": {
+        "epc_pct": 0.8568,
+        "rate_pct": 0.6067,
+        "product_pct": 0.694,
+        "traffic_flex": 0.7,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 1
+      }
+    },
+    {
+      "rank": 41,
+      "id": 31614,
+      "name": "JumpKETO - Weight Loss Supplements - CPS (UK)",
+      "composite_score": 0.8096,
+      "epc": 0.375,
+      "rate": 75,
+      "rate_type": "$ per lead",
+      "rate_text": "$75.00 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "Diet & Nutrition"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://tryjumpketo.com/offer/jumpketobhb_gummies/uk-v1/index.html?",
+      "description": "JumpKETO Gummies offer a premium, high-absorption formula designed to support metabolic health and accelerate the state of ketosis for effective weight management. This supplement targets the health-conscious UK market looking for a palatable alternative to traditional capsules while maintaining strict ketogenic standards.\nConverts on a successful credit card transaction for a completed purchase.\nTargeting: Adults aged 25-55 in the United Kingdom interested in ketogenic diets, fitness, biohacking, and rapid weight loss solutions.\nRestrictions: No incentivized traffic, brand bidding, or misleading health claims are permitted. All creative assets must adhere to UK advertising regulations regarding dietary supplements.",
+      "score_breakdown": {
+        "epc_pct": 0.5253,
+        "rate_pct": 0.8946,
+        "product_pct": 0.8789,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 42,
+      "id": 31922,
+      "name": "Myco-Max Memory - Brain Supplement - CPS (US,CA)",
+      "composite_score": 0.8096,
+      "epc": 0.375,
+      "rate": 75,
+      "rate_type": "$ per lead",
+      "rate_text": "$75.00 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "General Wellness"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://partners.primalforce.net/sp/myco-max-memory/",
+      "description": "Myco-Max is a mushroom-based nootropic designed for memory recall and mental clarity.\nConverts on Sale.\nTargeting: Adults interested in brain health, memory improvement, anti-aging, and Alzheimer’s prevention solutions.\nRestrictions:\nUsers can not have medical claims regarding Alzheimer’s or Dementia (FDA/Health Canada compliance). Brand Bidding is strictly prohibited. Headlines like \"Pfizer Buried This\" must lead to substantiated natural health content to maintain platform approval.",
+      "score_breakdown": {
+        "epc_pct": 0.5253,
+        "rate_pct": 0.8946,
+        "product_pct": 0.8789,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 43,
+      "id": 17722,
+      "name": "Heal and Soothe - Pain Relief - CPS (US,CA,AU + more)",
+      "composite_score": 0.8082,
+      "epc": 0.4,
+      "rate": 40,
+      "rate_type": "$ per lead",
+      "rate_text": "$40.00 per lead",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "Diet & Nutrition"
+      ],
+      "traffic_allowed": [
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "email",
+        "brand_bid"
+      ],
+      "landing_page": "https://healthandwellnessweekly.com/products/191/sp-protein-morphine?",
+      "description": "Heal-n-Soothe is a unique combination of the most powerful natural anti-inflammatory and pain relieving ingredients and is designed to deliver maximum natural pain relief.\nThis unique \"Better Than Morphine\" advertorial has a big hook that will pull your audience in and get them hot as an oven to buy. This leads into our Heal-N-Soothe Free Trial and pays out a high CPA, so your earnings will be sky-high. Test it out today and see for yourself.\nOffer converts on CC submit.\nNote: Leads are manually added on Fridays.",
+      "score_breakdown": {
+        "epc_pct": 0.7445,
+        "rate_pct": 0.745,
+        "product_pct": 0.7705,
+        "traffic_flex": 0.7,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 44,
+      "id": 25673,
+      "name": "Blinkist - Podcast and Book Summary - CPS (US)",
+      "composite_score": 0.8082,
+      "epc": 0.4,
+      "rate": 40,
+      "rate_type": "% of sale",
+      "rate_text": "40% of sale",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Shopping & E-Commerce",
+        "Subscriptions & Memberships"
+      ],
+      "traffic_allowed": [
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "email",
+        "brand_bid"
+      ],
+      "landing_page": "https://www.blinkist.com/nc/coupons/keeplearning_blackfriday23_affiliate_75?bf=true#",
+      "description": "Blinkist's Book Summary is service that helps users digest the key insights of podcasts and books in 15 minutes.\nOffer converts on subscription purchase.\nTargeting: Age 18-65, individuals who enjoy reading and learning, podcast listeners, individuals with a keen interest in nonfiction content, those with limited time seeking efficient ways to consume information.\nRestrictions: No promoting illegal, violent, deceptive, or spammy content, as well as restrictions on trademark infringement, incentivized traffic, and non-compliance with regulations. Returns/cancellations are subject to reversal.\nCoupon traffic OK.",
+      "score_breakdown": {
+        "epc_pct": 0.7445,
+        "rate_pct": 0.745,
+        "product_pct": 0.7705,
+        "traffic_flex": 0.7,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 45,
+      "id": 31453,
+      "name": "Domain.com -  Domains, Hosting, and Website Builder - CPS (WW)",
+      "composite_score": 0.8069,
+      "epc": 1.6171,
+      "rate": 180,
+      "rate_type": "$ per lead",
+      "rate_text": "$180.00 per lead",
+      "status": "By Request",
+      "approval": "Approval Required",
+      "sources": [
+        "trending",
+        "new",
+        "top"
+      ],
+      "categories": [
+        "Shopping & E-Commerce",
+        "Software & Hosting"
+      ],
+      "traffic_allowed": [
+        "incentive",
+        "email",
+        "contextual",
+        "search",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "social_media",
+        "brand_bid"
+      ],
+      "landing_page": "https://www.domain.com/?",
+      "description": "Domain.com is a comprehensive platform specializing in domain registration, web hosting, and website building tools.\nConverts on purchase of Web Builder, Hosting or Ecom Web Builder.\nTargeting: Entrepreneurs, small business owners (SMBs), and bloggers aged 20-55 looking to launch or scale a digital brand. Appeals to tech-savvy individuals and web developers seeking reliable domain management and hosting. High resonance with \"new movers\" in the digital space, including freelancers and influencers requiring a custom URL for portfolios or social media hubs.\nRestrictions: No misleading practices, or non-compliant promotion methods. All custom creatives must be pre-approved.",
+      "score_breakdown": {
+        "epc_pct": 0.9809,
+        "rate_pct": 0.9784,
+        "product_pct": 0.9897,
+        "traffic_flex": 0.8,
+        "approved": 0,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 46,
+      "id": 31540,
+      "name": "Silhouette MD - GLP-1 Weight Loss - CPS (US)",
+      "composite_score": 0.8065,
+      "epc": 5.962,
+      "rate": 318.75,
+      "rate_type": "$ per lead",
+      "rate_text": "$318.75 per lead",
+      "status": "By Request",
+      "approval": "Approval Required",
+      "sources": [
+        "trending",
+        "new",
+        "top"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "Diet & Nutrition"
+      ],
+      "traffic_allowed": [
+        "email",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "contextual",
+        "brand_bid"
+      ],
+      "landing_page": "https://weightloss.silhouette-md.com/en/index-v2.html?",
+      "description": "Silhouette MD is a premier telehealth platform providing medically supervised weight loss solutions featuring GLP-1 medications like Semaglutide and Tirzepatide. The program combines clinical expertise with prescription access to help patients achieve sustainable metabolic health improvements through a streamlined digital consultation process.\nConverts on a completed purchase and prescription enrollment.\nTargeting: Adults aged 30-65 struggling with BMI management, metabolic health, or insulin resistance who prefer the convenience of remote clinical supervision.\nRestrictions: No incentivized traffic or brand bidding is permitted. Marketing must avoid unsubstantiated medical claims or deceptive \"before and after\" imagery.\nVideo Creatives",
+      "score_breakdown": {
+        "epc_pct": 0.9995,
+        "rate_pct": 0.9961,
+        "product_pct": 0.9995,
+        "traffic_flex": 0.7,
+        "approved": 0,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 47,
+      "id": 31584,
+      "name": "Help Injury - Roblox Abuse Mass Tort - CPA (US)",
+      "composite_score": 0.8048,
+      "epc": 5.625,
+      "rate": 1125,
+      "rate_type": "$ per lead",
+      "rate_text": "$1125.00 per lead",
+      "status": "By Request",
+      "approval": "Approval Required",
+      "sources": [
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Legal Services",
+        "Mass Tort"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://www.help-injury.com/roblox/?",
+      "description": "Help Injury facilitates legal recourse for families affected by child safety failures and predatory incidents occurring within the Roblox gaming platform. This mass tort initiative focuses on identifying eligible claimants to join a collective legal action aimed at securing compensation for negligence and lack of oversight.\nConverts on a valid lead form submission from a qualified claimant or legal guardian.\nTargeting: Parents and legal guardians of minors (ages 5-17) who utilize online sandbox games, specifically those engaged with child safety advocacy and legal victim support groups. Excluded states include California, Indiana, Louisiana, and Tennessee\nRestrictions: No incentivized traffic, brand bidding, or misleading creative assets promising specific settlement amounts. All email and SMS traffic requires prior approval and adherence to strict compliance guidelines.",
+      "score_breakdown": {
+        "epc_pct": 0.999,
+        "rate_pct": 1,
+        "product_pct": 1,
+        "traffic_flex": 0.8,
+        "approved": 0,
+        "trending": 1,
+        "multi_list": 0.5
+      }
+    },
+    {
+      "rank": 48,
+      "id": 28778,
+      "name": "ShedRX - Weight Loss Injections - CPS (US)",
+      "composite_score": 0.8047,
+      "epc": 2.9806,
+      "rate": 112,
+      "rate_type": "$ per lead",
+      "rate_text": "$112.00 per lead",
+      "status": "By Request",
+      "approval": "Approval Required",
+      "sources": [
+        "trending",
+        "new",
+        "top"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "Diet & Nutrition"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://portal.shedrx.com/signup",
+      "description": "ShedRX provides telehealth services for weight-loss injections, including Semaglutide and Tirzepatide. Their platform offers personalized weight-loss plans, health coaching, and support to help individuals achieve their health goals.\nConverts on a lead submission when users sign up for a free consultation and purchase a weight-loss plan.\nTargeting: Women Ages 25-55 or any individual with high enough BMI looking to lose weight through medical interventions and personalized health coaching.\nRestrictions: No SMS, incentivized traffic, branded SEM, or domain purchases with brand names. No guarantee of results and No claims of efficacy.",
+      "score_breakdown": {
+        "epc_pct": 0.9917,
+        "rate_pct": 0.9529,
+        "product_pct": 0.9912,
+        "traffic_flex": 0.8,
+        "approved": 0,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 49,
+      "id": 28742,
+      "name": "Remedy Meds - Weight Loss - CPS (US)",
+      "composite_score": 0.8035,
+      "epc": 0.9475,
+      "rate": 273.75,
+      "rate_type": "$ per lead",
+      "rate_text": "$273.75 per lead",
+      "status": "By Request",
+      "approval": "Approval Required",
+      "sources": [
+        "trending",
+        "new",
+        "top"
+      ],
+      "categories": [
+        "Health & Wellness",
+        "Diet & Nutrition"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://remedymeds.com/?rm_campaign=BFCM25",
+      "description": "Remedy Meds provides an effortless approach to weight loss with products delivered directly to your door. Simplify your health journey with a solution designed for convenience and effectiveness.\nConverts on sale.\nTargeting: Adults seeking convenient and effective weight loss solutions delivered to their homes.\nRestrictions: No incentivized traffic,No misleading claims or exaggerations in promotional materials. NO BRAND BIDDING. NO BRANDED KEY TERMS.\nAll creatives , and custom creatives require approval.",
+      "score_breakdown": {
+        "epc_pct": 0.9573,
+        "rate_pct": 0.9917,
+        "product_pct": 0.9887,
+        "traffic_flex": 0.8,
+        "approved": 0,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    },
+    {
+      "rank": 50,
+      "id": 30444,
+      "name": "ProvideLoan.com - Loans up to $40k - RevShare (US)",
+      "composite_score": 0.8028,
+      "epc": 0.375,
+      "rate": 67.5,
+      "rate_type": "% of sale",
+      "rate_text": "67.5% of sale",
+      "status": "Active",
+      "approval": "Approved",
+      "sources": [
+        "approved",
+        "trending",
+        "new"
+      ],
+      "categories": [
+        "Financial",
+        "Loans"
+      ],
+      "traffic_allowed": [
+        "email",
+        "contextual",
+        "search",
+        "social_media",
+        "mobile",
+        "desktop",
+        "native",
+        "display"
+      ],
+      "traffic_blocked": [
+        "incentive",
+        "brand_bid"
+      ],
+      "landing_page": "https://www.provideloan.com/",
+      "description": "ProvideLoan.com connects consumers with a wide range of personal loan options by partnering with trusted lending providers. The platform offers users a streamlined application process to compare loan opportunities, making it easier for borrowers to access the financial support they need.\nConverts on completed loan application and approval with a revenue share model.\nTargeting: Adults aged 21–65 seeking personal loans, debt consolidation, or short-term financial assistance. Performs well with employed individuals and those actively searching for loan solutions.\nRestrictions: No incentivized traffic, no misleading claims, and no brand bidding. Creatives must accurately represent the loan services provided.",
+      "score_breakdown": {
+        "epc_pct": 0.5253,
+        "rate_pct": 0.8735,
+        "product_pct": 0.8622,
+        "traffic_flex": 0.8,
+        "approved": 1,
+        "trending": 1,
+        "multi_list": 0.75
+      }
+    }
+  ]
+}

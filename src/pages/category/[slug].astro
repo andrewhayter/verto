@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import Newsletter from '../../components/Newsletter.astro';
 import { categories, categoryBySlug } from '../../data/categories';
+import { topicsByCategory } from '../../data/topics';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -25,6 +26,9 @@ function getArticleSlug(article: (typeof allArticles)[0]) {
   const parts = article.id.split('/');
   return parts[parts.length - 1].replace(/\.mdx?$/, '');
 }
+
+// Subtopics for this category
+const catTopics = (topicsByCategory[slug] ?? []).slice(0, 32);
 
 // Other categories for the sidebar
 const otherCategories = categories
@@ -113,6 +117,29 @@ const otherCategories = categories
             <p class="text-gray-400">
               We're working on expert reviews and guides for {category.name}.
             </p>
+          </div>
+        )}
+
+        {catTopics.length > 0 && (
+          <div class="mt-10">
+            <div class="flex items-center justify-between mb-4">
+              <h2 class="font-display font-bold text-xl text-gray-900">
+                Trending Topics in {category.name}
+              </h2>
+              <a href="/topics" class="text-brand text-sm font-semibold hover:text-brand-dark transition-colors">
+                All Topics →
+              </a>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              {catTopics.map(t => (
+                <a
+                  href={`/topic/${t.slug}`}
+                  class="px-3.5 py-2 bg-white border border-gray-200 hover:border-brand hover:text-brand text-gray-600 text-sm font-medium rounded-xl transition-colors"
+                >
+                  {t.name}
+                </a>
+              ))}
+            </div>
           </div>
         )}
 

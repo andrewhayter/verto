@@ -1,0 +1,235 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import { topics, topicBySlug } from '../../data/topics';
+import { categoryBySlug, categories } from '../../data/categories';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  return topics.map(topic => ({
+    params: { slug: topic.slug },
+    props: { topic },
+  }));
+}
+
+const { topic } = Astro.props;
+const cat = categoryBySlug[topic.category];
+const gradient = cat?.gradient ?? 'linear-gradient(135deg, #0f172a, #1e1b4b)';
+
+// Related articles from same category
+const allArticles = await getCollection('articles');
+const relatedArticles = allArticles
+  .filter(a => a.data.category === topic.category)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 6);
+
+function getArticleSlug(article: (typeof allArticles)[0]) {
+  const parts = article.id.split('/');
+  return parts[parts.length - 1].replace(/\.mdx?$/, '');
+}
+
+// Sibling topics in same category (excluding current)
+const siblingTopics = topics
+  .filter(t => t.category === topic.category && t.slug !== topic.slug)
+  .slice(0, 16);
+
+// Related categories (others with shared terms)
+const otherCats = categories.filter(c => c.slug !== topic.category).slice(0, 6);
+
+const pageTitle = `${topic.name} — Deals, Reviews & Guides`;
+const description = `Discover the best ${topic.name} deals, reviews, and expert guides on Verto. Compare top offers in the ${cat?.name ?? topic.category} category.`;
+---
+
+<BaseLayout title={pageTitle} description={description}>
+  <!-- Topic hero -->
+  <div class="relative py-14 md:py-20 overflow-hidden" style={`background: ${gradient}`}>
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-4 left-10 text-9xl font-black text-white select-none leading-none">{topic.name[0]}</div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+      <!-- Breadcrumb -->
+      <nav class="flex items-center gap-2 text-white/50 text-sm mb-6">
+        <a href="/" class="hover:text-white transition-colors">Home</a>
+        <span>/</span>
+        {cat && <a href={`/category/${cat.slug}`} class="hover:text-white transition-colors">{cat.name}</a>}
+        {cat && <span>/</span>}
+        <span class="text-white/80">{topic.name}</span>
+      </nav>
+
+      <div class="max-w-2xl">
+        {cat && (
+          <a
+            href={`/category/${cat.slug}`}
+            class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest bg-white/15 hover:bg-white/25 text-white px-3 py-1.5 rounded-full mb-4 transition-colors"
+          >
+            <span>{cat.emoji}</span>
+            {cat.name}
+          </a>
+        )}
+        <h1 class="font-display text-4xl md:text-6xl font-black text-white leading-none mb-4">
+          {topic.name}
+        </h1>
+        <p class="text-white/75 text-lg">
+          Deals, expert reviews, and guides on {topic.name} — curated by the Verto editorial team.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-10">
+      <!-- Main content -->
+      <div class="lg:col-span-3 flex flex-col gap-10">
+
+        <!-- About this topic -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+          <h2 class="font-display font-bold text-xl text-gray-900 mb-3">
+            What is {topic.name}?
+          </h2>
+          <p class="text-gray-600 leading-relaxed">
+            {topic.name} is a trending topic in the <strong>{cat?.name ?? topic.category}</strong> space.
+            At Verto, we track the best offers, reviews, and opportunities related to {topic.name} so you
+            can make informed decisions without wasting time researching dozens of sources.
+          </p>
+          {cat && (
+            <div class="flex flex-wrap gap-3 mt-5">
+              <a
+                href={`/category/${cat.slug}`}
+                class="inline-flex items-center gap-2 px-4 py-2 bg-brand text-white font-semibold rounded-xl text-sm hover:bg-brand-dark transition-colors"
+              >
+                Browse all {cat.offsCount} {cat.name} offers →
+              </a>
+              <a
+                href="/categories"
+                class="inline-flex items-center gap-2 px-4 py-2 border border-gray-200 text-gray-600 font-semibold rounded-xl text-sm hover:border-brand hover:text-brand transition-colors"
+              >
+                All Categories
+              </a>
+            </div>
+          )}
+        </div>
+
+        <!-- Related articles -->
+        {relatedArticles.length > 0 ? (
+          <div>
+            <h2 class="font-display font-bold text-2xl text-gray-900 mb-6">
+              Top {cat?.name} Guides & Reviews
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {relatedArticles.map(article => (
+                <ArticleCard
+                  title={article.data.title}
+                  description={article.data.description}
+                  category={article.data.category}
+                  slug={getArticleSlug(article)}
+                  author={article.data.author}
+                  date={article.data.date}
+                  readTime={article.data.readTime}
+                  sponsored={article.data.sponsored}
+                />
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div class="text-center py-16 rounded-3xl border-2 border-dashed border-gray-200">
+            <p class="text-4xl mb-3">{cat?.emoji ?? '📝'}</p>
+            <h3 class="font-display font-bold text-xl text-gray-700 mb-2">
+              Expert content coming soon
+            </h3>
+            <p class="text-gray-400 max-w-sm mx-auto">
+              We're working on in-depth guides and reviews for {topic.name}. Subscribe to be notified.
+            </p>
+          </div>
+        )}
+
+        <!-- Related topics in same category -->
+        {siblingTopics.length > 0 && (
+          <div>
+            <h2 class="font-display font-bold text-xl text-gray-900 mb-4">
+              Related Topics in {cat?.name}
+            </h2>
+            <div class="flex flex-wrap gap-2">
+              {siblingTopics.map(t => (
+                <a
+                  href={`/topic/${t.slug}`}
+                  class="px-4 py-2 bg-white border border-gray-200 hover:border-brand hover:text-brand text-gray-600 text-sm font-medium rounded-full transition-colors"
+                >
+                  {t.name}
+                </a>
+              ))}
+              {topics.filter(t => t.category === topic.category).length > 16 && (
+                <a
+                  href={`/category/${topic.category}/topics`}
+                  class="px-4 py-2 bg-gray-900 text-white text-sm font-semibold rounded-full hover:bg-gray-700 transition-colors"
+                >
+                  +{topics.filter(t => t.category === topic.category).length - 16} more topics
+                </a>
+              )}
+            </div>
+          </div>
+        )}
+
+        <Newsletter />
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="lg:col-span-1 flex flex-col gap-6">
+        <!-- Category card -->
+        {cat && (
+          <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+            <div class="h-20 flex items-center justify-center text-3xl" style={`background: ${cat.gradient}`}>
+              {cat.emoji}
+            </div>
+            <div class="p-5">
+              <h3 class="font-display font-bold text-gray-900 mb-1">{cat.name}</h3>
+              <p class="text-sm text-gray-500 mb-4 leading-relaxed">{cat.description}</p>
+              <a href={`/category/${cat.slug}`} class="text-sm font-semibold text-brand hover:text-brand-dark transition-colors">
+                {cat.offsCount} offers available →
+              </a>
+            </div>
+          </div>
+        )}
+
+        <!-- Trending topics (sidebar) -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+          <h3 class="font-display font-bold text-gray-900 text-base mb-4">Trending Topics</h3>
+          <div class="flex flex-col gap-2">
+            {topics
+              .filter(t => t.frequency > 3)
+              .slice(0, 12)
+              .map(t => (
+                <a
+                  href={`/topic/${t.slug}`}
+                  class={`text-sm py-1.5 border-b border-gray-50 last:border-0 transition-colors ${t.slug === topic.slug ? 'text-brand font-semibold' : 'text-gray-600 hover:text-brand'}`}
+                >
+                  {t.name}
+                </a>
+              ))
+            }
+          </div>
+          <a href="/topics" class="block text-center text-brand text-sm font-semibold mt-4 hover:text-brand-dark transition-colors">
+            All Topics →
+          </a>
+        </div>
+
+        <!-- Other categories -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+          <h3 class="font-display font-bold text-gray-900 text-base mb-3">Explore More</h3>
+          <div class="flex flex-col gap-2">
+            {otherCats.map(c => (
+              <a
+                href={`/category/${c.slug}`}
+                class="flex items-center gap-2 text-gray-500 hover:text-brand text-sm py-1 transition-colors"
+              >
+                <span>{c.emoji}</span>
+                <span>{c.name}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</BaseLayout>
