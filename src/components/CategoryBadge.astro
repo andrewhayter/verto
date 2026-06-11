@@ -1,0 +1,19 @@
+---
+import { categoryBySlug } from '../data/categories';
+
+interface Props {
+  slug: string;
+  size?: 'sm' | 'md';
+}
+
+const { slug, size = 'md' } = Astro.props;
+const category = categoryBySlug[slug];
+const label = category?.name ?? slug;
+const badgeColor = category?.badgeColor ?? 'bg-gray-100 text-gray-700';
+const sizeClass = size === 'sm' ? 'text-xs px-2 py-0.5' : 'text-xs px-3 py-1';
+---
+
+<span class={`inline-flex items-center gap-1 rounded-full font-semibold uppercase tracking-wide ${badgeColor} ${sizeClass}`}>
+  {category?.emoji && <span class="text-xs">{category.emoji}</span>}
+  {label}
+</span>

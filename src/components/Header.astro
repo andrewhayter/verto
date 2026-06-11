@@ -1,0 +1,95 @@
+---
+import { categories } from '../data/categories';
+const navCategories = categories.slice(0, 6);
+---
+
+<header class="sticky top-0 z-50 bg-slate-900 shadow-xl">
+  <!-- Masthead -->
+  <div class="border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-6">
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-2 shrink-0">
+        <span class="font-display font-black text-2xl tracking-tight">
+          <span class="text-white">VER</span><span class="text-brand">TO</span>
+        </span>
+        <span class="hidden sm:block text-white/30 text-xs font-medium uppercase tracking-widest border-l border-white/20 pl-3">
+          Your Guide to the Best Offers
+        </span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden lg:flex items-center gap-1">
+        {navCategories.map(cat => (
+          <a
+            href={`/category/${cat.slug}`}
+            class="text-white/70 hover:text-white text-sm font-medium px-3 py-2 rounded-lg hover:bg-white/10 transition-colors whitespace-nowrap"
+          >
+            {cat.emoji} {cat.name}
+          </a>
+        ))}
+        <a
+          href="/categories"
+          class="text-brand hover:text-red-400 text-sm font-semibold px-3 py-2 rounded-lg hover:bg-white/10 transition-colors whitespace-nowrap"
+        >
+          All Categories →
+        </a>
+      </nav>
+
+      <!-- Mobile menu button -->
+      <button
+        id="menu-toggle"
+        class="lg:hidden text-white/70 hover:text-white p-2 rounded-lg hover:bg-white/10 transition-colors"
+        aria-label="Open menu"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Category strip -->
+  <div class="bg-slate-800/80 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="category-nav flex items-center gap-1 overflow-x-auto py-2">
+        <a
+          href="/"
+          class="shrink-0 text-white/60 hover:text-white text-xs font-semibold uppercase tracking-wide px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors"
+        >
+          All
+        </a>
+        {categories.map(cat => (
+          <a
+            href={`/category/${cat.slug}`}
+            class="shrink-0 text-white/60 hover:text-white text-xs font-medium px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
+          >
+            {cat.emoji} {cat.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile dropdown -->
+  <div id="mobile-menu" class="hidden lg:hidden bg-slate-800 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 py-4 grid grid-cols-2 gap-2">
+      {categories.map(cat => (
+        <a
+          href={`/category/${cat.slug}`}
+          class="flex items-center gap-2 text-white/70 hover:text-white text-sm px-3 py-2 rounded-lg hover:bg-white/10 transition-colors"
+        >
+          <span>{cat.emoji}</span>
+          <span class="truncate">{cat.name}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</header>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  toggle?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>

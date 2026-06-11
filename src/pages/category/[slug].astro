@@ -1,0 +1,168 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import { categories, categoryBySlug } from '../../data/categories';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  return categories.map(cat => ({
+    params: { slug: cat.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const category = categoryBySlug[slug];
+
+if (!category) return Astro.redirect('/');
+
+const allArticles = await getCollection('articles');
+const categoryArticles = allArticles
+  .filter(a => a.data.category === slug)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+function getArticleSlug(article: (typeof allArticles)[0]) {
+  const parts = article.id.split('/');
+  return parts[parts.length - 1].replace(/\.mdx?$/, '');
+}
+
+// Other categories for the sidebar
+const otherCategories = categories
+  .filter(c => c.slug !== slug)
+  .sort((a, b) => b.offsCount - a.offsCount)
+  .slice(0, 10);
+---
+
+<BaseLayout
+  title={`${category.name} — Best Offers & Reviews`}
+  description={category.description}
+>
+  <!-- Category hero -->
+  <div class="relative py-14 md:py-20" style={`background: ${category.gradient}`}>
+    <div class="absolute inset-0 bg-black/30"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="max-w-2xl">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-4xl">{category.emoji}</span>
+          <span class="text-white/60 text-sm font-medium uppercase tracking-widest">
+            {category.offsCount} offers available
+          </span>
+        </div>
+        <h1 class="font-display text-4xl md:text-5xl font-bold text-white mb-3">
+          {category.name}
+        </h1>
+        <p class="text-white/80 text-lg">{category.description}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-10">
+      <!-- Main content -->
+      <div class="lg:col-span-3">
+        {categoryArticles.length > 0 ? (
+          <>
+            <!-- Featured article in this category -->
+            {(() => {
+              const featured = categoryArticles[0];
+              return (
+                <a
+                  href={`/${featured.data.category}/${getArticleSlug(featured)}`}
+                  class="article-card group relative flex items-end rounded-3xl overflow-hidden h-72 mb-8 block"
+                  style={`background: ${category.gradient}`}
+                >
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                  <div class="relative z-10 p-8 flex flex-col gap-2">
+                    <span class="inline-block bg-brand text-white text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full w-fit mb-1">
+                      Latest
+                    </span>
+                    <h2 class="font-display font-bold text-2xl md:text-3xl text-white group-hover:text-white/90 transition-colors line-clamp-2">
+                      {featured.data.title}
+                    </h2>
+                    <p class="text-white/70 line-clamp-1">{featured.data.description}</p>
+                    <p class="text-white/50 text-sm">
+                      By {featured.data.author} · {featured.data.readTime} min read
+                    </p>
+                  </div>
+                </a>
+              );
+            })()}
+
+            <!-- Article grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {categoryArticles.slice(1).map(article => (
+                <ArticleCard
+                  title={article.data.title}
+                  description={article.data.description}
+                  category={article.data.category}
+                  slug={getArticleSlug(article)}
+                  author={article.data.author}
+                  date={article.data.date}
+                  readTime={article.data.readTime}
+                  sponsored={article.data.sponsored}
+                />
+              ))}
+            </div>
+          </>
+        ) : (
+          <div class="text-center py-24 rounded-3xl border-2 border-dashed border-gray-200">
+            <p class="text-5xl mb-4">{category.emoji}</p>
+            <h2 class="font-display font-bold text-2xl text-gray-700 mb-2">
+              Coming Soon
+            </h2>
+            <p class="text-gray-400">
+              We're working on expert reviews and guides for {category.name}.
+            </p>
+          </div>
+        )}
+
+        <div class="mt-12">
+          <Newsletter />
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="lg:col-span-1 flex flex-col gap-6">
+        <!-- Category stats card -->
+        <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+          <div class="h-24 flex items-center justify-center text-4xl" style={`background: ${category.gradient}`}>
+            {category.emoji}
+          </div>
+          <div class="p-5">
+            <h3 class="font-display font-bold text-gray-900 mb-1">{category.name}</h3>
+            <p class="text-sm text-gray-500 mb-3">{category.description}</p>
+            <div class="flex items-center gap-2 text-sm">
+              <span class="font-bold text-gray-900">{category.offsCount}</span>
+              <span class="text-gray-400">active offers</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other categories -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+          <h3 class="font-display font-bold text-gray-900 text-base mb-4">Other Categories</h3>
+          <div class="flex flex-col gap-2">
+            {otherCategories.map(cat => (
+              <a
+                href={`/category/${cat.slug}`}
+                class="flex items-center justify-between text-gray-600 hover:text-brand text-sm py-1.5 border-b border-gray-50 last:border-0 transition-colors group"
+              >
+                <span class="flex items-center gap-2">
+                  <span>{cat.emoji}</span>
+                  <span class="group-hover:underline">{cat.name}</span>
+                </span>
+                <span class="text-gray-300 text-xs">{cat.offsCount}</span>
+              </a>
+            ))}
+          </div>
+          <a
+            href="/categories"
+            class="block text-center text-brand text-sm font-semibold mt-4 hover:text-brand-dark transition-colors"
+          >
+            View All Categories →
+          </a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</BaseLayout>

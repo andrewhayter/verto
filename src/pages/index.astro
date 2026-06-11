@@ -1,0 +1,257 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FeaturedHero from '../components/FeaturedHero.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import Newsletter from '../components/Newsletter.astro';
+import CategoryBadge from '../components/CategoryBadge.astro';
+import { getCollection } from 'astro:content';
+import { categories, categoryBySlug } from '../data/categories';
+
+const allArticles = await getCollection('articles');
+
+const sortedArticles = allArticles.sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+
+const featuredArticle = sortedArticles.find(a => a.data.featured) ?? sortedArticles[0];
+const recentArticles = sortedArticles
+  .filter(a => a.id !== featuredArticle.id)
+  .slice(0, 6);
+
+const secondFeatured = sortedArticles.find(a => a.data.featured && a.id !== featuredArticle.id);
+
+// Group articles by category for spotlights
+const articlesByCategory = allArticles.reduce((acc, article) => {
+  const cat = article.data.category;
+  if (!acc[cat]) acc[cat] = [];
+  acc[cat].push(article);
+  return acc;
+}, {} as Record<string, typeof allArticles>);
+
+// Top 3 categories by offer count that have articles
+const spotlightCategories = categories
+  .filter(c => articlesByCategory[c.slug]?.length > 0)
+  .sort((a, b) => b.offsCount - a.offsCount)
+  .slice(0, 3);
+
+function getArticleSlug(article: (typeof allArticles)[0]) {
+  const parts = article.id.split('/');
+  return parts[parts.length - 1].replace(/\.mdx?$/, '');
+}
+---
+
+<BaseLayout title="Verto — Your Guide to the Best Offers & Deals">
+  <!-- Ticker -->
+  <div class="ticker-bar text-white text-xs font-semibold py-2 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center gap-2">
+      <span class="uppercase tracking-widest shrink-0 mr-3 opacity-80">Today:</span>
+      <div class="flex gap-8 animate-none overflow-x-auto category-nav">
+        {allArticles.slice(0, 6).map(a => (
+          <a href={`/${a.data.category}/${getArticleSlug(a)}`} class="whitespace-nowrap hover:underline opacity-90">
+            {a.data.title}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+
+    <!-- Hero grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-14">
+      <!-- Main featured -->
+      <div class="lg:col-span-2">
+        <FeaturedHero
+          title={featuredArticle.data.title}
+          description={featuredArticle.data.description}
+          category={featuredArticle.data.category}
+          slug={getArticleSlug(featuredArticle)}
+          author={featuredArticle.data.author}
+          date={featuredArticle.data.date}
+          readTime={featuredArticle.data.readTime}
+          ctaText={featuredArticle.data.ctaText}
+        />
+      </div>
+
+      <!-- Right rail -->
+      <div class="flex flex-col gap-4">
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+          <h3 class="font-display font-bold text-gray-900 text-base mb-4 flex items-center gap-2">
+            <span class="w-2 h-2 bg-brand rounded-full"></span>
+            Trending Now
+          </h3>
+          <div class="flex flex-col">
+            {sortedArticles.slice(0, 5).map((article, i) => (
+              <a
+                href={`/${article.data.category}/${getArticleSlug(article)}`}
+                class="group flex items-start gap-3 py-3 border-b border-gray-50 last:border-0 hover:bg-gray-50/50 -mx-2 px-2 rounded-lg transition-colors"
+              >
+                <span class="text-2xl font-display font-black text-gray-200 leading-none w-6 shrink-0">
+                  {i + 1}
+                </span>
+                <div>
+                  <CategoryBadge slug={article.data.category} size="sm" />
+                  <p class="text-sm font-semibold text-gray-800 group-hover:text-brand transition-colors leading-snug mt-1 line-clamp-2">
+                    {article.data.title}
+                  </p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <!-- All categories quick access -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+          <h3 class="font-display font-bold text-gray-900 text-base mb-3">All Categories</h3>
+          <div class="flex flex-wrap gap-2">
+            {categories.slice(0, 12).map(cat => (
+              <a
+                href={`/category/${cat.slug}`}
+                class="text-xs font-medium px-3 py-1.5 rounded-full border border-gray-200 text-gray-600 hover:border-brand hover:text-brand transition-colors"
+              >
+                {cat.emoji} {cat.name}
+              </a>
+            ))}
+            <a
+              href="/categories"
+              class="text-xs font-medium px-3 py-1.5 rounded-full bg-brand text-white hover:bg-brand-dark transition-colors"
+            >
+              +{categories.length - 12} more
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recent articles grid -->
+    <section class="mb-14">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="font-display font-bold text-2xl text-gray-900">
+          Latest Picks
+        </h2>
+        <a href="/categories" class="text-brand hover:text-brand-dark text-sm font-semibold transition-colors">
+          View All →
+        </a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {recentArticles.map(article => (
+          <ArticleCard
+            title={article.data.title}
+            description={article.data.description}
+            category={article.data.category}
+            slug={getArticleSlug(article)}
+            author={article.data.author}
+            date={article.data.date}
+            readTime={article.data.readTime}
+            sponsored={article.data.sponsored}
+          />
+        ))}
+      </div>
+    </section>
+
+    <!-- Category spotlights -->
+    {spotlightCategories.map(spotlightCat => {
+      const catArticles = (articlesByCategory[spotlightCat.slug] ?? [])
+        .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+      if (catArticles.length === 0) return null;
+      const [primary, ...rest] = catArticles;
+      return (
+        <section class="mb-14">
+          <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center gap-3">
+              <div class="w-1 h-7 bg-brand rounded-full"></div>
+              <h2 class="font-display font-bold text-2xl text-gray-900">
+                {spotlightCat.emoji} {spotlightCat.name}
+              </h2>
+              <span class="text-sm text-gray-400">{spotlightCat.offsCount} offers available</span>
+            </div>
+            <a
+              href={`/category/${spotlightCat.slug}`}
+              class="text-brand hover:text-brand-dark text-sm font-semibold transition-colors"
+            >
+              See All →
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
+            <div class="lg:col-span-3">
+              <a
+                href={`/${primary.data.category}/${getArticleSlug(primary)}`}
+                class="article-card group relative flex items-end rounded-2xl overflow-hidden h-80"
+                style={`background: ${spotlightCat.gradient}`}
+              >
+                <div class="absolute inset-0 bg-gradient-to-t from-black/75 to-transparent"></div>
+                <div class="relative z-10 p-6 flex flex-col gap-2">
+                  <CategoryBadge slug={primary.data.category} size="sm" />
+                  <h3 class="font-display font-bold text-xl text-white group-hover:text-white/90 transition-colors line-clamp-3">
+                    {primary.data.title}
+                  </h3>
+                  <p class="text-white/70 text-sm line-clamp-2">{primary.data.description}</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="lg:col-span-2 flex flex-col gap-4">
+              {rest.slice(0, 3).map(article => (
+                <ArticleCard
+                  title={article.data.title}
+                  description={article.data.description}
+                  category={article.data.category}
+                  slug={getArticleSlug(article)}
+                  author={article.data.author}
+                  date={article.data.date}
+                  readTime={article.data.readTime}
+                  sponsored={article.data.sponsored}
+                  variant="horizontal"
+                />
+              ))}
+              {rest.length === 0 && (
+                <a
+                  href={`/category/${spotlightCat.slug}`}
+                  class="flex items-center justify-center h-full rounded-2xl border-2 border-dashed border-gray-200 text-gray-400 hover:border-brand hover:text-brand transition-colors p-8 text-center"
+                >
+                  <div>
+                    <p class="text-3xl mb-2">{spotlightCat.emoji}</p>
+                    <p class="font-semibold">Browse {spotlightCat.offsCount} offers</p>
+                  </div>
+                </a>
+              )}
+            </div>
+          </div>
+        </section>
+      );
+    })}
+
+    <!-- Newsletter -->
+    <div class="mb-14">
+      <Newsletter />
+    </div>
+
+    <!-- All categories grid -->
+    <section>
+      <h2 class="font-display font-bold text-2xl text-gray-900 mb-6">
+        Explore All Categories
+      </h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        {categories.map(cat => (
+          <a
+            href={`/category/${cat.slug}`}
+            class="group flex flex-col items-center gap-3 p-5 bg-white rounded-2xl shadow-sm border border-gray-100 hover:border-gray-200 hover:shadow-md transition-all text-center"
+          >
+            <div
+              class="w-12 h-12 rounded-2xl flex items-center justify-center text-2xl"
+              style={`background: ${cat.gradient}`}
+            >
+              {cat.emoji}
+            </div>
+            <div>
+              <p class="font-semibold text-sm text-gray-800 group-hover:text-brand transition-colors leading-tight">{cat.name}</p>
+              <p class="text-xs text-gray-400 mt-0.5">{cat.offsCount} offers</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+  </div>
+</BaseLayout>

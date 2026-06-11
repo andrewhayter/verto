@@ -1,0 +1,172 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import CategoryBadge from '../components/CategoryBadge.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { categoryBySlug } from '../data/categories';
+import { getCollection } from 'astro:content';
+
+interface Props {
+  title: string;
+  description: string;
+  category: string;
+  author: string;
+  date: Date;
+  readTime: number;
+  ctaText?: string;
+  ctaUrl?: string;
+  sponsored?: boolean;
+}
+
+const {
+  title,
+  description,
+  category,
+  author,
+  date,
+  readTime,
+  ctaText,
+  ctaUrl,
+  sponsored = true,
+} = Astro.props;
+
+const cat = categoryBySlug[category];
+const gradient = cat?.gradient ?? 'linear-gradient(135deg, #0f172a, #1e1b4b)';
+const formattedDate = new Intl.DateTimeFormat('en-US', {
+  month: 'long', day: 'numeric', year: 'numeric',
+}).format(date);
+
+const allArticles = await getCollection('articles');
+const related = allArticles
+  .filter(a => a.data.category === category && `${a.data.category}/${a.slug.split('/').pop()}` !== `${category}/${Astro.url.pathname.split('/').pop()}`)
+  .slice(0, 4);
+---
+
+<BaseLayout title={title} description={description}>
+  <!-- Article Header -->
+  <div class="relative" style={`background: ${gradient}`}>
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60"></div>
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 py-16 md:py-24">
+      <div class="flex items-center gap-3 mb-4">
+        {sponsored && (
+          <span class="text-[10px] font-bold uppercase tracking-widest bg-black/40 text-white px-2.5 py-1 rounded-full">
+            Sponsored
+          </span>
+        )}
+        <CategoryBadge slug={category} size="sm" />
+      </div>
+      <h1 class="font-display text-3xl md:text-5xl font-bold text-white leading-tight mb-4">
+        {title}
+      </h1>
+      <p class="text-white/80 text-lg mb-6 max-w-2xl">{description}</p>
+      <div class="flex flex-wrap items-center gap-3 text-white/60 text-sm">
+        <span>By <strong class="text-white/80">{author}</strong></span>
+        <span>·</span>
+        <span>{formattedDate}</span>
+        <span>·</span>
+        <span>{readTime} min read</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Article Body -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <!-- Main content -->
+      <article class="lg:col-span-2">
+        {ctaText && ctaUrl && (
+          <div class="cta-block mb-8">
+            <p class="text-white/70 text-sm uppercase tracking-widest mb-2">Today's Top Offer</p>
+            <h3 class="text-white text-xl font-bold mb-4">{ctaText}</h3>
+            <a
+              href={ctaUrl}
+              class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+            >
+              View Offer
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          </div>
+        )}
+
+        <div class="prose-verto">
+          <slot />
+        </div>
+
+        <!-- Bottom CTA -->
+        {ctaText && ctaUrl && (
+          <div class="mt-12 border-t border-gray-200 pt-8">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-gray-50 rounded-2xl p-6">
+              <div>
+                <p class="text-xs uppercase tracking-widest text-gray-400 font-semibold mb-1">Featured Offer</p>
+                <p class="font-display font-bold text-lg text-gray-900">{ctaText}</p>
+              </div>
+              <a
+                href={ctaUrl}
+                class="shrink-0 inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-semibold px-6 py-3 rounded-xl text-sm transition-colors"
+              >
+                Claim Offer
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+            <p class="text-xs text-gray-400 mt-2 text-center">
+              Affiliate link — Verto may earn a commission at no cost to you.
+            </p>
+          </div>
+        )}
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="lg:col-span-1 flex flex-col gap-8">
+        <!-- Category info -->
+        {cat && (
+          <div class="rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+            <div class="h-20" style={`background: ${cat.gradient}`}></div>
+            <div class="p-5">
+              <h3 class="font-display font-bold text-gray-900 mb-1 flex items-center gap-2">
+                <span>{cat.emoji}</span> {cat.name}
+              </h3>
+              <p class="text-sm text-gray-500 mb-4">{cat.description}</p>
+              <a
+                href={`/category/${cat.slug}`}
+                class="text-sm font-semibold text-brand hover:text-brand-dark transition-colors"
+              >
+                Browse {cat.offsCount} offers →
+              </a>
+            </div>
+          </div>
+        )}
+
+        <!-- Related articles -->
+        {related.length > 0 && (
+          <div>
+            <h3 class="font-display font-bold text-gray-900 text-lg mb-4 pb-3 border-b border-gray-200">
+              More in {cat?.name}
+            </h3>
+            <div class="flex flex-col gap-3">
+              {related.map(article => {
+                const parts = article.id.split('/');
+                const slug = parts[parts.length - 1].replace(/\.md$/, '').replace(/\.mdx$/, '');
+                return (
+                  <ArticleCard
+                    title={article.data.title}
+                    description={article.data.description}
+                    category={article.data.category}
+                    slug={slug}
+                    author={article.data.author}
+                    date={article.data.date}
+                    readTime={article.data.readTime}
+                    sponsored={article.data.sponsored}
+                    variant="compact"
+                  />
+                );
+              })}
+            </div>
+          </div>
+        )}
+      </aside>
+    </div>
+  </div>
+</BaseLayout>
