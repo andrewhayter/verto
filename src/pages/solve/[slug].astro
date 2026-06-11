@@ -3,7 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import OfferCard from '../../components/OfferCard.astro';
 import Newsletter from '../../components/Newsletter.astro';
 import { problems, problemBySlug } from '../../data/problems';
-import { offersByProblem, offers as allOffers } from '../../data/offers';
+import { offersByProblem, offers as allOffers, getAffiliateUrl } from '../../data/offers';
 import { categoryBySlug } from '../../data/categories';
 
 export async function getStaticPaths() {
@@ -115,7 +115,7 @@ const topOffer = problemOffers[0];
             </div>
           </div>
           <a
-            href={`https://track.maxbounty.com/signup/?affiliate_id=YOUR_MB_AFFILIATE_ID&offer_id=${topOffer.id}`}
+            href={getAffiliateUrl(topOffer, problem.slug)}
             rel="sponsored noopener"
             target="_blank"
             class="shrink-0 bg-brand hover:bg-brand-dark text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors whitespace-nowrap"
@@ -228,7 +228,7 @@ const topOffer = problemOffers[0];
             <p class="text-white/70 mb-6">{topOffer.trustSignal}</p>
           )}
           <a
-            href={`https://track.maxbounty.com/signup/?affiliate_id=YOUR_MB_AFFILIATE_ID&offer_id=${topOffer.id}`}
+            href={getAffiliateUrl(topOffer, problem.slug)}
             rel="sponsored noopener"
             target="_blank"
             class="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-gray-900 font-bold px-8 py-4 rounded-2xl text-base transition-colors"

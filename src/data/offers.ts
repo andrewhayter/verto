@@ -1,4 +1,4 @@
-import { trackingUrl } from './config';
+import { getBestUrl } from './config';
 
 export interface Offer {
   id: number;
@@ -13,6 +13,10 @@ export interface Offer {
   geos: string[];
   categories: string[];
   problems: string[];
+  // Paste your full tracking URL from MaxBounty dashboard (Offer → Get Link).
+  // Format: https://afflat3e1.com/trk/lnk/{GUID}/?o={id}&c={c}&a=784951&k={key}&l={l}
+  // Leave undefined until you grab the link — falls back to landingPage (no commission).
+  trackingLink?: string;
   landingPage: string;
   approved: boolean;
   badge?: string;
@@ -707,7 +711,7 @@ export const offersByProblem = offers.reduce((acc, o) => {
 }, {} as Record<string, Offer[]>);
 
 export function getAffiliateUrl(offer: Offer, sub1?: string): string {
-  return trackingUrl(offer.id, sub1);
+  return getBestUrl(offer.trackingLink, offer.landingPage, sub1);
 }
 
 export const topOffers = offers
