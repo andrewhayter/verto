@@ -7,7 +7,7 @@ author: "Rachel Kim"
 featured: false
 tags: ["sweepstakes", "contests", "prizes", "cash", "free entry"]
 ctaText: "Enter Today's Top Sweepstakes"
-ctaUrl: "#"
+ctaUrl: "https://sweepscasinobonus.com/"
 readTime: 5
 sponsored: true
 ---

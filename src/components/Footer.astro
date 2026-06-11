@@ -28,20 +28,33 @@ import { categories } from '../data/categories';
         </div>
       </div>
 
-      <!-- Categories grid -->
-      <div class="md:col-span-3">
-        <h3 class="text-white text-sm font-semibold uppercase tracking-widest mb-5">Browse Categories</h3>
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
-          {categories.map(cat => (
-            <a
-              href={`/category/${cat.slug}`}
-              class="flex items-center gap-2 text-white/50 hover:text-white text-sm py-1.5 transition-colors group"
-            >
-              <span class="group-hover:scale-110 transition-transform">{cat.emoji}</span>
-              <span class="truncate">{cat.name}</span>
-              <span class="text-white/25 text-xs ml-auto">({cat.offsCount})</span>
-            </a>
-          ))}
+      <!-- Nav + Categories grid -->
+      <div class="md:col-span-3 grid grid-cols-1 sm:grid-cols-4 gap-8">
+        <!-- Quick links -->
+        <div class="sm:col-span-1">
+          <h3 class="text-white text-sm font-semibold uppercase tracking-widest mb-4">Quick Links</h3>
+          <nav class="flex flex-col gap-2 text-sm">
+            <a href="/solve" class="text-white/50 hover:text-white transition-colors">Solution Finder</a>
+            <a href="/topics" class="text-white/50 hover:text-white transition-colors">Trending Topics</a>
+            <a href="/categories" class="text-white/50 hover:text-white transition-colors">All Categories</a>
+            <a href="/about" class="text-white/50 hover:text-white transition-colors">About & Disclosure</a>
+          </nav>
+        </div>
+        <!-- Categories -->
+        <div class="sm:col-span-3">
+          <h3 class="text-white text-sm font-semibold uppercase tracking-widest mb-4">Browse Categories</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-1.5">
+            {categories.map(cat => (
+              <a
+                href={`/category/${cat.slug}`}
+                class="flex items-center gap-2 text-white/50 hover:text-white text-xs py-1 transition-colors group"
+              >
+                <span class="group-hover:scale-110 transition-transform text-sm">{cat.emoji}</span>
+                <span class="truncate">{cat.name}</span>
+                <span class="text-white/20 text-xs ml-auto shrink-0">({cat.offsCount})</span>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </div>
@@ -50,10 +63,10 @@ import { categories } from '../data/categories';
     <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/30">
       <p>© {new Date().getFullYear()} Verto Media. All rights reserved.</p>
       <div class="flex gap-5">
+        <a href="/about" class="hover:text-white/60 transition-colors">About</a>
+        <a href="/about#disclosure" class="hover:text-white/60 transition-colors">Affiliate Disclosure</a>
         <a href="/privacy" class="hover:text-white/60 transition-colors">Privacy Policy</a>
-        <a href="/terms" class="hover:text-white/60 transition-colors">Terms of Use</a>
-        <a href="/advertise" class="hover:text-white/60 transition-colors">Advertise</a>
-        <a href="/contact" class="hover:text-white/60 transition-colors">Contact</a>
+        <a href="/terms" class="hover:text-white/60 transition-colors">Terms</a>
       </div>
       <p class="text-center sm:text-right">
         Verto contains affiliate links. We may earn a commission at no cost to you.

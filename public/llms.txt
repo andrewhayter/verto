@@ -1,0 +1,35 @@
+# Verto
+
+> Verto is an affiliate advertorial publication covering health & wellness, personal finance, legal services, and consumer technology. Our editorial team researches and compares real offers from vetted affiliate networks to help readers solve specific problems — weight loss, loan access, online privacy, legal documents, and more. All content is sponsored or contains affiliate links; we disclose this on every page.
+
+## Solution Guides (Problem → Offer)
+- [Can't Lose Weight Guide](/solve/cant-lose-weight): Compares GLP-1 telehealth programs including Gala ($179/mo compounded Tirzepatide), Viviomd (oral tablet format), and TrimRX. Covers eligibility, pricing, and side effects.
+- [Quit Vaping Guide](/solve/quit-vaping): Reviews Quit with Jones FDA-approved NRT mints and behavioral coaching app for vapers aged 18–45.
+- [Men's Energy & Hormone Guide](/solve/low-energy-men): Covers Strut Health Sermorelin, NAD+ therapy, and men's wellness programs for adults over 35.
+- [Men's Hair Loss Guide](/solve/mens-hair-loss): Compares Dutasteride vs Finasteride for male-pattern hair loss via Strut Health telehealth.
+- [Personal Loan Guide](/solve/need-personal-loan): Loan matching platforms for $1K–$100K including CreditNLending, Money Pup, and ProvideLoan.
+- [Brain Fog & Memory Guide](/solve/brain-fog-memory): Nootropic supplements including Myco-Max lion's mane, Focus IQ, and Telo X Nano DNA-based formula.
+- [Kids Online Safety Guide](/solve/kids-online-safety): Bark parental controls — AI monitoring for 30+ apps used by 500K+ families.
+- [Menopause Symptoms Guide](/solve/menopause-symptoms): Winona bioidentical HRT for perimenopause and menopause, 80%+ patient relief in 90 days.
+- [Earn From Phone Guide](/solve/earn-from-phone): Nielsen Pulse — passive income app for US adults that pays for anonymous usage data.
+- [Legal Documents Guide](/solve/legal-documents-cheap): LegalNature automated legal documents starting at $7.95 — LLC, leases, wills.
+- [Blood Sugar Control Guide](/solve/blood-sugar-control): Natural supplements for pre-diabetes and glucose management including CardioNEX and keto formulas.
+- [Online Privacy Guide](/solve/online-privacy): ZoogVPN review — encrypted browsing, 150+ countries, under $5/month.
+
+## Category Hubs
+- [Health & Wellness](/category/health-wellness): 339 affiliate offers in weight loss, supplements, fitness, and telehealth.
+- [Financial](/category/financial): 301 offers including personal loans, credit cards, and investing platforms.
+- [Shopping & E-Commerce](/category/shopping-ecommerce): 592 offers across consumer goods, subscriptions, and services.
+- [Sweepstakes & Contests](/category/sweepstakes-contests): 361 contest and giveaway offers.
+- [Surveys](/category/surveys): 108 survey and market research offers.
+- [Insurance](/category/insurance): 54 insurance comparison offers.
+- [Legal Services](/category/legal-services): 36 legal document and attorney referral offers.
+
+## Topic Index
+- [All Topics](/topics): 1,768 trending subtopics organized across 25 categories.
+
+## Editorial Standards
+Content on Verto is written by our editorial team and reviewed for accuracy. All health content is informational only and does not constitute medical advice. Financial content is not investment advice. Readers should consult qualified professionals before acting on any recommendation. Affiliate relationships are disclosed on every page.
+
+## About
+- Verto Editorial (https://verto.pages.dev): Independent affiliate publication. Content covers consumer solutions in health, finance, legal, and technology verticals. Published continuously since 2025.

@@ -7,7 +7,7 @@ author: "Sofia Reyes"
 featured: false
 tags: ["credit cards", "cash back", "rewards", "personal finance"]
 ctaText: "Check Your Approval Odds — No Hard Pull"
-ctaUrl: "#"
+ctaUrl: "https://www.supermoney.com/reviews/personal-credit-cards"
 readTime: 6
 sponsored: true
 ---

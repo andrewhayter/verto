@@ -7,7 +7,7 @@ author: "Dr. Elena Park"
 featured: true
 tags: ["supplements", "health", "vitamins", "wellness", "evidence-based"]
 ctaText: "Get 30% Off Evidence-Based Supplements"
-ctaUrl: "#"
+ctaUrl: "https://partners.primalforce.net/sp/myco-max-memory/"
 readTime: 8
 sponsored: true
 ---

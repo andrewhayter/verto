@@ -7,7 +7,7 @@ author: "Verto Shopping Desk"
 featured: true
 tags: ["shopping", "deals", "amazon", "products", "reviews"]
 ctaText: "Shop Today's Deals"
-ctaUrl: "#"
+ctaUrl: "https://wildgrain.com/"
 readTime: 6
 sponsored: true
 ---

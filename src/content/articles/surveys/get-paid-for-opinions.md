@@ -7,7 +7,7 @@ author: "Priya Nair"
 featured: false
 tags: ["surveys", "side hustle", "make money online", "earn from home"]
 ctaText: "Start Earning with Top Survey Sites"
-ctaUrl: "#"
+ctaUrl: "https://nielsenpulse.com/"
 readTime: 6
 sponsored: true
 ---

@@ -43,6 +43,31 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
   <title>{siteTitle}</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Organization + WebSite schema -->
+  <script type="application/ld+json">{JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Verto",
+        "url": "https://verto.pages.dev",
+        "logo": "https://verto.pages.dev/favicon.svg",
+        "description": "Affiliate advertorial publication covering health, finance, legal, and consumer technology.",
+        "sameAs": []
+      },
+      {
+        "@type": "WebSite",
+        "name": "Verto",
+        "url": "https://verto.pages.dev",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://verto.pages.dev/topics?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  })}</script>
 </head>
 <body class="min-h-screen bg-surface">
   <Header />

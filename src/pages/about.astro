@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="About Verto — Affiliate Disclosure & Editorial Standards"
+  description="Verto is an independent affiliate publication. We earn commissions when you purchase through our links. Learn how we select and review offers."
+>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Verto",
+    "url": "https://verto.pages.dev/about",
+    "description": "About Verto — affiliate disclosure and editorial standards.",
+    "publisher": { "@type": "Organization", "name": "Verto", "url": "https://verto.pages.dev" }
+  })} />
+
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-16">
+    <h1 class="font-display text-4xl font-black text-gray-900 mb-8">About Verto</h1>
+
+    <div class="prose-verto">
+
+      <h2 id="disclosure">Affiliate Disclosure</h2>
+      <p>Verto is an independent affiliate publication. We earn a commission when you click links on our site and make a purchase or complete a lead form — at no additional cost to you. This commission funds our editorial team and keeps the site free to use.</p>
+      <p>Our affiliate relationships are with vetted affiliate networks including MaxBounty. We only feature offers we believe are genuinely useful to our readers. The presence of an affiliate link does not constitute an endorsement of the advertiser or a guarantee of results.</p>
+      <p>Sponsored content is labeled clearly with a "Sponsored" tag. Our editorial rankings and recommendations are independent of advertiser relationships.</p>
+
+      <h2>Editorial Standards</h2>
+      <p>Verto's editorial team researches and compares offers based on publicly available information including commission rates, consumer reviews, clinical evidence, and company credibility. We update content regularly as offers change.</p>
+      <p>Health content on Verto is informational only and does not constitute medical advice. Financial content is not investment advice. Legal content is not legal advice. Always consult a qualified professional before starting any health, financial, or legal program.</p>
+
+      <h2>How We Select Offers</h2>
+      <p>Offers featured on Verto are selected based on: (1) relevance to the problem the page addresses, (2) offer quality as measured by EPC, approval rate, and consumer reviews, (3) availability in the reader's geography, and (4) advertiser compliance standards. We prioritize approved offers with strong consumer feedback.</p>
+
+      <h2>Individual Results Vary</h2>
+      <p>Testimonials, case studies, or statistics about results from any product or service featured on Verto represent individual results. Your results will vary. We do not guarantee any specific outcomes from any offer, product, or service linked on this site.</p>
+
+      <h2>Contact</h2>
+      <p>For questions about our editorial practices or advertising: <a href="mailto:hello@verto.pages.dev" class="text-brand hover:text-brand-dark">hello@verto.pages.dev</a></p>
+
+    </div>
+  </div>
+</BaseLayout>

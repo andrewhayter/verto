@@ -7,7 +7,7 @@ author: "Alex Kovacs"
 featured: false
 tags: ["VPN", "privacy", "security", "online safety", "streaming"]
 ctaText: "Try the #1 Rated VPN — 30 Days Free"
-ctaUrl: "#"
+ctaUrl: "https://zoogvpn.com/mb/"
 readTime: 7
 sponsored: true
 ---

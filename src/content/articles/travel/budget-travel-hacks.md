@@ -7,7 +7,7 @@ author: "Maya Okonkwo"
 featured: false
 tags: ["travel", "budget", "flights", "hotels", "hacks", "deals"]
 ctaText: "Find Cheap Flights in 30 Seconds"
-ctaUrl: "#"
+ctaUrl: "https://www.withfaye.com/"
 readTime: 8
 sponsored: true
 ---

@@ -7,7 +7,7 @@ author: "Thomas Walsh"
 featured: false
 tags: ["insurance", "car insurance", "savings", "auto", "personal finance"]
 ctaText: "Compare Rates in 2 Minutes"
-ctaUrl: "#"
+ctaUrl: "https://www.withfaye.com/"
 readTime: 6
 sponsored: true
 ---

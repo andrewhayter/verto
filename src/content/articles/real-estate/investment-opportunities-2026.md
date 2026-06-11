@@ -7,7 +7,7 @@ author: "David Huang"
 featured: false
 tags: ["real estate", "investing", "property", "wealth", "passive income"]
 ctaText: "Explore Real Estate Investment Platforms"
-ctaUrl: "#"
+ctaUrl: "https://creditnlending.com/"
 readTime: 7
 sponsored: true
 ---
