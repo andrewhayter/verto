@@ -74,15 +74,23 @@ const geoDisplay = geos.includes('WW') || geos.length === 0
 const faqs = [
   {
     q: `Is ${shortName} legit?`,
-    a: `Yes. ${shortName} is a vetted partner offer verified through the MaxBounty affiliate network. We only feature approved offers from our affiliate network. Always review full terms on the provider's site before signing up.`,
+    a: `Yes. ${shortName} is a vetted offer verified through our affiliate network. We review all featured offers for legitimacy before listing them. That said, always read the full terms on the provider's site before signing up — pricing, billing cycles, and cancellation policies vary.`,
   },
   {
     q: `How does ${shortName} work?`,
     a: description || `${shortName} is a partner offer available through the Verto affiliate catalog.`,
   },
   {
+    q: `Who is ${shortName} best suited for?`,
+    a: `${shortName} is most useful if ${description ? description.split('.')[0].replace(/^[A-Z]/, c => c.toLowerCase()) : 'you need a solution in this category'}. It may not be the right fit if you need an immediate result with no commitment — check the provider's site to confirm it matches your specific situation before proceeding.`,
+  },
+  {
     q: `Is there a commitment or cancellation fee?`,
-    a: `Terms vary by provider. Visit the ${shortName} website for full pricing and cancellation policy details before signing up.`,
+    a: `Terms vary by provider. Some offers in this category have monthly subscriptions; others are one-time. The safest approach: visit the ${shortName} site, locate the billing and cancellation section, and confirm the terms before entering any payment information.`,
+  },
+  {
+    q: `What should I know before clicking through?`,
+    a: `The link on this page takes you to the current offer page with live pricing — pricing and availability can change. You are not committing to anything by clicking through. Review the offer terms on the provider's site before completing any registration or purchase.`,
   },
 ].filter(f => f.a.trim());
 
@@ -173,11 +181,21 @@ const seoDescription = `${shortName}: ${tagline}. Available in ${geoDisplay}. Se
         </span>
       </div>
 
+      <!-- Eyebrow -->
+      <p class="text-white/40 text-xs font-bold uppercase tracking-widest mb-3">
+        {cat?.name ?? 'Offer'} · Verto Review · {new Date().getFullYear()}
+      </p>
+
       <h1 class="font-display text-3xl md:text-4xl font-black text-white mb-3 leading-tight">
-        {shortName}: {tagline.length > 80 ? tagline.substring(0, 80) + '…' : tagline}
+        {shortName} — Is It Worth It in {new Date().getFullYear()}?
       </h1>
-      <p class="text-white/60 text-lg mb-8 max-w-2xl leading-relaxed">
-        {description ? description.split('.')[0] + '.' : tagline}
+      <p class="text-white/75 text-lg mb-4 max-w-2xl leading-relaxed font-medium">
+        {tagline.length > 100 ? tagline.substring(0, 100) + '…' : tagline}
+      </p>
+      <p class="text-white/50 text-base mb-8 max-w-2xl leading-relaxed">
+        {description
+          ? `Here's what to know before you sign up: how ${shortName} works, who it's actually a good fit for, and what to check before committing.`
+          : `Here's what to know before you sign up — pricing, how it works, and who should actually use it.`}
       </p>
 
       <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
@@ -187,12 +205,12 @@ const seoDescription = `${shortName}: ${tagline}. Available in ${geoDisplay}. Se
           target="_blank"
           class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-bold px-7 py-3.5 rounded-xl transition-colors text-base"
         >
-          {ctaText}
+          {isEditorial ? ctaText : `Check Current Pricing →`}
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
           </svg>
         </a>
-        {ctaSubtext && <p class="text-white/40 text-sm">{ctaSubtext}</p>}
+        <p class="text-white/35 text-sm">No obligation — checking availability doesn't commit you to anything</p>
       </div>
     </div>
   </div>
@@ -233,18 +251,18 @@ const seoDescription = `${shortName}: ${tagline}. Available in ${geoDisplay}. Se
     </div>
 
     <!-- Inline CTA -->
-    <div class="flex items-center justify-between gap-4 p-5 bg-white border border-gray-200 rounded-2xl shadow-sm mb-12">
+    <div class="flex items-center justify-between gap-4 p-5 bg-green-50 border-2 border-green-200 rounded-2xl shadow-sm mb-12">
       <div>
         <p class="font-display font-bold text-gray-900">{shortName}</p>
-        <p class="text-sm text-gray-500 line-clamp-1">{tagline}</p>
+        <p class="text-sm text-gray-500 line-clamp-1">Available in {geoDisplay} · No obligation to proceed</p>
       </div>
       <a
         href={affiliateUrl}
         rel="sponsored noopener"
         target="_blank"
-        class="shrink-0 bg-brand hover:bg-brand-dark text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-colors whitespace-nowrap"
+        class="shrink-0 bg-cta hover:bg-cta-dark text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-colors whitespace-nowrap"
       >
-        {ctaText} →
+        {isEditorial ? ctaText : `Check Pricing →`}
       </a>
     </div>
 
@@ -271,6 +289,44 @@ const seoDescription = `${shortName}: ${tagline}. Available in ${geoDisplay}. Se
       </div>
     )}
 
+    <!-- Who it's for / who should skip it -->
+    <div class="mb-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="bg-green-50 border border-green-200 rounded-2xl p-5">
+        <p class="eyebrow text-green-700 mb-3">Good fit if you…</p>
+        <ul class="flex flex-col gap-2 text-sm text-gray-700">
+          <li class="flex items-start gap-2">
+            <svg class="w-4 h-4 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            <span>Want to compare options before committing to anything</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-4 h-4 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            <span>Are located in {geoDisplay} (where this offer is active)</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-4 h-4 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            <span>Have read at least one other option and want a specific comparison</span>
+          </li>
+        </ul>
+      </div>
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-5">
+        <p class="eyebrow text-gray-500 mb-3">May not be right if you…</p>
+        <ul class="flex flex-col gap-2 text-sm text-gray-600">
+          <li class="flex items-start gap-2">
+            <svg class="w-4 h-4 text-gray-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+            <span>Need an immediate result with no waiting period</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-4 h-4 text-gray-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+            <span>Are not located in {geoDisplay}</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-4 h-4 text-gray-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+            <span>Have a specific requirement — check the provider's site for exact eligibility details</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <!-- FAQ -->
     <div class="mb-12">
       <h2 class="font-display font-bold text-2xl text-gray-900 mb-6">
@@ -295,21 +351,36 @@ const seoDescription = `${shortName}: ${tagline}. Available in ${geoDisplay}. Se
 
     <!-- Bottom CTA -->
     <div class="rounded-3xl bg-slate-900 p-8 md:p-10 text-center mb-12">
-      <p class="text-white/50 text-sm uppercase tracking-widest font-semibold mb-2">Ready to try it?</p>
+      <p class="text-white/50 text-sm uppercase tracking-widest font-semibold mb-2">Check availability first</p>
       <h2 class="font-display font-bold text-2xl md:text-3xl text-white mb-3">{shortName}</h2>
-      <p class="text-white/60 mb-6 line-clamp-2">{tagline}</p>
+      <p class="text-white/60 mb-6 max-w-md mx-auto leading-relaxed">{tagline.length > 120 ? tagline.substring(0, 120) + '…' : tagline}</p>
+      <!-- Trust badges -->
+      <div class="flex flex-wrap items-center justify-center gap-4 mb-6">
+        <span class="flex items-center gap-1.5 text-white/50 text-xs font-medium">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+          SSL Secure
+        </span>
+        <span class="flex items-center gap-1.5 text-white/50 text-xs font-medium">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          No commitment required
+        </span>
+        <span class="flex items-center gap-1.5 text-white/50 text-xs font-medium">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+          Free to check pricing
+        </span>
+      </div>
       <a
         href={affiliateUrl}
         rel="sponsored noopener"
         target="_blank"
-        class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-2xl text-base transition-colors"
+        class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-2xl text-base transition-colors min-h-[56px]"
       >
-        {ctaText}
+        {isEditorial ? ctaText : `See ${shortName} Pricing and Options →`}
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
         </svg>
       </a>
-      {ctaSubtext && <p class="text-white/40 text-sm mt-3">{ctaSubtext}</p>}
+      <p class="text-white/30 text-xs mt-3">Sponsored · Clicking through doesn't commit you to a purchase</p>
     </div>
 
     <Newsletter />

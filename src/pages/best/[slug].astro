@@ -58,6 +58,17 @@ const defaultComments: Comment[] = [
 const socialComments = commentsByCat[problem.category] ?? defaultComments;
 
 const pageViews = 18400 + Math.abs(problem.slug.length * 137 + problem.headline.length * 53) % 8000;
+
+/* Named author per category — mirrors ArticleLayout mapping */
+const categoryAuthor: Record<string, { name: string; jobTitle: string; initials: string; color: string }> = {
+  'health-wellness':  { name: 'Dr. Elena Park',  jobTitle: 'Health & Wellness Editor',           initials: 'EP', color: '#7c3aed' },
+  financial:          { name: 'Sofia Reyes',      jobTitle: 'Personal Finance Editor',             initials: 'SR', color: '#9333ea' },
+  'antivirus-vpn':    { name: 'Alex Kovacs',      jobTitle: 'Security & Technology Editor',        initials: 'AK', color: '#2563eb' },
+  insurance:          { name: 'Thomas Walsh',     jobTitle: 'Legal Services & Insurance Editor',   initials: 'TW', color: '#1d4ed8' },
+  travel:             { name: 'Maya Okonkwo',     jobTitle: 'Travel Editor',                       initials: 'MO', color: '#b45309' },
+  surveys:            { name: 'Priya Nair',       jobTitle: 'Side Income & Surveys Editor',        initials: 'PN', color: '#c2410c' },
+};
+const pageAuthor = categoryAuthor[problem.category] ?? { name: 'Verto Editorial Team', jobTitle: 'Contributing Editor', initials: 'VE', color: '#64748b' };
 ---
 
 <BaseLayout
@@ -156,6 +167,21 @@ const pageViews = 18400 + Math.abs(problem.slug.length * 137 + problem.headline.
         </span>
       </div>
 
+      <!-- Author byline (trust + editorial authority) -->
+      <div class="flex items-center gap-2.5 mb-5">
+        <div
+          class="w-8 h-8 rounded-full shrink-0 flex items-center justify-center text-white text-xs font-bold"
+          style={`background-color: ${pageAuthor.color};`}
+          aria-label={`Author: ${pageAuthor.name}`}
+        >
+          {pageAuthor.initials}
+        </div>
+        <div>
+          <p class="text-white/80 text-sm font-semibold leading-none">{pageAuthor.name}</p>
+          <p class="text-white/45 text-xs mt-0.5">{pageAuthor.jobTitle}</p>
+        </div>
+      </div>
+
       <!-- UTM-aware H1 -->
       <h1
         id="utm-headline"
@@ -188,21 +214,20 @@ const pageViews = 18400 + Math.abs(problem.slug.length * 137 + problem.headline.
        ============================ -->
   <div class="max-w-3xl mx-auto px-4 sm:px-6 py-10">
 
-    <!-- Hook narrative — PAS opening (Problem) -->
-    <div class="prose-verto mb-8">
-      <p class="text-xl text-gray-700 leading-relaxed font-medium italic border-l-4 border-brand pl-5 my-0">
-        "{problem.hook}"
+    <!-- Hook narrative — 3-paragraph PAS opening (Problem → Agitation → Stakes) -->
+    <div class="mb-10 space-y-5">
+      <!-- Para 1: Problem identity — hook as narrative opener, not pullquote -->
+      <p class="text-xl text-gray-800 font-semibold leading-snug">
+        {problem.hook}
       </p>
-    </div>
 
-    <div class="prose-verto mb-8">
+      <!-- Para 2: Agitation — description expands the problem, not the solution -->
       <p class="text-gray-600 text-lg leading-relaxed">{problem.description}</p>
-    </div>
 
-    <!-- Bottom line callout -->
-    <div class="bg-gray-50 border border-gray-200 rounded-2xl p-5 mb-10">
-      <p class="text-xs text-gray-400 font-bold uppercase tracking-widest mb-1.5">The Bottom Line</p>
-      <p class="text-gray-800 font-medium leading-snug">{problem.subheadline}</p>
+      <!-- Para 3: Stakes — subheadline as the "what changes if you get this right" bridge -->
+      <div class="border-l-4 border-brand pl-5 py-1">
+        <p class="text-gray-700 text-base leading-relaxed font-medium">{problem.subheadline}</p>
+      </div>
     </div>
 
     <!-- Social proof — after hook (Agitation) -->
@@ -216,6 +241,15 @@ const pageViews = 18400 + Math.abs(problem.slug.length * 137 + problem.headline.
       <div class="my-10 rounded-2xl bg-blue-50 border border-blue-100 p-6">
         <p class="eyebrow text-blue-600 mb-2">What We Found</p>
         <p class="text-gray-800 font-semibold leading-relaxed text-lg">{problem.facebookHook}</p>
+      </div>
+    )}
+
+    <!-- Mechanism section — WHY this works (surfaces FAQ[0] as editorial content before the sell) -->
+    {problem.faqs.length > 0 && (
+      <div class="my-10 bg-white border border-gray-100 rounded-2xl p-6 md:p-8 shadow-sm">
+        <p class="eyebrow text-brand mb-2">How It Works</p>
+        <h2 class="font-display font-bold text-xl text-gray-900 mb-3">{problem.faqs[0].q}</h2>
+        <p class="text-gray-600 leading-relaxed">{problem.faqs[0].a}</p>
       </div>
     )}
 
@@ -315,7 +349,7 @@ const pageViews = 18400 + Math.abs(problem.slug.length * 137 + problem.headline.
             </span>
             <span class="flex items-center gap-1.5 text-white/60 text-xs">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-              See Results Fast
+              Check takes under 2 min
             </span>
           </div>
           <a
@@ -325,14 +359,12 @@ const pageViews = 18400 + Math.abs(problem.slug.length * 137 + problem.headline.
             data-cta-click="problem-final"
             class="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-gray-900 font-bold px-8 py-4 rounded-2xl text-base transition-colors min-h-[56px]"
           >
-            {topOffer.ctaText}
+            See if you qualify →
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
           </a>
-          {topOffer.ctaSubtext && (
-            <p class="text-white/60 text-sm mt-3">{topOffer.ctaSubtext}</p>
-          )}
+          <p class="text-white/50 text-sm mt-3">No commitment — checking takes under 2 minutes</p>
         </div>
       </div>
     )}

@@ -22,7 +22,7 @@ export interface Problem {
 export const problems: Problem[] = [
   {
     slug: 'cant-lose-weight',
-    headline: 'GLP-1 Medications Produce 15–22% Body Weight Loss — Now Available for $179/Month Without Insurance',
+    headline: 'Why Diets Keep Failing You — And the Prescription That Produces 15–22% Weight Loss Without $1,500/Month Ozempic',
     subheadline: 'Compounded Tirzepatide and Semaglutide deliver the same active ingredients as Ozempic and Mounjaro — through telehealth platforms for a fraction of the brand-name cost',
     hook: 'I\'ve tried everything. Diet after diet, the gym, cutting carbs. Nothing sticks. Sound familiar?',
     description: 'If traditional diets and exercise alone haven\'t worked, you\'re not failing — the science has changed. GLP-1 medications (like Semaglutide and Tirzepatide, the active ingredients in Ozempic and Mounjaro) are now available from telehealth providers for a fraction of the brand-name cost.',
@@ -64,7 +64,7 @@ export const problems: Problem[] = [
   },
   {
     slug: 'quit-vaping',
-    headline: 'FDA-Approved Nicotine Replacement Therapy Built Specifically for Vapers — Not Cigarette Smokers',
+    headline: 'You\'ve Tried to Quit Vaping. Here\'s Why Standard NRT Products Fail Vapers — and What\'s Actually Built for You',
     subheadline: 'A discreet NRT mint paired with a behavioral coaching app — designed for the 25–34 demographic that vapes, not the products made for smokers who quit in the 1990s',
     hook: 'You\'ve tried to quit. You know you should. But vaping is different from cigarettes — and most quit-smoking products weren\'t built for vapers.',
     description: 'Quit with Jones uses FDA-approved nicotine replacement therapy (NRT) lozenges in a discreet, lifestyle-aligned format — no medical-looking packaging, no judgment. Paired with behavioral coaching delivered via app and SMS, the program is designed specifically for 25–34 year old vapers.',
@@ -144,7 +144,7 @@ export const problems: Problem[] = [
   },
   {
     slug: 'mens-hair-loss',
-    headline: 'Dutasteride vs Finasteride for Hair Loss — The Stronger DHT Blocker Now Available Without a Doctor\'s Visit',
+    headline: 'Your Hairline Is Receding — Here\'s the DHT Blocker That Outperforms Propecia (Now Available Without an In-Person Visit)',
     subheadline: 'Clinical studies show Dutasteride blocks up to 99% of DHT vs 70% for Finasteride — and it\'s now available via telehealth',
     hook: 'Your hairline is changing. You\'ve probably heard of Finasteride. But there\'s a stronger option most people don\'t know about.',
     description: 'Male-pattern hair loss is driven by DHT — a hormone that shrinks hair follicles over time. Dutasteride blocks more DHT than Finasteride (the ingredient in Propecia) and is now available in compounded oral and topical form via Strut Health without an in-person visit.',
@@ -182,7 +182,7 @@ export const problems: Problem[] = [
   },
   {
     slug: 'need-personal-loan',
-    headline: 'Personal Loans Up to $100,000 — Get Matched With Lenders in Under 2 Minutes',
+    headline: 'Need Money Fast? How to See Your Actual Loan Rate — Without a Hard Credit Pull',
     subheadline: 'Compare multiple loan offers without a hard credit inquiry — rates in seconds, funds in as little as 24 hours',
     hook: 'Whether it\'s an unexpected bill, debt consolidation, or a major purchase — getting the right personal loan shouldn\'t take weeks.',
     description: 'Loan matching platforms compare multiple lenders simultaneously, showing you personalized rates without impacting your credit score. For amounts from $1,000 to $100,000, matching services like CreditNLending, Money Pup, and ProvideLoan connect you with competing lenders in seconds.',
@@ -304,7 +304,7 @@ export const problems: Problem[] = [
   },
   {
     slug: 'menopause-symptoms',
-    headline: 'Menopause Symptoms Don\'t Have to Disrupt Your Life — Bioidentical HRT Delivered to Your Door',
+    headline: 'Hot Flashes, Mood Swings, and No Sleep at 2 AM — Why 80% of Women Who Try Bioidentical HRT Feel Better Within 90 Days',
     subheadline: 'Over 80% of Winona patients report significant relief from hot flashes, mood swings, and sleep disruption within 90 days',
     hook: 'Hot flashes at 2 AM. Mood swings that come from nowhere. Feeling like your body is working against you. Menopause symptoms are real — and they\'re treatable.',
     description: 'Winona offers bioidentical hormone replacement therapy (bHRT) using plant-based hormones that are molecularly identical to those your body produces naturally. Board-certified doctors review your health history online and prescribe personalized treatment plans shipped directly to your door.',
@@ -346,7 +346,7 @@ export const problems: Problem[] = [
   },
   {
     slug: 'earn-from-phone',
-    headline: 'Nielsen Pays You $50/Month to Keep an App Running in the Background of Your Phone',
+    headline: 'Your Phone Sits Idle for Hours Every Day — Here\'s the App That Pays You $50/Month Just for That',
     subheadline: 'No surveys. No tasks. Just install the app, let it run, and get paid for sharing your anonymous usage data',
     hook: 'What if your phone paid you money every month — just for using it the way you already do?',
     description: 'Nielsen Pulse is the official Nielsen market research app. It runs quietly in the background, measuring anonymous internet usage patterns to help companies understand consumer behavior. You don\'t fill out surveys — the app does the work automatically. Payment is via rewards for registered users.',
@@ -507,7 +507,7 @@ export const problems: Problem[] = [
   // ─── start-investing ───────────────────────────────────────────────────────
   {
     slug: 'start-investing',
-    headline: 'Never Invested Before? Get Up to $1,000 in Free Stock When You Open an Account',
+    headline: 'I Always Thought Investing Was Complicated — Then This App Gave Me Free NVDA Stock Just for Signing Up',
     subheadline: 'Commission-free trading, 24/7 markets, and a free NVDA stock bonus for new accounts — available for Canadian investors',
     hook: 'I always thought investing was for rich people or finance bros. I was wrong.',
     description: 'MooMoo offers Canadian investors commission-free stock, ETF, and options trading with real-time data and a welcome bonus of up to $1,000 in NVDA stock for new funded accounts. Paper trading mode lets you practice risk-free before committing real money. No minimums. 24M+ users worldwide.',
@@ -579,7 +579,7 @@ export const problems: Problem[] = [
   // ─── fitness-women-over-40 ──────────────────────────────────────────────────
   {
     slug: 'fitness-women-over-40',
-    headline: 'Fitness After 40: The Workout Plan Built for How Women\'s Bodies Actually Change',
+    headline: 'Every Fitness Plan Felt Built for 25-Year-Olds — Here\'s the One That Actually Works With Your Body After 40',
     subheadline: 'Low-impact, joint-friendly workouts designed around hormonal changes — not the punishing routines that stop working in your 40s',
     hook: 'Every fitness plan I found was designed for 25-year-olds. I needed something that worked with my body, not against it.',
     description: 'After 40, women experience declining estrogen, slower muscle recovery, increased joint sensitivity, and metabolic shifts. Generic workout plans ignore these realities. Reverse Health builds personalized calisthenics and low-impact strength programs specifically around these changes — helping women build lean muscle, improve mobility, and lose fat without risking injury or burnout.',
@@ -615,7 +615,7 @@ export const problems: Problem[] = [
   // ─── best-credit-card ───────────────────────────────────────────────────────
   {
     slug: 'best-credit-card',
-    headline: 'Find the Best Credit Card for Your Wallet — In Under 3 Minutes',
+    headline: 'What Most Credit Card Comparison Sites Don\'t Tell You — And How to Find the Card That Actually Earns for Your Spending',
     subheadline: 'Compare hundreds of cards side-by-side: cashback, travel rewards, balance transfer, and no-annual-fee options — then apply directly',
     hook: 'I had the same credit card for 8 years and left hundreds of dollars in rewards on the table every year. No more.',
     description: 'Most people pick a credit card once and stick with it forever — often missing out on significantly better rewards, lower APR, or bonuses available to them. SuperMoney\'s comparison platform lets you see cards matched to your credit profile (without a hard pull), compare real rates, and identify the card that fits your actual spending habits.',
@@ -687,7 +687,7 @@ export const problems: Problem[] = [
   // ─── rural-internet ─────────────────────────────────────────────────────────
   {
     slug: 'rural-internet',
-    headline: 'No Cable, No DSL, No Problem — Fast Home Internet That Works Anywhere',
+    headline: 'Stuck With Slow Rural Internet Because the Big Providers Don\'t Bother — Here\'s What Actually Works Outside the City',
     subheadline: 'Wireless home internet that doesn\'t require cable lines — works in rural areas, RVs, and places the big ISPs don\'t serve',
     hook: 'I moved to a rural property and discovered that my only internet option was slow DSL at $89/month. I found a much better solution.',
     description: 'Millions of Americans live in areas where cable and fiber internet simply aren\'t available. Home Fi delivers wireless home internet using cellular networks — no cable lines, no contracts, no technician visits. It works in rural homes, vacation properties, RVs, and anywhere with cellular signal. Plans include a portable router that travels with you.',
@@ -754,6 +754,190 @@ export const problems: Problem[] = [
     seoTitle: 'Get Expert Advice Online 2026 — JustAnswer Review: Worth It? | Verto',
     seoDescription: 'JustAnswer connects you with verified doctors, lawyers, and experts who answer your questions in minutes — for a fraction of in-office costs.',
     facebookHook: 'I needed a lawyer\'s opinion on a document. Got it in 12 minutes for under $30. Here\'s how.',
+  },
+
+  // ─── blood-sugar-control / diabetes-support ─────────────────────────────────
+  {
+    slug: 'diabetes-support',
+    headline: 'Your Blood Sugar Is Spiking — Here\'s the Natural Formula That Supports Glucose Control Without Metformin Side Effects',
+    subheadline: 'CardioNEX combines clinically studied natural ingredients to support healthy glucose levels and cardiovascular function — no prescription required',
+    hook: 'Pre-diabetic. Borderline. Watching your numbers. You know something has to change, but you\'re not ready for prescription medication — or the side effects that come with it.',
+    description: 'Millions of adults are managing elevated blood sugar through diet and lifestyle changes alone — but the gap between "watch and wait" and prescription medication leaves a lot of people underserved. Natural supplements formulated for glucose stability offer an intermediate option: supporting insulin sensitivity and reducing post-meal spikes through botanical and metabolic ingredients.',
+    emoji: '🩸',
+    gradient: 'linear-gradient(135deg, #dc2626, #7f1d1d)',
+    category: 'health-wellness',
+    audience: 'Adults 40+ managing pre-diabetes, elevated A1C, or metabolic concerns (Canada, Ireland, Switzerland)',
+    topOfferIds: [31617],
+    faqs: [
+      {
+        q: 'What natural ingredients support healthy blood sugar?',
+        a: 'Several botanical and nutritional compounds have clinical evidence for glucose support: berberine (comparable to metformin in some studies for A1C reduction), chromium (improves insulin sensitivity), cinnamon extract (reduces fasting glucose), and alpha-lipoic acid (antioxidant that supports insulin signaling). Look for formulas combining multiple mechanisms.',
+      },
+      {
+        q: 'Can supplements replace diabetes medication?',
+        a: 'No. Natural supplements are not a replacement for prescribed diabetes management. They are best suited for people in a pre-diabetic range looking to support healthy glucose levels alongside diet and exercise. Always consult your doctor before changing your approach to blood sugar management.',
+      },
+      {
+        q: 'What is CardioNEX?',
+        a: 'CardioNEX is a dietary supplement formulated to support both blood sugar stability and cardiovascular health through a multi-ingredient natural formula. It targets metabolic function without requiring a prescription. Available in Canada, Ireland, and Switzerland.',
+      },
+    ],
+    trustStats: [
+      { stat: '96M', label: 'Adults with pre-diabetes in the US alone' },
+      { stat: 'No Rx', label: 'Required — natural formula' },
+      { stat: '2-in-1', label: 'Glucose + cardiovascular support' },
+    ],
+    seoTitle: 'Best Natural Blood Sugar Support Supplements 2026 — Glucose Control Without Prescription | Verto',
+    seoDescription: 'Natural supplements for healthy blood sugar levels. Compare CardioNEX and other glucose support formulas — no prescription required. Available in Canada.',
+    facebookHook: 'If your doctor said your blood sugar is "borderline" — here\'s what thousands are doing before going on medication',
+  },
+
+  // ─── keto-weight-loss ───────────────────────────────────────────────────────
+  {
+    slug: 'keto-weight-loss',
+    headline: 'You\'ve Heard About Keto — Here\'s Why Most People Fail It (And the Shortcut That Gets You Into Ketosis Without the Strict Diet)',
+    subheadline: 'BHB ketone supplements accelerate ketosis without cutting carbs to near zero — making keto sustainable for people who can\'t stick to strict low-carb eating',
+    hook: 'Keto sounds simple. Eat fat, cut carbs, lose weight. But the first week is brutal — carb flu, cravings, no energy. Most people quit before they ever get into ketosis.',
+    description: 'The keto diet works by switching your body from burning glucose to burning fat (ketosis). The problem: getting into ketosis takes 3–7 days of strict carb restriction, and most people experience fatigue, brain fog, and cravings during that transition. BHB (beta-hydroxybutyrate) supplements provide exogenous ketones that help initiate and maintain ketosis faster — without requiring near-zero carb intake.',
+    emoji: '🔥',
+    gradient: 'linear-gradient(135deg, #ea580c, #7c2d12)',
+    category: 'health-wellness',
+    audience: 'Adults in Canada interested in keto weight loss without strict dieting',
+    topOfferIds: [31613],
+    faqs: [
+      {
+        q: 'What are BHB ketones and do they work?',
+        a: 'BHB (beta-hydroxybutyrate) is the primary ketone your body produces during ketosis. Exogenous BHB supplements provide these ketones directly, helping raise blood ketone levels and reduce the transition symptoms ("keto flu"). Research shows they can accelerate ketosis onset and help maintain fat-burning even when carb intake isn\'t perfectly controlled.',
+      },
+      {
+        q: 'Do I still need to eat low-carb with BHB supplements?',
+        a: 'Lower carb intake still produces better results — but BHB supplements reduce how strict you need to be. Many users follow a moderate-carb (under 50–75g/day) approach combined with BHB and see comparable fat loss to strict keto, without the severity of carb flu or dietary restriction.',
+      },
+      {
+        q: 'Is JumpKETO available in the US?',
+        a: 'JumpKETO Gummies are currently available in Canada only. For US-based keto support, GLP-1 telehealth programs like Gala and TrimRX offer medically supervised weight loss with stronger clinical evidence.',
+      },
+    ],
+    trustStats: [
+      { stat: '13M+', label: 'People following keto or low-carb diets' },
+      { stat: 'BHB', label: 'Clinically studied exogenous ketone form' },
+      { stat: 'No strict diet', label: 'Required with BHB supplementation' },
+    ],
+    seoTitle: 'Best Keto Weight Loss Supplements 2026 — BHB Gummies That Actually Work | Verto',
+    seoDescription: 'BHB keto supplements help you reach ketosis faster without strict dieting. Compare JumpKETO and other keto gummies for weight loss. Canadian options available.',
+    facebookHook: 'Why keto works for some people and fails for most — and the BHB shortcut that changes the equation',
+  },
+
+  // ─── heart-health ───────────────────────────────────────────────────────────
+  {
+    slug: 'heart-health',
+    headline: 'Your Doctor Told You to "Watch" Your Heart Health — Here\'s What to Actually Do About It',
+    subheadline: 'Natural cardiovascular support supplements address inflammation, blood pressure, and circulation — filling the gap between lifestyle changes and prescription intervention',
+    hook: 'High-normal blood pressure. Slightly elevated cholesterol. Your doctor says "watch your diet and come back in 6 months." That\'s not a plan.',
+    description: 'Millions of adults are in a grey zone for cardiovascular risk — not sick enough for medication, but not healthy enough to ignore. Natural supplements formulated for heart and circulatory support can address inflammation, blood pressure regulation, and vascular function through ingredients like omega-3s, CoQ10, magnesium, and proteolytic enzymes. Some people also find that asking a cardiologist or physician online helps them understand their specific markers before a follow-up appointment.',
+    emoji: '❤️',
+    gradient: 'linear-gradient(135deg, #e11d48, #881337)',
+    category: 'health-wellness',
+    audience: 'Adults 40+ concerned about cardiovascular health, blood pressure, or inflammation',
+    topOfferIds: [17722, 28149],
+    faqs: [
+      {
+        q: 'What natural supplements support heart health?',
+        a: 'The most evidence-backed natural cardiovascular ingredients include: CoQ10 (supports heart muscle energy), omega-3 fatty acids (reduce triglycerides and inflammation), magnesium (blood pressure regulation), berberine (LDL reduction comparable to some statins), and proteolytic enzymes like serrapeptase (reduces systemic inflammation). Heal and Soothe combines systemic enzymes and anti-inflammatories that target both pain and cardiovascular inflammation.',
+      },
+      {
+        q: 'Can supplements replace heart medication?',
+        a: 'No. If you have diagnosed cardiovascular disease or are prescribed heart medication, do not stop or replace it with supplements. Natural cardiovascular support is most appropriate for people in a preventive or grey-zone risk category who want to support healthy function alongside diet and exercise.',
+      },
+      {
+        q: 'When should I ask a doctor rather than try a supplement?',
+        a: 'If you have chest pain, shortness of breath, palpitations, or a documented diagnosis (hypertension, AFib, coronary disease), see a physician. For questions about specific lab values — like what your cholesterol ratio means — an online medical expert through JustAnswer can often provide context within minutes.',
+      },
+    ],
+    trustStats: [
+      { stat: '#1', label: 'Cause of death globally — cardiovascular disease' },
+      { stat: '80%', label: 'Of cardiovascular disease is preventable' },
+      { stat: 'Natural', label: 'Anti-inflammatory and enzyme formulas available' },
+    ],
+    seoTitle: 'Best Heart Health Supplements 2026 — Natural Cardiovascular Support Compared | Verto',
+    seoDescription: 'Natural supplements for heart health, blood pressure, and cardiovascular support. Compare Heal and Soothe and other anti-inflammatory formulas for heart health.',
+    facebookHook: 'What "watch your cholesterol" actually means — and what people in their 40s and 50s are doing about it',
+  },
+
+  // ─── bad-credit-loan ────────────────────────────────────────────────────────
+  {
+    slug: 'bad-credit-loan',
+    headline: 'Banks Keep Saying No — Here\'s How to Get a Personal Loan With Bad Credit (Without Wrecking Your Score Further)',
+    subheadline: 'Loan matching networks show you real rates from lenders who work with bad credit — using a soft pull that doesn\'t affect your score',
+    hook: 'Rejected again. Your credit score is the first thing they see, and it stops everything. But there are lenders that look at more than just a FICO score.',
+    description: 'Traditional banks and credit unions typically require a credit score of 670+ for personal loans. But subprime and alternative lenders work with scores as low as 500 — weighing income, employment stability, and debt-to-income ratio alongside credit history. Loan matching platforms like Money Pup, CreditNLending, and ProvideLoan submit your application to multiple lenders simultaneously, maximizing your approval odds without multiple hard inquiries.',
+    emoji: '💳',
+    gradient: 'linear-gradient(135deg, #0f172a, #1e3a5f)',
+    category: 'financial',
+    audience: 'Adults with fair to poor credit (300–669) seeking personal loans in the US; Canadians with credit challenges',
+    topOfferIds: [26642, 30154, 30444, 31464],
+    faqs: [
+      {
+        q: 'What credit score do I need for a personal loan?',
+        a: 'Traditional bank loans typically require 670+. Online lenders and subprime networks often approve borrowers with scores as low as 500–580, depending on income and other factors. Matching platforms show you which lenders are likely to approve based on your profile before you apply.',
+      },
+      {
+        q: 'Will applying hurt my credit score?',
+        a: 'Loan matching platforms use a soft credit pull to show you options — which does not affect your score. A hard inquiry only happens if you choose to formally apply with a specific lender after seeing your pre-qualified offers.',
+      },
+      {
+        q: 'How much can I borrow with bad credit?',
+        a: 'It depends on your income, debt load, and the lender. Subprime personal loans typically range from $500 to $35,000. Higher amounts (up to $100,000) become more accessible as your credit improves. CreditNLending matches up to $100K; ProvideLoan up to $40K; Money Pup up to $50K.',
+      },
+      {
+        q: 'Is Credit Resources (Canada) legit?',
+        a: 'Yes. Credit Resources is a Canadian platform that connects individuals with subprime lenders who work outside traditional bank criteria. It includes a credit dispute portal and score simulator. Plans start at $20/week — review terms carefully before subscribing.',
+      },
+    ],
+    trustStats: [
+      { stat: '33%', label: 'Of Americans have a subprime credit score (below 670)' },
+      { stat: 'Soft pull', label: 'Only — matching doesn\'t affect your score' },
+      { stat: '$100K', label: 'Max loan available through CreditNLending' },
+    ],
+    seoTitle: 'Personal Loans for Bad Credit 2026 — Get Matched Without a Hard Pull | Verto',
+    seoDescription: 'Compare personal loan options for bad credit. Loan matching networks from Money Pup, CreditNLending, and ProvideLoan find lenders that work with low credit scores.',
+    facebookHook: 'Banks keep saying no — here\'s how the loan matching workaround actually works for bad credit',
+  },
+
+  // ─── credit-repair ──────────────────────────────────────────────────────────
+  {
+    slug: 'credit-repair',
+    headline: 'Your Credit Score Is Costing You Money Every Month — Here\'s How to Actually Fix It (Not Just Wait)',
+    subheadline: 'Disputing inaccurate items, reducing utilization, and using the right tools can raise your score 50–100+ points — and the process starts with knowing what\'s dragging it down',
+    hook: 'A bad credit score isn\'t just embarrassing — it costs you in every loan, every rental application, every insurance quote. And most of it is fixable.',
+    description: 'The average credit report contains at least one error. Incorrect late payments, duplicate accounts, outdated balances, and fraudulent tradelines all reduce your score — and federal law gives you the right to dispute them for free. Beyond disputes, improving your utilization ratio, adding positive tradelines, and understanding your credit mix can raise your score meaningfully within 3–6 months.',
+    emoji: '📈',
+    gradient: 'linear-gradient(135deg, #059669, #064e3b)',
+    category: 'financial',
+    audience: 'Adults with poor to fair credit (300–669) seeking to repair or rebuild their credit profile',
+    topOfferIds: [26642, 30154, 31464],
+    faqs: [
+      {
+        q: 'What actually improves a credit score?',
+        a: 'The five FICO factors in order of weight: payment history (35%) — no missed payments; credit utilization (30%) — keep balances below 30% of limits; length of credit history (15%) — older accounts help; credit mix (10%) — having different types helps; new inquiries (10%) — avoid unnecessary hard pulls. Most quick wins come from reducing utilization and disputing errors.',
+      },
+      {
+        q: 'Can I dispute credit report errors myself?',
+        a: 'Yes — and it\'s free. You can file disputes directly with Equifax, Experian, and TransUnion online. The bureaus have 30–45 days to investigate. Tools like Credit Resources (Canada) and some US platforms provide guided dispute workflows that make this process faster and track your submissions.',
+      },
+      {
+        q: 'How long does credit repair take?',
+        a: 'Error disputes typically resolve in 30–45 days. Score changes from behavioral improvements (paying down balances, removing negative items) often show up within 1–3 billing cycles. Full credit rebuilding from a low score (500 range) to good credit (700+) typically takes 12–24 months of consistent on-time payments.',
+      },
+    ],
+    trustStats: [
+      { stat: '1 in 5', label: 'Credit reports contain a material error' },
+      { stat: '50–100+', label: 'Points gained possible within 6 months' },
+      { stat: 'Free', label: 'Federal right to dispute errors with all 3 bureaus' },
+    ],
+    seoTitle: 'How to Fix Bad Credit in 2026 — Credit Repair Guide & Best Tools | Verto',
+    seoDescription: 'Learn how to repair your credit score — dispute errors, reduce utilization, and use credit repair tools. Compare CreditNLending and Credit Resources for rebuilding.',
+    facebookHook: 'I raised my credit score 90 points in 4 months without paying a credit repair company — here\'s exactly what I did',
   },
 
   // ─── self-improvement ────────────────────────────────────────────────────────
