@@ -2,6 +2,7 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Analytics from '../components/Analytics.astro';
+import { CLARITY_PROJECT_ID } from '../data/config';
 import '../styles/global.css';
 
 interface Props {
@@ -63,14 +64,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <title>{siteTitle}</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-  <!-- Microsoft Clarity — session recording + heatmaps -->
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window,document,"clarity","script","CLARITY_PROJECT_ID");
-  </script>
+  <!-- Microsoft Clarity — session recording + heatmaps (gated on project ID) -->
+  {CLARITY_PROJECT_ID && (
+    <script type="text/javascript" set:html={`(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","${CLARITY_PROJECT_ID}");`} />
+  )}
 
   <!-- Organization + WebSite schema -->
   <script type="application/ld+json" set:html={JSON.stringify({
