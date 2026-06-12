@@ -1,0 +1,358 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const creditnlendingUrl = "https://afflat3e3.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=30154&c=918277&a=784951&k=0&l=34161";
+const moneypupUrl = "https://afflat3e3.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=26642&c=918277&a=784951&k=0&l=28265";
+---
+
+<BaseLayout
+  title="Debt Consolidation Savings Calculator — See How Much a Personal Loan Saves You"
+  description="Enter your credit card balances and APRs to see exactly how much you'd save consolidating into a personal loan. Includes month-by-month payoff comparison and live lender matching."
+>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Debt Consolidation Savings Calculator",
+    "description": "Calculate interest savings from consolidating credit card debt into a personal loan. Shows month-by-month comparison and connects users with lender networks.",
+    "url": "https://verto.pages.dev/calculators/loan-savings",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  })} />
+
+  <div class="max-w-3xl mx-auto px-4 py-10">
+
+    <div class="mb-8">
+      <div class="text-xs font-semibold uppercase tracking-widest text-[#dc2626] mb-3">Debt Consolidation Calculator</div>
+      <h1 class="font-display text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4">
+        How Much Would You Save Paying Off Your Credit Cards With a Personal Loan?
+      </h1>
+      <p class="text-lg text-gray-600 leading-relaxed">
+        The average credit card APR in 2026 is 20.1% (Federal Reserve). Personal loans for good credit start at 9%. On $15,000 of debt, that gap costs $4,800 in extra interest over 3 years. Enter your numbers below to see your exact savings.
+      </p>
+    </div>
+
+    <!-- Calculator -->
+    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 md:p-8 mb-8">
+      <h2 class="font-display text-xl font-bold text-gray-900 mb-6">Your Debt Situation</h2>
+
+      <!-- Cards section -->
+      <div class="mb-6">
+        <div class="flex items-center justify-between mb-3">
+          <label class="text-sm font-semibold text-gray-700">Credit Cards / High-Interest Debt</label>
+          <button id="add-card" class="text-xs font-semibold text-[#dc2626] hover:text-[#991b1b] border border-[#dc2626] rounded-lg px-3 py-1 transition-colors">+ Add another</button>
+        </div>
+
+        <div id="cards-container" class="space-y-3">
+          <!-- First card row -->
+          <div class="card-row grid grid-cols-12 gap-2 items-center">
+            <div class="col-span-5">
+              <input type="text" placeholder="Card name" value="Card 1" class="card-name w-full border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#dc2626]" />
+            </div>
+            <div class="col-span-3">
+              <div class="relative">
+                <span class="absolute left-3 top-2.5 text-gray-400 text-sm">$</span>
+                <input type="number" placeholder="Balance" value="8500" class="card-balance w-full border border-gray-200 rounded-lg pl-6 pr-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#dc2626]" min="0" />
+              </div>
+            </div>
+            <div class="col-span-3">
+              <div class="relative">
+                <input type="number" placeholder="APR" value="22.9" class="card-apr w-full border border-gray-200 rounded-lg pl-3 pr-6 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#dc2626]" min="0" max="100" step="0.1" />
+                <span class="absolute right-3 top-2.5 text-gray-400 text-sm">%</span>
+              </div>
+            </div>
+            <div class="col-span-1 text-center">
+              <button class="remove-card text-gray-300 hover:text-red-500 text-lg leading-none" title="Remove">×</button>
+            </div>
+          </div>
+          <!-- Second card row -->
+          <div class="card-row grid grid-cols-12 gap-2 items-center">
+            <div class="col-span-5">
+              <input type="text" placeholder="Card name" value="Card 2" class="card-name w-full border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#dc2626]" />
+            </div>
+            <div class="col-span-3">
+              <div class="relative">
+                <span class="absolute left-3 top-2.5 text-gray-400 text-sm">$</span>
+                <input type="number" placeholder="Balance" value="4200" class="card-balance w-full border border-gray-200 rounded-lg pl-6 pr-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#dc2626]" min="0" />
+              </div>
+            </div>
+            <div class="col-span-3">
+              <div class="relative">
+                <input type="number" placeholder="APR" value="19.9" class="card-apr w-full border border-gray-200 rounded-lg pl-3 pr-6 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#dc2626]" min="0" max="100" step="0.1" />
+                <span class="absolute right-3 top-2.5 text-gray-400 text-sm">%</span>
+              </div>
+            </div>
+            <div class="col-span-1 text-center">
+              <button class="remove-card text-gray-300 hover:text-red-500 text-lg leading-none" title="Remove">×</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repayment term -->
+      <div class="mb-6">
+        <label class="block text-sm font-semibold text-gray-700 mb-2">Target payoff timeline</label>
+        <div class="grid grid-cols-4 gap-2">
+          {[24, 36, 48, 60].map(m => (
+            <label class="cursor-pointer">
+              <input type="radio" name="term" value={m} class="peer sr-only" checked={m === 36} />
+              <div class="border-2 border-gray-200 rounded-lg p-3 text-center peer-checked:border-[#dc2626] peer-checked:bg-[#fef2f2] transition-all">
+                <div class="font-bold text-sm text-gray-900">{m}</div>
+                <div class="text-xs text-gray-500">months</div>
+              </div>
+            </label>
+          ))}
+        </div>
+      </div>
+
+      <!-- Credit score estimate -->
+      <div class="mb-6">
+        <label class="block text-sm font-semibold text-gray-700 mb-3">Your approximate credit score</label>
+        <div class="space-y-2">
+          {[
+            { range: '760+', label: 'Excellent', rate: 9, color: 'text-green-700' },
+            { range: '700–759', label: 'Good', rate: 13, color: 'text-green-600' },
+            { range: '640–699', label: 'Fair', rate: 19, color: 'text-yellow-600' },
+            { range: 'Below 640', label: 'Poor', rate: 27, color: 'text-red-600' },
+          ].map((tier, i) => (
+            <label class="flex items-center justify-between gap-3 border border-gray-200 rounded-lg p-3 cursor-pointer has-[:checked]:border-[#dc2626] has-[:checked]:bg-[#fef2f2] transition-all">
+              <div class="flex items-center gap-3">
+                <input type="radio" name="credit" value={tier.rate} class="accent-[#dc2626]" checked={i === 1} />
+                <div>
+                  <span class="font-medium text-sm text-gray-900">{tier.range}</span>
+                  <span class="text-xs text-gray-500 ml-2">({tier.label})</span>
+                </div>
+              </div>
+              <span class={`text-sm font-semibold ${tier.color}`}>~{tier.rate}% APR</span>
+            </label>
+          ))}
+        </div>
+      </div>
+
+      <button
+        id="calculate-btn"
+        class="w-full bg-[#dc2626] hover:bg-[#991b1b] text-white font-bold py-4 rounded-xl text-lg transition-colors"
+      >
+        Show My Savings →
+      </button>
+    </div>
+
+    <!-- Results -->
+    <div id="results" class="hidden">
+
+      <!-- Main savings banner -->
+      <div class="bg-green-50 border-2 border-green-400 rounded-2xl p-6 md:p-8 mb-6 text-center">
+        <div class="text-sm font-semibold uppercase tracking-wider text-green-700 mb-1">Estimated interest savings</div>
+        <div id="interest-savings" class="text-5xl font-bold text-green-700 mb-2">—</div>
+        <div id="savings-context" class="text-sm text-green-700">—</div>
+      </div>
+
+      <!-- Side-by-side comparison -->
+      <div class="grid md:grid-cols-2 gap-4 mb-6">
+        <div class="bg-gray-50 rounded-xl border border-gray-200 p-5">
+          <div class="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">Keeping your cards</div>
+          <div class="space-y-2 text-sm">
+            <div class="flex justify-between">
+              <span class="text-gray-600">Total balance</span>
+              <span id="cc-balance" class="font-semibold text-gray-900">—</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-gray-600">Weighted APR</span>
+              <span id="cc-apr" class="font-semibold text-gray-900">—</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-gray-600">Monthly payment</span>
+              <span id="cc-monthly" class="font-semibold text-gray-900">—</span>
+            </div>
+            <div class="flex justify-between border-t border-gray-200 pt-2 mt-2">
+              <span class="text-gray-700 font-medium">Total interest paid</span>
+              <span id="cc-interest" class="font-bold text-red-600">—</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-gray-700 font-medium">Total cost</span>
+              <span id="cc-total" class="font-bold text-gray-900">—</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#fef2f2] rounded-xl border-2 border-[#dc2626] p-5">
+          <div class="text-xs font-semibold uppercase tracking-wider text-[#dc2626] mb-3">Personal loan consolidation</div>
+          <div class="space-y-2 text-sm">
+            <div class="flex justify-between">
+              <span class="text-gray-600">Loan amount</span>
+              <span id="loan-balance" class="font-semibold text-gray-900">—</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-gray-600">Estimated APR</span>
+              <span id="loan-apr" class="font-semibold text-gray-900">—</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-gray-600">Monthly payment</span>
+              <span id="loan-monthly" class="font-semibold text-gray-900">—</span>
+            </div>
+            <div class="flex justify-between border-t border-gray-200 pt-2 mt-2">
+              <span class="text-gray-700 font-medium">Total interest paid</span>
+              <span id="loan-interest" class="font-bold text-green-600">—</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-gray-700 font-medium">Total cost</span>
+              <span id="loan-total" class="font-bold text-gray-900">—</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lender CTA block -->
+      <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 md:p-8 mb-6">
+        <h3 class="font-display text-lg font-bold text-gray-900 mb-2">Get competing loan offers — soft credit check only</h3>
+        <p class="text-sm text-gray-600 mb-5">A soft credit inquiry does not affect your credit score. These platforms submit your profile to multiple lenders simultaneously and return competing offers in under 2 minutes. You choose which lender to proceed with (or none).</p>
+
+        <div class="space-y-4">
+          <div class="border border-gray-200 rounded-xl p-4 flex items-center justify-between gap-4">
+            <div>
+              <div class="font-bold text-gray-900">CreditNLending — up to $100,000</div>
+              <div class="text-sm text-gray-600">Largest loan range. Good for larger consolidation balances.</div>
+            </div>
+            <a href={creditnlendingUrl} target="_blank" rel="noopener sponsored" class="shrink-0 bg-[#dc2626] hover:bg-[#991b1b] text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors">
+              Check Rates →
+            </a>
+          </div>
+
+          <div class="border border-gray-200 rounded-xl p-4 flex items-center justify-between gap-4">
+            <div>
+              <div class="font-bold text-gray-900">Money Pup — up to $50,000</div>
+              <div class="text-sm text-gray-600">Fast matching. Strong for balances under $50K.</div>
+            </div>
+            <a href={moneypupUrl} target="_blank" rel="noopener sponsored" class="shrink-0 bg-gray-900 hover:bg-gray-700 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors">
+              Check Rates →
+            </a>
+          </div>
+        </div>
+
+        <p class="text-xs text-gray-500 mt-4">Using multiple platforms takes 5 minutes and gives you more competing offers. Soft inquiry only — no credit score impact until you formally accept a loan offer.</p>
+      </div>
+
+      <!-- When it doesn't make sense -->
+      <div id="breakeven-warning" class="hidden bg-yellow-50 border border-yellow-200 rounded-xl p-5 mb-6">
+        <div class="font-semibold text-yellow-900 mb-1">⚠ Limited benefit in this scenario</div>
+        <p id="breakeven-text" class="text-sm text-yellow-800">—</p>
+      </div>
+
+      <div class="bg-gray-50 rounded-xl p-4 text-xs text-gray-500">
+        <strong>How this is calculated:</strong> Credit card interest uses the weighted average APR across your cards with fixed monthly payments over the selected term. Personal loan interest uses standard amortization. Estimated personal loan APR is based on Federal Reserve rate environment and credit tier averages as of 2026. Actual rates depend on the individual lender, your full credit profile, debt-to-income ratio, and loan amount. This calculator is for informational purposes only and does not constitute financial advice.
+      </div>
+    </div>
+
+  </div>
+
+</BaseLayout>
+
+<script define:vars={{ creditnlendingUrl, moneypupUrl }}>
+  // Add card row
+  let cardCount = 2;
+  document.getElementById('add-card').addEventListener('click', () => {
+    if (cardCount >= 6) return;
+    cardCount++;
+    const row = document.createElement('div');
+    row.className = 'card-row grid grid-cols-12 gap-2 items-center';
+    row.innerHTML = `
+      <div class="col-span-5">
+        <input type="text" placeholder="Card name" value="Card ${cardCount}" class="card-name w-full border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#dc2626]" />
+      </div>
+      <div class="col-span-3">
+        <div class="relative">
+          <span class="absolute left-3 top-2.5 text-gray-400 text-sm">$</span>
+          <input type="number" placeholder="Balance" class="card-balance w-full border border-gray-200 rounded-lg pl-6 pr-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#dc2626]" min="0" />
+        </div>
+      </div>
+      <div class="col-span-3">
+        <div class="relative">
+          <input type="number" placeholder="APR" class="card-apr w-full border border-gray-200 rounded-lg pl-3 pr-6 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#dc2626]" min="0" max="100" step="0.1" />
+          <span class="absolute right-3 top-2.5 text-gray-400 text-sm">%</span>
+        </div>
+      </div>
+      <div class="col-span-1 text-center">
+        <button class="remove-card text-gray-300 hover:text-red-500 text-lg leading-none">×</button>
+      </div>
+    `;
+    document.getElementById('cards-container').appendChild(row);
+  });
+
+  document.getElementById('cards-container').addEventListener('click', e => {
+    if (e.target.classList.contains('remove-card')) {
+      const rows = document.querySelectorAll('.card-row');
+      if (rows.length > 1) e.target.closest('.card-row').remove();
+    }
+  });
+
+  function fmt(n) { return '$' + Math.round(n).toLocaleString(); }
+  function calcMonthly(principal, annualRate, months) {
+    const r = annualRate / 100 / 12;
+    if (r === 0) return principal / months;
+    return principal * r * Math.pow(1+r, months) / (Math.pow(1+r, months) - 1);
+  }
+
+  document.getElementById('calculate-btn').addEventListener('click', () => {
+    const rows = document.querySelectorAll('.card-row');
+    let totalBalance = 0;
+    let weightedAprSum = 0;
+
+    rows.forEach(row => {
+      const bal = parseFloat(row.querySelector('.card-balance').value) || 0;
+      const apr = parseFloat(row.querySelector('.card-apr').value) || 0;
+      totalBalance += bal;
+      weightedAprSum += bal * apr;
+    });
+
+    if (totalBalance === 0) return;
+
+    const weightedApr = weightedAprSum / totalBalance;
+    const loanApr = parseFloat(document.querySelector('input[name="credit"]:checked')?.value) || 13;
+    const months = parseInt(document.querySelector('input[name="term"]:checked')?.value) || 36;
+
+    const ccMonthly = calcMonthly(totalBalance, weightedApr, months);
+    const ccInterest = ccMonthly * months - totalBalance;
+    const ccTotal = ccMonthly * months;
+
+    const loanMonthly = calcMonthly(totalBalance, loanApr, months);
+    const loanInterest = loanMonthly * months - totalBalance;
+    const loanTotal = loanMonthly * months;
+
+    const savings = ccInterest - loanInterest;
+
+    // Fill results
+    document.getElementById('interest-savings').textContent = fmt(savings);
+    document.getElementById('savings-context').textContent =
+      'over ' + months + ' months vs keeping your current cards';
+
+    document.getElementById('cc-balance').textContent = fmt(totalBalance);
+    document.getElementById('cc-apr').textContent = weightedApr.toFixed(1) + '% (weighted avg)';
+    document.getElementById('cc-monthly').textContent = fmt(ccMonthly) + '/mo';
+    document.getElementById('cc-interest').textContent = fmt(ccInterest);
+    document.getElementById('cc-total').textContent = fmt(ccTotal);
+
+    document.getElementById('loan-balance').textContent = fmt(totalBalance);
+    document.getElementById('loan-apr').textContent = '~' + loanApr + '%';
+    document.getElementById('loan-monthly').textContent = fmt(loanMonthly) + '/mo';
+    document.getElementById('loan-interest').textContent = fmt(loanInterest);
+    document.getElementById('loan-total').textContent = fmt(loanTotal);
+
+    // Breakeven warning
+    const bwarn = document.getElementById('breakeven-warning');
+    const btext = document.getElementById('breakeven-text');
+    if (savings < 200) {
+      bwarn.classList.remove('hidden');
+      btext.textContent = 'Your credit card APR (' + weightedApr.toFixed(1) + '%) is close to estimated personal loan rates for your credit tier (' + loanApr + '%). The interest savings are modest. Consolidation may still be worthwhile for simplifying to a single payment, but run the numbers with actual rate offers before committing.';
+    } else {
+      bwarn.classList.add('hidden');
+    }
+
+    document.getElementById('results').classList.remove('hidden');
+    document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+</script>

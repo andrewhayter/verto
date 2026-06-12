@@ -1,0 +1,491 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const galaUrl = "https://afflat3e1.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=32072&c=918277&a=784951&k=0&l=37601";
+const viviomdUrl = "https://afflat3e3.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=31644&c=918277&a=784951&k=0&l=37881";
+const trimrxUrl = "https://afflat3e3.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=31973&c=918277&a=784951&k=0&l=37882";
+---
+
+<BaseLayout
+  title="Which GLP-1 Program Is Right for You? — 2026 Matching Quiz"
+  description="8 questions. 3 minutes. Get matched to the GLP-1 medication program that fits your budget, timeline, and medical situation from our vetted provider list."
+>
+  <script type="application/ld+json">{JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://verto.pages.dev/calculators/glp1-quiz",
+        "name": "GLP-1 Program Matching Quiz",
+        "description": "8-question quiz that matches users to Gala, Viviomd, or TrimRX based on budget, administration preference (injection vs oral), speed, prior history, and drug preference. Produces a ranked recommendation.",
+        "url": "https://verto.pages.dev/calculators/glp1-quiz",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "Web",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@id": "https://verto.pages.dev/#organization" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://verto.pages.dev" },
+          { "@type": "ListItem", "position": 2, "name": "Calculators", "item": "https://verto.pages.dev/calculators/" },
+          { "@type": "ListItem", "position": 3, "name": "GLP-1 Program Quiz", "item": "https://verto.pages.dev/calculators/glp1-quiz" }
+        ]
+      }
+    ]
+  })}</script>
+
+  <div class="max-w-2xl mx-auto px-4 py-10">
+
+    <div class="mb-8">
+      <div class="text-xs font-semibold uppercase tracking-widest text-[#dc2626] mb-3">GLP-1 Program Quiz</div>
+      <h1 class="font-display text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4">
+        Which GLP-1 Weight Loss Program Fits Your Situation?
+      </h1>
+      <p class="text-lg text-gray-600 leading-relaxed">
+        There are now 6+ compounded GLP-1 programs available — Gala, Viviomd, TrimRX, and others — ranging from $179 to $350/month with different supervision levels, medication options, and support models. Answer 8 questions to find your best match.
+      </p>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="mb-6">
+      <div class="flex justify-between text-xs text-gray-500 mb-1">
+        <span id="progress-label">Question 1 of 8</span>
+        <span id="progress-pct">0%</span>
+      </div>
+      <div class="w-full bg-gray-200 rounded-full h-2">
+        <div id="progress-bar" class="bg-[#dc2626] h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
+      </div>
+    </div>
+
+    <!-- Quiz container -->
+    <div id="quiz-container">
+
+      <!-- Q1 -->
+      <div class="question" data-q="1">
+        <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 md:p-8">
+          <h2 class="font-display text-xl font-bold text-gray-900 mb-5">What is your primary reason for considering a GLP-1 program?</h2>
+          <div class="space-y-3" data-key="reason">
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="reason" value="weight" class="accent-[#dc2626]" />
+              <span class="text-gray-800">Lose weight — I have tried diet and exercise and not getting the results I need</span>
+            </label>
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="reason" value="health" class="accent-[#dc2626]" />
+              <span class="text-gray-800">Manage a weight-related health condition (type 2 diabetes, hypertension, sleep apnea)</span>
+            </label>
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="reason" value="cost" class="accent-[#dc2626]" />
+              <span class="text-gray-800">Switch from brand-name Ozempic/Wegovy to a more affordable compounded version</span>
+            </label>
+          </div>
+        </div>
+        <button class="next-btn mt-4 w-full bg-[#dc2626] hover:bg-[#991b1b] text-white font-bold py-3 rounded-xl transition-colors opacity-50 cursor-not-allowed" disabled>Next →</button>
+      </div>
+
+      <!-- Q2 -->
+      <div class="question hidden" data-q="2">
+        <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 md:p-8">
+          <h2 class="font-display text-xl font-bold text-gray-900 mb-5">What is your approximate BMI?</h2>
+          <p class="text-sm text-gray-500 mb-4">BMI = weight(lbs) × 703 ÷ height(in)². Most programs require BMI ≥27 with a condition or ≥30 with no conditions.</p>
+          <div class="space-y-3" data-key="bmi">
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="bmi" value="under27" class="accent-[#dc2626]" />
+              <span class="text-gray-800">Under 27 — I may not qualify but want to check</span>
+            </label>
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="bmi" value="27to30" class="accent-[#dc2626]" />
+              <span class="text-gray-800">27–30 — I have at least one weight-related health condition</span>
+            </label>
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="bmi" value="30to40" class="accent-[#dc2626]" />
+              <span class="text-gray-800">30–40 — Obese I or II range</span>
+            </label>
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="bmi" value="over40" class="accent-[#dc2626]" />
+              <span class="text-gray-800">Over 40 — Obese III (severe)</span>
+            </label>
+          </div>
+        </div>
+        <button class="next-btn mt-4 w-full bg-[#dc2626] hover:bg-[#991b1b] text-white font-bold py-3 rounded-xl transition-colors opacity-50 cursor-not-allowed" disabled>Next →</button>
+      </div>
+
+      <!-- Q3 -->
+      <div class="question hidden" data-q="3">
+        <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 md:p-8">
+          <h2 class="font-display text-xl font-bold text-gray-900 mb-5">What monthly budget are you working with for medication?</h2>
+          <div class="space-y-3" data-key="budget">
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="budget" value="lowest" class="accent-[#dc2626]" />
+              <div>
+                <div class="text-gray-800 font-medium">$179/month — I want the lowest available cost</div>
+                <div class="text-sm text-gray-500">Gala's all-inclusive price, all doses</div>
+              </div>
+            </label>
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="budget" value="mid" class="accent-[#dc2626]" />
+              <div>
+                <div class="text-gray-800 font-medium">$179–$250/month — value matters but I'll pay for quality</div>
+                <div class="text-sm text-gray-500">Most compounded programs fall in this range</div>
+              </div>
+            </label>
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="budget" value="flexible" class="accent-[#dc2626]" />
+              <div>
+                <div class="text-gray-800 font-medium">$250+ — I want the best clinical program regardless of cost</div>
+                <div class="text-sm text-gray-500">Premium platforms with additional coaching/monitoring</div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <button class="next-btn mt-4 w-full bg-[#dc2626] hover:bg-[#991b1b] text-white font-bold py-3 rounded-xl transition-colors opacity-50 cursor-not-allowed" disabled>Next →</button>
+      </div>
+
+      <!-- Q4 -->
+      <div class="question hidden" data-q="4">
+        <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 md:p-8">
+          <h2 class="font-display text-xl font-bold text-gray-900 mb-5">Do you prefer injections or oral medication?</h2>
+          <div class="space-y-3" data-key="method">
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="method" value="injection" class="accent-[#dc2626]" />
+              <div>
+                <div class="text-gray-800 font-medium">Injection (subcutaneous, weekly)</div>
+                <div class="text-sm text-gray-500">Higher bioavailability, fastest results, standard clinical form</div>
+              </div>
+            </label>
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="method" value="oral" class="accent-[#dc2626]" />
+              <div>
+                <div class="text-gray-800 font-medium">Oral medication (tablet or sublingual)</div>
+                <div class="text-sm text-gray-500">Needle-free, slightly lower bioavailability, newer formulations</div>
+              </div>
+            </label>
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="method" value="either" class="accent-[#dc2626]" />
+              <span class="text-gray-800">No preference — I'll follow the physician's recommendation</span>
+            </label>
+          </div>
+        </div>
+        <button class="next-btn mt-4 w-full bg-[#dc2626] hover:bg-[#991b1b] text-white font-bold py-3 rounded-xl transition-colors opacity-50 cursor-not-allowed" disabled>Next →</button>
+      </div>
+
+      <!-- Q5 -->
+      <div class="question hidden" data-q="5">
+        <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 md:p-8">
+          <h2 class="font-display text-xl font-bold text-gray-900 mb-5">How important is ongoing coaching and check-ins to you?</h2>
+          <div class="space-y-3" data-key="support">
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="support" value="minimal" class="accent-[#dc2626]" />
+              <div>
+                <div class="text-gray-800 font-medium">Minimal — just the prescription and medication</div>
+                <div class="text-sm text-gray-500">I'm self-directed and don't need coaching</div>
+              </div>
+            </label>
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="support" value="moderate" class="accent-[#dc2626]" />
+              <div>
+                <div class="text-gray-800 font-medium">Standard medical supervision — monthly physician check-ins</div>
+                <div class="text-sm text-gray-500">Regular dose adjustments and monitoring</div>
+              </div>
+            </label>
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="support" value="high" class="accent-[#dc2626]" />
+              <div>
+                <div class="text-gray-800 font-medium">Comprehensive — coaching, nutrition guidance, behavioral support</div>
+                <div class="text-sm text-gray-500">I want the full program, not just the drug</div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <button class="next-btn mt-4 w-full bg-[#dc2626] hover:bg-[#991b1b] text-white font-bold py-3 rounded-xl transition-colors opacity-50 cursor-not-allowed" disabled>Next →</button>
+      </div>
+
+      <!-- Q6 -->
+      <div class="question hidden" data-q="6">
+        <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 md:p-8">
+          <h2 class="font-display text-xl font-bold text-gray-900 mb-5">How quickly do you want to get started?</h2>
+          <div class="space-y-3" data-key="speed">
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="speed" value="asap" class="accent-[#dc2626]" />
+              <span class="text-gray-800">As fast as possible — I want to start within days</span>
+            </label>
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="speed" value="normal" class="accent-[#dc2626]" />
+              <span class="text-gray-800">Normal timeline — within 1–2 weeks is fine</span>
+            </label>
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="speed" value="researching" class="accent-[#dc2626]" />
+              <span class="text-gray-800">Still researching — I want to understand my options before committing</span>
+            </label>
+          </div>
+        </div>
+        <button class="next-btn mt-4 w-full bg-[#dc2626] hover:bg-[#991b1b] text-white font-bold py-3 rounded-xl transition-colors opacity-50 cursor-not-allowed" disabled>Next →</button>
+      </div>
+
+      <!-- Q7 -->
+      <div class="question hidden" data-q="7">
+        <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 md:p-8">
+          <h2 class="font-display text-xl font-bold text-gray-900 mb-5">Have you tried GLP-1 medications before?</h2>
+          <div class="space-y-3" data-key="history">
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="history" value="no" class="accent-[#dc2626]" />
+              <span class="text-gray-800">No — this would be my first GLP-1 experience</span>
+            </label>
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="history" value="brand" class="accent-[#dc2626]" />
+              <span class="text-gray-800">Yes — I've used brand-name Ozempic, Wegovy, or Mounjaro and want to switch to compounded</span>
+            </label>
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="history" value="compounded" class="accent-[#dc2626]" />
+              <span class="text-gray-800">Yes — I've used a compounded program and want to find a better option</span>
+            </label>
+          </div>
+        </div>
+        <button class="next-btn mt-4 w-full bg-[#dc2626] hover:bg-[#991b1b] text-white font-bold py-3 rounded-xl transition-colors opacity-50 cursor-not-allowed" disabled>Next →</button>
+      </div>
+
+      <!-- Q8 -->
+      <div class="question hidden" data-q="8">
+        <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 md:p-8">
+          <h2 class="font-display text-xl font-bold text-gray-900 mb-5">Which medication are you most interested in?</h2>
+          <div class="space-y-3" data-key="drug">
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="drug" value="tirzepatide" class="accent-[#dc2626]" />
+              <div>
+                <div class="text-gray-800 font-medium">Tirzepatide (GLP-1 + GIP dual agonist)</div>
+                <div class="text-sm text-gray-500">Active ingredient in Mounjaro/Zepbound. Clinical trials show 15–22% weight loss at 72 weeks.</div>
+              </div>
+            </label>
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="drug" value="semaglutide" class="accent-[#dc2626]" />
+              <div>
+                <div class="text-gray-800 font-medium">Semaglutide (GLP-1 agonist)</div>
+                <div class="text-sm text-gray-500">Active ingredient in Ozempic/Wegovy. Established track record. Clinical trials: 10–15% weight loss.</div>
+              </div>
+            </label>
+            <label class="option flex items-center gap-3 border-2 border-gray-200 rounded-xl p-4 cursor-pointer hover:border-gray-400 transition-all">
+              <input type="radio" name="drug" value="unsure" class="accent-[#dc2626]" />
+              <span class="text-gray-800">Not sure — I'll let the physician recommend based on my profile</span>
+            </label>
+          </div>
+        </div>
+        <button id="get-results-btn" class="mt-4 w-full bg-[#dc2626] hover:bg-[#991b1b] text-white font-bold py-3 rounded-xl transition-colors opacity-50 cursor-not-allowed" disabled>Get My Matches →</button>
+      </div>
+
+    </div>
+
+    <!-- Results -->
+    <div id="results" class="hidden">
+
+      <div class="mb-6">
+        <h2 class="font-display text-2xl font-bold text-gray-900 mb-2">Your Best Matches</h2>
+        <p id="results-intro" class="text-gray-600">—</p>
+      </div>
+
+      <div id="matches-container" class="space-y-5 mb-8">
+        <!-- injected by JS -->
+      </div>
+
+      <div class="bg-gray-50 rounded-xl border border-gray-200 p-5">
+        <h3 class="font-semibold text-gray-900 mb-2">What happens after the assessment?</h3>
+        <p class="text-sm text-gray-700">You complete a medical questionnaire (10–15 minutes). A licensed physician reviews your responses and medical history. If GLP-1 medication is appropriate for your case, they issue a prescription. Your first dose ships within 5–7 business days. A prescription is not guaranteed — it is a clinical decision made by the reviewing physician.</p>
+      </div>
+
+      <button
+        id="retake-btn"
+        class="mt-6 w-full border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold py-3 rounded-xl transition-colors text-sm"
+      >
+        Retake the quiz
+      </button>
+
+    </div>
+
+  </div>
+
+</BaseLayout>
+
+<script define:vars={{ galaUrl, viviomdUrl, trimrxUrl }}>
+  const programs = [
+    {
+      id: 'gala',
+      name: 'Gala',
+      tagline: 'Compounded Tirzepatide — Starting at $179/month',
+      highlights: ['Lowest price in the market — all doses included at $179/month', 'Tirzepatide (dual GLP-1 + GIP mechanism)', 'Physician consultation and prescription included', 'No hidden fees'],
+      badge: '⭐ Best Value',
+      badgeColor: 'bg-yellow-100 text-yellow-800',
+      url: galaUrl,
+      cta: 'Start Free Gala Assessment →',
+      scores: {
+        budget_lowest: 3,
+        drug_tirzepatide: 2,
+        drug_unsure: 1,
+        support_minimal: 2,
+        support_moderate: 1,
+        speed_asap: 2,
+        speed_normal: 1,
+      }
+    },
+    {
+      id: 'viviomd',
+      name: 'Viviomd',
+      tagline: 'Medically Supervised GLP-1 Program',
+      highlights: ['Full medical supervision with licensed physicians', 'Both semaglutide and tirzepatide options available', 'Ongoing monitoring and dose adjustments', 'Delaware-based platform, established since 2024'],
+      badge: '🩺 Best Supervision',
+      badgeColor: 'bg-blue-100 text-blue-800',
+      url: viviomdUrl,
+      cta: 'Start Free Viviomd Assessment →',
+      scores: {
+        support_moderate: 3,
+        support_high: 3,
+        history_brand: 2,
+        history_compounded: 2,
+        budget_mid: 2,
+        budget_flexible: 2,
+        drug_semaglutide: 1,
+        drug_tirzepatide: 1,
+      }
+    },
+    {
+      id: 'trimrx',
+      name: 'TrimRX',
+      tagline: 'Fast-Start GLP-1 — 3-Minute Assessment',
+      highlights: ['3-minute assessment, physician review within 24 hours', 'Both semaglutide and tirzepatide available', 'Streamlined onboarding for people who want to start quickly', 'Straightforward pricing, no subscription complexity'],
+      badge: '⚡ Best for Speed',
+      badgeColor: 'bg-purple-100 text-purple-800',
+      url: trimrxUrl,
+      cta: 'Start Free TrimRX Assessment →',
+      scores: {
+        speed_asap: 3,
+        speed_normal: 2,
+        support_minimal: 1,
+        support_moderate: 1,
+        history_no: 2,
+        drug_semaglutide: 2,
+        drug_unsure: 1,
+      }
+    },
+  ];
+
+  const answers = {};
+  let currentQ = 1;
+  const totalQ = 8;
+
+  function updateProgress() {
+    const pct = Math.round(((currentQ - 1) / totalQ) * 100);
+    document.getElementById('progress-bar').style.width = pct + '%';
+    document.getElementById('progress-pct').textContent = pct + '%';
+    document.getElementById('progress-label').textContent = 'Question ' + currentQ + ' of ' + totalQ;
+  }
+
+  // Enable next/submit button when an option is selected
+  document.querySelectorAll('.question').forEach(qEl => {
+    const qNum = parseInt(qEl.dataset.q);
+    const radios = qEl.querySelectorAll('input[type=radio]');
+    const btn = qEl.querySelector('.next-btn, #get-results-btn');
+    if (!btn) return;
+    radios.forEach(r => {
+      r.addEventListener('change', () => {
+        btn.disabled = false;
+        btn.classList.remove('opacity-50', 'cursor-not-allowed');
+        // Highlight selected option
+        qEl.querySelectorAll('.option').forEach(o => o.classList.remove('border-[#dc2626]', 'bg-[#fef2f2]'));
+        r.closest('.option')?.classList.add('border-[#dc2626]', 'bg-[#fef2f2]');
+      });
+    });
+  });
+
+  // Next button handler
+  document.querySelectorAll('.next-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const qEl = btn.closest('.question');
+      const qNum = parseInt(qEl.dataset.q);
+      const selected = qEl.querySelector('input[type=radio]:checked');
+      if (!selected) return;
+      answers[selected.name] = selected.value;
+      // Hide current, show next
+      qEl.classList.add('hidden');
+      currentQ++;
+      updateProgress();
+      document.querySelector('.question[data-q="' + currentQ + '"]')?.classList.remove('hidden');
+    });
+  });
+
+  // Results
+  document.getElementById('get-results-btn').addEventListener('click', () => {
+    const qEl = document.querySelector('.question[data-q="8"]');
+    const selected = qEl.querySelector('input[type=radio]:checked');
+    if (!selected) return;
+    answers[selected.name] = selected.value;
+
+    // Score programs
+    const scored = programs.map(p => {
+      let score = 0;
+      Object.entries(answers).forEach(([key, val]) => {
+        const scoreKey = key + '_' + val;
+        if (p.scores[scoreKey]) score += p.scores[scoreKey];
+      });
+      return { ...p, score };
+    }).sort((a, b) => b.score - a.score);
+
+    // Build results
+    const bmiVal = answers.bmi || 'unknown';
+    let intro = 'Based on your answers, here are the programs that best match your budget, support needs, and medication preference.';
+    if (bmiVal === 'under27') {
+      intro = 'Note: Your BMI may be below the standard threshold for GLP-1 programs. If you have a qualifying health condition (type 2 diabetes, hypertension, sleep apnea), you may still qualify. Complete a clinical assessment to find out — physicians make the final decision.';
+    }
+    document.getElementById('results-intro').textContent = intro;
+
+    const container = document.getElementById('matches-container');
+    container.innerHTML = '';
+
+    scored.forEach((p, i) => {
+      const el = document.createElement('div');
+      const isTop = i === 0;
+      el.className = 'border-2 ' + (isTop ? 'border-[#dc2626]' : 'border-gray-200') + ' rounded-2xl p-6';
+      el.innerHTML = `
+        ${isTop ? '<div class="text-xs font-bold uppercase tracking-wider text-[#dc2626] mb-2">🎯 Best match for you</div>' : ''}
+        <div class="flex items-start justify-between gap-3 mb-3">
+          <div>
+            <div class="font-display font-bold text-gray-900 text-lg">${p.name}</div>
+            <div class="text-sm text-gray-600">${p.tagline}</div>
+          </div>
+          <span class="shrink-0 text-xs font-semibold px-2 py-1 rounded-full ${p.badgeColor}">${p.badge}</span>
+        </div>
+        <ul class="text-sm text-gray-700 space-y-1.5 mb-5">
+          ${p.highlights.map(h => `<li class="flex gap-2"><span class="text-green-600 font-bold shrink-0">✓</span>${h}</li>`).join('')}
+        </ul>
+        <a href="${p.url}" target="_blank" rel="noopener sponsored"
+          class="block w-full text-center ${isTop ? 'bg-[#dc2626] hover:bg-[#991b1b]' : 'bg-gray-900 hover:bg-gray-700'} text-white font-bold py-3 rounded-xl transition-colors">
+          ${p.cta}
+        </a>
+      `;
+      container.appendChild(el);
+    });
+
+    document.getElementById('quiz-container').classList.add('hidden');
+    document.getElementById('results').classList.remove('hidden');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    updateProgress();
+    document.getElementById('progress-label').textContent = 'Quiz complete';
+    document.getElementById('progress-bar').style.width = '100%';
+    document.getElementById('progress-pct').textContent = '100%';
+  });
+
+  document.getElementById('retake-btn').addEventListener('click', () => {
+    Object.keys(answers).forEach(k => delete answers[k]);
+    currentQ = 1;
+    updateProgress();
+    document.querySelectorAll('.question').forEach(q => {
+      q.classList.add('hidden');
+      q.querySelectorAll('input[type=radio]').forEach(r => r.checked = false);
+      q.querySelectorAll('.option').forEach(o => o.classList.remove('border-[#dc2626]', 'bg-[#fef2f2]'));
+      const btn = q.querySelector('.next-btn, #get-results-btn');
+      if (btn) { btn.disabled = true; btn.classList.add('opacity-50', 'cursor-not-allowed'); }
+    });
+    document.querySelector('.question[data-q="1"]').classList.remove('hidden');
+    document.getElementById('quiz-container').classList.remove('hidden');
+    document.getElementById('results').classList.add('hidden');
+  });
+
+  updateProgress();
+</script>

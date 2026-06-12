@@ -1,0 +1,308 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const galaUrl = "https://afflat3e1.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=32072&c=918277&a=784951&k=0&l=37601";
+const viviomdUrl = "https://afflat3e3.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=31644&c=918277&a=784951&k=0&l=37881";
+const trimrxUrl = "https://afflat3e3.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=31973&c=918277&a=784951&k=0&l=37882";
+---
+
+<BaseLayout
+  title="GLP-1 Cost Calculator 2026 — Compounded Tirzepatide vs Brand Ozempic"
+  description="See exactly how much you'd save with compounded GLP-1 medications vs brand-name Ozempic or Wegovy. Enter your current situation and get a personalized 12-month cost comparison."
+>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "GLP-1 Cost Calculator",
+    "description": "Interactive calculator comparing the annual cost of compounded tirzepatide/semaglutide programs versus brand-name Ozempic or Wegovy.",
+    "url": "https://verto.pages.dev/calculators/glp1-cost",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  })} />
+
+  <div class="max-w-3xl mx-auto px-4 py-10">
+
+    <!-- Header -->
+    <div class="mb-8">
+      <div class="text-xs font-semibold uppercase tracking-widest text-[#dc2626] mb-3">GLP-1 Cost Calculator</div>
+      <h1 class="font-display text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4">
+        How Much Could You Save on GLP-1 Medication in 2026?
+      </h1>
+      <p class="text-lg text-gray-600 leading-relaxed">
+        Brand-name Ozempic costs $935/month without insurance. Compounded tirzepatide programs start at $179/month. Enter your situation below — the calculator shows your 12-month cost difference and which programs you likely qualify for.
+      </p>
+    </div>
+
+    <!-- Calculator Card -->
+    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 md:p-8 mb-8">
+      <h2 class="font-display text-xl font-bold text-gray-900 mb-6">Your Situation</h2>
+
+      <div class="space-y-6">
+
+        <!-- Current drug -->
+        <div>
+          <label class="block text-sm font-semibold text-gray-700 mb-2">What are you currently using or considering?</label>
+          <select id="current-drug" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-[#dc2626]">
+            <option value="none">Not using anything yet</option>
+            <option value="ozempic">Ozempic (brand name, semaglutide)</option>
+            <option value="wegovy">Wegovy (brand name, high-dose semaglutide)</option>
+            <option value="mounjaro">Mounjaro (brand name, tirzepatide)</option>
+            <option value="zepbound">Zepbound (brand name, tirzepatide)</option>
+            <option value="compounded">Already using compounded GLP-1</option>
+          </select>
+        </div>
+
+        <!-- Insurance -->
+        <div>
+          <label class="block text-sm font-semibold text-gray-700 mb-2">Does your insurance cover GLP-1 medication?</label>
+          <div class="grid grid-cols-3 gap-3">
+            <label class="cursor-pointer">
+              <input type="radio" name="insurance" value="yes" class="peer sr-only" />
+              <div class="border-2 border-gray-200 rounded-lg p-3 text-center text-sm font-medium peer-checked:border-[#dc2626] peer-checked:bg-[#fef2f2] peer-checked:text-[#dc2626] transition-all">
+                Yes, covered
+              </div>
+            </label>
+            <label class="cursor-pointer">
+              <input type="radio" name="insurance" value="no" class="peer sr-only" checked />
+              <div class="border-2 border-gray-200 rounded-lg p-3 text-center text-sm font-medium peer-checked:border-[#dc2626] peer-checked:bg-[#fef2f2] peer-checked:text-[#dc2626] transition-all">
+                No coverage
+              </div>
+            </label>
+            <label class="cursor-pointer">
+              <input type="radio" name="insurance" value="unknown" class="peer sr-only" />
+              <div class="border-2 border-gray-200 rounded-lg p-3 text-center text-sm font-medium peer-checked:border-[#dc2626] peer-checked:bg-[#fef2f2] peer-checked:text-[#dc2626] transition-all">
+                Not sure
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Treatment goal duration -->
+        <div>
+          <label class="block text-sm font-semibold text-gray-700 mb-2">How long are you planning to use GLP-1 medication?</label>
+          <select id="duration" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-[#dc2626]">
+            <option value="6">6 months (short course)</option>
+            <option value="12" selected>12 months (standard treatment window)</option>
+            <option value="18">18 months</option>
+            <option value="24">24 months (long-term maintenance)</option>
+          </select>
+        </div>
+
+        <!-- BMI input for eligibility signal -->
+        <div>
+          <label class="block text-sm font-semibold text-gray-700 mb-2">Your approximate BMI <span class="font-normal text-gray-500">(helps determine which programs you qualify for)</span></label>
+          <div class="flex gap-3 items-center">
+            <input type="range" id="bmi-slider" min="22" max="50" value="32" class="flex-1 accent-[#dc2626]" />
+            <span id="bmi-display" class="w-12 text-center font-bold text-[#dc2626] text-lg">32</span>
+          </div>
+          <div class="flex justify-between text-xs text-gray-400 mt-1">
+            <span>22 (Normal)</span>
+            <span>27 (Overweight)</span>
+            <span>35 (Obese I)</span>
+            <span>50+</span>
+          </div>
+          <p class="text-xs text-gray-500 mt-2">BMI = weight(lbs) × 703 ÷ height(in)². Most GLP-1 programs require BMI ≥27 with a health condition or BMI ≥30.</p>
+        </div>
+
+        <button
+          id="calculate-btn"
+          class="w-full bg-[#dc2626] hover:bg-[#991b1b] text-white font-bold py-4 rounded-xl text-lg transition-colors"
+        >
+          Calculate My Savings →
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Results (hidden until calculated) -->
+    <div id="results" class="hidden">
+
+      <!-- Cost comparison -->
+      <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 md:p-8 mb-6">
+        <h2 class="font-display text-xl font-bold text-gray-900 mb-6">Your Cost Comparison</h2>
+
+        <div class="grid md:grid-cols-2 gap-4 mb-6">
+
+          <!-- Brand name cost -->
+          <div class="bg-gray-50 rounded-xl p-5 border-2 border-gray-200">
+            <div class="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-1">Brand-Name Cost</div>
+            <div id="brand-monthly" class="text-3xl font-bold text-gray-900 mb-1">—</div>
+            <div class="text-sm text-gray-500">per month (without insurance)</div>
+            <div id="brand-total" class="text-lg font-semibold text-gray-700 mt-3">— total</div>
+          </div>
+
+          <!-- Compounded cost -->
+          <div class="bg-[#fef2f2] rounded-xl p-5 border-2 border-[#dc2626]">
+            <div class="text-xs font-semibold uppercase tracking-wider text-[#dc2626] mb-1">Compounded Program</div>
+            <div id="compound-monthly" class="text-3xl font-bold text-[#dc2626] mb-1">—</div>
+            <div class="text-sm text-gray-600">per month (all-inclusive)</div>
+            <div id="compound-total" class="text-lg font-semibold text-gray-700 mt-3">— total</div>
+          </div>
+
+        </div>
+
+        <!-- Savings highlight -->
+        <div id="savings-banner" class="bg-green-50 border border-green-200 rounded-xl p-5 text-center">
+          <div class="text-sm font-medium text-green-700 mb-1">Estimated savings with a compounded program</div>
+          <div id="savings-amount" class="text-4xl font-bold text-green-700">—</div>
+          <div id="savings-label" class="text-sm text-green-600 mt-1">—</div>
+        </div>
+
+      </div>
+
+      <!-- Eligibility + recommendations -->
+      <div id="recommendations" class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 md:p-8 mb-6">
+        <h2 class="font-display text-xl font-bold text-gray-900 mb-2">Programs You Likely Qualify For</h2>
+        <p id="eligibility-note" class="text-sm text-gray-600 mb-5">Based on your BMI and situation:</p>
+
+        <div class="space-y-4" id="program-list">
+          <!-- injected by JS -->
+        </div>
+
+        <p class="text-xs text-gray-500 mt-6 border-t border-gray-100 pt-4">
+          Eligibility is determined by each program's licensed physicians after a clinical assessment — this calculator provides an estimate only. A prescription is issued only if clinically appropriate. Individual results vary.
+        </p>
+      </div>
+
+      <!-- Insurance note -->
+      <div id="insurance-note-block" class="hidden bg-blue-50 border border-blue-200 rounded-xl p-5 mb-6">
+        <div class="font-semibold text-blue-900 mb-1">You have insurance coverage — here's what to know</div>
+        <p class="text-sm text-blue-800">Many insurance plans that cover Ozempic for diabetes do not cover it for weight loss. Coverage for Wegovy (specifically indicated for weight loss) is more common. Call your insurer and ask specifically: "Is semaglutide or tirzepatide covered for weight management under my plan?" If not, compounded programs remain the most cost-effective pathway.</p>
+      </div>
+
+      <!-- Disclaimer -->
+      <div class="bg-gray-50 rounded-xl p-4 text-xs text-gray-500">
+        <strong>How these numbers are calculated:</strong> Brand-name prices reflect average retail cash prices sourced from GoodRx and pharmacy data as of 2026. Ozempic 1mg: ~$935/month. Wegovy 2.4mg: ~$1,350/month. Mounjaro/Zepbound 15mg: ~$1,022/month. Compounded program pricing reflects Gala's published starting rate of $179/month for all doses. Actual costs vary by dose, pharmacy, and insurance negotiation. This calculator does not constitute medical or financial advice.
+      </div>
+
+    </div>
+
+  </div>
+
+</BaseLayout>
+
+<script define:vars={{ galaUrl, viviomdUrl, trimrxUrl }}>
+  const brandPrices = {
+    none: 935,
+    ozempic: 935,
+    wegovy: 1350,
+    mounjaro: 1022,
+    zepbound: 1022,
+    compounded: 179,
+  };
+
+  const programs = [
+    {
+      name: "Gala — Compounded Tirzepatide",
+      price: 179,
+      tagline: "Starting at $179/month, all doses included",
+      highlight: "Lowest price in the market — all doses included, physician consultation and prescription included. No hidden fees.",
+      badge: "Best Value",
+      badgeColor: "bg-green-100 text-green-800",
+      url: galaUrl,
+      minBMI: 27,
+      cta: "Start Free Gala Assessment →",
+    },
+    {
+      name: "Viviomd — GLP-1 Weight Loss",
+      price: 199,
+      tagline: "Medically supervised GLP-1 program",
+      highlight: "Delaware-based telehealth platform connecting patients with licensed providers. Full medical supervision included.",
+      badge: "Medical Supervision",
+      badgeColor: "bg-blue-100 text-blue-800",
+      url: viviomdUrl,
+      minBMI: 27,
+      cta: "Start Viviomd Assessment →",
+    },
+    {
+      name: "TrimRX — Semaglutide or Tirzepatide",
+      price: 195,
+      tagline: "3-minute online assessment",
+      highlight: "Streamlined platform offering both semaglutide and tirzepatide options. 3-minute assessment, physician review within 24 hours.",
+      badge: "Fast Start",
+      badgeColor: "bg-purple-100 text-purple-800",
+      url: trimrxUrl,
+      minBMI: 27,
+      cta: "Start TrimRX Assessment →",
+    },
+  ];
+
+  const bmiSlider = document.getElementById('bmi-slider');
+  const bmiDisplay = document.getElementById('bmi-display');
+  const calculateBtn = document.getElementById('calculate-btn');
+  const results = document.getElementById('results');
+
+  bmiSlider.addEventListener('input', () => {
+    bmiDisplay.textContent = bmiSlider.value;
+  });
+
+  calculateBtn.addEventListener('click', () => {
+    const currentDrug = document.getElementById('current-drug').value;
+    const insurance = document.querySelector('input[name="insurance"]:checked')?.value ?? 'no';
+    const duration = parseInt(document.getElementById('duration').value);
+    const bmi = parseInt(bmiSlider.value);
+
+    const brandMonthly = brandPrices[currentDrug] ?? 935;
+    const compoundMonthly = 179;
+    const brandTotal = brandMonthly * duration;
+    const compoundTotal = compoundMonthly * duration;
+    const savings = brandTotal - compoundTotal;
+
+    // Show brand cost (if already on brand, show what they're paying; otherwise show "if you used brand")
+    const isOnBrand = currentDrug !== 'none' && currentDrug !== 'compounded';
+    const brandLabel = isOnBrand ? 'Your current cost' : 'Brand-name cost (if uninsured)';
+
+    document.getElementById('brand-monthly').textContent = '$' + brandMonthly.toLocaleString() + '/mo';
+    document.getElementById('brand-total').textContent = '$' + brandTotal.toLocaleString() + ' over ' + duration + ' months';
+    document.getElementById('compound-monthly').textContent = '$179/mo';
+    document.getElementById('compound-total').textContent = '$' + compoundTotal.toLocaleString() + ' over ' + duration + ' months';
+    document.getElementById('savings-amount').textContent = '$' + savings.toLocaleString();
+    document.getElementById('savings-label').textContent = 'saved over ' + duration + ' months with a compounded program';
+
+    // Programs
+    const programList = document.getElementById('program-list');
+    programList.innerHTML = '';
+    const eligible = programs.filter(p => bmi >= p.minBMI);
+    const ineligible = bmi < 27;
+
+    if (ineligible) {
+      document.getElementById('eligibility-note').textContent = 'Your BMI is below 27. Most GLP-1 programs require BMI ≥27 with a qualifying health condition (type 2 diabetes, hypertension, sleep apnea, high cholesterol) or BMI ≥30 with no conditions. If you have one of these conditions, you may still qualify — complete a clinical assessment to find out.';
+    } else {
+      document.getElementById('eligibility-note').textContent = 'Based on a BMI of ' + bmi + ', you likely qualify for the programs below. Formal eligibility is confirmed by a licensed physician after assessment.';
+    }
+
+    eligible.forEach(p => {
+      const el = document.createElement('div');
+      el.className = 'border border-gray-200 rounded-xl p-5';
+      el.innerHTML = `
+        <div class="flex items-start justify-between gap-3 mb-3">
+          <div>
+            <div class="font-bold text-gray-900">${p.name}</div>
+            <div class="text-sm text-gray-600 mt-0.5">${p.tagline}</div>
+          </div>
+          <span class="shrink-0 text-xs font-semibold px-2 py-1 rounded-full ${p.badgeColor}">${p.badge}</span>
+        </div>
+        <p class="text-sm text-gray-700 mb-4">${p.highlight}</p>
+        <a href="${p.url}" target="_blank" rel="noopener sponsored" class="block w-full text-center bg-[#dc2626] hover:bg-[#991b1b] text-white font-bold py-3 rounded-lg transition-colors text-sm">
+          ${p.cta}
+        </a>
+      `;
+      programList.appendChild(el);
+    });
+
+    // Insurance note
+    const insBlock = document.getElementById('insurance-note-block');
+    if (insurance === 'yes' || insurance === 'unknown') {
+      insBlock.classList.remove('hidden');
+    }
+
+    results.classList.remove('hidden');
+    results.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+</script>

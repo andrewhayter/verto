@@ -32,9 +32,9 @@ Not interested in passive only? See our [full comparison of the best survey site
 
 ---
 
-Passive income from your phone usually means one of three things: a scam, a scheme that pays pennies per hour, or something that requires constant effort. Nielsen Pulse is the legitimate exception.
+Nielsen Pulse is a legitimate passive income app from Nielsen — the market research company that has been the global industry standard since 1923. It pays US adults $25–$50/month in gift cards just to have it installed on their phone. No surveys, no tasks, no daily logins. Setup takes 10 minutes; earning is automatic after that.
 
-It's backed by Nielsen — the market research company that's been the industry standard since 1923. It pays you to share the same kind of anonymous usage data you're already generating. And it requires exactly zero effort after the 10-minute setup.
+What makes it credible: Nielsen collects the same kind of anonymous usage data you're already generating every time you use your phone. They pay panel members for access to that data because companies pay Nielsen tens of millions to understand how Americans actually use the internet.
 
 Here's how it works, what you'll actually earn, and whether it's worth the few minutes to install.
 

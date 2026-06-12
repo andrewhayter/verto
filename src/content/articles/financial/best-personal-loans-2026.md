@@ -30,6 +30,8 @@ faqs:
 
 The Federal Reserve's 2025 household finance survey found that 36% of Americans could not cover a $400 emergency expense from savings alone. Personal loans bridge that gap—but the difference between a 9% APR and a 24% APR on a $10,000 loan is $8,200 in interest over five years. Using a loan-matching platform instead of applying to a single lender produces competing offers that reduce your rate.
 
+Wondering how much you'd save consolidating your credit card debt into a personal loan? Our [debt consolidation savings calculator](/calculators/loan-savings) runs the exact numbers based on your balances, APRs, and credit tier in under 2 minutes.
+
 Here is how the three leading platforms compare.
 
 ---

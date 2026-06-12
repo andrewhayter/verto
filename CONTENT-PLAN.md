@@ -660,6 +660,94 @@ These are SOI/CPL with lower payouts but very low friction. Use them for viral "
 
 ---
 
+---
+
+## Phase 6 — Low-Friction Social Traffic Plays
+*Identified 2026-06-12. Offers selected for cold interrupted traffic: CPL/CPA conversion, strong standalone Facebook hooks, Pinterest visual plays.*
+
+> Full article briefs are in ARTICLE-IDEAS.md Batch 16. This section maps offers to solve pages and documents the Facebook hook strategy.
+
+### CLUSTER 6A — Surprise/Utility Hooks (CPL/CPA)
+
+| Offer | ID | Type | EPC | Solve Page | Facebook Hook |
+|---|---|---|---|---|---|
+| Junova — Flight Price Drop | 31854 | CPL | $0.49 | `/solve/flight-refund` (build) | "Airlines owe you money if prices drop after you book. Most people never claim it." |
+| ShopBack — Cashback Extension | 30194 | CPA | $0.38 | `/solve/save-money-shopping` (build) | "Free browser extension. Earned me $94 back on shopping I was doing anyway." |
+| Gizmogo — Sell Electronics | 30260 | CPL | $0.38 | existing `/solve/declutter-earn-cash` or build | "That old iPhone in your drawer is worth $80–$300 right now." |
+| HavenRenovate — Bathroom Quote | 31286 | CPL | $0.25 | `/solve/bathroom-renovation` (build) | "Get a free renovation quote without calling 6 contractors." |
+
+**Notes:**
+- All four have zero-cost-to-reader CTAs — frame every article as a service, not a sale
+- HavenRenovate has the lowest EPC but the home renovation FB audience is massive and low-competition
+- ShopBack CPA = browser install, the lightest possible conversion ask
+
+---
+
+### CLUSTER 6B — Curiosity & Privacy Hooks
+
+| Offer | ID | Type | EPC | Solve Page | Facebook Hook |
+|---|---|---|---|---|---|
+| DFViewer — View IG Anonymously | 31564 | CPS | $0.34 | `/solve/instagram-anonymous` (build) | "How to watch stories without appearing in the viewer list." |
+| Spynger — Phone Monitoring | 27337 | CPS | $0.48 | `/solve/teen-phone-monitoring` (build) | "What parents find when they finally check their teenager's phone." |
+
+**Notes:**
+- DFViewer: frame as privacy/curiosity tool, not stalking. Organic share rate will be high.
+- Spynger: parenting angle only — "child safety" not "spy on partner." Facebook parenting groups 35–55.
+- Both articles should have a strong mechanism section explaining *how* it works technically — that's what earns trust and shares
+
+---
+
+### CLUSTER 6C — Fitness & Health (Pinterest + Facebook Women's Groups)
+
+| Offer | ID | Type | EPC | Solve Page | Pinterest Board |
+|---|---|---|---|---|---|
+| RH Fitness — Calisthenics for Women | 32132 | CPS | $0.45 | `/solve/fitness-no-gym` (build or extend) | fitness over 40 / home workout |
+| 21KETO Gummies — CA | 31618 | CPS | $0.60 | `/solve/keto-canada` (extend existing) | keto / weight loss |
+
+**Notes:**
+- 21KETO CA at $0.60 EPC is the highest in this cluster — prioritise for Canadian Facebook groups
+- RH Fitness needs a strong before/after image brief for Pinterest. The "no equipment" angle is the hook.
+
+---
+
+### CLUSTER 6D — Gifts & Shopping (Pinterest Evergreen)
+
+| Offer | ID | Type | EPC | Solve Page | Pinterest Board |
+|---|---|---|---|---|---|
+| AmazingClubs — Gift of Month | 31121 | CPS | $0.49 | `/solve/gift-ideas` (build) | subscription boxes / gift guides |
+
+**Notes:**
+- Evergreen year-round, peaks Oct–Dec. Write now, schedule Pinterest pushes for November.
+- Article hook: "the gift that arrives every month and never gets returned"
+
+---
+
+### CLUSTER 6 — Facebook Hook Bank
+
+*Ready-to-post text for all 9 offers:*
+
+```
+JUNOVA: Most people don't know: if your flight price drops after you book, you may be owed a partial refund. This app files the claim automatically. [link]
+
+SHOPBACK: I installed a free browser extension 6 weeks ago. It's quietly put $94 back into my account on purchases I was going to make anyway. Here's the one I use. [link]
+
+GIZMOGO: There's an old iPhone in almost every household drawer right now worth $80–$300. Here's the fastest way to turn it into cash today. [link]
+
+DFVIEWER: There's a way to watch someone's Instagram story without your name showing up in their viewer list. Here's exactly how it works. [link]
+
+SPYNGER: A parent in our group asked what she'd find if she checked her 14-year-old's phone. This app told her — without reading every single message. Here's what it does. [link]
+
+RH FITNESS: No gym. No equipment. Just bodyweight. This calisthenics app is quietly going viral with women over 40. Here's why. [link]
+
+21KETO CA: Canadian keto gummies that ship to your door in 3 days. I tracked 30 days. Here's the honest report. [link]
+
+HAVENRENOVATE: Homeowners in [city] are getting full bathroom renovation quotes for free in under 24 hours without calling a single contractor. Here's how. [link]
+
+AMAZINGCLUBS: I gave my dad a gourmet food subscription 3 years ago. He still won't let me cancel it. Here's what lands every month. [link]
+```
+
+---
+
 ## Summary: Total Content Count
 
 | Phase | Clusters | Problem Pages | Articles | FB Hook Sets |
@@ -669,7 +757,8 @@ These are SOI/CPL with lower payouts but very low friction. Use them for viral "
 | Phase 3 | 11 | 12 | 42 | 50+ |
 | Phase 4 | 6 | 2 | 10 | 15+ |
 | Phase 5 | 3 | 1 | 8 | 10+ |
-| **TOTAL** | **32** | **30** | **101** | **135+** |
+| Phase 6 | 4 | 7 | 9 | 9 |
+| **TOTAL** | **36** | **37** | **110** | **144+** |
 
 ---
 
@@ -689,6 +778,9 @@ These are SOI/CPL with lower payouts but very low friction. Use them for viral "
 
 ### Phase 5 (Sweepstakes / Volume)
 `28939` `31910` `17161` `17164` `18224` `18524` `19103` `19560` `19692` `19787` `28457` `28456` `28458` `28453` `28454` `31956` `30629` `30651` `29955` `30528` `30540` `29093` `32034` `31338`
+
+### Phase 6 (Low-Friction Social — added 2026-06-12)
+`31854` `30194` `30260` `31286` `31564` `27337` `32132` `31618` `31121`
 
 ---
 

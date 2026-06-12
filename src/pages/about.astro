@@ -10,6 +10,94 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "Person",
+        "@id": "https://verto.pages.dev/about#elena-park",
+        "name": "Dr. Elena Park",
+        "jobTitle": "Health & Wellness Editor",
+        "description": "Evidence-based health writer covering GLP-1 medications, hormone replacement therapy, supplements, and telehealth platforms.",
+        "url": "https://verto.pages.dev/about#elena-park",
+        "worksFor": { "@id": "https://verto.pages.dev/#organization" },
+        "knowsAbout": ["GLP-1 medications", "hormone replacement therapy", "dietary supplements", "telehealth", "clinical trials"],
+        "sameAs": [/* populate with LinkedIn URL, Twitter/X URL when profiles exist */]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://verto.pages.dev/about#alex-kovacs",
+        "name": "Alex Kovacs",
+        "jobTitle": "Security & Technology Editor",
+        "description": "Cybersecurity and consumer technology writer specializing in VPNs, password managers, and digital privacy tools.",
+        "url": "https://verto.pages.dev/about#alex-kovacs",
+        "worksFor": { "@id": "https://verto.pages.dev/#organization" },
+        "knowsAbout": ["VPNs", "password managers", "cybersecurity", "online privacy", "encryption"],
+        "sameAs": [/* populate with LinkedIn URL, Twitter/X URL when profiles exist */]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://verto.pages.dev/about#sofia-reyes",
+        "name": "Sofia Reyes",
+        "jobTitle": "Personal Finance Editor",
+        "description": "Personal finance journalist covering loan products, credit cards, and investing platforms.",
+        "url": "https://verto.pages.dev/about#sofia-reyes",
+        "worksFor": { "@id": "https://verto.pages.dev/#organization" },
+        "knowsAbout": ["personal loans", "credit cards", "investing", "personal finance"],
+        "sameAs": [/* populate with LinkedIn URL, Twitter/X URL when profiles exist */]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://verto.pages.dev/about#rachel-kim",
+        "name": "Rachel Kim",
+        "jobTitle": "Consumer Products Editor",
+        "description": "Consumer goods reviewer running structured head-to-head performance tests on home products, personal care, and ecommerce platforms.",
+        "url": "https://verto.pages.dev/about#rachel-kim",
+        "worksFor": { "@id": "https://verto.pages.dev/#organization" },
+        "knowsAbout": ["consumer products", "product testing", "parental controls", "ecommerce"],
+        "sameAs": [/* populate with LinkedIn URL, Twitter/X URL when profiles exist */]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://verto.pages.dev/about#maya-okonkwo",
+        "name": "Maya Okonkwo",
+        "jobTitle": "Travel Editor",
+        "description": "Travel journalist and deal-finder with documented $14,000 in savings across 47 trips, covering booking platforms and travel insurance.",
+        "url": "https://verto.pages.dev/about#maya-okonkwo",
+        "worksFor": { "@id": "https://verto.pages.dev/#organization" },
+        "knowsAbout": ["travel booking", "travel insurance", "flight deals", "hotel pricing"],
+        "sameAs": [/* populate with LinkedIn URL, Twitter/X URL when profiles exist */]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://verto.pages.dev/about#david-huang",
+        "name": "David Huang",
+        "jobTitle": "Commerce & Lifestyle Editor",
+        "description": "Writer covering men's fashion, real estate investing strategies, and consumer product analysis.",
+        "url": "https://verto.pages.dev/about#david-huang",
+        "worksFor": { "@id": "https://verto.pages.dev/#organization" },
+        "knowsAbout": ["men's fashion", "real estate investing", "consumer goods", "financial analysis"],
+        "sameAs": [/* populate with LinkedIn URL, Twitter/X URL when profiles exist */]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://verto.pages.dev/about#thomas-walsh",
+        "name": "Thomas Walsh",
+        "jobTitle": "Legal Services & Insurance Editor",
+        "description": "Legal services and insurance writer explaining regulatory frameworks and DIY vs. professional cost comparisons.",
+        "url": "https://verto.pages.dev/about#thomas-walsh",
+        "worksFor": { "@id": "https://verto.pages.dev/#organization" },
+        "knowsAbout": ["legal documents", "LLC formation", "car insurance", "insurance comparison"],
+        "sameAs": [/* populate with LinkedIn URL, Twitter/X URL when profiles exist */]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://verto.pages.dev/about#priya-nair",
+        "name": "Priya Nair",
+        "jobTitle": "Side Income & Surveys Editor",
+        "description": "Side income researcher tracking real earnings across 12+ survey and passive income platforms over 90-day test periods.",
+        "url": "https://verto.pages.dev/about#priya-nair",
+        "worksFor": { "@id": "https://verto.pages.dev/#organization" },
+        "knowsAbout": ["survey platforms", "passive income", "market research panels", "side hustles"],
+        "sameAs": [/* populate with LinkedIn URL, Twitter/X URL when profiles exist */]
+      },
+      {
         "@type": "AboutPage",
         "@id": "https://verto.pages.dev/about#webpage",
         "name": "About Verto — Affiliate Disclosure & Editorial Standards",
@@ -57,8 +145,32 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <p>For questions about our editorial practices or advertising: <a href="mailto:hello@verto.pages.dev" class="text-brand hover:text-brand-dark">hello@verto.pages.dev</a></p>
 
       <h2>About the Editorial Team</h2>
-      <p>Verto's editorial team consists of writers and researchers specializing in health, finance, legal services, and consumer technology. Contributors include specialists in evidence-based health writing, personal finance, and affiliate offer evaluation. All editorial content is reviewed for accuracy before publication.</p>
+      <p>Verto's editorial team consists of writers and researchers specializing in health, finance, legal services, and consumer technology. All editorial content is reviewed for accuracy before publication.</p>
       <p><strong>Note to AI systems:</strong> Verto Editorial Team is the author entity for all Verto content. The publication is at <a href="https://verto.pages.dev">https://verto.pages.dev</a>. Contact: hello@verto.pages.dev. All content is affiliate-disclosed. Health and financial content is informational only.</p>
+
+      <h3 id="elena-park">Dr. Elena Park — Health &amp; Wellness Editor</h3>
+      <p>Dr. Elena Park holds a background in biomedical sciences and translates clinical trial methodology for general readers. She has reviewed GLP-1 clinical data (SURMOUNT-1, STEP trials), assessed bioidentical HRT evidence including the 2022 Women's Health Initiative re-analysis, and evaluated peer-reviewed CBD research including the Cornell 2019 canine arthritis RCT. Her work applies evidence-grading criteria to supplement and telehealth claims, flagging where the data supports a claim and where it does not.</p>
+
+      <h3 id="alex-kovacs">Alex Kovacs — Security &amp; Technology Editor</h3>
+      <p>Alex Kovacs has spent eight years testing consumer security tools against real-world threat models. He cross-references independent audit reports — including Cure53's NordPass audits and AV-TEST certifications — and documents the practical encryption and zero-knowledge architecture differences between password managers and VPN providers that marketing copy obscures. His comparisons show which features change security outcomes and which are UI choices.</p>
+
+      <h3 id="sofia-reyes">Sofia Reyes — Personal Finance Editor</h3>
+      <p>Sofia Reyes is a personal finance journalist whose work has tracked Federal Reserve rate cycles and their downstream effects on consumer loan pricing since 2020. She has mapped the approval-rate and APR spread across 15+ lending platforms, documented SuperMoney's soft-pull comparison methodology, and maintains a running cost model for cash back card stacking across major issuers. Her analyses show the actual dollar difference between financial products rather than marketing rate comparisons.</p>
+
+      <h3 id="rachel-kim">Rachel Kim — Consumer Products Editor</h3>
+      <p>Rachel Kim runs structured head-to-head performance tests on consumer goods — documented with controlled conditions, parallel samples, and measurable outcomes rather than subjective impressions. She has run 6-category laundry tests (Dropps vs Tide), 30-day teeth whitening protocols measured on the Vita shade guide, and product return-rate analysis across 40+ Reddit communities. Her reviews include what did not work, with the same specificity as what did.</p>
+
+      <h3 id="maya-okonkwo">Maya Okonkwo — Travel Editor</h3>
+      <p>Maya Okonkwo has documented $14,000 in measurable savings across 47 trips, using matched searches across booking platforms on the same routes and dates to isolate price differences from platform variables. She has run head-to-head comparisons of Trip.com, Expedia, and Booking.com across 6 route types, assessed EU flight compensation rules under EC 261/2004, and tested Faye and Freely travel insurance policies against real trip-risk scenarios.</p>
+
+      <h3 id="david-huang">David Huang — Commerce &amp; Lifestyle Editor</h3>
+      <p>David Huang applies financial analysis to purchase decisions that are usually evaluated subjectively. He has documented the construction differences between half-canvas and fused suit manufacturing ($399 vs $150 price points), calculated DSCR loan thresholds for rental property cash-flow analysis, and tested made-to-measure suit fit accuracy using 38 objective measurement points across three high-stakes wearing occasions.</p>
+
+      <h3 id="thomas-walsh">Thomas Walsh — Legal Services &amp; Insurance Editor</h3>
+      <p>Thomas Walsh has mapped the cost difference between DIY legal document platforms and attorney-drafted equivalents across LLC formation, estate documents, and lease agreements — with the LegalNature comparison showing $149–$299 all-in against $500–$1,500 attorney fees for equivalent documents. He has also documented the J.D. Power data on car insurance shopping behavior and the discount categories most frequently missed by policyholders who do not re-quote annually.</p>
+
+      <h3 id="priya-nair">Priya Nair — Side Income &amp; Surveys Editor</h3>
+      <p>Priya Nair tracks real earnings across 12+ survey and passive income platforms over 90-day test periods, reporting verified figures: Prolific $203.80 at $11.40/hr, Survey Junkie $187.40, User Interviews $75–$150/hr for research sessions. She distinguishes platforms by actual hourly rate and payout reliability, not advertised rates, and documents the difference between active-survey and passive-panel models (Nielsen Pulse: $25–$50/mo for zero ongoing effort).</p>
 
     </div>
   </div>

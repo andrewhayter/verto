@@ -7,12 +7,21 @@ interface Props {
   title: string;
   description?: string;
   image?: string;
+  ogType?: string;
+  article?: {
+    publishedTime?: string;
+    modifiedTime?: string;
+    author?: string;
+    section?: string;
+  };
 }
 
 const {
   title,
   description = 'Verto matches you with expert-reviewed offers for health, finance, legal, and lifestyle needs — honest comparisons, real results.',
-  image = '/favicon.svg',
+  image = 'https://verto.pages.dev/og/default.svg',
+  ogType = 'website',
+  article,
 } = Astro.props;
 
 const siteTitle = title === 'Verto' ? title : `${title} | Verto`;
@@ -28,12 +37,18 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <link rel="canonical" href={canonicalURL} />
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content={ogType} />
   <meta property="og:title" content={siteTitle} />
   <meta property="og:description" content={description} />
   <meta property="og:image" content={image} />
   <meta property="og:url" content={canonicalURL} />
   <meta property="og:site_name" content="Verto" />
+
+  <!-- Article meta (for og:type=article pages) -->
+  {article?.publishedTime && <meta property="article:published_time" content={article.publishedTime} />}
+  {article?.modifiedTime && <meta property="article:modified_time" content={article.modifiedTime} />}
+  {article?.author && <meta property="article:author" content={article.author} />}
+  {article?.section && <meta property="article:section" content={article.section} />}
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -41,21 +56,30 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={image} />
 
+  <!-- Pinterest Rich Pins -->
+  <meta name="pinterest-rich-pin" content="true" />
+
   <title>{siteTitle}</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
+  <!-- Microsoft Clarity — session recording + heatmaps -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script","CLARITY_PROJECT_ID");
+  </script>
+
   <!-- Organization + WebSite schema -->
-  <!-- IMPORTANT: sameAs array below must be populated with real profile URLs before launch.
-       Required: Wikidata entity URL, Wikipedia article URL (if exists), LinkedIn company page, Twitter/X profile, Crunchbase profile.
-       Create each profile first, then paste the canonical URL here. Wikidata is highest priority — it feeds Knowledge Graphs used by ChatGPT and Google. -->
-  <script type="application/ld+json">{JSON.stringify({
+  <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Organization",
         "@id": "https://verto.pages.dev/#organization",
         "name": "Verto",
-        "alternateName": "Verto Editorial",
+        "alternateName": ["Verto Editorial", "Verto Editorial Team"],
         "url": "https://verto.pages.dev",
         "logo": {
           "@type": "ImageObject",
@@ -63,16 +87,30 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
           "width": 512,
           "height": 512
         },
-        "description": "Independent affiliate advertorial publication. Researches and compares vetted offers for health, finance, legal, and consumer technology to help readers solve specific problems.",
+        "description": "Independent affiliate advertorial publication covering health and wellness, personal finance, legal services, and consumer technology.",
         "foundingDate": "2025",
+        "email": "hello@verto.pages.dev",
         "contactPoint": {
           "@type": "ContactPoint",
           "email": "hello@verto.pages.dev",
           "contactType": "editorial"
         },
-        "sameAs": [
-          "https://verto.pages.dev"
-        ]
+        "sameAs": [],
+        "knowsAbout": [
+          "health and wellness",
+          "GLP-1 weight loss medications",
+          "hormone replacement therapy",
+          "personal loans",
+          "cash back credit cards",
+          "VPN services",
+          "password managers",
+          "legal document automation",
+          "car insurance savings",
+          "affiliate marketing",
+          "consumer technology",
+          "telehealth services"
+        ],
+        "publishingPrinciples": "https://verto.pages.dev/about#disclosure"
       },
       {
         "@type": "WebSite",
@@ -90,7 +128,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
         }
       }
     ]
-  })}</script>
+  })} />
 </head>
 <body class="min-h-screen bg-surface">
   <Header />

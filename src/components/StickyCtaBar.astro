@@ -1,0 +1,54 @@
+---
+interface Props {
+  text: string;
+  ctaText: string;
+  ctaUrl: string;
+}
+const { text, ctaText, ctaUrl } = Astro.props;
+---
+
+<div
+  id="sticky-cta-bar"
+  class="fixed bottom-0 left-0 right-0 z-[100] translate-y-full bg-white border-t-2 border-cta shadow-2xl"
+  aria-hidden="true"
+>
+  <div class="max-w-4xl mx-auto px-4 py-3 flex items-center gap-3 justify-between">
+    <p class="text-sm font-semibold text-gray-800 hidden sm:block line-clamp-1 flex-1">{text}</p>
+    <a
+      href={ctaUrl}
+      rel="sponsored noopener"
+      target="_blank"
+      data-cta-click="sticky-bar"
+      class="btn-cta btn-cta-full sm:w-auto sm:flex-shrink-0 text-sm"
+    >
+      {ctaText} →
+    </a>
+  </div>
+</div>
+
+<script>
+(function () {
+  var bar = document.getElementById('sticky-cta-bar');
+  if (!bar) return;
+
+  var heroEl = document.querySelector('[data-hero-sentinel]') || document.querySelector('h1');
+  if (!heroEl) return;
+
+  var observer = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) {
+          bar.classList.replace('translate-y-full', 'translate-y-0');
+          bar.setAttribute('aria-hidden', 'false');
+        } else {
+          bar.classList.replace('translate-y-0', 'translate-y-full');
+          bar.setAttribute('aria-hidden', 'true');
+        }
+      });
+    },
+    { threshold: 0, rootMargin: '0px 0px -100px 0px' }
+  );
+
+  observer.observe(heroEl);
+})();
+</script>

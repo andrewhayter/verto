@@ -1,121 +1,323 @@
 ---
 import { categories } from '../data/categories';
-const navCategories = categories.slice(0, 6);
+import { problems } from '../data/problems';
+import { offersByProblem } from '../data/offers';
+
+// Top problems for intent strip + mega-nav — ones with approved offers, sorted by offer count
+const rankedProblems = problems
+  .filter(p => (offersByProblem[p.slug] ?? []).filter(o => o.approved).length > 0)
+  .sort((a, b) => (offersByProblem[b.slug] ?? []).filter(o => o.approved).length - (offersByProblem[a.slug] ?? []).filter(o => o.approved).length);
+
+const intentProblems = rankedProblems.slice(0, 8);   // mega-nav
+const stripProblems  = rankedProblems.slice(0, 6);   // intent strip
+
+// Category groups for mega-nav right panel
+const catGroups = [
+  { label: 'Health & Body',    slugs: ['health-wellness', 'insurance'] },
+  { label: 'Money & Finance',  slugs: ['financial', 'credit-cards'] },
+  { label: 'Tech & Privacy',   slugs: ['antivirus-vpn', 'background-check-id-protection'] },
+  { label: 'Legal & Services', slugs: ['legal-services', 'b2b'] },
+  { label: 'Lifestyle',        slugs: ['travel', 'shopping-ecommerce', 'surveys', 'sweepstakes-contests'] },
+];
 ---
 
 <header class="sticky top-0 z-50 bg-slate-900 shadow-xl">
-  <!-- Masthead -->
+
+  <!-- ── Main row ────────────────────────────────────────────── -->
   <div class="border-b border-white/10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+
       <!-- Logo -->
       <a href="/" class="flex items-center gap-2 shrink-0">
         <span class="font-display font-black text-2xl tracking-tight">
           <span class="text-white">VER</span><span class="text-brand">TO</span>
         </span>
-        <span class="hidden sm:block text-white/30 text-xs font-medium uppercase tracking-widest border-l border-white/20 pl-3">
+        <span class="hidden sm:block text-white/30 text-[11px] font-medium uppercase tracking-widest border-l border-white/20 pl-3">
           Your Guide to the Best Offers
         </span>
       </a>
 
       <!-- Desktop nav -->
-      <nav class="hidden lg:flex items-center gap-1">
-        <a
-          href="/best"
-          class="bg-brand hover:bg-brand-dark text-white text-sm font-bold px-4 py-2 rounded-lg transition-colors whitespace-nowrap mr-2"
-        >
-          🎯 Find My Solution
-        </a>
-        {navCategories.slice(0, 4).map(cat => (
-          <a
-            href={`/${cat.slug}/`}
-            class="text-white/70 hover:text-white text-sm font-medium px-3 py-2 rounded-lg hover:bg-white/10 transition-colors whitespace-nowrap"
+      <nav class="hidden lg:flex items-center gap-0.5 flex-1 justify-center">
+
+        <!-- Solutions mega-nav trigger -->
+        <div class="relative" id="mega-nav-root">
+          <button
+            id="mega-nav-btn"
+            aria-haspopup="true"
+            aria-expanded="false"
+            class="flex items-center gap-1.5 text-white/80 hover:text-white text-sm font-semibold px-3.5 py-2 rounded-lg hover:bg-white/10 transition-colors"
           >
-            {cat.emoji} {cat.name}
-          </a>
-        ))}
-        <a
-          href="/reviews"
-          class="text-white/70 hover:text-white text-sm font-medium px-3 py-2 rounded-lg hover:bg-white/10 transition-colors whitespace-nowrap"
-        >
-          All Reviews
-        </a>
-        <a
-          href="/topics"
-          class="text-white/70 hover:text-white text-sm font-medium px-3 py-2 rounded-lg hover:bg-white/10 transition-colors whitespace-nowrap"
-        >
-          Topics
-        </a>
-        <a
-          href="/categories"
-          class="text-white/50 hover:text-white text-sm font-medium px-3 py-2 rounded-lg hover:bg-white/10 transition-colors whitespace-nowrap"
-        >
-          All →
-        </a>
+            Explore Solutions
+            <svg id="mega-nav-chevron" class="w-3.5 h-3.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <!-- Mega-nav panel -->
+          <div
+            id="mega-nav-panel"
+            role="menu"
+            class="hidden absolute top-[calc(100%+8px)] left-0 w-[680px] bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden"
+          >
+            <div class="grid grid-cols-2 divide-x divide-gray-100">
+
+              <!-- Left: Problem guides -->
+              <div class="p-5">
+                <p class="eyebrow text-gray-400 mb-3">Top Problem Guides</p>
+                <div class="flex flex-col gap-0.5">
+                  {intentProblems.map(p => (
+                    <a
+                      href={`/best/${p.slug}`}
+                      class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-gray-50 transition-colors group"
+                      role="menuitem"
+                    >
+                      <span class="text-xl w-7 text-center shrink-0">{p.emoji}</span>
+                      <div class="min-w-0">
+                        <p class="text-sm font-semibold text-gray-900 group-hover:text-brand transition-colors leading-snug line-clamp-1">
+                          {p.headline.split('—')[0].trim().substring(0, 52)}
+                        </p>
+                        <p class="text-xs text-gray-400 line-clamp-1">{p.subheadline.substring(0, 58)}</p>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+                <a
+                  href="/best"
+                  class="flex items-center gap-1.5 text-xs font-bold text-brand hover:text-brand-dark mt-3 px-3 transition-colors"
+                >
+                  Browse all {problems.length} guides →
+                </a>
+              </div>
+
+              <!-- Right: Category groups -->
+              <div class="p-5">
+                <p class="eyebrow text-gray-400 mb-3">Browse by Category</p>
+                <div class="flex flex-col gap-4">
+                  {catGroups.map(group => {
+                    const groupCats = group.slugs.map(s => categories.find(c => c.slug === s)).filter(Boolean);
+                    if (!groupCats.length) return null;
+                    return (
+                      <div>
+                        <p class="text-[10px] font-bold uppercase tracking-widest text-gray-300 mb-1.5">{group.label}</p>
+                        <div class="flex flex-col gap-0.5">
+                          {groupCats.map(cat => (
+                            <a
+                              href={`/${cat!.slug}/`}
+                              class="flex items-center justify-between px-2 py-1.5 rounded-lg hover:bg-gray-50 transition-colors group"
+                              role="menuitem"
+                            >
+                              <span class="flex items-center gap-2 text-sm text-gray-700 group-hover:text-brand transition-colors">
+                                <span>{cat!.emoji}</span>
+                                <span>{cat!.name}</span>
+                              </span>
+                              <span class="text-xs text-gray-300">{cat!.offsCount}</span>
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+                <a
+                  href="/categories"
+                  class="flex items-center gap-1.5 text-xs font-bold text-brand hover:text-brand-dark mt-3 px-2 transition-colors"
+                >
+                  All {categories.length} categories →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="/reviews"  class="text-white/70 hover:text-white text-sm font-medium px-3 py-2 rounded-lg hover:bg-white/10 transition-colors">All Reviews</a>
+        <a href="/topics"   class="text-white/70 hover:text-white text-sm font-medium px-3 py-2 rounded-lg hover:bg-white/10 transition-colors">Topics</a>
+        <a href="/about"    class="text-white/70 hover:text-white text-sm font-medium px-3 py-2 rounded-lg hover:bg-white/10 transition-colors">About</a>
       </nav>
 
-      <!-- Mobile menu button -->
-      <button
-        id="menu-toggle"
-        class="lg:hidden text-white/70 hover:text-white p-2 rounded-lg hover:bg-white/10 transition-colors"
-        aria-label="Open menu"
-      >
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-    </div>
-  </div>
-
-  <!-- Category strip -->
-  <div class="bg-slate-800/80 backdrop-blur-sm">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div class="category-nav flex items-center gap-1 overflow-x-auto py-2">
+      <!-- Right actions -->
+      <div class="flex items-center gap-2 shrink-0">
         <a
-          href="/"
-          class="shrink-0 text-white/60 hover:text-white text-xs font-semibold uppercase tracking-wide px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors"
+          href="/best"
+          class="hidden sm:inline-flex items-center gap-1.5 bg-cta hover:bg-cta-dark text-white text-sm font-bold px-4 py-2 rounded-lg transition-colors whitespace-nowrap"
         >
-          All
+          Find My Solution →
         </a>
-        {categories.map(cat => (
-          <a
-            href={`/${cat.slug}/`}
-            class="shrink-0 text-white/60 hover:text-white text-xs font-medium px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
-          >
-            {cat.emoji} {cat.name}
-          </a>
-        ))}
+        <button
+          id="menu-toggle"
+          class="lg:hidden text-white/70 hover:text-white p-2 rounded-lg hover:bg-white/10 transition-colors"
+          aria-label="Open menu"
+        >
+          <svg id="menu-icon-open"  class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
       </div>
     </div>
   </div>
 
-  <!-- Mobile dropdown -->
-  <div id="mobile-menu" class="hidden lg:hidden bg-slate-800 border-t border-white/10">
-    <div class="max-w-7xl mx-auto px-4 py-4">
+  <!-- ── Intent strip: top problem guides (replaces category dump) ── -->
+  <div class="bg-slate-800/80 backdrop-blur-sm border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="category-nav flex items-center overflow-x-auto py-2 gap-0.5">
+        <span class="text-white/30 text-[10px] font-bold uppercase tracking-widest mr-2 shrink-0">Quick:</span>
+        {stripProblems.map(p => (
+          <a
+            href={`/best/${p.slug}`}
+            class="shrink-0 flex items-center gap-1.5 text-white/60 hover:text-white text-xs font-medium px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
+          >
+            <span>{p.emoji}</span>
+            <span>{p.headline.split('—')[0].split(':')[0].trim().substring(0, 28)}</span>
+          </a>
+        ))}
+        <a
+          href="/best"
+          class="shrink-0 ml-1 text-white/40 hover:text-white/80 text-xs font-semibold px-3 py-1.5 rounded-full border border-white/10 hover:border-white/20 transition-colors whitespace-nowrap"
+        >
+          All Guides →
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Mobile full-screen overlay ─────────────────────────── -->
+  <div
+    id="mobile-menu"
+    class="hidden fixed inset-0 top-0 bg-slate-900 z-[200] overflow-y-auto"
+    aria-modal="true"
+    role="dialog"
+  >
+    <!-- Mobile header row -->
+    <div class="flex items-center justify-between px-4 h-16 border-b border-white/10 sticky top-0 bg-slate-900 z-10">
+      <a href="/" class="font-display font-black text-2xl text-white">
+        VER<span class="text-brand">TO</span>
+      </a>
+      <button id="menu-close" class="text-white/70 hover:text-white p-2 rounded-lg hover:bg-white/10 transition-colors" aria-label="Close menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="px-4 py-6">
+      <!-- Intent section -->
+      <p class="eyebrow text-white/40 mb-4">What do you need help with?</p>
+      <div class="grid grid-cols-2 gap-3 mb-6">
+        {stripProblems.map(p => (
+          <a
+            href={`/best/${p.slug}`}
+            class="relative flex flex-col justify-end rounded-2xl overflow-hidden p-4 min-h-[100px]"
+            style={`background: ${p.gradient}`}
+          >
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="relative z-10">
+              <div class="text-2xl mb-1">{p.emoji}</div>
+              <p class="text-white font-semibold text-sm leading-snug line-clamp-2">
+                {p.headline.split('—')[0].split(':')[0].trim().substring(0, 36)}
+              </p>
+            </div>
+          </a>
+        ))}
+      </div>
       <a
         href="/best"
-        class="flex items-center gap-2 bg-brand hover:bg-brand-dark text-white text-sm font-bold px-4 py-3 rounded-xl mb-4 transition-colors"
+        class="flex items-center justify-center gap-2 w-full bg-cta hover:bg-cta-dark text-white font-bold py-3.5 rounded-xl mb-8 transition-colors text-sm"
       >
-        🎯 Find My Solution
+        Browse All {problems.length} Problem Guides →
       </a>
-      <div class="grid grid-cols-2 gap-2">
+
+      <!-- Divider -->
+      <div class="h-px bg-white/10 mb-6"></div>
+
+      <!-- Categories -->
+      <p class="eyebrow text-white/40 mb-4">Browse by Category</p>
+      <div class="grid grid-cols-2 gap-1.5 mb-6">
         {categories.map(cat => (
           <a
             href={`/${cat.slug}/`}
-            class="flex items-center gap-2 text-white/70 hover:text-white text-sm px-3 py-2 rounded-lg hover:bg-white/10 transition-colors"
+            class="flex items-center gap-2 text-white/60 hover:text-white text-sm px-3 py-2.5 rounded-xl hover:bg-white/10 transition-colors"
           >
-            <span>{cat.emoji}</span>
+            <span class="text-base">{cat.emoji}</span>
             <span class="truncate">{cat.name}</span>
           </a>
         ))}
       </div>
+
+      <!-- Divider -->
+      <div class="h-px bg-white/10 mb-5"></div>
+
+      <!-- Utility links -->
+      <nav class="flex flex-col gap-1">
+        <a href="/reviews"   class="text-white/60 hover:text-white text-sm px-3 py-2.5 rounded-xl hover:bg-white/10 transition-colors">All Offer Reviews</a>
+        <a href="/topics"    class="text-white/60 hover:text-white text-sm px-3 py-2.5 rounded-xl hover:bg-white/10 transition-colors">Browse Topics</a>
+        <a href="/about"     class="text-white/60 hover:text-white text-sm px-3 py-2.5 rounded-xl hover:bg-white/10 transition-colors">About & Disclosure</a>
+      </nav>
     </div>
   </div>
+
 </header>
 
 <script>
-  const toggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('mobile-menu');
-  toggle?.addEventListener('click', () => {
-    menu?.classList.toggle('hidden');
-  });
+// ── Mega-nav (desktop) ────────────────────────────────────────
+const megaRoot    = document.getElementById('mega-nav-root');
+const megaBtn     = document.getElementById('mega-nav-btn');
+const megaPanel   = document.getElementById('mega-nav-panel');
+const megaChevron = document.getElementById('mega-nav-chevron');
+
+function openMega() {
+  megaPanel?.classList.remove('hidden');
+  megaBtn?.setAttribute('aria-expanded', 'true');
+  megaChevron?.classList.add('rotate-180');
+}
+function closeMega() {
+  megaPanel?.classList.add('hidden');
+  megaBtn?.setAttribute('aria-expanded', 'false');
+  megaChevron?.classList.remove('rotate-180');
+}
+
+megaBtn?.addEventListener('click', (e) => {
+  e.stopPropagation();
+  megaPanel?.classList.contains('hidden') ? openMega() : closeMega();
+});
+
+document.addEventListener('click', (e) => {
+  if (megaRoot && !megaRoot.contains(e.target as Node)) closeMega();
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeMega();
+});
+
+// ── Mobile menu ───────────────────────────────────────────────
+const toggle    = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+const closeBtn  = document.getElementById('menu-close');
+const iconOpen  = document.getElementById('menu-icon-open');
+const iconClose = document.getElementById('menu-icon-close');
+
+function openMobile() {
+  mobileMenu?.classList.remove('hidden');
+  iconOpen?.classList.add('hidden');
+  iconClose?.classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+}
+function closeMobile() {
+  mobileMenu?.classList.add('hidden');
+  iconOpen?.classList.remove('hidden');
+  iconClose?.classList.add('hidden');
+  document.body.style.overflow = '';
+}
+
+toggle?.addEventListener('click', () => {
+  mobileMenu?.classList.contains('hidden') ? openMobile() : closeMobile();
+});
+closeBtn?.addEventListener('click', closeMobile);
+
+// Close mobile menu when navigating
+mobileMenu?.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', closeMobile);
+});
 </script>

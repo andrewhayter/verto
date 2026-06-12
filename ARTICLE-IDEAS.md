@@ -31,9 +31,9 @@ Batches are sized for 4–6 articles each. Write one batch at a time, build, shi
 | # | Status | Title | Format | Slug | Offer ID | Payout |
 |---|---|---|---|---|---|---|
 | 1.1 | [ ] | "I Quit Vaping 3 Times. Here's What Finally Worked." | `[NARRATIVE]` | health-wellness/quit-vaping-personal-story | 30785 | 75% rev |
-| 1.2 | [ ] | "The Honest Math on GLP-1 Alternatives in 2026" | `[MATH]` | health-wellness/glp1-cost-breakdown-2026 | 32072 | $225 |
-| 1.3 | [ ] | "Why Your Doctor Won't Prescribe Sermorelin (It's Not What You Think)" | `[CONTRARIAN]` | health-wellness/sermorelin-why-doctors-avoid | 31081 | $113 |
-| 1.4 | [ ] | "DHT Is Why Your Hair Is Thinning — Not Stress, Not Your Shampoo" | `[EXPLAINER]` | health-wellness/dht-hair-loss-truth | 28072 | $79 |
+| 1.2 | [x] | "The Honest Math on GLP-1 Alternatives in 2026" | `[MATH]` | health-wellness/glp1-cost-breakdown-2026 | 32072 | $225 |
+| 1.3 | [x] | "Why Your Doctor Won't Prescribe Sermorelin (It's Not What You Think)" | `[CONTRARIAN]` | health-wellness/sermorelin-why-doctors-avoid | 31081 | $113 |
+| 1.4 | [x] | "DHT Is Why Your Hair Is Thinning — Not Stress, Not Your Shampoo" | `[EXPLAINER]` | health-wellness/dht-hair-loss-truth | 28072 | $79 |
 | 1.5 | [ ] | "I Let an NAD+ Protocol Run for 60 Days. Here's What Changed." | `[NARRATIVE]` | health-wellness/nad-therapy-60-day-test | 31080 | $103 |
 | 1.6 | [ ] | "Perimenopause Starts at 35. Most Women Find Out at 47." | `[EXPLAINER]` | health-wellness/perimenopause-early-signs | 28316 | $79 |
 
@@ -71,9 +71,9 @@ Batches are sized for 4–6 articles each. Write one batch at a time, build, shi
 | # | Status | Title | Format | Slug | Offer ID | Payout |
 |---|---|---|---|---|---|---|
 | 3.1 | [ ] | "The $8 Travel Upgrade That De-Risks a $4,000 Trip" | `[NARRATIVE]` | travel/travel-insurance-why-it-matters | 26732 | $45 |
-| 3.2 | [ ] | "Faye vs Freely: I Compared Two Travel Insurance Policies for the Same Trip" | `[COMPARE]` | travel/faye-vs-freely-travel-insurance | 26732 | $45 |
-| 3.3 | [ ] | "Your Flight Was Delayed. The Airline Legally Owes You Money. Here's the Claim." | `[EXPLAINER]` | travel/flight-delay-compensation-how-to | 16819 | $8 |
-| 3.4 | [ ] | "Trip.com vs Expedia vs Booking.com — I Searched the Same Trip on All Three" | `[COMPARE]` | travel/tripcom-vs-expedia-vs-booking | 19783 | 4.8% rev |
+| 3.2 | [x] | "Faye vs Freely: I Compared Two Travel Insurance Policies for the Same Trip" | `[COMPARE]` | travel/faye-vs-freely-travel-insurance | 26732 | $45 |
+| 3.3 | [x] | "Your Flight Was Delayed. The Airline Legally Owes You Money. Here's the Claim." | `[EXPLAINER]` | travel/flight-delay-compensation-guide | 16819 | $8 |
+| 3.4 | [x] | "Trip.com vs Expedia vs Booking.com — I Searched the Same Trip on All Three" | `[COMPARE]` | travel/tripcom-vs-expedia-vs-booking | 19783 | 4.8% rev |
 | 3.5 | [ ] | "How a $300 Europe Trip Is Built: The Actual Spreadsheet" | `[MATH]` | travel/budget-europe-trip-math-2026 | 26732 | $45 |
 | 3.6 | [ ] | "The Best Internet for RVs and Remote Work in 2026 — No Contract" | `[COMPARE]` | travel/rv-internet-options-no-contract | 31456 | $65 |
 
@@ -146,7 +146,7 @@ Batches are sized for 4–6 articles each. Write one batch at a time, build, shi
 | # | Status | Title | Format | Slug | Offer ID | Payout |
 |---|---|---|---|---|---|---|
 | 7.1 | [ ] | "Cometeer Review: I Cancelled My Coffee Shop Tab and Here's What Happened" | `[REVIEW]` | shopping-ecommerce/cometeer-coffee-review | 23612 | 15% rev |
-| 7.2 | [ ] | "I Eliminated 40 Plastic Jugs From My Year With One Swap — Dropps Review" | `[NARRATIVE]` | shopping-ecommerce/dropps-concentrated-detergent-review | 32161 | $15 |
+| 7.2 | [x] | "I Eliminated 40 Plastic Jugs From My Year With One Swap — Dropps Review" | `[NARRATIVE]` | shopping-ecommerce/dropps-concentrated-detergent-review | 32161 | $15 |
 | 7.3 | [ ] | "Wildgrain Review: Artisan Bread That Bakes From Frozen in 25 Minutes" | `[REVIEW]` | shopping-ecommerce/wildgrain-bread-subscription-review | 30557 | $15 |
 | 7.4 | [ ] | "The Heated Jacket I Wore Through an Entire Canadian Winter — iHood Review" | `[REVIEW]` | shopping-ecommerce/ihoodwarm-heated-jacket-review | 26096 | 9.75% rev |
 | 7.5 | [ ] | "Sleepyhead Mattress Topper Review: 60 Days of Better Sleep — What Changed" | `[REVIEW]` | shopping-ecommerce/sleepyhead-mattress-topper-review | 28861 | 9% rev |
@@ -166,10 +166,10 @@ Batches are sized for 4–6 articles each. Write one batch at a time, build, shi
 
 | # | Status | Title | Format | Slug | Offer ID | Payout |
 |---|---|---|---|---|---|---|
-| 8.1 | [ ] | "I Wore a Made-to-Measure Suit to a Job Interview, a Wedding, and a Funeral. One Suit." | `[NARRATIVE]` | shopping-ecommerce/kahlon-made-to-measure-suit-review | 29358 | $188 |
-| 8.2 | [ ] | "Why Every Off-the-Rack Suit Fits Wrong (And What to Do About It)" | `[EXPLAINER]` | shopping-ecommerce/off-rack-suit-fit-problems | 29358 | $188 |
-| 8.3 | [ ] | "I Switched From Dollar Shave to Liberty Razors. The Difference Was Immediate." | `[REVIEW]` | shopping-ecommerce/liberty-razors-vs-dollar-shave | 29393 | $18.75 |
-| 8.4 | [ ] | "Snow Teeth Whitening Review: 30 Days, Before/After, Honest Verdict" | `[REVIEW]` | shopping-ecommerce/snow-teeth-whitening-30-day-review | 23686 | 11.25% rev |
+| 8.1 | [x] | "I Wore a Made-to-Measure Suit to a Job Interview, a Wedding, and a Funeral. One Suit." | `[NARRATIVE]` | shopping-ecommerce/kahlon-made-to-measure-suit-review | 29358 | $188 |
+| 8.2 | [x] | "Why Every Off-the-Rack Suit Fits Wrong (And What to Do About It)" | `[EXPLAINER]` | shopping-ecommerce/off-rack-suit-fit-problems | 29358 | $188 |
+| 8.3 | [x] | "I Switched From Dollar Shave to Liberty Razors. The Difference Was Immediate." | `[REVIEW]` | shopping-ecommerce/liberty-razors-vs-dollar-shave-review | 29393 | $18.75 |
+| 8.4 | [x] | "Snow Teeth Whitening Review: 30 Days, Before/After, Honest Verdict" | `[REVIEW]` | shopping-ecommerce/snow-teeth-whitening-30-day-review | 23686 | 11.25% rev |
 
 **Batch brief:**
 - Kahlon ($188/lead) is the highest-payout single offer in this batch — lead with the narrative, not the price
@@ -184,7 +184,7 @@ Batches are sized for 4–6 articles each. Write one batch at a time, build, shi
 | # | Status | Title | Format | Slug | Offer ID | Payout |
 |---|---|---|---|---|---|---|
 | 9.1 | [ ] | "Why I Use a VPN on My Phone (And What I Found When I Stopped)" | `[NARRATIVE]` | antivirus-vpn/why-vpn-actually-matters-2026 | 25474 | 75% rev |
-| 9.2 | [ ] | "NordPass vs 1Password vs Built-in Browser Saving — The Password Manager Comparison" | `[COMPARE]` | antivirus-vpn/nordpass-review-password-manager | 30698 | 22.5% rev |
+| 9.2 | [x] | "NordPass vs 1Password vs Built-in Browser Saving — The Password Manager Comparison" | `[COMPARE]` | antivirus-vpn/nordpass-review-password-manager | 30698 | 22.5% rev |
 | 9.3 | [ ] | "The Best Travel eSIM in 2026 — I Tested 4 Before a 3-Week Trip" | `[COMPARE]` | shopping-ecommerce/best-travel-esim-comparison | 29917 | 11.25% rev |
 | 9.4 | [ ] | "Blinkist Review: I 'Read' 52 Books Last Year. Here's What Actually Stuck." | `[REVIEW]` | shopping-ecommerce/blinkist-review-honest-2026 | 25673 | 40% rev |
 | 9.5 | [ ] | "CapCut Pro Review: What It Does That iMovie and Premiere Don't" | `[COMPARE]` | shopping-ecommerce/capcut-pro-review-2026 | 27683 | 34% rev |
@@ -221,8 +221,8 @@ Batches are sized for 4–6 articles each. Write one batch at a time, build, shi
 | 11.1 | [ ] | "Bad Credit Loans in Canada 2026: The Lender Network for People Banks Won't Touch" | `[EXPLAINER]` | financial/bad-credit-loans-canada-2026 | 31464 | $10.50 |
 | 11.2 | [ ] | "MooMoo Canada Review: How to Get Up to $1,000 in Free Stock" | `[REVIEW]` | financial/moomoo-canada-free-stock-2026 | 29920 | $82 |
 | 11.3 | [ ] | "I Checked My Canadian Credit Report and Found 2 Errors Lowering My Score" | `[NARRATIVE]` | financial/trackfinance-credit-errors-canada | 31093 | $11.25 |
-| 11.4 | [ ] | "JumpKETO Canada Review: BHB Keto Gummies — Do They Actually Help?" | `[REVIEW]` | health-wellness/jumpketo-canada-keto-gummies | 31613 | $120 |
-| 11.5 | [ ] | "Felix Health Canada: Get Ozempic, HRT, or Viagra Online Without a Clinic" | `[EXPLAINER]` | health-wellness/felix-health-canada-guide | 29431 | $7.86 |
+| 11.4 | [x] | "JumpKETO Canada Review: BHB Keto Gummies — Do They Actually Help?" | `[REVIEW]` | health-wellness/jumpketo-canada-keto-gummies | 31613 | $120 |
+| 11.5 | [x] | "Felix Health Canada: Get Ozempic, HRT, or Viagra Online Without a Clinic" | `[EXPLAINER]` | health-wellness/felix-health-canada-guide | 29431 | $7.86 |
 | 11.6 | [ ] | "LuckyOnes Casino Canada Review: Is the Welcome Bonus Legit?" | `[REVIEW]` | sweepstakes-contests/luckyones-casino-canada-review | 31910 | $75 |
 
 **Batch brief:**
@@ -256,7 +256,7 @@ Batches are sized for 4–6 articles each. Write one batch at a time, build, shi
 
 | # | Status | Title | Format | Slug | Offer ID | Payout |
 |---|---|---|---|---|---|---|
-| 13.1 | [ ] | "TopSweepsCasino Review: The Legal Casino App With a $112/Lead Signup Bonus" | `[REVIEW]` | sweepstakes-contests/topsweepscasino-review-2026 | 28939 | $112 |
+| 13.1 | [x] | "TopSweepsCasino Review: The Legal Casino App With a $112/Lead Signup Bonus" | `[REVIEW]` | sweepstakes-contests/topsweepscasino-review-2026 | 28939 | $112 |
 | 13.2 | [ ] | "Sweepstakes Are Legal Gambling With Better Odds. Here's How They Actually Work." | `[EXPLAINER]` | sweepstakes-contests/how-sweepstakes-work-legally | 28939 | $112 |
 | 13.3 | [ ] | "The Best Sweepstakes Sites in 2026 — Ranked by Prize Pool and Payout Speed" | `[LISTICLE]` | sweepstakes-contests/best-sweepstakes-sites-ranked | 28939 | $112 |
 | 13.4 | [ ] | "YOUSWEEPS Review: I Entered 5 Competitions. Here's What Happened." | `[NARRATIVE]` | sweepstakes-contests/yousweeps-review-honest | 19560 | $2.40 |
@@ -275,7 +275,7 @@ Batches are sized for 4–6 articles each. Write one batch at a time, build, shi
 |---|---|---|---|---|---|---|
 | 14.1 | [ ] | "Heal & Soothe Review: 3 Months for My Lower Back. Here's the Honest Report." | `[REVIEW]` | health-wellness/heal-soothe-chronic-pain-review | 17722 | varies |
 | 14.2 | [ ] | "Systemic Enzymes for Joint Pain: The Anti-Inflammatory Stack That Isn't Ibuprofen" | `[EXPLAINER]` | health-wellness/systemic-enzymes-joint-pain-explained | 17722 | varies |
-| 14.3 | [ ] | "King Kanine CBD Review: I Gave My Dog This for Arthritis. 8 Weeks Later..." | `[NARRATIVE]` | health-wellness/king-kanine-dog-cbd-arthritis-review | 14913 | 19% rev |
+| 14.3 | [x] | "King Kanine CBD Review: I Gave My Dog This for Arthritis. 8 Weeks Later..." | `[NARRATIVE]` | health-wellness/king-kanine-dog-cbd-arthritis-review | 14913 | 19% rev |
 | 14.4 | [ ] | "My Patriot Supply Review: Emergency Food Prep — Practical or Paranoid?" | `[CONTRARIAN]` | health-wellness/my-patriot-supply-honest-review | 29715 | 11.25% rev |
 
 ---
@@ -293,6 +293,45 @@ Batches are sized for 4–6 articles each. Write one batch at a time, build, shi
 | 15.6 | [ ] | "America's Test Kitchen Online: Worth the Membership for Serious Home Cooks?" | `[REVIEW]` | shopping-ecommerce/americas-test-kitchen-membership-review | 30262 | varies |
 | 15.7 | [ ] | "Westgate Resorts Review: What the 'Vacation Package' Offer Actually Includes" | `[REVIEW]` | shopping-ecommerce/westgate-resorts-vacation-package-review | 30629 | varies |
 | 15.8 | [ ] | "SocialGood Review: The App That Pays You Crypto for Normal Shopping" | `[REVIEW]` | financial/socialgood-crypto-rewards-review | 27202 | $18 |
+
+---
+
+## BATCH 16 — Low-Friction Social Traffic Plays
+*Theme: Offers that convert on interrupted cold traffic — CPL, CPA, and free-to-try formats that feel helpful, not sales-y. Prioritised for Facebook page/group organic and Pinterest boards.*
+
+> **Cross-references:** TopSweepsCasino → Batch 13 | Compensair → Batch 3.3 | Felix Ozempic → Batch 11.5 | IDPA → Batch 15.3 | Raising Skilled Readers → Batch 5.3. Articles below are the 9 not yet mapped anywhere.
+
+| # | Status | Title | Format | Slug | Offer ID | Payout |
+|---|---|---|---|---|---|---|
+| 16.1 | [ ] | "Airlines Owe You Money When Prices Drop After You Book — Here's How to Claim It" | `[EXPLAINER]` | travel/flight-price-drop-refund-junova | 31854 | CPL |
+| 16.2 | [ ] | "The Free Browser Extension That Earned Me $94 Back on Normal Shopping" | `[NARRATIVE]` | shopping-ecommerce/shopback-cashback-extension-review | 30194 | CPA |
+| 16.3 | [ ] | "21KETO Gummies Canada: I Took Them for 30 Days. Here's the Honest Report." | `[REVIEW]` | health-wellness/21keto-canada-keto-gummies-review | 31618 | CPS — $0.60 EPC |
+| 16.4 | [ ] | "Your Old iPhone Is Worth Real Money Right Now — Here's Exactly How to Sell It" | `[EXPLAINER]` | shopping-ecommerce/sell-old-iphone-electronics-gizmogo | 30260 | CPL |
+| 16.5 | [ ] | "How to View Instagram Stories Anonymously (Without Showing Up in the Viewer List)" | `[EXPLAINER]` | antivirus-vpn/view-instagram-stories-anonymously | 31564 | CPS |
+| 16.6 | [ ] | "What Parents Are Finding When They Finally Check Their Teenager's Phone" | `[CONTRARIAN]` | shopping-ecommerce/spynger-parental-monitoring-review | 27337 | CPS — $0.48 EPC |
+| 16.7 | [ ] | "The Calisthenics App Women Over 40 Are Using Instead of the Gym" | `[REVIEW]` | health-wellness/rh-fitness-calisthenics-women-review | 32132 | CPS — $0.45 EPC |
+| 16.8 | [ ] | "How Homeowners Get Bathroom Renovation Quotes Without Calling 6 Contractors" | `[EXPLAINER]` | insurance/haven-renovate-bathroom-renovation-guide | 31286 | CPL |
+| 16.9 | [ ] | "The Gift Subscription Nobody Returns — AmazingClubs Honest Review" | `[REVIEW]` | shopping-ecommerce/amazingclubs-gift-subscription-review | 31121 | CPS — $0.49 EPC |
+
+**Batch brief:**
+- Every hook above should work as a standalone Facebook post with the article as the destination — test the hook sentence before building the page
+- CPL and CPA articles (16.1, 16.2, 16.4, 16.8) need the lightest CTAs: "get a free quote", "install free", "see what it's worth" — the ask is zero-cost to the reader
+- 16.5 (DFViewer) and 16.6 (Spynger) will get organic shares without any promotion — curiosity hooks spread on their own in social/privacy communities; frame both around practical use cases not surveillance
+- 16.3 (21KETO CA) and 16.7 (RH Fitness) belong on Pinterest health boards — both need a strong hero image brief if built
+- 16.9 (AmazingClubs) is the only evergreen gift guide play here — it runs year-round but surges Oct–Dec; write it now and schedule social pushes for November
+
+**Facebook hook lines (ready to post):**
+- 16.1: "Most people don't know: if a flight price drops after you book, you may be entitled to a partial refund. This app claims it back automatically."
+- 16.2: "I installed a free browser extension 6 weeks ago. It has quietly earned me $94 on purchases I was going to make anyway."
+- 16.4: "There's an old iPhone in almost every household drawer worth $80–$300. Here's the fastest way to turn it into cash today."
+- 16.5: "There's a way to watch someone's Instagram story without your name appearing in their viewer list. Here's how it works."
+- 16.6: "A parent in our group asked what she'd find if she checked her 14-year-old's phone. This app told her — without reading every message."
+
+**Pinterest board targets:**
+- 16.2 → money-saving / frugal living
+- 16.7 → fitness over 40 / home workout
+- 16.9 → gift guides / subscription boxes
+- 16.8 → home renovation / bathroom ideas
 
 ---
 
@@ -315,7 +354,8 @@ Batches are sized for 4–6 articles each. Write one batch at a time, build, shi
 | 13 — Sweepstakes | 4 | $0.56 (TopSweeps) | Low |
 | 14 — Pain & Recovery | 4 | $0.38–$0.40 | Medium |
 | 15 — Niche / Specialty | 8 | $0.38–$0.47 | Low |
-| **TOTAL** | **83 articles** | | |
+| 16 — Low-Friction Social | 9 | $0.25–$0.60 | Low |
+| **TOTAL** | **92 articles** | | |
 
 ---
 

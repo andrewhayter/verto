@@ -28,7 +28,7 @@ faqs:
 
 **Bottom line:** Bioidentical hormone replacement therapy addresses the root cause of menopause symptoms — declining estrogen and progesterone — rather than masking individual symptoms. Over 80% of Winona patients report meaningful relief within 90 days. Board-certified physicians review your history online and ship personalized treatment to your door.
 
-See our full [menopause symptoms guide](/solve/menopause-symptoms) for a comparison of treatment approaches, what to expect in the first 90 days, and answers to the most common questions about HRT safety.
+See our full [menopause symptoms guide](/best/menopause-symptoms) for a comparison of treatment approaches, what to expect in the first 90 days, and answers to the most common questions about HRT safety.
 
 ---
 
@@ -36,7 +36,7 @@ Menopause is not a disorder. It's a biological transition — and the symptoms t
 
 The evidence for HRT has become significantly clearer over the past decade. For most healthy women who start treatment within 10 years of their final period, the benefits — symptom relief, bone protection, cardiovascular benefit when started early — outweigh the risks. The 2002 WHI study that generated widespread HRT anxiety applied primarily to older women using synthetic progestins. The picture for bioidentical therapy in the "timing window" is substantially more favorable.
 
-## The Symptoms of Hormonal Decline
+## Hot Flashes, Sleep Loss, Brain Fog: Six Body Systems Disrupted When Estrogen Declines
 
 Estrogen and progesterone don't just regulate the reproductive system. They affect temperature regulation, sleep architecture, mood neurotransmitter systems, bone density, vaginal tissue, cardiovascular function, and cognitive clarity. When these hormones decline during perimenopause and menopause, the effects are systemic.
 
@@ -46,7 +46,7 @@ The most common symptoms:
 - **Sleep disruption:** Estrogen affects sleep architecture directly. Night sweats compound disruption. Poor sleep compounds every other symptom.
 - **Mood and anxiety:** Estrogen modulates serotonin and dopamine activity. Declining levels increase susceptibility to depression and anxiety — particularly in women with prior mood sensitivity.
 - **Cognitive symptoms:** "Brain fog," word-finding difficulty, and short-term memory gaps are consistently reported during the menopause transition and typically improve with estrogen replacement.
-- **Vaginal and urinary changes:** Genitourinary syndrome of menopause (GSM) affects 50%+ of postmenopausal women — causing dryness, discomfort, and increased UTI frequency. Local estrogen therapy addresses this effectively.
+- **Vaginal and urinary changes:** Genitourinary syndrome of menopause (GSM) affects 50%+ of postmenopausal women (North American Menopause Society) — causing dryness, discomfort, and increased UTI frequency. Local estrogen therapy addresses this effectively.
 - **Bone density loss:** Estrogen protects bone. The first 5 years after menopause represent the fastest period of bone density loss in a woman's lifetime.
 
 ## What Is Bioidentical HRT?
@@ -55,7 +55,7 @@ Bioidentical hormones are molecularly identical to the hormones your body produc
 
 Winona's treatments are compounded — prepared by licensed compounding pharmacies to your physician's specific prescription. This allows for precise dosing and delivery method customization that standard pharmaceutical products don't offer.
 
-## How Winona Works
+## Winona: Free Assessment, Physician-Designed Protocol, Treatment Shipped Directly to You
 
 Winona is a telehealth platform staffed by board-certified physicians specializing in hormone health. The process:
 
@@ -66,7 +66,7 @@ Winona is a telehealth platform staffed by board-certified physicians specializi
 
 Winona serves US patients in most states. The initial assessment is free.
 
-## What the Evidence Shows
+## Estrogen Therapy Reduces Hot Flashes by 75–90% — the Most Effective Treatment Available
 
 The strongest evidence for HRT relief:
 
@@ -84,11 +84,15 @@ Women with a personal history of hormone-sensitive breast cancer, active blood c
 
 Women with a family history of hormone-sensitive cancers are evaluated individually — family history alone is not a contraindication, but it informs the risk-benefit discussion.
 
-## The Bottom Line
+## If Symptoms Are Disrupting Your Life, HRT Has the Strongest Clinical Evidence of Any Available Treatment
 
 If menopause symptoms are disrupting your sleep, mood, or daily life — and you've been told to "just deal with it" — that advice is out of date. HRT is the most effective treatment available for the core symptoms of estrogen decline, and bioidentical therapy delivered through telehealth has made access significantly easier.
 
 **[Start your free Winona assessment →](https://bywinona.com/)**
+
+### Is bioidentical HRT safe for women who start it before age 60?
+
+Yes, for most healthy women without contraindications. Updated analysis of Women's Health Initiative data supports a favorable risk-benefit ratio for bHRT when started within 10 years of menopause onset or before age 60. Women with personal history of hormone-sensitive breast cancer, blood clots, or unexplained bleeding need specialist evaluation first.
 
 ---
 

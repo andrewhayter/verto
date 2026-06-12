@@ -23,7 +23,9 @@ faqs:
 
 **Bottom line:** Commission-free trading is table stakes. What separates investing platforms in 2026: research quality, execution reliability, and welcome bonuses. For Canadian investors, MooMoo's up-to-$1,000 NVDA stock bonus plus 8.1% APY on uninvested cash is the most generous new-account offer currently available.
 
-New to investing? See our full [beginner investor guide for Canadians](/solve/start-investing) — with eligibility details and how to claim the bonus step-by-step.
+**Geographic note:** This article covers the MooMoo Canada promotion. The offer and platform details described here apply to Canadian residents. US readers: MooMoo operates in the US separately — check MooMoo.com directly for current US promotions, which differ from the Canadian offer.
+
+New to investing? For context on the broader financial landscape — including personal loans, cash back cards, and investing together — see our [personal finance hub](/financial/).
 
 ---
 

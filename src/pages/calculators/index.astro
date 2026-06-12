@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const tools = [
+  {
+    href: '/calculators/glp1-cost',
+    emoji: '💉',
+    title: 'GLP-1 Cost Calculator',
+    desc: 'See how much you\'d save with compounded tirzepatide vs brand Ozempic. Shows 12-month cost comparison and which programs you likely qualify for.',
+    badge: 'Health',
+    badgeColor: 'bg-green-100 text-green-800',
+    cta: 'Compare GLP-1 costs →',
+  },
+  {
+    href: '/calculators/flight-delay',
+    emoji: '✈️',
+    title: 'EU Flight Delay Compensation Checker',
+    desc: 'EC 261/2004 entitles you to €250–€600 per passenger for delays over 3 hours. Enter your route and find out exactly what the airline legally owes you.',
+    badge: 'Travel',
+    badgeColor: 'bg-blue-100 text-blue-800',
+    cta: 'Check my compensation →',
+  },
+  {
+    href: '/calculators/loan-savings',
+    emoji: '💳',
+    title: 'Debt Consolidation Savings Calculator',
+    desc: 'Enter your credit card balances and APRs. See how much you\'d save in interest consolidating into a personal loan — with real lender matching at the end.',
+    badge: 'Finance',
+    badgeColor: 'bg-purple-100 text-purple-800',
+    cta: 'Calculate my savings →',
+  },
+  {
+    href: '/calculators/glp1-quiz',
+    emoji: '🎯',
+    title: 'Which GLP-1 Program Fits You?',
+    desc: '8-question quiz that matches you to the right GLP-1 program based on budget, speed, medical needs, and location. Routes to the best-fit offer from 3 platforms.',
+    badge: 'Health',
+    badgeColor: 'bg-green-100 text-green-800',
+    cta: 'Take the quiz →',
+  },
+];
+---
+
+<BaseLayout
+  title="Free Financial & Health Calculators — Verto"
+  description="Interactive calculators and quizzes that give personalized answers — then connect you with the right offer. GLP-1 cost comparison, flight delay compensation, debt consolidation savings."
+>
+
+  <div class="max-w-4xl mx-auto px-4 py-10">
+
+    <div class="mb-10">
+      <div class="text-xs font-semibold uppercase tracking-widest text-[#dc2626] mb-3">Free Tools</div>
+      <h1 class="font-display text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4">
+        Calculators That Give You an Answer, Then Connect You With the Right Option
+      </h1>
+      <p class="text-lg text-gray-600">
+        These tools run real calculations based on your numbers — not generic estimates. No email required. Results appear instantly.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      {tools.map(tool => (
+        <a href={tool.href} class="group bg-white rounded-2xl border border-gray-200 hover:border-[#dc2626] hover:shadow-lg transition-all p-6 flex flex-col">
+          <div class="flex items-start justify-between mb-4">
+            <span class="text-3xl">{tool.emoji}</span>
+            <span class={`text-xs font-semibold px-2 py-1 rounded-full ${tool.badgeColor}`}>{tool.badge}</span>
+          </div>
+          <h2 class="font-display font-bold text-gray-900 text-lg mb-2 group-hover:text-[#dc2626] transition-colors">{tool.title}</h2>
+          <p class="text-sm text-gray-600 leading-relaxed mb-4 flex-1">{tool.desc}</p>
+          <span class="text-sm font-semibold text-[#dc2626]">{tool.cta}</span>
+        </a>
+      ))}
+    </div>
+
+    <div class="mt-12 bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-200">
+      <h2 class="font-display text-xl font-bold text-gray-900 mb-3">How These Tools Work</h2>
+      <p class="text-gray-700 mb-4">Every calculator on this page uses your actual numbers — not population averages — to produce a personalized output. After running the calculation, it connects you with the most relevant vetted offer for your situation.</p>
+      <p class="text-sm text-gray-600">All tools are free. Some calculators connect to affiliate offers — Verto earns a commission if you choose to proceed with a linked offer at no cost to you. Affiliate relationships are disclosed on each tool page.</p>
+    </div>
+
+  </div>
+
+</BaseLayout>

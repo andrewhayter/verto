@@ -156,14 +156,20 @@ Strut's physician review screens for contraindications before any prescription i
 
 ## Cost Summary
 
-| Treatment | Monthly Cost | Payout Rate |
+| Treatment | Monthly Cost | Includes |
 |---|---|---|
-| Sermorelin (oral peptide) | From $79/month | $113/lead |
-| NAD+ Injections | From $103/month | $103/lead |
-| Men's Sexual Health | From $79/month | $101/lead |
-| Dutasteride (hair loss) | From $79/month | $79/lead |
+| Sermorelin (oral peptide) | From $79/month | Physician consultation + prescription |
+| NAD+ Injections | From $103/month | Physician supervision + prescription |
+| Men's Sexual Health | From $79/month | 30-day supply + consultation |
+| Dutasteride (hair loss) | From $79/month | Physician assessment + prescription |
 
 All plans include a physician consultation and prescription. No subscription required — plans can be canceled at any time.
+
+Looking for GLP-1 weight management programs? Strut Health covers metabolic health, but for GLP-1 telehealth specifically (Semaglutide and Tirzepatide at $179–$225/month), see our [GLP-1 programs comparison](/health-wellness/weight-loss-programs-ranked).
+
+Most primary care physicians don't prescribe sermorelin — not because the evidence is weak, but because of a regulatory and training gap. [Why Your Doctor Won't Prescribe Sermorelin](/articles/health-wellness/sermorelin-why-doctors-avoid) explains what's actually behind the avoidance. For the DHT mechanism behind male pattern baldness and why dutasteride outperforms finasteride in head-to-head trials, see [DHT Is Why Your Hair Is Thinning](/articles/health-wellness/dht-hair-loss-truth).
+
+For men investing in their physical presentation alongside their health: our [Kahlon made-to-measure suit review](/shopping-ecommerce/kahlon-made-to-measure-suit-review) covers a $299–$599 option that fits your actual body measurements — one-third the price of a traditional tailor, with documented real-world results across three high-stakes wearing occasions.
 
 [Check Which Treatment Is Right for You → Strut Health Free Assessment](https://afflat3e3.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=31081&c=918277&a=784951&k=0&l=36091)
 

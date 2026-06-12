@@ -26,7 +26,7 @@ faqs:
 
 **Bottom line:** LegalNature generates attorney-drafted legal documents — LLC formation, leases, wills, NDAs — through a 10-minute interview process, starting at $7.95. An attorney charges $500–$1,500 for the same document. For standard, straightforward legal needs, LegalNature delivers the same output at 5–10% of the cost.
 
-See our [legal documents problem guide](/solve/legal-documents-cheap) if you're comparing LegalNature to other DIY legal services or deciding whether you need a lawyer for your specific situation.
+See our [legal documents problem guide](/best/legal-documents-cheap) if you're comparing LegalNature to other DIY legal services or deciding whether you need a lawyer for your specific situation.
 
 ---
 

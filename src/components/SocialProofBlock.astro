@@ -1,0 +1,51 @@
+---
+export interface Comment {
+  name: string;
+  location: string;
+  text: string;
+  initials: string;
+  bgColor: string;
+  ago: string;
+  helpful?: number;
+}
+
+interface Props {
+  comments: Comment[];
+  title?: string;
+}
+
+const { comments, title = 'What Readers Are Saying' } = Astro.props;
+---
+
+<div class="my-10">
+  <div class="flex items-center gap-3 mb-4">
+    <h3 class="font-display font-bold text-xl text-gray-900">{title}</h3>
+    <span class="text-sm text-gray-400">{comments.length} comments</span>
+  </div>
+  <div class="flex flex-col gap-3">
+    {comments.map((c) => (
+      <div class="flex gap-3 bg-white border border-gray-100 rounded-2xl p-4 shadow-sm">
+        <div
+          class="w-10 h-10 rounded-full shrink-0 flex items-center justify-center text-white text-sm font-bold"
+          style={`background-color: ${c.bgColor};`}
+        >
+          {c.initials}
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex flex-wrap items-baseline gap-x-2 gap-y-0.5 mb-1.5">
+            <span class="font-semibold text-sm text-gray-900">{c.name}</span>
+            <span class="text-xs text-gray-400">{c.location}</span>
+            <span class="text-gray-200 text-xs">·</span>
+            <span class="text-xs text-gray-400">{c.ago}</span>
+          </div>
+          <p class="text-sm text-gray-700 leading-relaxed">{c.text}</p>
+          {c.helpful && (
+            <p class="text-xs text-gray-400 mt-2 select-none">
+              👍 {c.helpful.toLocaleString()} people found this helpful
+            </p>
+          )}
+        </div>
+      </div>
+    ))}
+  </div>
+</div>

@@ -1,67 +1,103 @@
 ---
 import { categories } from '../data/categories';
+import { problems } from '../data/problems';
+import { offersByProblem } from '../data/offers';
+
+const featuredGuides = problems
+  .filter(p => (offersByProblem[p.slug] ?? []).filter(o => o.approved).length > 0)
+  .slice(0, 6);
 ---
 
 <footer class="bg-slate-900 text-white/60 mt-20">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16">
+
     <!-- Top section -->
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
-      <!-- Brand -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+
+      <!-- Brand col -->
       <div class="md:col-span-1">
         <a href="/" class="font-display font-black text-2xl tracking-tight block mb-3">
           <span class="text-white">VER</span><span class="text-brand">TO</span>
         </a>
-        <p class="text-sm leading-relaxed text-white/50">
-          Your trusted guide to the internet's best offers, deals, and opportunities — reviewed by real humans.
+        <p class="text-sm leading-relaxed text-white/50 mb-5">
+          Expert-reviewed offers for health, finance, security, and lifestyle — compared honestly.
         </p>
-        <div class="flex gap-3 mt-5">
-          <a href="/about" aria-label="About Verto" class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors text-white text-xs font-bold">
-            V
+        <a
+          href="/best"
+          class="inline-flex items-center gap-2 bg-cta hover:bg-cta-dark text-white text-xs font-bold px-4 py-2.5 rounded-lg transition-colors"
+        >
+          Find My Solution →
+        </a>
+      </div>
+
+      <!-- Quick links -->
+      <div>
+        <h3 class="text-white text-xs font-semibold uppercase tracking-widest mb-4">Navigate</h3>
+        <nav class="flex flex-col gap-2 text-sm">
+          <a href="/best"        class="text-white/50 hover:text-white transition-colors">Solution Guides</a>
+          <a href="/reviews"     class="text-white/50 hover:text-white transition-colors">All Reviews</a>
+          <a href="/categories"  class="text-white/50 hover:text-white transition-colors">All Categories</a>
+          <a href="/topics"      class="text-white/50 hover:text-white transition-colors">Trending Topics</a>
+          <a href="/calculators" class="text-white/50 hover:text-white transition-colors">Free Calculators</a>
+          <a href="/about"       class="text-white/50 hover:text-white transition-colors">About & Disclosure</a>
+        </nav>
+      </div>
+
+      <!-- Top problem guides -->
+      <div class="md:col-span-2">
+        <h3 class="text-white text-xs font-semibold uppercase tracking-widest mb-4">Top Problem Guides</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-1">
+          {featuredGuides.map(p => (
+            <a
+              href={`/best/${p.slug}`}
+              class="flex items-center gap-2 text-white/50 hover:text-white text-sm py-1.5 transition-colors group"
+            >
+              <span class="text-base shrink-0">{p.emoji}</span>
+              <span class="group-hover:underline line-clamp-1 text-xs leading-snug">
+                {p.headline.split('—')[0].split(':')[0].trim().substring(0, 40)}
+              </span>
+            </a>
+          ))}
+        </div>
+        <a href="/best" class="inline-block mt-3 text-xs font-semibold text-brand hover:text-red-400 transition-colors">
+          All {problems.length} guides →
+        </a>
+      </div>
+
+      <!-- Categories -->
+      <div>
+        <h3 class="text-white text-xs font-semibold uppercase tracking-widest mb-4">Categories</h3>
+        <div class="flex flex-col gap-1">
+          {categories.slice(0, 12).map(cat => (
+            <a
+              href={`/${cat.slug}/`}
+              class="flex items-center justify-between text-white/50 hover:text-white text-xs py-1 transition-colors group"
+            >
+              <span class="flex items-center gap-1.5">
+                <span>{cat.emoji}</span>
+                <span class="group-hover:underline truncate max-w-[120px]">{cat.name}</span>
+              </span>
+              <span class="text-white/20 text-[10px] shrink-0 ml-1">({cat.offsCount})</span>
+            </a>
+          ))}
+          <a href="/categories" class="text-brand hover:text-red-400 text-xs mt-1 transition-colors">
+            +{categories.length - 12} more →
           </a>
         </div>
       </div>
 
-      <!-- Nav + Categories grid -->
-      <div class="md:col-span-3 grid grid-cols-1 sm:grid-cols-4 gap-8">
-        <!-- Quick links -->
-        <div class="sm:col-span-1">
-          <h3 class="text-white text-sm font-semibold uppercase tracking-widest mb-4">Quick Links</h3>
-          <nav class="flex flex-col gap-2 text-sm">
-            <a href="/best" class="text-white/50 hover:text-white transition-colors">Solution Finder</a>
-            <a href="/topics" class="text-white/50 hover:text-white transition-colors">Trending Topics</a>
-            <a href="/categories" class="text-white/50 hover:text-white transition-colors">All Categories</a>
-            <a href="/about" class="text-white/50 hover:text-white transition-colors">About & Disclosure</a>
-          </nav>
-        </div>
-        <!-- Categories -->
-        <div class="sm:col-span-3">
-          <h3 class="text-white text-sm font-semibold uppercase tracking-widest mb-4">Browse Categories</h3>
-          <div class="grid grid-cols-2 sm:grid-cols-3 gap-1.5">
-            {categories.map(cat => (
-              <a
-                href={`/${cat.slug}/`}
-                class="flex items-center gap-2 text-white/50 hover:text-white text-xs py-1 transition-colors group"
-              >
-                <span class="group-hover:scale-110 transition-transform text-sm">{cat.emoji}</span>
-                <span class="truncate">{cat.name}</span>
-                <span class="text-white/20 text-xs ml-auto shrink-0">({cat.offsCount})</span>
-              </a>
-            ))}
-          </div>
-        </div>
-      </div>
     </div>
 
     <!-- Bottom bar -->
     <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/30">
       <p>© {new Date().getFullYear()} Verto. All rights reserved.</p>
       <div class="flex gap-5">
-        <a href="/about" class="hover:text-white/60 transition-colors">About</a>
-        <a href="/about#disclosure" class="hover:text-white/60 transition-colors">Affiliate Disclosure</a>
-        <a href="/privacy" class="hover:text-white/60 transition-colors">Privacy Policy</a>
-        <a href="/terms" class="hover:text-white/60 transition-colors">Terms</a>
+        <a href="/about"              class="hover:text-white/60 transition-colors">About</a>
+        <a href="/about#disclosure"   class="hover:text-white/60 transition-colors">Affiliate Disclosure</a>
+        <a href="/privacy"            class="hover:text-white/60 transition-colors">Privacy Policy</a>
+        <a href="/terms"              class="hover:text-white/60 transition-colors">Terms</a>
       </div>
-      <p class="text-center sm:text-right">
+      <p class="text-center sm:text-right max-w-xs">
         Verto contains affiliate links. We may earn a commission at no cost to you.
       </p>
     </div>

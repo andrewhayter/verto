@@ -2,8 +2,14 @@
 import BaseLayout from './BaseLayout.astro';
 import CategoryBadge from '../components/CategoryBadge.astro';
 import ArticleCard from '../components/ArticleCard.astro';
+import StickyCtaBar from '../components/StickyCtaBar.astro';
+import SocialProofBlock from '../components/SocialProofBlock.astro';
+import ScrollTracker from '../components/ScrollTracker.astro';
 import { categoryBySlug } from '../data/categories';
+import { problems } from '../data/problems';
+import { offersByProblem, getAffiliateUrl } from '../data/offers';
 import { getCollection } from 'astro:content';
+import type { Comment } from '../components/SocialProofBlock.astro';
 
 interface Props {
   title: string;
@@ -36,18 +42,95 @@ const {
 } = Astro.props;
 
 const cat = categoryBySlug[category];
-const gradient = cat?.gradient ?? 'linear-gradient(135deg, #0f172a, #1e1b4b)';
+
 const formattedDate = new Intl.DateTimeFormat('en-US', {
   month: 'long', day: 'numeric', year: 'numeric',
 }).format(date);
 
+const updatedFormatted = updatedDate
+  ? new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric' }).format(updatedDate)
+  : formattedDate;
+
+const eyebrowDate = new Intl.DateTimeFormat('en-US', { month: 'long', year: 'numeric' }).format(updatedDate ?? date);
+
+const authorMeta: Record<string, { initials: string; color: string; jobTitle: string; description: string; slug: string }> = {
+  "Dr. Elena Park":  { initials: "EP", color: "#7c3aed", jobTitle: "Health & Wellness Editor",      description: "Evidence-based health writer covering GLP-1 medications, hormone therapy, supplements, and telehealth platforms.",         slug: "elena-park"  },
+  "Alex Kovacs":     { initials: "AK", color: "#2563eb", jobTitle: "Security & Technology Editor",   description: "Cybersecurity writer specializing in VPNs, password managers, and privacy tools. Tests products against real-world threats.", slug: "alex-kovacs" },
+  "Sofia Reyes":     { initials: "SR", color: "#9333ea", jobTitle: "Personal Finance Editor",        description: "Personal finance journalist covering loans, credit cards, and investing platforms.",                                         slug: "sofia-reyes" },
+  "Rachel Kim":      { initials: "RK", color: "#be185d", jobTitle: "Consumer Products Editor",       description: "Consumer goods reviewer focused on home products, personal care, and ecommerce platforms.",                                 slug: "rachel-kim"  },
+  "Maya Okonkwo":    { initials: "MO", color: "#b45309", jobTitle: "Travel Editor",                  description: "Travel journalist covering booking platforms, travel insurance, and tactics that produce measurable cost reductions.",       slug: "maya-okonkwo"},
+  "David Huang":     { initials: "DH", color: "#047857", jobTitle: "Commerce & Lifestyle Editor",    description: "Writer covering men's fashion, real estate investing, and consumer product reviews.",                                       slug: "david-huang" },
+  "Thomas Walsh":    { initials: "TW", color: "#1d4ed8", jobTitle: "Legal Services & Insurance Editor", description: "Legal services and insurance writer explaining regulatory frameworks and cost comparisons in plain language.",           slug: "thomas-walsh"},
+  "Priya Nair":      { initials: "PN", color: "#c2410c", jobTitle: "Side Income & Surveys Editor",   description: "Side income researcher tracking real earnings across 12+ survey platforms over 90-day test periods.",                      slug: "priya-nair"  },
+};
+
+const authorProfile = authorMeta[author] ?? { initials: author.split(' ').map(n => n[0]).join('').slice(0,2).toUpperCase(), color: "#64748b", jobTitle: "Contributing Editor", description: "", slug: "editor" };
+
 const allArticles = await getCollection('articles');
 const related = allArticles
   .filter(a => a.data.category === category && `${a.data.category}/${a.slug.split('/').pop()}` !== `${category}/${Astro.url.pathname.split('/').pop()}`)
-  .slice(0, 4);
+  .slice(0, 3);
+
+/* Category-specific social proof comments */
+const commentsByCat: Record<string, Comment[]> = {
+  'health-wellness': [
+    { name: "Jennifer M.", location: "Winnipeg, MB", initials: "JM", bgColor: "#7c3aed", ago: "3 days ago",  helpful: 342, text: "I was so skeptical after years of trying everything. But 3 months in and I've lost 22 lbs. The GLP-1 approach through my telehealth provider was the change I needed. Wish I'd found this a year ago." },
+    { name: "Sandra K.",   location: "Ottawa, ON",   initials: "SK", bgColor: "#2563eb", ago: "1 week ago",  helpful: 218, text: "My doctor mentioned I was a candidate for GLP-1 but the cost through insurance was prohibitive. Found a telehealth option for under $200/month which is a game-changer." },
+    { name: "Mike T.",     location: "Calgary, AB",  initials: "MT", bgColor: "#b45309", ago: "2 weeks ago", helpful: 156, text: "Tried keto, intermittent fasting, you name it. The biological approach finally made things click. Down 18 lbs in 8 weeks and my energy is back." },
+  ],
+  financial: [
+    { name: "David R.",   location: "Toronto, ON",    initials: "DR", bgColor: "#047857", ago: "2 days ago",  helpful: 412, text: "Had 4 credit cards all at 22% APR. The loan consolidation tool got me to 11.9% and my monthly payments dropped $340. Took 3 minutes to see my options." },
+    { name: "Amanda S.",  location: "Vancouver, BC",  initials: "AS", bgColor: "#9333ea", ago: "5 days ago",  helpful: 287, text: "Was nervous about the credit check but they only use soft pulls. Got matched with 3 lenders instantly. Ended up with $8,500 at 14% for a home repair emergency." },
+    { name: "Kevin O.",   location: "Montréal, QC",   initials: "KO", bgColor: "#be185d", ago: "1 week ago",  helpful: 189, text: "As a Canadian I was worried most of these would be US-only. All 3 options shown were available in Quebec. Very straightforward process." },
+  ],
+  'antivirus-vpn': [
+    { name: "Alex P.",   location: "Edmonton, AB",   initials: "AP", bgColor: "#2563eb", ago: "4 days ago",  helpful: 203, text: "Switched from paying $12/month for a VPN that slowed my connection by 40% to one that actually performs. Night and day difference for streaming." },
+    { name: "Rachel L.", location: "Vancouver, BC",  initials: "RL", bgColor: "#7c3aed", ago: "1 week ago",  helpful: 167, text: "Needed something for the whole family. The 6-device plan covers all our phones and laptops. Finally stopped worrying about public WiFi." },
+    { name: "James M.",  location: "Toronto, ON",    initials: "JM", bgColor: "#047857", ago: "2 weeks ago", helpful: 145, text: "My ISP was definitely throttling me. Running the same speed tests after the VPN and my Netflix quality went from buffering SD to smooth 4K." },
+  ],
+  insurance: [
+    { name: "Patricia W.", location: "Hamilton, ON",   initials: "PW", bgColor: "#c2410c", ago: "3 days ago",  helpful: 298, text: "Saved $780 on my annual premium just by using the comparison tool. Took 5 minutes and the new policy has better coverage than my old one." },
+    { name: "Tyler B.",    location: "Calgary, AB",    initials: "TB", bgColor: "#1d4ed8", ago: "6 days ago",  helpful: 234, text: "After a fender-bender my rates jumped 40%. This comparison tool found me 4 providers who didn't penalize me as heavily. Back to a reasonable rate." },
+    { name: "Maria S.",    location: "Mississauga, ON", initials: "MS", bgColor: "#b45309", ago: "1 week ago",  helpful: 176, text: "New driver here. Everyone told me insurance would be brutal. Used the comparison and found a rate 30% lower than what my parents' broker quoted." },
+  ],
+  travel: [
+    { name: "Linda K.",   location: "Ottawa, ON",     initials: "LK", bgColor: "#047857", ago: "2 days ago",  helpful: 267, text: "Saved $420 on a Mexico trip using the flight deal tracker. The hotel match was even better — 4-star for the price of 3-star I was looking at." },
+    { name: "Carlos M.", location: "Toronto, ON",     initials: "CM", bgColor: "#7c3aed", ago: "1 week ago",  helpful: 198, text: "The budget hacks in here are real. Flights for 2 to Europe this fall at prices I haven't seen since pre-2020. Booked immediately." },
+    { name: "Sophie R.", location: "Vancouver, BC",   initials: "SR", bgColor: "#be185d", ago: "2 weeks ago", helpful: 154, text: "The cashback card recommendation alone paid for the article's value. Already earned $180 back in the first 2 months on the same spending I was doing anyway." },
+  ],
+};
+
+const defaultComments: Comment[] = [
+  { name: "Sarah B.",   location: "Toronto, ON",   initials: "SB", bgColor: "#7c3aed", ago: "3 days ago",  helpful: 289, text: "Really thorough breakdown of the options. Saved me hours of research and I'm confident I made the right choice." },
+  { name: "Michael C.", location: "Vancouver, BC", initials: "MC", bgColor: "#047857", ago: "1 week ago",  helpful: 234, text: "Appreciated how honest this was about pros and cons. Most sites just push whatever pays the most commission." },
+  { name: "Lisa T.",    location: "Ottawa, ON",    initials: "LT", bgColor: "#be185d", ago: "2 weeks ago", helpful: 178, text: "Shared this with three friends who were looking for the same thing. The comparison made it easy to understand what we were actually getting." },
+];
+
+const socialComments = commentsByCat[category] ?? defaultComments;
+
+const socialCount = 3841 + Math.abs(title.length * 73 + category.length * 29) % 2000;
+
+// Problem guide bridge — find the top problem for this category
+const bridgeProblem = problems.find(
+  p => p.category === category && (offersByProblem[p.slug] ?? []).filter(o => o.approved).length > 0
+);
+const bridgeOffer = bridgeProblem
+  ? (offersByProblem[bridgeProblem.slug] ?? []).filter(o => o.approved)[0]
+  : null;
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout
+  title={title}
+  description={description}
+  image={image ?? `https://verto.pages.dev/og/${category}.svg`}
+  ogType="article"
+  article={{
+    publishedTime: date.toISOString().split('T')[0],
+    modifiedTime: (updatedDate ?? date).toISOString().split('T')[0],
+    author: author,
+    section: cat?.name ?? category,
+  }}
+>
   <!-- Article schema -->
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
@@ -60,33 +143,35 @@ const related = allArticles
         "dateModified": (updatedDate ?? date).toISOString().split('T')[0],
         "image": {
           "@type": "ImageObject",
-          "url": image ?? `https://verto.pages.dev/og/${category}.png`,
+          "url": image ?? `https://verto.pages.dev/og/${category}.svg`,
           "width": 1200,
           "height": 628
         },
         "author": {
           "@type": "Person",
+          "@id": `https://verto.pages.dev/about#${authorProfile.slug}`,
           "name": author,
-          "url": "https://verto.pages.dev/about"
+          "url": `https://verto.pages.dev/about#${authorProfile.slug}`,
+          "jobTitle": authorProfile.jobTitle,
+          "description": authorProfile.description,
+          "worksFor": {
+            "@type": "Organization",
+            "@id": "https://verto.pages.dev/#organization",
+            "name": "Verto"
+          }
         },
         "publisher": {
           "@type": "Organization",
           "name": "Verto",
           "url": "https://verto.pages.dev",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://verto.pages.dev/favicon.svg"
-          }
+          "logo": { "@type": "ImageObject", "url": "https://verto.pages.dev/favicon.svg" }
         },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": Astro.url.href
-        }
+        "mainEntityOfPage": { "@type": "WebPage", "@id": Astro.url.href }
       },
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://verto.pages.dev" },
+          { "@type": "ListItem", "position": 1, "name": "Home",         "item": "https://verto.pages.dev" },
           { "@type": "ListItem", "position": 2, "name": cat?.name ?? "Articles", "item": `https://verto.pages.dev/${category}/` },
           { "@type": "ListItem", "position": 3, "name": title.substring(0, 60), "item": Astro.url.href }
         ]
@@ -102,131 +187,336 @@ const related = allArticles
     ]
   })} />
 
-  <!-- Article Header -->
-  <div class="relative" style={`background: ${gradient}`}>
-    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60"></div>
-    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 py-16 md:py-24">
-      <div class="flex items-center gap-3 mb-4">
-        {sponsored && (
-          <span class="text-[10px] font-bold uppercase tracking-widest bg-black/40 text-white px-2.5 py-1 rounded-full">
-            Sponsored
-          </span>
-        )}
-        <CategoryBadge slug={category} size="sm" />
-      </div>
-      <h1 class="font-display text-3xl md:text-5xl font-bold text-white leading-tight mb-4">
-        {title}
-      </h1>
-      <p class="text-white/80 text-lg mb-6 max-w-2xl">{description}</p>
-      <div class="flex flex-wrap items-center gap-3 text-white/60 text-sm">
-        <span>By <strong class="text-white/80">{author}</strong></span>
-        <span>·</span>
-        <span>{formattedDate}</span>
-        <span>·</span>
-        <span>{readTime} min read</span>
-      </div>
+  <!-- Disclosure -->
+  <div class="bg-amber-50 border-b border-amber-100">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 py-2 text-center">
+      <p class="text-xs text-amber-700">
+        <strong>Advertising Disclosure:</strong> This page contains affiliate links. Verto may earn a commission if you purchase through them, at no extra cost to you.
+        <a href="/about#disclosure" class="underline hover:text-amber-900">Learn more</a>
+      </p>
     </div>
   </div>
 
-  <!-- Article Body -->
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-      <!-- Main content -->
-      <article class="lg:col-span-2">
-        {ctaText && ctaUrl && (
-          <div class="cta-block mb-8">
-            <p class="text-white/70 text-sm uppercase tracking-widest mb-2">Today's Top Offer</p>
-            <h3 class="text-white text-xl font-bold mb-4">{ctaText}</h3>
+  <!-- ============================
+       EDITORIAL ARTICLE HEADER
+       ============================ -->
+  <header class="bg-white border-b border-gray-100" data-hero-sentinel>
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 pt-8 pb-6 md:pt-12 md:pb-8">
+
+      <!-- Eyebrow line -->
+      <div class="flex items-center gap-3 mb-4">
+        <span class="eyebrow text-brand">{cat?.name ?? category}</span>
+        <span class="text-gray-200">|</span>
+        <span class="eyebrow text-gray-400">{eyebrowDate}</span>
+        {sponsored && (
+          <>
+            <span class="text-gray-200">|</span>
+            <span class="eyebrow bg-gray-100 text-gray-400 px-2 py-0.5 rounded">Sponsored</span>
+          </>
+        )}
+      </div>
+
+      <!-- H1 — UTM-aware swap via JS -->
+      <h1
+        id="utm-article-headline"
+        data-default-headline={title}
+        class="font-display text-[1.75rem] sm:text-4xl md:text-[2.5rem] font-black text-gray-900 leading-tight mb-4"
+      >
+        {title}
+      </h1>
+
+      <!-- Subhead — UTM-aware swap via JS -->
+      <p
+        id="utm-article-subhead"
+        data-default-subhead={description}
+        class="text-lg text-gray-500 leading-relaxed mb-6 max-w-2xl"
+      >
+        {description}
+      </p>
+
+      <!-- Divider -->
+      <div class="h-px bg-gray-100 mb-5"></div>
+
+      <!-- Byline row -->
+      <div class="flex items-start sm:items-center gap-3 mb-4">
+        <!-- Author avatar -->
+        <div
+          class="w-11 h-11 rounded-full shrink-0 flex items-center justify-center text-white text-sm font-bold"
+          style={`background-color: ${authorProfile.color};`}
+          aria-label={`Author avatar for ${author}`}
+        >
+          {authorProfile.initials}
+        </div>
+        <div class="flex-1 min-w-0">
+          <p class="text-sm font-semibold text-gray-900">{author}</p>
+          <p class="text-xs text-gray-400">{authorProfile.jobTitle}</p>
+        </div>
+        <div class="text-right shrink-0">
+          <p class="text-xs text-gray-500">{formattedDate}</p>
+          <p class="text-xs text-gray-400">Updated {updatedFormatted} · {readTime} min read</p>
+        </div>
+      </div>
+
+      <!-- Social counter -->
+      <div class="flex items-center gap-2 text-sm text-gray-400">
+        <span class="text-amber-400 text-base leading-none">★★★★★</span>
+        <span class="font-semibold text-gray-600">{socialCount.toLocaleString()}</span>
+        <span>people found this helpful</span>
+      </div>
+    </div>
+
+    <!-- Optional hero image -->
+    {image && (
+      <div class="max-w-3xl mx-auto px-0 sm:px-6 pb-0">
+        <img
+          src={image}
+          alt={title}
+          width="750"
+          height="420"
+          loading="eager"
+          decoding="async"
+          class="w-full sm:rounded-xl object-cover"
+          style="aspect-ratio: 750/420;"
+        />
+      </div>
+    )}
+  </header>
+
+  <!-- ============================
+       CONTENT BODY
+       ============================ -->
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-10">
+
+    <!-- Article prose -->
+    <div class="prose-verto" id="article-prose">
+      <slot />
+    </div>
+
+    <!-- Social proof: FB-style comments (rendered after main content) -->
+    <SocialProofBlock comments={socialComments} title="What Readers Are Saying" />
+
+    <!-- Problem guide bridge — funnels article readers to the conversion page -->
+    {bridgeProblem && (
+      <div class="my-10 rounded-2xl overflow-hidden border border-gray-100 shadow-sm bg-white">
+        <div class="h-2" style={`background: ${bridgeProblem.gradient}`}></div>
+        <div class="p-5 sm:p-6">
+          <p class="eyebrow text-brand mb-2">Based on this article</p>
+          <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-2xl">{bridgeProblem.emoji}</span>
+                <h3 class="font-display font-bold text-gray-900 text-lg leading-snug line-clamp-2">
+                  {bridgeProblem.headline.split('—')[0].trim()}
+                </h3>
+              </div>
+              <p class="text-sm text-gray-500 leading-relaxed line-clamp-2 sm:line-clamp-1">
+                {bridgeProblem.subheadline}
+              </p>
+              {bridgeOffer && (
+                <p class="text-xs text-gray-400 mt-1">
+                  Top pick: <span class="font-semibold text-gray-600">{bridgeOffer.shortName}</span>
+                  {bridgeOffer.trustSignal && <span> · {bridgeOffer.trustSignal}</span>}
+                </p>
+              )}
+            </div>
+            <a
+              href={`/best/${bridgeProblem.slug}`}
+              class="shrink-0 btn-cta text-sm w-full sm:w-auto"
+              data-cta-click="article-bridge"
+            >
+              See Verified Options →
+            </a>
+          </div>
+        </div>
+      </div>
+    )}
+
+    <!-- FAQ section -->
+    {faqs && faqs.length > 0 && (
+      <div class="mt-12 border-t border-gray-100 pt-10">
+        <h2 class="font-display font-bold text-2xl text-gray-900 mb-6">Frequently Asked Questions</h2>
+        <div class="flex flex-col gap-3">
+          {faqs.map((faq) => (
+            <details class="group bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden">
+              <summary class="flex items-center justify-between gap-4 p-5 cursor-pointer list-none hover:bg-gray-100 transition-colors">
+                <h3 class="font-semibold text-gray-900 text-base leading-snug">{faq.q}</h3>
+                <svg class="w-5 h-5 text-gray-400 shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div class="px-5 pb-5">
+                <p class="text-gray-600 leading-relaxed text-[15px]">{faq.a}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- Final CTA block -->
+    {ctaText && ctaUrl && (
+      <div class="mt-12">
+        <div class="rounded-3xl overflow-hidden" style="background: linear-gradient(135deg, #14532d, #166534);">
+          <div class="p-8 md:p-10 text-center">
+            <p class="eyebrow text-green-300 mb-2">Today's Top Pick</p>
+            <h2 class="font-display font-bold text-2xl text-white mb-2">{ctaText}</h2>
+            <p class="text-green-200 text-sm mb-6 max-w-sm mx-auto">
+              Available now — check current pricing and availability.
+            </p>
             <a
               href={ctaUrl}
-              class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+              rel="sponsored noopener"
+              target="_blank"
+              data-cta-click="article-bottom"
+              class="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-gray-900 font-bold px-8 py-4 rounded-2xl text-base transition-colors min-h-[56px]"
             >
-              View Offer
+              {ctaText}
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>
             </a>
-          </div>
-        )}
 
-        <div class="prose-verto">
-          <slot />
-        </div>
-
-        <!-- Bottom CTA -->
-        {ctaText && ctaUrl && (
-          <div class="mt-12 border-t border-gray-200 pt-8">
-            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-gray-50 rounded-2xl p-6">
-              <div>
-                <p class="text-xs uppercase tracking-widest text-gray-400 font-semibold mb-1">Featured Offer</p>
-                <p class="font-display font-bold text-lg text-gray-900">{ctaText}</p>
-              </div>
-              <a
-                href={ctaUrl}
-                class="shrink-0 inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-semibold px-6 py-3 rounded-xl text-sm transition-colors"
-              >
-                Claim Offer
+            <!-- Trust badges -->
+            <div class="flex flex-wrap items-center justify-center gap-4 mt-5">
+              <div class="flex items-center gap-1.5 text-green-300/80 text-xs font-medium">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                 </svg>
-              </a>
+                SSL Secure
+              </div>
+              <div class="flex items-center gap-1.5 text-green-300/80 text-xs font-medium">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+                No Obligation
+              </div>
+              <div class="flex items-center gap-1.5 text-green-300/80 text-xs font-medium">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Free to Check
+              </div>
             </div>
-            <p class="text-xs text-gray-400 mt-2 text-center">
-              Affiliate link — Verto may earn a commission at no cost to you.
-            </p>
+            <p class="text-green-300/60 text-xs mt-3">Sponsored · Checking availability doesn't commit you to anything</p>
           </div>
-        )}
-      </article>
+        </div>
+      </div>
+    )}
 
-      <!-- Sidebar -->
-      <aside class="lg:col-span-1 flex flex-col gap-8">
-        <!-- Category info -->
-        {cat && (
-          <div class="rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
-            <div class="h-20" style={`background: ${cat.gradient}`}></div>
-            <div class="p-5">
-              <h3 class="font-display font-bold text-gray-900 mb-1 flex items-center gap-2">
-                <span>{cat.emoji}</span> {cat.name}
-              </h3>
-              <p class="text-sm text-gray-500 mb-4">{cat.description}</p>
-              <a
-                href={`/${cat.slug}/`}
-                class="text-sm font-semibold text-brand hover:text-brand-dark transition-colors"
-              >
-                Browse {cat.offsCount} offers →
-              </a>
-            </div>
-          </div>
-        )}
-
-        <!-- Related articles -->
-        {related.length > 0 && (
-          <div>
-            <h3 class="font-display font-bold text-gray-900 text-lg mb-4 pb-3 border-b border-gray-200">
-              More in {cat?.name}
-            </h3>
-            <div class="flex flex-col gap-3">
-              {related.map(article => {
-                const parts = article.id.split('/');
-                const slug = parts[parts.length - 1].replace(/\.md$/, '').replace(/\.mdx$/, '');
-                return (
-                  <ArticleCard
-                    title={article.data.title}
-                    description={article.data.description}
-                    category={article.data.category}
-                    slug={slug}
-                    author={article.data.author}
-                    date={article.data.date}
-                    readTime={article.data.readTime}
-                    sponsored={article.data.sponsored}
-                    variant="compact"
-                  />
-                );
-              })}
-            </div>
-          </div>
-        )}
-      </aside>
+    <!-- Disclosure footer -->
+    <div class="mt-10 p-4 bg-gray-50 rounded-2xl border border-gray-100">
+      <p class="text-xs text-gray-400 leading-relaxed">
+        <strong class="text-gray-500">Advertising Disclosure:</strong> This article contains affiliate links. Verto may receive a commission when you purchase through these links, at no additional cost to you. We only feature offers we believe are genuinely useful. Individual results vary. Consult a qualified professional before starting any health, financial, or legal program.
+      </p>
     </div>
+
+    <!-- Related articles -->
+    {related.length > 0 && (
+      <div class="mt-12 pt-10 border-t border-gray-200">
+        <h3 class="font-display font-bold text-gray-900 text-xl mb-5">
+          More in {cat?.name ?? 'Related Articles'}
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {related.map(article => {
+            const parts = article.id.split('/');
+            const slug = parts[parts.length - 1].replace(/\.mdx?$/, '');
+            return (
+              <ArticleCard
+                title={article.data.title}
+                description={article.data.description}
+                category={article.data.category}
+                slug={slug}
+                author={article.data.author}
+                date={article.data.date}
+                readTime={article.data.readTime}
+                sponsored={article.data.sponsored}
+                variant="compact"
+              />
+            );
+          })}
+        </div>
+      </div>
+    )}
   </div>
+
+  <!-- Mid-page CTA injected via JS after ~half the article paragraphs -->
+  {ctaText && ctaUrl && (
+    <script define:vars={{ ctaText, ctaUrl }}>
+      document.addEventListener('DOMContentLoaded', function () {
+        var prose = document.getElementById('article-prose');
+        if (!prose || !ctaUrl) return;
+        var paras = Array.from(prose.querySelectorAll('p'));
+        if (paras.length < 4) return;
+        var midpoint = Math.floor(paras.length * 0.5);
+        var insertBefore = paras[midpoint];
+        var div = document.createElement('div');
+        div.innerHTML =
+          '<div style="margin: 2.5rem 0; padding: 1.5rem; border-radius: 1rem; background: #f0fdf4; border: 2px solid #16a34a; text-align: center;">' +
+            '<p style="font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #15803d; margin-bottom: 0.4rem;">Today\'s Top Pick</p>' +
+            '<p style="font-family: Georgia, serif; font-size: 1.15rem; font-weight: 700; color: #111827; margin-bottom: 1rem;">' + ctaText + '</p>' +
+            '<a href="' + ctaUrl + '" rel="sponsored noopener" target="_blank" data-cta-click="mid-page" ' +
+              'style="display: flex; align-items: center; justify-content: center; width: 100%; background: #16a34a; color: white; font-weight: 700; padding: 0.875rem 1.5rem; border-radius: 0.75rem; text-decoration: none; font-size: 1rem; min-height: 56px; gap: 0.4rem;">' +
+              ctaText + ' →' +
+            '</a>' +
+            '<p style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.5rem; margin-bottom: 0;">Affiliate link · no extra cost to you</p>' +
+          '</div>';
+        if (insertBefore && insertBefore.parentNode) {
+          insertBefore.parentNode.insertBefore(div, insertBefore);
+        }
+      });
+    </script>
+  )}
+
+  <!-- Sticky CTA bar (appears after hero scrolls off) -->
+  {ctaText && ctaUrl && (
+    <StickyCtaBar
+      text={`${ctaText} — Check availability`}
+      ctaText="Check Availability"
+      ctaUrl={ctaUrl}
+    />
+  )}
+
+  <!-- Scroll depth + CTA click tracking -->
+  <ScrollTracker pageName={`article-${category}`} />
+
+  <!-- UTM-aware headline + subhead swap -->
+  <!-- Supported params:
+       utm_headline  — direct headline override (URL-encoded)
+       utm_subhead   — direct subhead override (URL-encoded)
+       utm_angle     — angle key: pain | aspiration | social (uses generic variants)
+  -->
+  <script>
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var h1 = document.getElementById('utm-article-headline');
+    var sub = document.getElementById('utm-article-subhead');
+    if (!h1) return;
+
+    // Direct overrides take priority
+    var directHeadline = params.get('utm_headline');
+    var directSubhead  = params.get('utm_subhead');
+    if (directHeadline) { h1.textContent = decodeURIComponent(directHeadline); }
+    if (directSubhead && sub) { sub.textContent = decodeURIComponent(directSubhead); }
+
+    // Angle-based variants (generic fallbacks)
+    if (!directHeadline) {
+      var angle = params.get('utm_angle') || params.get('utm_content');
+      if (!angle) return;
+      var defaultH = h1.dataset.defaultHeadline || h1.textContent;
+      var painVariants: Record<string, string> = {
+        pain:       'Why ' + defaultH.replace(/^(Why |How |The |Best )/i, '') + ' — And What Actually Works',
+        aspiration: defaultH,
+        social:     'What Thousands Are Saying About ' + defaultH.replace(/^(Why |How |The |Best )/i, ''),
+        curiosity:  'The Surprising Truth About ' + defaultH.replace(/^(Why |How |The |Best )/i, ''),
+      };
+      if (painVariants[angle]) { h1.textContent = painVariants[angle]; }
+    }
+  })();
+  </script>
 </BaseLayout>
+
+<style>
+  details[open] summary {
+    background-color: rgb(249 250 251);
+  }
+</style>

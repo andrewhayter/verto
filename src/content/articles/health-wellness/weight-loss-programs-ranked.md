@@ -26,15 +26,15 @@ faqs:
 
 **Bottom line:** GLP-1 medications produce 15–22% body weight loss at 12 months — the highest documented results of any weight loss method. Compounded versions cost $179–$225/month through telehealth platforms, versus $1,000+ for brand-name Ozempic without insurance.
 
-Not sure if you qualify? Our [GLP-1 eligibility and cost guide](/solve/cant-lose-weight) covers BMI requirements, side effects, what to expect in the first 30 days, and a full FAQ.
+Not sure which program fits your budget and situation? Our [GLP-1 program matching quiz](/calculators/glp1-quiz) routes you to the best-fit platform in 3 minutes based on your budget, administration preference, and medical history. Or use the [GLP-1 cost calculator](/calculators/glp1-cost) to see the exact 12-month cost difference between brand-name and compounded options. Full eligibility details and what to expect in the first 30 days are covered in our [GLP-1 eligibility guide](/best/cant-lose-weight).
 
 ---
 
-The clinical evidence for GLP-1 weight loss medications (Semaglutide, Tirzepatide) is now overwhelming. Average weight loss of 15–22% of body weight at 12 months is 3–5x the results of diet-only approaches. Since 2023, telehealth platforms have made compounded versions available for under $300/month — and some as low as $179.
+**What is a GLP-1 medication?** GLP-1 (glucagon-like peptide-1) receptor agonists — including Semaglutide (Ozempic, Wegovy) and Tirzepatide (Mounjaro, Zepbound) — are injectable hormones that slow gastric emptying and signal the brain to reduce hunger. The result: sustained calorie reduction without willpower. Clinical trials show 15–22% average body weight loss at 12 months — 3–5x the results of diet-only approaches. Since 2023, telehealth platforms have made compounded versions (same active ingredient, made by licensed US pharmacies) available for under $300/month — and some as low as $179.
 
 We compared the four most accessible platforms currently offering compounded GLP-1 medications.
 
-## 1. Gala — Best Overall Value
+## 1. Gala — $179/Month for All Doses, Including Physician Consultation
 
 **Price: $179/month for all dosages, including physician consultation**
 
@@ -46,7 +46,7 @@ Gala is a direct-to-consumer telehealth platform providing compounded Tirzepatid
 
 ---
 
-## 2. Viviomd — Best for Needle-Averse Patients
+## 2. Viviomd — The Only Major GLP-1 Platform With a Needle-Free Oral Tablet Format
 
 **Format: Oral Disintegrating Tablet (ODT) — no injections required**
 
@@ -57,7 +57,7 @@ Viviomd connects patients with licensed providers for GLP-1 treatments in Oral D
 
 ---
 
-## 3. TrimRX — Best for Fast Start
+## 3. TrimRX — 3-Minute Assessment, Physician Review Within 24 Hours
 
 **Assessment: 3 minutes — fastest intake process of any platform we tested**
 
@@ -68,23 +68,24 @@ TrimRX provides medically supervised access to Semaglutide and Tirzepatide via a
 
 ---
 
-## 4. ShedRX — Best Free Consultation
+## 4. ShedRX — Free Telehealth Consultation Before Any Commitment
 
 **Free initial telehealth consultation — no upfront commitment required**
 
 ShedRX offers a free telehealth consultation for weight loss injections including Semaglutide and Tirzepatide. Personalized plans include health coaching and ongoing physician support. Best option if you want to speak with a provider and understand your options before committing to a monthly plan.
 
 - **Best for:** Patients who want a provider conversation before starting a GLP-1 program
+- **[Start Free ShedRX Consultation →](https://afflat3e3.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=28778&c=918277&a=784951&k=0&l=31971)**
 
 ---
 
-## What the Research Says
+## GLP-1 Clinical Data: 15–22% Body Weight Loss at 12 Months, vs 5–8% for Diet Programs
 
 - **15–22% body weight lost** at 12 months in SURMOUNT-1 (Tirzepatide) clinical trials (New England Journal of Medicine, 2022)
 - **5–8%** typical result from behavioral diet-only interventions at 6 months (Journal of the Academy of Nutrition and Dietetics meta-analysis)
 - **$179–$225/month** cost range for compounded telehealth GLP-1 programs vs $900–$1,200 for brand-name monthly supply
 
-## Who Qualifies
+## You Qualify if Your BMI Is 30+ (or 27+ With a Weight-Related Condition) and No Contraindications
 
 Most telehealth GLP-1 providers require:
 - BMI 30+ (or BMI 27+ with a weight-related condition such as hypertension or type 2 diabetes)
@@ -92,11 +93,15 @@ Most telehealth GLP-1 providers require:
 - Not pregnant or breastfeeding
 - US residency and age 18+
 
-## Bottom Line
+## Lowest Price: Gala. No Needles: Viviomd. Fastest Start: TrimRX.
 
 For the lowest price, **Gala at $179/month** is the current market leader. For patients who want no needles, **Viviomd's ODT format** is the only oral option. For fastest enrollment, **TrimRX's 3-minute assessment** is the most streamlined.
 
 The clinical evidence gap between GLP-1 medication and diet-only weight loss is now very large. For adults with significant weight to lose and no contraindications, speaking with a telehealth provider is worth the 3–5 minutes of intake.
+
+### What is the cheapest GLP-1 weight loss program available in 2026?
+
+Gala offers compounded Tirzepatide at $179/month including all dosages and physician consultation — the lowest current price in the US telehealth market. TrimRX and Viviomd are comparable at $179–$225/month. Brand-name Ozempic runs $900–$1,200/month without insurance. All require BMI 30+ or BMI 27+ with a qualifying condition.
 
 ---
 

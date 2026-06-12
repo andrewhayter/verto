@@ -1,6 +1,6 @@
 ---
-title: "21 Travel Hacks That Saved Our Team $14,000 Last Year"
-description: "21 tactics producing $14,000 in documented savings across 47 trips — $297/trip on average. Highest-leverage moves: book Tuesday 1pm ET, Google Flights ±3 day calendar view ($80–$200 per booking), book hotel direct after OTA quote, hold transferable Chase/Amex/Capital One points. Plus Faye travel insurance at 4–8% of trip cost."
+title: "12 Travel Hacks That Saved Our Team $14,000 Last Year"
+description: "12 tactics producing $14,000 in documented savings across 47 trips — $297/trip on average. Highest-leverage moves: book Tuesday 1pm ET, Google Flights ±3 day calendar view ($80–$200 per booking), book hotel direct after OTA quote, hold transferable Chase/Amex/Capital One points. Plus Faye travel insurance at 4–8% of trip cost."
 category: "travel"
 date: 2026-06-03
 updatedDate: 2026-06-11
@@ -24,9 +24,9 @@ faqs:
     a: "Transferable points (Chase Ultimate Rewards, American Express Membership Rewards, Capital One Miles) can move to 15–20 different airline and hotel partners. This flexibility means you're not locked to one program's availability or award charts. A $500 annual fee card used for everyday spending typically generates $2,000+ in travel value annually. Single-airline miles expire, devalue, and offer no flexibility."
 ---
 
-**Bottom line:** 21 tactics produced $14,000 in documented savings across 47 trips in 2025 — $297 per trip on average. The four highest-leverage moves: book flights Tuesday 1pm ET, use Google Flights ±3 day calendar view, book hotel direct after finding the OTA rate, and hold transferable points (Chase UR, Amex MR, Capital One Miles) rather than single-airline miles. Always buy travel insurance — a single medical emergency abroad costs more than years of booking savings.
+**Bottom line:** 12 tactics produced $14,000 in documented savings across 47 trips in 2025 — $297 per trip on average. The four highest-leverage moves: book flights Tuesday 1pm ET, use Google Flights ±3 day calendar view, book hotel direct after finding the OTA rate, and hold transferable points (Chase UR, Amex MR, Capital One Miles) rather than single-airline miles. Always buy travel insurance — a single medical emergency abroad costs more than years of booking savings.
 
-Twenty-one booking and travel tactics produced $14,000 in documented savings across 47 trips in 2025 — an average of $297 per trip. The highest-leverage moves: booking Tuesday at 1pm ET, using Google Flights' ±3 day calendar view, booking hotel direct after finding the OTA rate, and holding transferable points rather than single-airline miles.
+These 12 booking and travel tactics produced $14,000 in documented savings across 47 trips in 2025 — an average of $297 per trip. The highest-leverage moves: booking Tuesday at 1pm ET, using Google Flights' ±3 day calendar view, booking hotel direct after finding the OTA rate, and holding transferable points rather than single-airline miles.
 
 Here's the complete playbook with specific numbers.
 
@@ -82,4 +82,18 @@ The math is real. The programs are legitimate. The learning curve is two weekend
 
 ## The One Expense That Always Pays Off
 
-Every cost-cutting tactic above assumes the trip runs as planned. It rarely does. Trip cancellation, lost luggage, and medical emergencies abroad can cost $5,000–$100,000+ and wipe out years of savings from smart booking. [Faye Travel Insurance](https://www.withfaye.com/) covers trip cancellation, flight delays, lost baggage, and emergency medical — with app-based claims and 24/7 support. Plans typically cost 4–8% of your total trip value: about $80–$160 on a $2,000 trip.
+Every cost-cutting tactic above assumes the trip runs as planned. It rarely does. Trip cancellation, lost luggage, and medical emergencies abroad can cost $5,000–$100,000+ and wipe out years of savings from smart booking. Faye covers trip cancellation, flight delays, lost baggage, and emergency medical — with app-based claims and 24/7 support. Plans typically cost 4–8% of your total trip value: about $80–$160 on a $2,000 trip.
+
+**[Get Faye Travel Insurance Before Your Next Trip →](https://afflat3e1.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=26732&c=918277&a=784951&k=0&l=37028)**
+
+Comparing Faye against Freely before you buy? Our [Faye vs Freely head-to-head comparison](/travel/faye-vs-freely-travel-insurance) covers what each policy covers, what each costs for the same $3,800 Europe itinerary, and when Freely's adventure sports coverage wins.
+
+---
+
+## Already Booked? Check if You're Owed Compensation
+
+EU regulations (EC 261/2004) entitle passengers to €250–€600 per person for flights delayed more than 3 hours or cancelled — on routes departing from or arriving in the EU. Airlines do not notify you when you qualify. Use our [EU Flight Delay Compensation Checker](/calculators/flight-delay) to find out in under 2 minutes what you are owed.
+
+---
+
+*This article contains affiliate links. Verto earns a commission when you purchase through our links at no additional cost to you. Travel prices, insurance terms, and booking platform availability change frequently — verify current details before booking.*

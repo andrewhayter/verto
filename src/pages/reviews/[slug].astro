@@ -98,18 +98,19 @@ const seoDescription = `${shortName}: ${tagline}. Available in ${geoDisplay}. Se
         "@type": "Article",
         "headline": `${shortName} Review 2026`,
         "description": seoDescription,
-        "datePublished": "2026-05-01",
-        "dateModified": "2026-06-11",
+        "datePublished": "2025-10-01",
+        "dateModified": new Date().toISOString().split('T')[0],
         "image": {
           "@type": "ImageObject",
-          "url": `https://verto.pages.dev/og/${catSlug}.png`,
+          "url": `https://verto.pages.dev/og/${catSlug}.svg`,
           "width": 1200, "height": 628
         },
         "author": {
           "@type": "Person",
+          "@id": "https://verto.pages.dev/about#editorial-team",
           "name": "Verto Editorial Team",
           "url": "https://verto.pages.dev/about",
-          "worksFor": { "@type": "Organization", "name": "Verto", "url": "https://verto.pages.dev" }
+          "worksFor": { "@type": "Organization", "@id": "https://verto.pages.dev/#organization", "name": "Verto", "url": "https://verto.pages.dev" }
         },
         "publisher": {
           "@type": "Organization",

@@ -1,0 +1,209 @@
+---
+interface QuizQuestion {
+  q: string;
+  options: string[];
+}
+
+interface Props {
+  headline?: string;
+  offerName: string;
+  ctaUrl: string;
+  ctaText: string;
+  category: string;
+  subtext?: string;
+}
+
+const {
+  headline = 'See If You Qualify',
+  offerName,
+  ctaUrl,
+  ctaText,
+  category,
+  subtext,
+} = Astro.props;
+
+const q1Map: Record<string, QuizQuestion> = {
+  'health-wellness': {
+    q: "What's been your biggest challenge?",
+    options: [
+      "Can't lose weight despite trying everything",
+      'Low energy and hormone changes',
+      'Menopause / perimenopause symptoms',
+      "Men's health or testosterone concerns",
+    ],
+  },
+  financial: {
+    q: 'What best describes your situation?',
+    options: [
+      'Overwhelmed by high-interest debt',
+      'Need emergency funds quickly',
+      'Looking to consolidate multiple loans',
+      'Want to build or repair credit',
+    ],
+  },
+  'antivirus-vpn': {
+    q: "What's your main reason for looking?",
+    options: [
+      'Concerned about online privacy and tracking',
+      'Need to access geo-restricted content',
+      'Protect devices from hackers and malware',
+      'Secure my passwords and accounts',
+    ],
+  },
+  insurance: {
+    q: 'What are you hoping to solve?',
+    options: [
+      'My current premium is too high',
+      "I just got my license or a new car",
+      'Shopping around after an incident',
+      'Just doing a routine comparison',
+    ],
+  },
+  travel: {
+    q: "What describes your travel situation?",
+    options: [
+      'Planning a trip and looking for deals',
+      'Want to cut hotel and flight costs',
+      'Frequent traveler with loyalty points',
+      'Just starting to travel more',
+    ],
+  },
+  surveys: {
+    q: 'What matters most to you?',
+    options: [
+      'Maximum hourly earnings',
+      'Flexible schedule and easy tasks',
+      'Fast, reliable payouts',
+      'Variety of ways to earn',
+    ],
+  },
+};
+
+const q1 = q1Map[category] ?? {
+  q: 'What best describes why you\'re here today?',
+  options: [
+    'Looking for the best available option',
+    'Researching before making a decision',
+    'Ready to take action today',
+    'Comparing multiple options',
+  ],
+};
+---
+
+<div class="my-12 rounded-3xl overflow-hidden border-2 border-green-200 bg-green-50 shadow-lg" id="quiz-wrapper">
+  <!-- Progress bar -->
+  <div class="h-1.5 bg-green-100">
+    <div id="quiz-progress" class="h-full bg-cta transition-all duration-500" style="width: 0%"></div>
+  </div>
+
+  <div class="p-6 md:p-8">
+    <p class="eyebrow text-cta mb-2">Personalized Recommendation</p>
+    <h3 class="font-display font-bold text-xl md:text-2xl text-gray-900 mb-1">{headline}</h3>
+    <p class="text-sm text-gray-500 mb-6">Answer 3 quick questions — takes less than 30 seconds</p>
+
+    <!-- Q1 -->
+    <div id="quiz-q1" class="quiz-step">
+      <p class="font-semibold text-gray-800 mb-3">{q1.q}</p>
+      <div class="flex flex-col gap-2">
+        {q1.options.map((opt) => (
+          <button class="quiz-option-btn" data-step="1">{opt}</button>
+        ))}
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div id="quiz-q2" class="quiz-step hidden">
+      <p class="font-semibold text-gray-800 mb-3">How long have you been dealing with this?</p>
+      <div class="flex flex-col gap-2">
+        <button class="quiz-option-btn" data-step="2">Less than 6 months</button>
+        <button class="quiz-option-btn" data-step="2">6 months to 2 years</button>
+        <button class="quiz-option-btn" data-step="2">More than 2 years</button>
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div id="quiz-q3" class="quiz-step hidden">
+      <p class="font-semibold text-gray-800 mb-3">What matters most to you?</p>
+      <div class="flex flex-col gap-2">
+        <button class="quiz-option-btn" data-step="3">Seeing real results as fast as possible</button>
+        <button class="quiz-option-btn" data-step="3">A long-term, sustainable solution</button>
+        <button class="quiz-option-btn" data-step="3">The most affordable option available</button>
+      </div>
+    </div>
+
+    <!-- Result -->
+    <div id="quiz-result" class="hidden text-center py-2">
+      <div class="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
+        <svg class="w-7 h-7 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <p class="eyebrow text-cta mb-2">Based on your answers</p>
+      <h3 class="font-display font-bold text-xl md:text-2xl text-gray-900 mb-2">
+        {offerName} appears to be a strong match
+      </h3>
+      <p class="text-sm text-gray-500 mb-6">
+        {subtext ?? 'Available in your region — check current availability and pricing below.'}
+      </p>
+      <a
+        href={ctaUrl}
+        rel="sponsored noopener"
+        target="_blank"
+        data-cta-click="quiz-result"
+        class="btn-cta btn-cta-full text-base"
+      >
+        {ctaText} →
+      </a>
+      <p class="text-xs text-gray-400 mt-3">Sponsored · No obligation to purchase</p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var steps = ['quiz-q1', 'quiz-q2', 'quiz-q3', 'quiz-result'];
+  var current = 0;
+
+  function advance() {
+    var currentEl = document.getElementById(steps[current]);
+    if (currentEl) currentEl.classList.add('hidden');
+    current++;
+
+    var pct = Math.min(Math.round((current / 3) * 100), 100);
+    var bar = document.getElementById('quiz-progress');
+    if (bar) bar.style.width = pct + '%';
+
+    var nextEl = document.getElementById(steps[current]);
+    if (nextEl) {
+      nextEl.classList.remove('hidden');
+      nextEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    if (current === 1 && typeof window.fbq === 'function') {
+      window.fbq('trackCustom', 'QuizStart', { step: 1 });
+    }
+    if (current === 3) {
+      if (typeof window.fbq === 'function') {
+        window.fbq('trackCustom', 'QuizComplete', { steps_completed: 3 });
+      }
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'quiz_complete', { event_category: 'conversion' });
+      }
+    }
+  }
+
+  var quizStartFired = false;
+  document.querySelectorAll('.quiz-option-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      if (!quizStartFired) {
+        quizStartFired = true;
+        if (typeof window.fbq === 'function') window.fbq('trackCustom', 'QuizStart', { step: 0 });
+        if (typeof window.gtag === 'function') window.gtag('event', 'quiz_start', { event_category: 'conversion' });
+        if (typeof window.clarity === 'function') window.clarity('event', 'quiz_start');
+      }
+      this.classList.add('selected');
+      setTimeout(advance, 280);
+    });
+  });
+})();
+</script>

@@ -60,12 +60,10 @@ const geoLabel = offer.geos.includes('WW') ? 'Worldwide' : offer.geos.join(', ')
         href={affiliateUrl}
         rel="sponsored noopener"
         target="_blank"
-        class="block w-full text-center bg-brand hover:bg-brand-dark text-white font-bold text-base px-6 py-4 rounded-2xl transition-colors"
+        data-cta-click="offer-featured"
+        class="btn-cta btn-cta-full text-base"
       >
-        {offer.ctaText}
-        <svg class="inline-block w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-        </svg>
+        {offer.ctaText} →
       </a>
       {offer.ctaSubtext && (
         <p class="text-center text-xs text-gray-400 mt-2">{offer.ctaSubtext}</p>
@@ -119,7 +117,8 @@ const geoLabel = offer.geos.includes('WW') ? 'Worldwide' : offer.geos.join(', ')
           href={affiliateUrl}
           rel="sponsored noopener"
           target="_blank"
-          class="flex-1 text-center bg-brand hover:bg-brand-dark text-white font-semibold text-sm px-4 py-3 rounded-xl transition-colors"
+          data-cta-click="offer-full"
+          class="flex-1 text-center bg-cta hover:bg-cta-dark text-white font-semibold text-sm px-4 py-3 rounded-xl transition-colors min-h-[44px] flex items-center justify-center"
         >
           {offer.ctaText} →
         </a>
@@ -160,7 +159,8 @@ const geoLabel = offer.geos.includes('WW') ? 'Worldwide' : offer.geos.join(', ')
       href={affiliateUrl}
       rel="sponsored noopener"
       target="_blank"
-      class="shrink-0 bg-brand hover:bg-brand-dark text-white text-xs font-bold px-3 py-2 rounded-lg transition-colors whitespace-nowrap"
+      data-cta-click="offer-compact"
+      class="shrink-0 bg-cta hover:bg-cta-dark text-white text-xs font-bold px-3 py-2.5 rounded-lg transition-colors whitespace-nowrap min-h-[40px] flex items-center"
     >
       {offer.ctaText}
     </a>

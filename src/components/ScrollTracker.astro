@@ -1,0 +1,57 @@
+---
+interface Props {
+  pageName?: string;
+}
+const { pageName = 'page' } = Astro.props;
+---
+
+<script define:vars={{ pageName }}>
+(function () {
+  var fired = {};
+  var milestones = [25, 50, 75, 100];
+
+  function getScrollPct() {
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    return docHeight > 0 ? Math.round((scrollTop / docHeight) * 100) : 0;
+  }
+
+  function fireScrollEvent(depth) {
+    if (typeof window.fbq === 'function') {
+      window.fbq('trackCustom', 'ScrollDepth', { page: pageName, depth: depth });
+    }
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'scroll_depth', { page_name: pageName, depth_percentage: depth });
+    }
+  }
+
+  var ticking = false;
+  window.addEventListener('scroll', function () {
+    if (!ticking) {
+      window.requestAnimationFrame(function () {
+        var pct = getScrollPct();
+        milestones.forEach(function (m) {
+          if (pct >= m && !fired[m]) {
+            fired[m] = true;
+            fireScrollEvent(m);
+          }
+        });
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+
+  document.addEventListener('click', function (e) {
+    var target = e.target && e.target.closest ? e.target.closest('[data-cta-click]') : null;
+    if (!target) return;
+    var ctaType = target.getAttribute('data-cta-click');
+    if (typeof window.fbq === 'function') {
+      window.fbq('trackCustom', 'CTAClick', { page: pageName, cta_type: ctaType });
+    }
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'cta_click', { page_name: pageName, cta_type: ctaType });
+    }
+  });
+})();
+</script>

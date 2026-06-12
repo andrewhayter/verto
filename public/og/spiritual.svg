@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="628" viewBox="0 0 1200 628">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#4c1d95"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="628" fill="url(#bg)"/>
+  <rect width="1200" height="628" fill="rgba(0,0,0,0.45)"/>
+  <!-- Verto wordmark -->
+  <text x="60" y="72" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="rgba(255,255,255,0.6)" letter-spacing="6">VERTO</text>
+  <!-- Emoji -->
+  <text x="60" y="360" font-family="Apple Color Emoji, Segoe UI Emoji, sans-serif" font-size="120" fill="white">🌙</text>
+  <!-- Category name -->
+  <text x="60" y="480" font-family="system-ui, -apple-system, sans-serif" font-size="64" font-weight="800" fill="white">Spiritual</text>
+  <!-- Tagline -->
+  <text x="60" y="556" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="400" fill="rgba(255,255,255,0.65)">Expert-reviewed offers · verto.pages.dev</text>
+</svg>

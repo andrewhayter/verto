@@ -7,7 +7,7 @@ updatedDate: 2026-06-11
 author: "Dr. Elena Park"
 featured: true
 tags: ["supplements", "health", "vitamins", "wellness", "evidence-based"]
-ctaText: "Try Myco-Max Lion's Mane — Fruiting Body Extract, Not Mycelium"
+ctaText: "Myco-Max Lion's Mane — Fruiting Body Extract, Clinical-Dose Hericenones"
 ctaUrl: "https://afflat3e3.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=31922&c=918277&a=784951&k=0&l=37488"
 readTime: 8
 sponsored: true
@@ -17,7 +17,7 @@ faqs:
   - q: "Which magnesium form is best absorbed?"
     a: "Magnesium glycinate has the highest bioavailability and the lowest rate of digestive side effects among magnesium forms. Magnesium oxide — the cheapest and most common form — is poorly absorbed. For sleep and stress, 200–400mg elemental magnesium glycinate taken at night is the recommended dose."
   - q: "Does lion's mane mushroom actually improve memory?"
-    a: "Lion's mane (Hericium erinaceus) is the most credibly researched nootropic mushroom. Its active compounds — hericenones and erinacines — cross the blood-brain barrier and stimulate nerve growth factor (NGF) production. A 2009 double-blind trial showed significant cognitive improvement in adults with mild cognitive impairment after 12 weeks of daily use at 3g/day."
+    a: "Lion's mane (Hericium erinaceus) is the most credibly researched nootropic mushroom. Its active compounds — hericenones and erinacines — cross the blood-brain barrier and stimulate nerve growth factor (NGF) production. A 2009 double-blind trial showed significant cognitive improvement in adults with mild cognitive impairment after 12 weeks of daily use at 3g/day. For sourcing: look for fruiting body extract products (not mycelium-on-grain) with standardized hericenone content — these are what the clinical studies used."
   - q: "What supplements are a waste of money in 2026?"
     a: "Testosterone boosters, fat burners, proprietary blends that hide individual doses, colostrum supplements for non-infants, and most pre-workouts with under-dosed actives. The $50B supplement industry is largely unregulated — only products with NSF, Informed Sport, or USP third-party testing certification meet a minimum evidence bar."
   - q: "How much vitamin D3 should I take daily?"
@@ -26,9 +26,11 @@ faqs:
 
 **Bottom line:** Six supplements have enough clinical evidence to justify buying — creatine monohydrate, vitamin D3+K2, omega-3 (EPA/DHA), magnesium glycinate, collagen peptides, and ashwagandha (KSM-66 or Sensoril). Everything else in a typical supplement store is marketing dressed in scientific language.
 
-Six supplements have enough clinical evidence to justify buying: creatine monohydrate, vitamin D3 + K2, omega-3 (EPA/DHA), magnesium glycinate, collagen peptides, and ashwagandha (KSM-66 or Sensoril). Everything else in a typical supplement store is marketing dressed in scientific language.
+An evidence-backed supplement is one with at least one randomized controlled trial in humans showing a measurable effect at a specific dose — not animal data, not in-vitro studies, not manufacturer-funded observational reports. By that standard, six supplements clear the bar in 2026.
 
-Here's what the evidence actually shows — and the doses that matter.
+Here's what the clinical data shows for each — and the doses that actually matter.
+
+---
 
 ## 1. Creatine Monohydrate — For Strength & Cognitive Performance
 
@@ -93,3 +95,11 @@ The supplement industry isn't regulated like pharmaceuticals. Third-party testin
 Lion's mane (Hericium erinaceus) is the one nootropic mushroom with genuinely compelling human research. The hericenone and erinacine compounds stimulate nerve growth factor (NGF) synthesis — the mechanism behind improved memory consolidation and neurogenesis observed in multiple 12-week trials. The effect is real; the question is dose and extraction quality.
 
 **Myco-Max** is a concentrated lion's mane supplement using the fruiting body (not mycelium — the part with actual hericenone content). For adults experiencing brain fog, memory difficulty, or cognitive fatigue, it's the supplement from this list most likely to produce a noticeable effect in 8–12 weeks.
+
+For a broader review of evidence-backed nootropics — including NAD+ delivery mechanisms, Focus IQ, and Telo X Nano — see our [Best Nootropics Guide for 2026](/health-wellness/best-nootropics-2026).
+
+---
+
+## A Note on Pet Supplements
+
+Most pet supplements share the same evidence problem as human supplements — proprietary blends with no RCT data. The exception is CBD for dogs with arthritis. A 2019 Cornell University randomized controlled trial found 2mg/kg CBD twice daily significantly reduced pain scores and improved mobility in dogs with osteoarthritis (p<0.001). This is harder evidence than most human supplement categories. If you have a dog with hip dysplasia or joint pain, our [8-week King Kanine CBD review](/health-wellness/king-kanine-dog-cbd-arthritis-review) documents the behavioral changes with a logged data set.

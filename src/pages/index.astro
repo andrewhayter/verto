@@ -2,7 +2,6 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import OfferCard from '../components/OfferCard.astro';
-import Newsletter from '../components/Newsletter.astro';
 import { getCollection } from 'astro:content';
 import { categories } from '../data/categories';
 import { problems } from '../data/problems';
@@ -15,97 +14,165 @@ const sortedArticles = allArticles.sort(
 const featuredArticle = sortedArticles.find(a => a.data.featured) ?? sortedArticles[0];
 const recentArticles = sortedArticles
   .filter(a => a.id !== featuredArticle?.id)
-  .slice(0, 6);
+  .slice(0, 8);
 
 function getArticleSlug(article: (typeof allArticles)[0]) {
   const parts = article.id.split('/');
   return parts[parts.length - 1].replace(/\.mdx?$/, '');
 }
 
-// Spotlight problems — ones with approved offers
+function getFeaturedSlug(article: (typeof allArticles)[0]) {
+  const parts = article.id.split('/');
+  return parts[parts.length - 1].replace(/\.mdx?$/, '');
+}
+
+const featuredSlug = featuredArticle ? getFeaturedSlug(featuredArticle) : '';
+
 const spotlightProblems = problems
   .filter(p => (offersByProblem[p.slug] ?? []).filter(o => o.approved).length > 0)
   .slice(0, 6);
 
-// Top offers for a sidebar strip
-const featuredTopOffers = topOffers.slice(0, 5);
+const featuredTopOffers = topOffers.slice(0, 3);
+
+const eyebrowDate = new Intl.DateTimeFormat('en-US', { month: 'long', year: 'numeric' }).format(new Date());
 ---
 
 <BaseLayout
   title="Verto — Expert-Reviewed Offers for Health, Finance & Lifestyle"
   description="Compare the top-rated offers for weight loss, personal loans, legal documents, VPNs, and more. Verto reviews affiliate offers from vetted networks so you don't have to."
 >
-  <!-- Schema for homepage -->
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "WebPage",
     "@id": "https://verto.pages.dev/#webpage",
     "name": "Verto — Expert-Reviewed Offers for Health, Finance & Lifestyle",
-    "description": "Compare the top-rated offers for weight loss, personal loans, legal documents, VPNs, and more. Verto reviews affiliate offers from vetted networks so you don't have to.",
+    "description": "Compare the top-rated offers for weight loss, personal loans, legal documents, VPNs, and more.",
     "url": "https://verto.pages.dev",
     "isPartOf": { "@id": "https://verto.pages.dev/#website" },
     "about": { "@id": "https://verto.pages.dev/#organization" },
-    "speakable": {
-      "@type": "SpeakableSpecification",
-      "cssSelector": ["h1", ".ticker-bar"]
-    },
     "breadcrumb": {
       "@type": "BreadcrumbList",
       "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://verto.pages.dev" }]
     }
   })} />
 
-  <!-- Ticker bar -->
+  <!-- Trending ticker -->
   <div class="ticker-bar text-white text-xs font-semibold py-2 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center gap-2">
       <span class="uppercase tracking-widest shrink-0 mr-3 opacity-80">Trending:</span>
       <div class="flex gap-8 overflow-x-auto category-nav">
         {spotlightProblems.map(p => (
           <a href={`/best/${p.slug}`} class="whitespace-nowrap hover:underline opacity-90">
-            {p.emoji} {p.headline.split('—')[0].trim().substring(0, 55)}
+            {p.emoji} {p.headline.split('—')[0].trim().substring(0, 50)}
           </a>
         ))}
       </div>
     </div>
   </div>
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10">
 
-    <!-- Hero: Problem Finder -->
-    <div class="mb-14">
-      <div class="text-center max-w-3xl mx-auto mb-10">
-        <h1 class="font-display text-4xl md:text-5xl font-black text-gray-900 leading-tight mb-4">
-          The highest-rated offers for {problems.length} specific health, finance, and lifestyle problems — verified and compared
-        </h1>
-        <p class="text-gray-500 text-lg">
-          Each guide compares the top offers for one problem — with pricing, eligibility, clinical evidence, and FAQs. No generic lists. No sponsored rankings.
-        </p>
+    <!-- ============================
+         MAGAZINE HERO: featured article
+         ============================ -->
+    {featuredArticle && (
+      <section class="mb-14">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="eyebrow text-brand">Featured</span>
+          <span class="text-gray-200 text-xs">|</span>
+          <span class="eyebrow text-gray-400">{eyebrowDate}</span>
+        </div>
+
+        <a
+          href={`/${featuredArticle.data.category}/${featuredSlug}`}
+          class="group block bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-shadow"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <!-- Left: content -->
+            <div class="p-8 md:p-10 flex flex-col justify-center">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="eyebrow text-brand">{featuredArticle.data.category.replace(/-/g, ' ')}</span>
+                {featuredArticle.data.sponsored && (
+                  <span class="eyebrow bg-amber-50 text-amber-600 px-2 py-0.5 rounded">Sponsored</span>
+                )}
+              </div>
+              <h2 class="font-display text-2xl md:text-3xl font-black text-gray-900 leading-tight mb-3 group-hover:text-brand transition-colors">
+                {featuredArticle.data.title}
+              </h2>
+              <p class="text-gray-500 text-base leading-relaxed mb-5 line-clamp-3">
+                {featuredArticle.data.description}
+              </p>
+              <div class="flex items-center gap-3 text-sm text-gray-400">
+                <span>By <strong class="text-gray-600">{featuredArticle.data.author}</strong></span>
+                <span>·</span>
+                <span>{new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric' }).format(featuredArticle.data.date)}</span>
+                <span>·</span>
+                <span>{featuredArticle.data.readTime ?? 5} min read</span>
+              </div>
+              <div class="mt-5">
+                <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand group-hover:gap-3 transition-all">
+                  Read Article
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <!-- Right: gradient placeholder -->
+            <div
+              class="h-56 md:h-full min-h-[220px] flex items-center justify-center text-6xl"
+              style={`background: ${categories.find(c => c.slug === featuredArticle.data.category)?.gradient ?? 'linear-gradient(135deg, #1e1b4b, #312e81)'}`}
+            >
+              <div class="text-white/30 text-8xl font-display font-black select-none">
+                {featuredArticle.data.category.charAt(0).toUpperCase()}
+              </div>
+            </div>
+          </div>
+        </a>
+      </section>
+    )}
+
+    <!-- ============================
+         PROBLEM GUIDES GRID
+         ============================ -->
+    <section class="mb-14">
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <div class="flex items-center gap-3 mb-1">
+            <div class="w-1 h-7 bg-brand rounded-full"></div>
+            <h2 class="font-display font-bold text-2xl text-gray-900">Solution Guides</h2>
+          </div>
+          <p class="text-sm text-gray-400 pl-4">One guide per problem — ranked offers, evidence, FAQs</p>
+        </div>
+        <a href="/best" class="text-brand hover:text-brand-dark text-sm font-semibold transition-colors whitespace-nowrap">
+          All {problems.length} guides →
+        </a>
       </div>
 
-      <!-- Problem grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {spotlightProblems.map(problem => {
           const problemOffers = (offersByProblem[problem.slug] ?? []).filter(o => o.approved);
           const topOffer = problemOffers[0];
           return (
             <a
-              href={`/solve/${problem.slug}`}
+              href={`/best/${problem.slug}`}
               class="group relative flex flex-col justify-between rounded-2xl overflow-hidden p-6 min-h-[200px] hover:shadow-lg transition-all"
               style={`background: ${problem.gradient}`}
             >
               <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors"></div>
               <div class="relative z-10">
                 <div class="text-3xl mb-3">{problem.emoji}</div>
-                <h2 class="font-display font-bold text-white text-lg leading-snug line-clamp-2">
-                  {problem.headline.split('?')[0].substring(0, 70)}{problem.headline.includes('?') ? '?' : ''}
-                </h2>
+                <h3 class="font-display font-bold text-white text-lg leading-snug line-clamp-2">
+                  {problem.headline.split('?')[0].substring(0, 65)}{problem.headline.includes('?') ? '?' : ''}
+                </h3>
               </div>
               <div class="relative z-10 mt-4">
                 {topOffer && (
                   <p class="text-white/70 text-xs mb-2">Top pick: <span class="text-white font-semibold">{topOffer.shortName}</span></p>
                 )}
                 <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest bg-white/15 hover:bg-white/25 text-white px-3 py-1.5 rounded-full transition-colors">
-                  Find My Solution
+                  See Options
                   <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                   </svg>
@@ -115,47 +182,26 @@ const featuredTopOffers = topOffers.slice(0, 5);
           );
         })}
       </div>
-
-      <div class="text-center">
-        <a href="/best" class="inline-flex items-center gap-2 text-brand hover:text-brand-dark font-semibold text-sm transition-colors">
-          Browse all problem guides
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-          </svg>
-        </a>
-      </div>
-    </div>
-
-    <!-- Today's Top Offers strip -->
-    <section class="mb-14">
-      <div class="flex items-center justify-between mb-6">
-        <div class="flex items-center gap-3">
-          <div class="w-1 h-7 bg-brand rounded-full"></div>
-          <h2 class="font-display font-bold text-2xl text-gray-900">Today's Top Offers</h2>
-          <span class="text-xs text-gray-400 hidden sm:block">Ranked by EPC · Updated daily</span>
-        </div>
-      </div>
-      <div class="flex flex-col gap-3">
-        {featuredTopOffers.map((offer, i) => (
-          <OfferCard offer={offer} rank={i + 1} variant="compact" />
-        ))}
-      </div>
     </section>
 
-    <!-- Editorial articles grid -->
+    <!-- ============================
+         EDITORIAL ARTICLE GRID
+         ============================ -->
     {recentArticles.length > 0 && (
       <section class="mb-14">
         <div class="flex items-center justify-between mb-6">
           <div class="flex items-center gap-3">
             <div class="w-1 h-7 bg-brand rounded-full"></div>
-            <h2 class="font-display font-bold text-2xl text-gray-900">Expert Guides & Reviews</h2>
+            <h2 class="font-display font-bold text-2xl text-gray-900">Expert Guides &amp; Reviews</h2>
           </div>
           <a href="/categories" class="text-brand hover:text-brand-dark text-sm font-semibold transition-colors">
-            View All →
+            View all →
           </a>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {recentArticles.map(article => (
+
+        <!-- First 3 articles large, rest compact -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+          {recentArticles.slice(0, 3).map(article => (
             <ArticleCard
               title={article.data.title}
               description={article.data.description}
@@ -168,19 +214,62 @@ const featuredTopOffers = topOffers.slice(0, 5);
             />
           ))}
         </div>
+
+        {recentArticles.length > 3 && (
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {recentArticles.slice(3, 7).map(article => (
+              <a
+                href={`/${article.data.category}/${getArticleSlug(article)}`}
+                class="flex items-start gap-4 bg-white rounded-xl border border-gray-100 p-4 hover:border-gray-200 hover:shadow-sm transition-all group"
+              >
+                <div
+                  class="w-12 h-12 rounded-xl shrink-0 flex items-center justify-center text-xl"
+                  style={`background: ${categories.find(c => c.slug === article.data.category)?.gradient ?? 'linear-gradient(135deg, #e2e8f0, #cbd5e1)'}`}
+                >
+                  {categories.find(c => c.slug === article.data.category)?.emoji ?? '📄'}
+                </div>
+                <div class="flex-1 min-w-0">
+                  <p class="eyebrow text-brand mb-1">{article.data.category.replace(/-/g, ' ')}</p>
+                  <h3 class="font-semibold text-sm text-gray-900 leading-snug line-clamp-2 group-hover:text-brand transition-colors">
+                    {article.data.title}
+                  </h3>
+                  <p class="text-xs text-gray-400 mt-1">{article.data.author} · {article.data.readTime ?? 5} min</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        )}
       </section>
     )}
 
-    <!-- Newsletter -->
-    <div class="mb-14">
-      <Newsletter />
-    </div>
+    <!-- ============================
+         TOP OFFERS STRIP
+         ============================ -->
+    <section class="mb-14">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-1 h-7 bg-brand rounded-full"></div>
+        <h2 class="font-display font-bold text-2xl text-gray-900">Top Offers Right Now</h2>
+        <span class="text-xs text-gray-400 hidden sm:block">Ranked by value · Updated daily</span>
+      </div>
+      <div class="flex flex-col gap-3">
+        {featuredTopOffers.map((offer, i) => (
+          <OfferCard offer={offer} rank={i + 1} variant="compact" />
+        ))}
+      </div>
+      <div class="text-center mt-4">
+        <a href="/reviews" class="text-sm font-semibold text-brand hover:text-brand-dark transition-colors">
+          Browse all {500}+ reviewed offers →
+        </a>
+      </div>
+    </section>
 
-    <!-- All categories -->
+    <!-- ============================
+         CATEGORIES GRID
+         ============================ -->
     <section>
       <div class="flex items-center gap-3 mb-6">
         <div class="w-1 h-7 bg-brand rounded-full"></div>
-        <h2 class="font-display font-bold text-2xl text-gray-900">Browse All Categories</h2>
+        <h2 class="font-display font-bold text-2xl text-gray-900">Browse by Category</h2>
       </div>
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
         {categories.map(cat => (

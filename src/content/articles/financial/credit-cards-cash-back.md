@@ -3,6 +3,7 @@ title: "Best Cash Back Credit Cards of 2026: Up to 5% Back — Compare and Apply
 description: "The average household leaves $400+ in unused card rewards per year. These five cards earn 2–6% back on everyday spending. Use SuperMoney to compare your options without affecting your credit score."
 category: "financial"
 date: 2026-06-02
+updatedDate: 2026-06-12
 author: "Sofia Reyes"
 featured: false
 tags: ["credit cards", "cash back", "rewards", "personal finance", "supermoney"]
@@ -23,7 +24,11 @@ faqs:
 
 **Bottom line:** The average household carries a card earning 1% back or less. The best cash back cards earn 2–6% on everyday spending. Use [SuperMoney](https://www.supermoney.com/reviews/personal-credit-cards) to compare 250+ cards and see your approval odds before applying — it uses a soft inquiry that won't affect your credit score.
 
-Not sure which card fits your credit score or spending pattern? See our [credit card comparison guide](/solve/best-credit-card) — it matches you to the right card based on your actual situation.
+A cash back credit card is a rewards card that returns a percentage of every purchase as redeemable cash — either as a statement credit, direct deposit, or gift card. Rates range from 1% flat (most cards) to 6% on specific categories like groceries (Amex Blue Cash Preferred). The difference between a 1% and 2% card on $40,000 of annual spending is $400 per year.
+
+Not sure which card fits your credit score or spending pattern? See our [credit card comparison guide](/best/best-credit-card) — it matches you to the right card based on your actual situation.
+
+**APR on a cash back card** is the annual percentage rate charged on any balance you carry past the due date. The best cash back cards charge 19.99–29.99% APR — meaning cash back rewards are erased if you carry a balance month to month. Cash back cards only produce net positive returns when paid in full every billing cycle. If you carry a balance, a low-APR card (typically 13–18%) saves more money than any rewards card at any rate.
 
 ---
 
