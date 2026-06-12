@@ -63,6 +63,15 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <title>{siteTitle}</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NP1KGMXP4T"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NP1KGMXP4T');
+  </script>
+
 
   <!-- Organization + WebSite schema -->
   <script type="application/ld+json" set:html={JSON.stringify({
