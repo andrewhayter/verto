@@ -81,22 +81,22 @@ const pageViews = 18400 + Math.abs(problem.slug.length * 137 + problem.headline.
         "dateModified": new Date().toISOString().split('T')[0],
         "image": {
           "@type": "ImageObject",
-          "url": `https://verto.pages.dev/og/${problem.category}.svg`,
+          "url": `https://verto.fun/og/${problem.category}.svg`,
           "width": 1200,
           "height": 628
         },
         "author": {
           "@type": "Person",
-          "@id": "https://verto.pages.dev/about#editorial-team",
+          "@id": "https://verto.fun/about#editorial-team",
           "name": "Verto Editorial Team",
-          "url": "https://verto.pages.dev/about",
-          "worksFor": { "@type": "Organization", "@id": "https://verto.pages.dev/#organization", "name": "Verto" }
+          "url": "https://verto.fun/about",
+          "worksFor": { "@type": "Organization", "@id": "https://verto.fun/#organization", "name": "Verto" }
         },
         "publisher": {
           "@type": "Organization",
           "name": "Verto",
-          "url": "https://verto.pages.dev",
-          "logo": { "@type": "ImageObject", "url": "https://verto.pages.dev/favicon.svg" }
+          "url": "https://verto.fun",
+          "logo": { "@type": "ImageObject", "url": "https://verto.fun/favicon.svg" }
         },
         "mainEntityOfPage": { "@type": "WebPage", "@id": Astro.url.href }
       },
@@ -111,8 +111,8 @@ const pageViews = 18400 + Math.abs(problem.slug.length * 137 + problem.headline.
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home",      "item": "https://verto.pages.dev" },
-          { "@type": "ListItem", "position": 2, "name": cat?.name ?? "Offers", "item": `https://verto.pages.dev/${problem.category}/` },
+          { "@type": "ListItem", "position": 1, "name": "Home",      "item": "https://verto.fun" },
+          { "@type": "ListItem", "position": 2, "name": cat?.name ?? "Offers", "item": `https://verto.fun/${problem.category}/` },
           { "@type": "ListItem", "position": 3, "name": problem.headline.substring(0, 60), "item": Astro.url.href }
         ]
       }

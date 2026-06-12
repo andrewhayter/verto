@@ -102,21 +102,21 @@ const seoDescription = `${shortName}: ${tagline}. Available in ${geoDisplay}. Se
         "dateModified": new Date().toISOString().split('T')[0],
         "image": {
           "@type": "ImageObject",
-          "url": `https://verto.pages.dev/og/${catSlug}.svg`,
+          "url": `https://verto.fun/og/${catSlug}.svg`,
           "width": 1200, "height": 628
         },
         "author": {
           "@type": "Person",
-          "@id": "https://verto.pages.dev/about#editorial-team",
+          "@id": "https://verto.fun/about#editorial-team",
           "name": "Verto Editorial Team",
-          "url": "https://verto.pages.dev/about",
-          "worksFor": { "@type": "Organization", "@id": "https://verto.pages.dev/#organization", "name": "Verto", "url": "https://verto.pages.dev" }
+          "url": "https://verto.fun/about",
+          "worksFor": { "@type": "Organization", "@id": "https://verto.fun/#organization", "name": "Verto", "url": "https://verto.fun" }
         },
         "publisher": {
           "@type": "Organization",
           "name": "Verto",
-          "url": "https://verto.pages.dev",
-          "logo": { "@type": "ImageObject", "url": "https://verto.pages.dev/favicon.svg" }
+          "url": "https://verto.fun",
+          "logo": { "@type": "ImageObject", "url": "https://verto.fun/favicon.svg" }
         },
         "mainEntityOfPage": { "@type": "WebPage", "@id": Astro.url.href },
       },
@@ -131,9 +131,9 @@ const seoDescription = `${shortName}: ${tagline}. Available in ${geoDisplay}. Se
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home",   "item": "https://verto.pages.dev" },
-          { "@type": "ListItem", "position": 2, "name": "Reviews", "item": "https://verto.pages.dev/reviews" },
-          cat ? { "@type": "ListItem", "position": 3, "name": cat.name, "item": `https://verto.pages.dev/${catSlug}/` } : null,
+          { "@type": "ListItem", "position": 1, "name": "Home",   "item": "https://verto.fun" },
+          { "@type": "ListItem", "position": 2, "name": "Reviews", "item": "https://verto.fun/reviews" },
+          cat ? { "@type": "ListItem", "position": 3, "name": cat.name, "item": `https://verto.fun/${catSlug}/` } : null,
           { "@type": "ListItem", "position": cat ? 4 : 3, "name": shortName, "item": Astro.url.href },
         ].filter(Boolean),
       },

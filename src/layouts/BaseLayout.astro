@@ -19,7 +19,7 @@ interface Props {
 const {
   title,
   description = 'Verto matches you with expert-reviewed offers for health, finance, legal, and lifestyle needs — honest comparisons, real results.',
-  image = 'https://verto.pages.dev/og/default.svg',
+  image = 'https://verto.fun/og/default.svg',
   ogType = 'website',
   article,
 } = Astro.props;
@@ -77,22 +77,22 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://verto.pages.dev/#organization",
+        "@id": "https://verto.fun/#organization",
         "name": "Verto",
         "alternateName": ["Verto Editorial", "Verto Editorial Team"],
-        "url": "https://verto.pages.dev",
+        "url": "https://verto.fun",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://verto.pages.dev/favicon.svg",
+          "url": "https://verto.fun/favicon.svg",
           "width": 512,
           "height": 512
         },
         "description": "Independent affiliate advertorial publication covering health and wellness, personal finance, legal services, and consumer technology.",
         "foundingDate": "2025",
-        "email": "hello@verto.pages.dev",
+        "email": "hello@verto.fun",
         "contactPoint": {
           "@type": "ContactPoint",
-          "email": "hello@verto.pages.dev",
+          "email": "hello@verto.fun",
           "contactType": "editorial"
         },
         "sameAs": [],
@@ -110,19 +110,19 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
           "consumer technology",
           "telehealth services"
         ],
-        "publishingPrinciples": "https://verto.pages.dev/about#disclosure"
+        "publishingPrinciples": "https://verto.fun/about#disclosure"
       },
       {
         "@type": "WebSite",
-        "@id": "https://verto.pages.dev/#website",
+        "@id": "https://verto.fun/#website",
         "name": "Verto",
-        "url": "https://verto.pages.dev",
-        "publisher": { "@id": "https://verto.pages.dev/#organization" },
+        "url": "https://verto.fun",
+        "publisher": { "@id": "https://verto.fun/#organization" },
         "potentialAction": {
           "@type": "SearchAction",
           "target": {
             "@type": "EntryPoint",
-            "urlTemplate": "https://verto.pages.dev/topics?q={search_term_string}"
+            "urlTemplate": "https://verto.fun/topics?q={search_term_string}"
           },
           "query-input": "required name=search_term_string"
         }

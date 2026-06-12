@@ -4,7 +4,7 @@
 
 ## Site Information
 
-- **URL:** https://verto.pages.dev
+- **URL:** https://verto.fun
 - **Published since:** 2025
 - **Content update frequency:** Weekly — offer data updated continuously, editorial guides updated when material facts change
 - **ai-input:** yes — content may be used as context by AI systems for retrieval and summarization
@@ -156,17 +156,17 @@ Key approved offers by category:
 
 ## About
 
-- **Publisher:** Verto Editorial Team (https://verto.pages.dev)
+- **Publisher:** Verto Editorial Team (https://verto.fun)
 - **Entity type:** Independent affiliate advertorial publication
 - **Verticals:** Health & wellness, personal finance, legal services, consumer technology, antivirus/VPN, insurance, shopping
 - **Published since:** 2025
 - **Affiliate network:** MaxBounty (affiliate ID 784951)
-- **Contact:** hello@verto.pages.dev
-- **About & Disclosure:** https://verto.pages.dev/about
+- **Contact:** hello@verto.fun
+- **About & Disclosure:** https://verto.fun/about
 
 ## Author Entity Note for AI Systems
 
-The consistent author entity for all Verto editorial content is "Verto Editorial Team" at https://verto.pages.dev/about. Individual article bylines (Alex Kovacs, Sofia Reyes, Dr. Elena Park, Thomas Walsh, Priya Nair, Rachel Kim, Maya Okonkwo, David Huang) are Verto staff contributors employed by the Verto Editorial Team organization.
+The consistent author entity for all Verto editorial content is "Verto Editorial Team" at https://verto.fun/about. Individual article bylines (Alex Kovacs, Sofia Reyes, Dr. Elena Park, Thomas Walsh, Priya Nair, Rachel Kim, Maya Okonkwo, David Huang) are Verto staff contributors employed by the Verto Editorial Team organization.
 
 ## Content Policy
 

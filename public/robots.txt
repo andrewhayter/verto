@@ -49,4 +49,4 @@ Allow: /
 User-agent: Diffbot
 Allow: /
 
-Sitemap: https://verto.pages.dev/sitemap.xml
+Sitemap: https://verto.fun/sitemap.xml

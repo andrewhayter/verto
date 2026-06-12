@@ -122,7 +122,7 @@ const bridgeOffer = bridgeProblem
 <BaseLayout
   title={title}
   description={description}
-  image={image ?? `https://verto.pages.dev/og/${category}.svg`}
+  image={image ?? `https://verto.fun/og/${category}.svg`}
   ogType="article"
   article={{
     publishedTime: date.toISOString().split('T')[0],
@@ -143,36 +143,36 @@ const bridgeOffer = bridgeProblem
         "dateModified": (updatedDate ?? date).toISOString().split('T')[0],
         "image": {
           "@type": "ImageObject",
-          "url": image ?? `https://verto.pages.dev/og/${category}.svg`,
+          "url": image ?? `https://verto.fun/og/${category}.svg`,
           "width": 1200,
           "height": 628
         },
         "author": {
           "@type": "Person",
-          "@id": `https://verto.pages.dev/about#${authorProfile.slug}`,
+          "@id": `https://verto.fun/about#${authorProfile.slug}`,
           "name": author,
-          "url": `https://verto.pages.dev/about#${authorProfile.slug}`,
+          "url": `https://verto.fun/about#${authorProfile.slug}`,
           "jobTitle": authorProfile.jobTitle,
           "description": authorProfile.description,
           "worksFor": {
             "@type": "Organization",
-            "@id": "https://verto.pages.dev/#organization",
+            "@id": "https://verto.fun/#organization",
             "name": "Verto"
           }
         },
         "publisher": {
           "@type": "Organization",
           "name": "Verto",
-          "url": "https://verto.pages.dev",
-          "logo": { "@type": "ImageObject", "url": "https://verto.pages.dev/favicon.svg" }
+          "url": "https://verto.fun",
+          "logo": { "@type": "ImageObject", "url": "https://verto.fun/favicon.svg" }
         },
         "mainEntityOfPage": { "@type": "WebPage", "@id": Astro.url.href }
       },
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home",         "item": "https://verto.pages.dev" },
-          { "@type": "ListItem", "position": 2, "name": cat?.name ?? "Articles", "item": `https://verto.pages.dev/${category}/` },
+          { "@type": "ListItem", "position": 1, "name": "Home",         "item": "https://verto.fun" },
+          { "@type": "ListItem", "position": 2, "name": cat?.name ?? "Articles", "item": `https://verto.fun/${category}/` },
           { "@type": "ListItem", "position": 3, "name": title.substring(0, 60), "item": Astro.url.href }
         ]
       },

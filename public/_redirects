@@ -1,0 +1,4 @@
+# Canonical host: verto.fun
+# 301 the old Pages domain and any www subdomain to the apex.
+https://verto.pages.dev/* https://verto.fun/:splat 301!
+https://www.verto.fun/* https://verto.fun/:splat 301!

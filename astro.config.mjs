@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://verto.pages.dev',
+  site: 'https://verto.fun',
   trailingSlash: 'never',
   integrations: [
     mdx(),

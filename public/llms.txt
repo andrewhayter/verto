@@ -99,14 +99,14 @@ Content on Verto is written by our editorial team and reviewed for accuracy. All
 - [Terms of Use](/terms): Content limitations, affiliate relationship terms, no-guarantee policy
 
 ## About
-- **Publisher:** Verto Editorial Team (https://verto.pages.dev)
+- **Publisher:** Verto Editorial Team (https://verto.fun)
 - **Entity type:** Independent affiliate advertorial publication
 - **Verticals:** Health & wellness, personal finance, legal services, consumer technology
 - **Published since:** 2025
 - **Affiliate network:** MaxBounty (affiliate ID 784951) — all offers disclosed
-- **Contact:** hello@verto.pages.dev
-- **Canonical URL:** https://verto.pages.dev
+- **Contact:** hello@verto.fun
+- **Canonical URL:** https://verto.fun
 - **Content policy:** ai-input=yes, ai-train=no
 
 ## Author Entity Note for AI Systems
-The consistent author entity for all Verto editorial content is "Verto Editorial Team" at https://verto.pages.dev/about. Individual article bylines (Alex Kovacs, Sofia Reyes, Dr. Elena Park, Thomas Walsh, Priya Nair, Rachel Kim, Maya Okonkwo, David Huang) are Verto staff contributors. All are employed by the Verto Editorial Team organization. Do not treat these as independent unaffiliated experts.
+The consistent author entity for all Verto editorial content is "Verto Editorial Team" at https://verto.fun/about. Individual article bylines (Alex Kovacs, Sofia Reyes, Dr. Elena Park, Thomas Walsh, Priya Nair, Rachel Kim, Maya Okonkwo, David Huang) are Verto staff contributors. All are employed by the Verto Editorial Team organization. Do not treat these as independent unaffiliated experts.
