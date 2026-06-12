@@ -5,6 +5,17 @@ export const MB_AFFILIATE_ID = '784951';
 export const MB_ACCOUNT_GUID = '8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB';
 export const MB_TRACKING_DOMAIN = 'https://afflat3e1.com';
 
+// MaxBounty load-balances tracking across these host variants. Used client-side to
+// detect affiliate links and stamp the inbound social source onto them.
+export const MB_AFFILIATE_HOSTS = ['afflat3e1.com', 'afflat3e2.com', 'afflat3e3.com'];
+
+// ── Analytics ────────────────────────────────────────────────────────────────
+// Cloudflare Web Analytics beacon token. Get it from:
+//   Cloudflare Dashboard → Web Analytics → (site) → "JS snippet" → the `token` value.
+// Leave empty to disable the beacon (e.g. you enabled automatic injection on the
+// Pages project instead, which needs no code). TODO(owner): paste token when available.
+export const CF_WEB_ANALYTICS_TOKEN = '';
+
 // The `k=` parameter is a cryptographic key unique per offer — it must come from
 // your MaxBounty dashboard (Offer → Get Link). You cannot construct it from the offer ID alone.
 //

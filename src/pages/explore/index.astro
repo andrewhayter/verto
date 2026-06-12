@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import { pillars } from '../../data/taxonomy';
+---
+
+<BaseLayout
+  title="Explore Verto — Browse Every Topic"
+  description="Browse Verto by topic: health, money, travel, home, side income, safety, legal, and play. Find the guides, tools, and top offers for what you need."
+>
+  <section class="bg-slate-900 py-14 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <h1 class="font-display font-black text-4xl md:text-5xl text-white mb-3">Explore by Topic</h1>
+      <p class="text-white/70 text-lg max-w-2xl">
+        Every guide, tool, and reviewed offer, organized by what you're actually trying to do.
+      </p>
+    </div>
+  </section>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {pillars.map((pillar) => (
+        <a
+          href={`/explore/${pillar.slug}`}
+          class="group relative rounded-3xl overflow-hidden p-6 min-h-[200px] flex flex-col justify-end"
+          style={`background: ${pillar.gradient}`}
+        >
+          <div class="absolute inset-0 bg-black/35 group-hover:bg-black/25 transition-colors"></div>
+          <div class="relative z-10">
+            <div class="text-4xl mb-2">{pillar.emoji}</div>
+            <h2 class="font-display font-bold text-2xl text-white mb-1">{pillar.name}</h2>
+            <p class="text-white/80 text-sm mb-3">{pillar.blurb}</p>
+            <div class="flex flex-wrap gap-1.5">
+              {pillar.clusters.slice(0, 4).map((c) => (
+                <span class="text-[11px] font-medium text-white/90 bg-white/15 px-2 py-0.5 rounded-full">
+                  {c.name}
+                </span>
+              ))}
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <Newsletter />
+</BaseLayout>

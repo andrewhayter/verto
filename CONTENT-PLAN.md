@@ -7,7 +7,7 @@
 
 - Every Facebook post links to a **Verto URL**, not directly to an offer
 - Verto pages do the trust-building; affiliate links are inside the page
-- Problem pages (`/solve/[slug]`) = high-intent landing pages
+- Problem pages (`/best/[slug]`) = high-intent landing pages
 - Articles (`/articles/[category]/[slug]`) = longer-form editorial, better for organic + social
 - EPC = earnings per click (the number that matters — accounts for real conversion rate)
 
@@ -24,7 +24,7 @@ These 8 clusters have the highest EPC, the biggest audiences, and the clearest F
 
 | Type | Slug / Filename | Title | Offers | EPC |
 |---|---|---|---|---|
-| Problem page | `/solve/cant-lose-weight` | *(exists — expand with new offers)* | Gala, Viviomd, TrimRX | $0.91–0.94 |
+| Problem page | `/best/cant-lose-weight` | *(exists — expand with new offers)* | Gala, Viviomd, TrimRX | $0.91–0.94 |
 | Article | `health-wellness/glp1-no-injection-option` | "The GLP-1 Weight Loss Pill: Viviomd's No-Injection Oral Tablet Explained" | Viviomd (32072) | $0.94 |
 | Article | `health-wellness/glp1-price-breakdown-2026` | "How to Get Ozempic-Level Results for $179/Month — Without Insurance" | Gala, TrimRX, Viviomd | $0.91 |
 | Article | `health-wellness/tirzepatide-vs-semaglutide` | "Tirzepatide vs Semaglutide: Which GLP-1 Is Right for You in 2026?" | Gala, TrimRX | $0.94 |
@@ -48,7 +48,7 @@ These 8 clusters have the highest EPC, the biggest audiences, and the clearest F
 
 | Type | Slug / Filename | Title | Offers | EPC |
 |---|---|---|---|---|
-| Problem page | `/solve/earn-from-phone` | *(exists — punch it up with bigger numbers)* | Nielsen Pulse | $3.51 |
+| Problem page | `/best/earn-from-phone` | *(exists — punch it up with bigger numbers)* | Nielsen Pulse | $3.51 |
 | Article | `surveys/nielsen-pulse-review-2026` | "I Made $612 This Year From an App I Never Open — Nielsen Pulse Full Review" | Nielsen Pulse (32298) | $3.51 |
 | Article | `surveys/passive-income-apps-ranked` | "5 Apps That Pay You Passively in 2026 — Ranked by What I Actually Earned" | Nielsen Pulse + Rewardia (AU) | $3.51 |
 
@@ -67,7 +67,7 @@ These 8 clusters have the highest EPC, the biggest audiences, and the clearest F
 
 | Type | Slug / Filename | Title | Offers | EPC |
 |---|---|---|---|---|
-| Problem page | `/solve/mens-style-upgrade` | "The Made-to-Measure Suit That Changed How I Dress — Without the $2,000 Price Tag" | Kahlon | $0.94 |
+| Problem page | `/best/mens-style-upgrade` | "The Made-to-Measure Suit That Changed How I Dress — Without the $2,000 Price Tag" | Kahlon | $0.94 |
 | Article | `shopping-ecommerce/kahlon-suit-review-2026` | "I Ordered a Kahlon Suit. Here's What a Made-to-Measure Actually Looks Like." | Kahlon (29358) | $0.94 |
 | Article | `shopping-ecommerce/made-to-measure-vs-off-rack` | "Why Every Man's Off-the-Rack Suit Fits Wrong (And What to Do About It)" | Kahlon | $0.94 |
 | Article | `shopping-ecommerce/suit-for-every-occasion-2026` | "One Suit for Job Interviews, Weddings, and Court — Here's How to Get It Right" | Kahlon | $0.94 |
@@ -87,7 +87,7 @@ These 8 clusters have the highest EPC, the biggest audiences, and the clearest F
 
 | Type | Slug / Filename | Title | Offers | EPC |
 |---|---|---|---|---|
-| Problem page | `/solve/quit-vaping` | *(exists — ensure Jones is dominant)* | Quit with Jones | $2.76 |
+| Problem page | `/best/quit-vaping` | *(exists — ensure Jones is dominant)* | Quit with Jones | $2.76 |
 | Article | `health-wellness/quit-vaping-2026-what-actually-works` | "How to Quit Vaping in 2026: What Actually Works for Vapers (Not Smokers)" | Quit with Jones (30785) | $2.76 |
 | Article | `health-wellness/nicotine-nrt-for-vapers-explained` | "FDA-Approved NRT Built for Vapers: Why Jones Is Different From Nicotine Gum" | Quit with Jones | $2.76 |
 | Article | `health-wellness/vaping-vs-smoking-addiction-difference` | "Vaping Addiction Is Different From Cigarette Addiction — Here's Why Quit-Smoking Products Fail Vapers" | Quit with Jones | $2.76 |
@@ -107,7 +107,7 @@ These 8 clusters have the highest EPC, the biggest audiences, and the clearest F
 
 | Type | Slug / Filename | Title | Offers | EPC |
 |---|---|---|---|---|
-| Problem page | `/solve/rural-internet` | *(exists — push Home Fi harder)* | Home Fi | $0.94 |
+| Problem page | `/best/rural-internet` | *(exists — push Home Fi harder)* | Home Fi | $0.94 |
 | Article | `shopping-ecommerce/home-fi-review-rural-internet` | "4 Months of Home Fi Wireless Internet in a Rural Area — Honest Review" | Home Fi (31456) | $0.94 |
 | Article | `shopping-ecommerce/rural-internet-options-2026` | "Rural Internet in 2026: Starlink vs Home Fi vs DSL — What I Actually Tested" | Home Fi | $0.94 |
 | Article | `shopping-ecommerce/rv-internet-options-2026` | "The Best Internet for RVs and Full-Time Travelers in 2026 — No Contract Required" | Home Fi | $0.94 |
@@ -127,9 +127,9 @@ These 8 clusters have the highest EPC, the biggest audiences, and the clearest F
 
 | Type | Slug / Filename | Title | Offers | EPC |
 |---|---|---|---|---|
-| Problem page | `/solve/low-energy-men` | *(exists — add NAD+ and Sermorelin detail)* | Strut Sermorelin, NAD+, Telo X Nano | $0.52–0.57 |
-| Problem page | `/solve/ed-treatment-men` | "Discreet ED Treatment Online — No Waiting Room, Ships in Plain Packaging" | Strut Sexual Health, HintMeds | $0.47–0.51 |
-| Problem page | `/solve/mens-hair-loss` | *(exists — Dutasteride vs Finasteride frame)* | Strut Hair Loss | $0.40 |
+| Problem page | `/best/low-energy-men` | *(exists — add NAD+ and Sermorelin detail)* | Strut Sermorelin, NAD+, Telo X Nano | $0.52–0.57 |
+| Problem page | `/best/ed-treatment-men` | "Discreet ED Treatment Online — No Waiting Room, Ships in Plain Packaging" | Strut Sexual Health, HintMeds | $0.47–0.51 |
+| Problem page | `/best/mens-hair-loss` | *(exists — Dutasteride vs Finasteride frame)* | Strut Hair Loss | $0.40 |
 | Article | `health-wellness/nad-therapy-men-over-40` | "NAD+ Therapy: The Prescription Treatment for Men's Energy Decline After 40" | Strut NAD+ (31080) | $0.52 |
 | Article | `health-wellness/sermorelin-vs-hgh-explained` | "Sermorelin vs HGH: Why Doctors Prefer This for Growth Hormone Optimization" | Strut Sermorelin (31081) | $0.57 |
 | Article | `health-wellness/tadalafil-spray-hintmeds` | "Tadalafil in a Spray? HintMeds' New Format Is Turning Heads" | HintMeds (32125) | $0.47 |
@@ -157,13 +157,13 @@ These 8 clusters have the highest EPC, the biggest audiences, and the clearest F
 
 | Type | Slug / Filename | Title | Offers | EPC |
 |---|---|---|---|---|
-| Problem page | `/solve/book-cheap-flights` | "Stop Overpaying for Travel: The Booking Sites That Actually Find the Lowest Prices" | Trip.com US/CA, Kiwi, Oojo, Junova | $0.61–1.47 |
+| Problem page | `/best/book-cheap-flights` | "Stop Overpaying for Travel: The Booking Sites That Actually Find the Lowest Prices" | Trip.com US/CA, Kiwi, Oojo, Junova | $0.61–1.47 |
 | Article | `travel/tripcom-vs-expedia-vs-booking-2026` | "Trip.com vs Expedia vs Booking.com: Where You Save the Most Money in 2026" | Trip.com US (19783), Trip.com CA (25048) | $0.61–1.47 |
 | Article | `travel/how-kiwi-finds-cheaper-flights` | "How Kiwi.com Finds Flights That Don't Exist on Any Single Airline's Website" | Kiwi.com (8338) | $0.09 EPC |
 | Article | `travel/junova-flight-refund-hack` | "I Found Out I Could Have Paid $180 Less — After I Already Booked. Here's the App." | Junova (31854) | $0.49 |
 | Article | `travel/oojo-international-flights-review` | "Oojo Travel Review: The International Flight Booking Site Frequent Flyers Use" | Oojo US (26824), CA (26825), UK (27267) | $0.38 |
 | Article | `travel/compensair-flight-delay-compensation` | "Your Delayed Flight Probably Owes You Money — Here's How to Claim It" | Compensair (16819) | $0.40 |
-| Problem page | `/solve/car-rental-savings` | "Stop Booking Car Rentals Directly — Use a Comparison Site and Save Up to 40%" | Alamo, Enterprise US/CA | $0.24–0.30 |
+| Problem page | `/best/car-rental-savings` | "Stop Booking Car Rentals Directly — Use a Comparison Site and Save Up to 40%" | Alamo, Enterprise US/CA | $0.24–0.30 |
 | Article | `travel/alamo-enterprise-car-rental-comparison` | "Alamo vs Enterprise vs Hertz: Who Has the Best Price When You Actually Book?" | Alamo (15461), Enterprise US (15462) | $0.24–0.29 |
 
 **Offers:**
@@ -190,7 +190,7 @@ These 8 clusters have the highest EPC, the biggest audiences, and the clearest F
 
 | Type | Slug / Filename | Title | Offers | EPC |
 |---|---|---|---|---|
-| Problem page | `/solve/gourmet-food-subscription` | "The Food Subscription Boxes Worth Getting in 2026 (And the Ones That Aren't)" | Wildgrain, AmazingClubs | $0.49–0.99 |
+| Problem page | `/best/gourmet-food-subscription` | "The Food Subscription Boxes Worth Getting in 2026 (And the Ones That Aren't)" | Wildgrain, AmazingClubs | $0.49–0.99 |
 | Article | `shopping-ecommerce/wildgrain-review-2026` | "Wildgrain Review: Artisan Sourdough That Bakes From Frozen in 25 Minutes — Is It Worth It?" | Wildgrain (30557) | $0.99 |
 | Article | `shopping-ecommerce/amazingclubs-gift-review` | "AmazingClubs Review: The Gourmet Gift-of-the-Month Box That Actually Impresses People" | AmazingClubs (31121) | $0.49 |
 | Article | `shopping-ecommerce/best-food-subscription-boxes-2026` | "Best Food Subscription Boxes of 2026 — Ranked After Testing 6 of Them" | Wildgrain + AmazingClubs | $0.99 |
@@ -217,7 +217,7 @@ Canada has dramatically lower content competition and you have a dense cluster o
 
 | Type | Slug / Filename | Title | Offers | EPC |
 |---|---|---|---|---|
-| Problem page | `/solve/bad-credit-loans-canada` | "Rejected by Your Bank? Canada's Subprime Lender Network Gets People Approved" | Credit Resources CA | $1.97 |
+| Problem page | `/best/bad-credit-loans-canada` | "Rejected by Your Bank? Canada's Subprime Lender Network Gets People Approved" | Credit Resources CA | $1.97 |
 | Article | `financial/bad-credit-loans-canada-2026` | "Bad Credit Loans in Canada 2026: The Lender Network for People Banks Won't Touch" | Credit Resources CA (31464) | $1.97 |
 | Article | `financial/credit-repair-canada-guide` | "How to Fix Your Credit Score in Canada — Free Tools + Lenders That Work With Bad Credit" | Credit Resources CA + TrackFinance CA | $1.97 |
 
@@ -237,8 +237,8 @@ Canada has dramatically lower content competition and you have a dense cluster o
 
 | Type | Slug / Filename | Title | Offers | EPC |
 |---|---|---|---|---|
-| Problem page | `/solve/keto-weight-loss-canada` | "Keto Weight Loss in Canada 2026: The BHB Supplements That Actually Work" | JumpKETO, 21KETO | $0.60 |
-| Problem page | `/solve/blood-sugar-control` | *(exists — push CardioNEX CA angle harder)* | CardioNEX | $0.60 |
+| Problem page | `/best/keto-weight-loss-canada` | "Keto Weight Loss in Canada 2026: The BHB Supplements That Actually Work" | JumpKETO, 21KETO | $0.60 |
+| Problem page | `/best/blood-sugar-control` | *(exists — push CardioNEX CA angle harder)* | CardioNEX | $0.60 |
 | Article | `health-wellness/jumpketo-review-canada` | "JumpKETO Review (Canada): BHB Gummies That Speed Up Ketosis — Tested" | JumpKETO (31613) | $0.60 |
 | Article | `health-wellness/keto-gummies-canada-comparison` | "JumpKETO vs 21KETO: Which Keto Gummy Is Worth Buying in Canada?" | JumpKETO + 21KETO | $0.60 |
 | Article | `health-wellness/cardioneх-blood-sugar-canada` | "CardioNEX Review: The Blood Glucose Supplement Available in Canada, Ireland & Switzerland" | CardioNEX (31617) | $0.60 |
@@ -259,8 +259,8 @@ Canada has dramatically lower content competition and you have a dense cluster o
 
 | Type | Slug / Filename | Title | Offers | EPC |
 |---|---|---|---|---|
-| Problem page | `/solve/start-investing` | *(exists — expand with Felix Health CA crosslinks)* | MooMoo CA | $0.37 |
-| Problem page | `/solve/credit-monitoring-canada` | "Monitor Your Canadian Credit Report — Before an Error Costs You a Loan" | TrackFinance CA | $0.55 |
+| Problem page | `/best/start-investing` | *(exists — expand with Felix Health CA crosslinks)* | MooMoo CA | $0.37 |
+| Problem page | `/best/credit-monitoring-canada` | "Monitor Your Canadian Credit Report — Before an Error Costs You a Loan" | TrackFinance CA | $0.55 |
 | Article | `financial/moomoo-canada-free-stock-2026` | "MooMoo Canada Review 2026: How to Get Up to $1,000 in Free Stock" | MooMoo CA (29920) | $0.37 |
 | Article | `financial/trackfinance-canada-review` | "TrackFinance Review: The Canadian Credit Monitoring Trial Worth Taking" | TrackFinance CA (31093) | $0.55 |
 | Article | `financial/felix-health-canada-ozempic-menopause` | "Felix Health Canada: Get Ozempic, Menopause HRT, or Viagra Online Without a Clinic Visit" | Felix Menopause/Viagra/Ozempic CA | $0.39 |
@@ -301,8 +301,8 @@ Build after Phase 1 & 2 are live. These are strong offers with slightly smaller 
 ### CLUSTER 3A — Women's Health (US)
 | Type | Slug / Filename | Title | Offers | EPC |
 |---|---|---|---|---|
-| Problem page | `/solve/menopause-symptoms` | *(exists — reinforce Winona)* | Winona | $0.39 |
-| Problem page | `/solve/fitness-women-over-40` | *(exists — expand with Ultrahuman angle)* | Reverse Health | $0.45 |
+| Problem page | `/best/menopause-symptoms` | *(exists — reinforce Winona)* | Winona | $0.39 |
+| Problem page | `/best/fitness-women-over-40` | *(exists — expand with Ultrahuman angle)* | Reverse Health | $0.45 |
 | Article | `health-wellness/winona-hrt-review-2026` | "Winona HRT Review 2026: What 90 Days of Bioidentical Hormone Therapy Actually Did" | Winona (28316) | $0.39 |
 | Article | `health-wellness/perimenopause-symptoms-what-to-do` | "Perimenopause Symptoms Starting in Your 40s — The Treatment Options Your Doctor May Not Mention" | Winona | $0.39 |
 | Article | `health-wellness/women-fitness-over-40-what-changes` | "Why Your Workouts Stop Working After 40 — And the Science Behind What Does Work" | Reverse Health (29132) | $0.45 |
@@ -318,7 +318,7 @@ Build after Phase 1 & 2 are live. These are strong offers with slightly smaller 
 ### CLUSTER 3B — Brain & Cognitive Supplements (US + CA)
 | Type | Slug / Filename | Title | Offers | EPC |
 |---|---|---|---|---|
-| Problem page | `/solve/brain-fog-memory` | *(exists — expand with Alzheimer's Protocol)* | Telo X Nano, Focus IQ, Myco-Max | $0.38–0.53 |
+| Problem page | `/best/brain-fog-memory` | *(exists — expand with Alzheimer's Protocol)* | Telo X Nano, Focus IQ, Myco-Max | $0.38–0.53 |
 | Article | `health-wellness/myco-max-lions-mane-review` | "Myco-Max Review: Does Lion's Mane Actually Improve Memory? I Tested It for 90 Days." | Myco-Max (31922) | $0.38 |
 | Article | `health-wellness/focus-iq-nootropic-review` | "Focus IQ Review: The Nootropic Stack for People Who Need to Think Clearly All Day" | Focus IQ (29640) | $0.41 |
 | Article | `health-wellness/alzheimers-protocol-supplement` | "The Brain Supplement Neurologists Are Recommending for Early Cognitive Decline" | Alzheimer's Protocol (30425) | $0.38 |
@@ -338,8 +338,8 @@ Build after Phase 1 & 2 are live. These are strong offers with slightly smaller 
 ### CLUSTER 3C — Financial US (Loans + Credit Cards)
 | Type | Slug / Filename | Title | Offers | EPC |
 |---|---|---|---|---|
-| Problem page | `/solve/need-personal-loan` | *(exists — expand with more lenders)* | Money Pup, CreditNLending, ProvideLoan, AuthorityLoan | $0.38–0.40 |
-| Problem page | `/solve/best-credit-card` | *(exists — SuperMoney angle)* | SuperMoney | $0.48 |
+| Problem page | `/best/need-personal-loan` | *(exists — expand with more lenders)* | Money Pup, CreditNLending, ProvideLoan, AuthorityLoan | $0.38–0.40 |
+| Problem page | `/best/best-credit-card` | *(exists — SuperMoney angle)* | SuperMoney | $0.48 |
 | Article | `financial/personal-loans-no-bank-visit-2026` | "Get a Personal Loan Without Walking Into a Bank — 4 Platforms That Match You in Minutes" | Money Pup (26642), CreditNLending (30154), ProvideLoan (30444) | $0.38–0.40 |
 | Article | `financial/credit-cards-cashback-2026` | *(exists — keep updating)* | SuperMoney (20484) | $0.48 |
 | Article | `financial/socialgood-crypto-rewards-shopping` | "This App Gives You Crypto Back on Every Purchase — Here's How SocialGood Works" | SocialGood (27202) | $0.45 |
@@ -363,8 +363,8 @@ Build after Phase 1 & 2 are live. These are strong offers with slightly smaller 
 ### CLUSTER 3D — Kids, Family & Parenting (US)
 | Type | Slug / Filename | Title | Offers | EPC |
 |---|---|---|---|---|
-| Problem page | `/solve/kids-online-safety` | *(exists — more aggressive Bark angle)* | Bark | $0.38 |
-| Problem page | `/solve/learn-to-read-kids` | "My 7-Year-Old Was Struggling to Read — This 10-Minute Daily Program Changed Everything" | Raising Skilled Readers | $0.47 |
+| Problem page | `/best/kids-online-safety` | *(exists — more aggressive Bark angle)* | Bark | $0.38 |
+| Problem page | `/best/learn-to-read-kids` | "My 7-Year-Old Was Struggling to Read — This 10-Minute Daily Program Changed Everything" | Raising Skilled Readers | $0.47 |
 | Article | `shopping-ecommerce/bark-parental-controls-review-2026` | "Bark Review 2026: I Let This App Monitor My Kids for 6 Months — Here's Every Alert It Sent" | Bark (24645) | $0.38 |
 | Article | `shopping-ecommerce/parentaler-app-review` | "Parentaler App Review: The Phone Monitoring Tool for Parents Who Want Peace of Mind" | Parentaler (27275) | $0.38 |
 | Article | `shopping-ecommerce/raising-skilled-readers-review` | "Raising Skilled Readers Review: The Science-Backed Reading Program That Actually Works" | Raising Skilled Readers (30563) | $0.47 |
@@ -379,7 +379,7 @@ Build after Phase 1 & 2 are live. These are strong offers with slightly smaller 
 ### CLUSTER 3E — Home, Lifestyle & Gadgets (US)
 | Type | Slug / Filename | Title | Offers | EPC |
 |---|---|---|---|---|
-| Problem page | `/solve/eco-home-products` | "The Eco Swaps for Your Home That Actually Work (And Save Money)" | Dropps, iHood, Pura | $0.49 |
+| Problem page | `/best/eco-home-products` | "The Eco Swaps for Your Home That Actually Work (And Save Money)" | Dropps, iHood, Pura | $0.49 |
 | Article | `shopping-ecommerce/dropps-detergent-review` | "Dropps Review: The Concentrated Detergent Pod That Eliminated 40 Plastic Jugs From My Year" | Dropps (32161) | $0.49 |
 | Article | `shopping-ecommerce/ihoodwarm-heated-jacket-review` | "iHood Heated Apparel Review: I Wore This Through a Canadian Winter — Here's the Verdict" | iHood (26096) | $0.49 |
 | Article | `shopping-ecommerce/pura-smart-diffuser-review` | "Pura Smart Diffuser Review: App-Controlled Home Fragrance That Actually Works" | Pura (27626) | $0.49 |
@@ -408,7 +408,7 @@ Build after Phase 1 & 2 are live. These are strong offers with slightly smaller 
 ### CLUSTER 3F — Men's Grooming & Personal Care (US)
 | Type | Slug / Filename | Title | Offers | EPC |
 |---|---|---|---|---|
-| Problem page | `/solve/mens-grooming-upgrade` | "The Simple Grooming Upgrades Men Ignore (That Women Notice Immediately)" | Liberty Razors, Snow Teeth | $0.45–0.47 |
+| Problem page | `/best/mens-grooming-upgrade` | "The Simple Grooming Upgrades Men Ignore (That Women Notice Immediately)" | Liberty Razors, Snow Teeth | $0.45–0.47 |
 | Article | `shopping-ecommerce/liberty-razors-review` | "Liberty Razors Review: Better Than Dollar Shave, No Subscription Required" | Liberty Razors (29393) | $0.47 |
 | Article | `shopping-ecommerce/snow-teeth-whitening-review-2026` | "Snow Teeth Whitening Review 2026: Tested for 30 Days. Here's What the Mirror Showed." | Snow Teeth Whitening (23686) | $0.45 |
 
@@ -421,9 +421,9 @@ Build after Phase 1 & 2 are live. These are strong offers with slightly smaller 
 ### CLUSTER 3G — Legal, Business & Professional (US)
 | Type | Slug / Filename | Title | Offers | EPC |
 |---|---|---|---|---|
-| Problem page | `/solve/legal-documents-cheap` | *(exists — strengthen LLC angle)* | LegalNature | $0.49 |
-| Problem page | `/solve/expert-advice-online` | *(exists — JustAnswer)* | JustAnswer | $0.48 |
-| Problem page | `/solve/self-improvement` | *(exists — Blinkist)* | Blinkist US | $0.40 |
+| Problem page | `/best/legal-documents-cheap` | *(exists — strengthen LLC angle)* | LegalNature | $0.49 |
+| Problem page | `/best/expert-advice-online` | *(exists — JustAnswer)* | JustAnswer | $0.48 |
+| Problem page | `/best/self-improvement` | *(exists — Blinkist)* | Blinkist US | $0.40 |
 | Article | `legal-services/legalnature-llc-formation-review` | "I Formed an LLC for $149. The Lawyer Quoted Me $1,200. Here's the Site I Used." | LegalNature (32356) | $0.49 |
 | Article | `legal-services/justanswer-review-2026` | "JustAnswer Review 2026: I Asked a Lawyer, a Doctor, and a Mechanic the Same Question" | JustAnswer (28149) | $0.48 |
 | Article | `shopping-ecommerce/blinkist-review-honest-2026` | "Blinkist Review: I 'Read' 52 Books Last Year. Here's What I Actually Retained." | Blinkist (25673) | $0.40 |
@@ -445,7 +445,7 @@ Build after Phase 1 & 2 are live. These are strong offers with slightly smaller 
 ### CLUSTER 3H — Health Insurance & Travel Protection (US)
 | Type | Slug / Filename | Title | Offers | EPC |
 |---|---|---|---|---|
-| Problem page | `/solve/travel-insurance` | *(exists — Faye dominant)* | Faye, Freely | $0.38–0.45 |
+| Problem page | `/best/travel-insurance` | *(exists — Faye dominant)* | Faye, Freely | $0.38–0.45 |
 | Article | `insurance/faye-travel-insurance-review` | *(exists — expand)* | Faye (26732) | $0.45 |
 | Article | `insurance/freely-travel-insurance-vs-faye` | "Freely vs Faye Travel Insurance: Which One Is Worth Buying Before Your Next Trip?" | Freely (29877) | $0.38 |
 | Article | `insurance/air-doctor-medical-care-abroad` | "Air Doctor Review: How to Find an English-Speaking Doctor Anywhere in the World" | Air Doctor (29713) | $0.38 |
@@ -462,7 +462,7 @@ Build after Phase 1 & 2 are live. These are strong offers with slightly smaller 
 ### CLUSTER 3I — Pain Relief & Longevity (US + WW)
 | Type | Slug / Filename | Title | Offers | EPC |
 |---|---|---|---|---|
-| Problem page | `/solve/joint-pain-relief` | *(exists — Heal and Soothe)* | Heal & Soothe | $0.40 |
+| Problem page | `/best/joint-pain-relief` | *(exists — Heal and Soothe)* | Heal & Soothe | $0.40 |
 | Article | `health-wellness/heal-soothe-review-chronic-pain` | *(exists — expand)* | Heal & Soothe (17722) | $0.40 |
 | Article | `health-wellness/estro-cleanse-world-war-t-review` | "Estro-Cleanse & World War T: The Hormone Balancing Stack for Men and Women Over 45" | Estro-Cleanse (30138) | $0.38 |
 | Article | `health-wellness/mito-essense-anti-aging-review` | "Mito-Essense Review: The Anti-Aging Supplement That Targets Cellular Energy" | Mito-Essense (30426) | $0.38 |
@@ -486,7 +486,7 @@ Build after Phase 1 & 2 are live. These are strong offers with slightly smaller 
 ### CLUSTER 3J — Privacy & Technology (US + WW)
 | Type | Slug / Filename | Title | Offers | EPC |
 |---|---|---|---|---|
-| Problem page | `/solve/online-privacy` | *(exists — ZoogVPN)* | ZoogVPN, NordPass | $0.38 |
+| Problem page | `/best/online-privacy` | *(exists — ZoogVPN)* | ZoogVPN, NordPass | $0.38 |
 | Article | `antivirus-vpn/best-vpns-2026` | *(exists — update)* | ZoogVPN (25474) | $0.38 |
 | Article | `antivirus-vpn/nordpass-review-password-manager` | "NordPass Review: The Password Manager That's Actually Simpler Than LastPass" | NordPass (30698) | $0.38 |
 | Article | `antivirus-vpn/spynger-monitoring-tool-review` | "Spynger Review: The Legal Phone Monitoring Tool Parents and Partners Are Using" | Spynger (27337) | $0.48 |
@@ -532,7 +532,7 @@ Build after Phase 1 & 2 are live. These are strong offers with slightly smaller 
 ### CLUSTER 4A — UK Market
 | Type | Slug / Filename | Title | Offers | EPC |
 |---|---|---|---|---|
-| Problem page | `/solve/book-cheap-flights-uk` | "Cheapest Flights from the UK in 2026 — The Sites That Beat Google Flights" | Trip.com UK, Oojo UK, Kiwi | $0.48 |
+| Problem page | `/best/book-cheap-flights-uk` | "Cheapest Flights from the UK in 2026 — The Sites That Beat Google Flights" | Trip.com UK, Oojo UK, Kiwi | $0.48 |
 | Article | `travel/jumpketo-uk-review` | "JumpKETO UK Review: The Keto Gummy That's Converting Weight Loss Audiences in Britain" | JumpKETO UK (31614) | $0.38 |
 | Article | `shopping-ecommerce/mac-cosmetics-test-keep-uk` | "How to Get MAC Cosmetics Products to Test and Keep for Free (UK Only)" | YOUSWEEPS MAC UK (31268) | $0.47 |
 | Article | `shopping-ecommerce/maybelline-test-keep-uk` | "Test and Keep £1,000 in Maybelline Products — Here's How the UK Promotion Works" | FORYOUPROMO Maybelline UK (32385) | $0.47 |
@@ -615,7 +615,7 @@ These are SOI/CPL with lower payouts but very low friction. Use them for viral "
 
 | Type | Slug / Filename | Title | Offers | EPC |
 |---|---|---|---|---|
-| Problem page | `/solve/enter-sweepstakes` | "The Best Sweepstakes Sites and How to Actually Win — A 2026 Guide" | All US sweeps | varies |
+| Problem page | `/best/enter-sweepstakes` | "The Best Sweepstakes Sites and How to Actually Win — A 2026 Guide" | All US sweeps | varies |
 | Article | `sweepstakes-contests/yousweeps-review-2026` | "YOUSWEEPS Review 2026: Is It Legit? I Entered 5 Competitions and Here's What Happened" | YOUSWEEPS US | $0.02–0.06 EPC |
 | Article | `sweepstakes-contests/topsweepscasino-review` | "TopSweepsCasino Review: The $112/Lead Casino Sweepstakes App That's Legal in 49 States" | TopSweepsCasino (28939) | $0.56 |
 
@@ -671,10 +671,10 @@ These are SOI/CPL with lower payouts but very low friction. Use them for viral "
 
 | Offer | ID | Type | EPC | Solve Page | Facebook Hook |
 |---|---|---|---|---|---|
-| Junova — Flight Price Drop | 31854 | CPL | $0.49 | `/solve/flight-refund` (build) | "Airlines owe you money if prices drop after you book. Most people never claim it." |
-| ShopBack — Cashback Extension | 30194 | CPA | $0.38 | `/solve/save-money-shopping` (build) | "Free browser extension. Earned me $94 back on shopping I was doing anyway." |
-| Gizmogo — Sell Electronics | 30260 | CPL | $0.38 | existing `/solve/declutter-earn-cash` or build | "That old iPhone in your drawer is worth $80–$300 right now." |
-| HavenRenovate — Bathroom Quote | 31286 | CPL | $0.25 | `/solve/bathroom-renovation` (build) | "Get a free renovation quote without calling 6 contractors." |
+| Junova — Flight Price Drop | 31854 | CPL | $0.49 | `/best/flight-refund` (build) | "Airlines owe you money if prices drop after you book. Most people never claim it." |
+| ShopBack — Cashback Extension | 30194 | CPA | $0.38 | `/best/save-money-shopping` (build) | "Free browser extension. Earned me $94 back on shopping I was doing anyway." |
+| Gizmogo — Sell Electronics | 30260 | CPL | $0.38 | existing `/best/declutter-earn-cash` or build | "That old iPhone in your drawer is worth $80–$300 right now." |
+| HavenRenovate — Bathroom Quote | 31286 | CPL | $0.25 | `/best/bathroom-renovation` (build) | "Get a free renovation quote without calling 6 contractors." |
 
 **Notes:**
 - All four have zero-cost-to-reader CTAs — frame every article as a service, not a sale
@@ -687,8 +687,8 @@ These are SOI/CPL with lower payouts but very low friction. Use them for viral "
 
 | Offer | ID | Type | EPC | Solve Page | Facebook Hook |
 |---|---|---|---|---|---|
-| DFViewer — View IG Anonymously | 31564 | CPS | $0.34 | `/solve/instagram-anonymous` (build) | "How to watch stories without appearing in the viewer list." |
-| Spynger — Phone Monitoring | 27337 | CPS | $0.48 | `/solve/teen-phone-monitoring` (build) | "What parents find when they finally check their teenager's phone." |
+| DFViewer — View IG Anonymously | 31564 | CPS | $0.34 | `/best/instagram-anonymous` (build) | "How to watch stories without appearing in the viewer list." |
+| Spynger — Phone Monitoring | 27337 | CPS | $0.48 | `/best/teen-phone-monitoring` (build) | "What parents find when they finally check their teenager's phone." |
 
 **Notes:**
 - DFViewer: frame as privacy/curiosity tool, not stalking. Organic share rate will be high.
@@ -701,8 +701,8 @@ These are SOI/CPL with lower payouts but very low friction. Use them for viral "
 
 | Offer | ID | Type | EPC | Solve Page | Pinterest Board |
 |---|---|---|---|---|---|
-| RH Fitness — Calisthenics for Women | 32132 | CPS | $0.45 | `/solve/fitness-no-gym` (build or extend) | fitness over 40 / home workout |
-| 21KETO Gummies — CA | 31618 | CPS | $0.60 | `/solve/keto-canada` (extend existing) | keto / weight loss |
+| RH Fitness — Calisthenics for Women | 32132 | CPS | $0.45 | `/best/fitness-no-gym` (build or extend) | fitness over 40 / home workout |
+| 21KETO Gummies — CA | 31618 | CPS | $0.60 | `/best/keto-canada` (extend existing) | keto / weight loss |
 
 **Notes:**
 - 21KETO CA at $0.60 EPC is the highest in this cluster — prioritise for Canadian Facebook groups
@@ -714,7 +714,7 @@ These are SOI/CPL with lower payouts but very low friction. Use them for viral "
 
 | Offer | ID | Type | EPC | Solve Page | Pinterest Board |
 |---|---|---|---|---|---|
-| AmazingClubs — Gift of Month | 31121 | CPS | $0.49 | `/solve/gift-ideas` (build) | subscription boxes / gift guides |
+| AmazingClubs — Gift of Month | 31121 | CPS | $0.49 | `/best/gift-ideas` (build) | subscription boxes / gift guides |
 
 **Notes:**
 - Evergreen year-round, peaks Oct–Dec. Write now, schedule Pinterest pushes for November.
@@ -794,7 +794,7 @@ AMAZINGCLUBS: I gave my dad a gourmet food subscription 3 years ago. He still wo
 5. **Disclosure footer** — "This article contains affiliate links. Verto earns a commission..."
 6. **Frontmatter fields:** `title`, `description`, `category`, `date`, `author`, `featured`, `tags`, `ctaText`, `ctaUrl`, `readTime`, `sponsored: true`
 
-### Every problem page (`/solve/[slug]`) needs:
+### Every problem page (`/best/[slug]`) needs:
 - `headline` — the proof-forward statement ("15–22% body weight loss")
 - `subheadline` — the mechanism ("compounded telehealth GLP-1 from $179/month")
 - `hook` — the relatable first-person opener

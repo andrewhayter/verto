@@ -1,0 +1,71 @@
+---
+// Phase 1 instrumentation (GROWTH-PHASES.md):
+//  1. Cloudflare Web Analytics beacon (page traffic by referrer/UTM) — gated on token.
+//  2. Inbound UTM capture → stamped onto outbound MaxBounty links as sub2/sub3 so the
+//     MaxBounty dashboard shows WHICH social source/campaign actually converted.
+import { CF_WEB_ANALYTICS_TOKEN, MB_AFFILIATE_HOSTS } from '../data/config';
+const hosts = JSON.stringify(MB_AFFILIATE_HOSTS);
+---
+
+{CF_WEB_ANALYTICS_TOKEN && (
+  <script
+    is:inline
+    defer
+    src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon={`{"token": "${CF_WEB_ANALYTICS_TOKEN}"}`}
+  ></script>
+)}
+
+<script is:inline define:vars={{ hosts }}>
+  (function () {
+    const AFFILIATE_HOSTS = JSON.parse(hosts);
+    const KEY = 'verto_attr';
+
+    // 1) Capture inbound attribution once per session (first touch wins).
+    function captureAttribution() {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const source = params.get('utm_source');
+        const campaign = params.get('utm_campaign');
+        const medium = params.get('utm_medium');
+        if (!source && !campaign && !medium) return;
+        if (sessionStorage.getItem(KEY)) return; // first-touch only
+        sessionStorage.setItem(
+          KEY,
+          JSON.stringify({ source: source || '', medium: medium || '', campaign: campaign || '' })
+        );
+      } catch (e) {}
+    }
+
+    // 2) Stamp source/campaign onto every MaxBounty affiliate link as sub2/sub3.
+    //    sub1 (the cluster) is already set server-side; we add the traffic source.
+    function stampAffiliateLinks() {
+      let attr;
+      try {
+        attr = JSON.parse(sessionStorage.getItem(KEY) || 'null');
+      } catch (e) {}
+      if (!attr || (!attr.source && !attr.campaign)) return;
+
+      document.querySelectorAll('a[href]').forEach(function (a) {
+        let url;
+        try {
+          url = new URL(a.href);
+        } catch (e) {
+          return;
+        }
+        const isAffiliate = AFFILIATE_HOSTS.some((h) => url.hostname.endsWith(h));
+        if (!isAffiliate) return;
+        if (attr.source && !url.searchParams.has('sub2')) url.searchParams.set('sub2', attr.source);
+        if (attr.campaign && !url.searchParams.has('sub3')) url.searchParams.set('sub3', attr.campaign);
+        a.href = url.toString();
+      });
+    }
+
+    captureAttribution();
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', stampAffiliateLinks);
+    } else {
+      stampAffiliateLinks();
+    }
+  })();
+</script>

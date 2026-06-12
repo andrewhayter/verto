@@ -1,0 +1,147 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import OfferCard from '../../components/OfferCard.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import { pillars, pillarBySlug } from '../../data/taxonomy';
+import { problems } from '../../data/problems';
+import { offersByProblem } from '../../data/offers';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  return pillars.map((p) => ({ params: { pillar: p.slug } }));
+}
+
+const slug = Astro.params.pillar;
+const pillar = pillarBySlug[slug];
+if (!pillar) return Astro.redirect('/');
+
+const problemBySlug = Object.fromEntries(problems.map((p) => [p.slug, p]));
+const allArticles = await getCollection('articles');
+
+function articleSlug(a: (typeof allArticles)[number]) {
+  const parts = a.id.split('/');
+  return parts[parts.length - 1].replace(/\.mdx?$/, '');
+}
+
+// Build the parent → child → siblings tree for this pillar.
+const clusters = pillar.clusters.map((cluster) => {
+  // Sibling problem pages
+  const clusterProblems = cluster.problems
+    .map((ps) => problemBySlug[ps])
+    .filter(Boolean);
+
+  // Sibling offers (deduped, approved-first, by EPC)
+  const offerMap = new Map<number, any>();
+  for (const ps of cluster.problems) {
+    for (const o of offersByProblem[ps] ?? []) offerMap.set(o.id, o);
+  }
+  const clusterOffers = [...offerMap.values()].sort(
+    (a, b) => Number(b.approved) - Number(a.approved) || b.epc - a.epc
+  );
+
+  // Sibling articles (from this cluster's categories)
+  const clusterArticles = allArticles
+    .filter((a) => cluster.categories.includes(a.data.category))
+    .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+    .slice(0, 4);
+
+  return { cluster, clusterProblems, clusterOffers, clusterArticles };
+});
+---
+
+<BaseLayout
+  title={`${pillar.name} — Guides, Tools & Top Offers | Verto`}
+  description={pillar.blurb}
+>
+  <!-- Pillar hero -->
+  <section class="relative py-14 md:py-20 overflow-hidden" style={`background: ${pillar.gradient}`}>
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+      <nav class="flex items-center gap-2 text-white/50 text-sm mb-5">
+        <a href="/" class="hover:text-white transition-colors">Home</a>
+        <span>/</span>
+        <a href="/explore" class="hover:text-white transition-colors">Explore</a>
+        <span>/</span>
+        <span class="text-white/80">{pillar.name}</span>
+      </nav>
+      <div class="text-5xl mb-3">{pillar.emoji}</div>
+      <h1 class="font-display font-black text-4xl md:text-5xl text-white mb-3">{pillar.name}</h1>
+      <p class="text-white/80 text-lg max-w-2xl">{pillar.blurb}</p>
+
+      <!-- Cluster jump links -->
+      <div class="flex flex-wrap gap-2 mt-6">
+        {pillar.clusters.map((c) => (
+          <a
+            href={`#${c.slug}`}
+            class="text-sm font-medium text-white/80 hover:text-white bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-full transition-colors"
+          >
+            {c.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 space-y-16">
+    {clusters.map(({ cluster, clusterProblems, clusterOffers, clusterArticles }) => (
+      <section id={cluster.slug} class="scroll-mt-24">
+        <div class="mb-6">
+          <h2 class="font-display font-bold text-2xl md:text-3xl text-gray-900">{cluster.name}</h2>
+          <p class="text-gray-500 mt-1">{cluster.blurb}</p>
+        </div>
+
+        <!-- Problem guides + tools -->
+        {(clusterProblems.length > 0 || (cluster.calculators?.length ?? 0) > 0) && (
+          <div class="flex flex-wrap gap-2 mb-6">
+            {clusterProblems.map((p) => (
+              <a href={`/best/${p.slug}`} class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand bg-brand/5 hover:bg-brand/10 px-3.5 py-2 rounded-lg transition-colors">
+                <span>{p.emoji}</span>
+                {p.headline.split('—')[0].split(':')[0].trim().substring(0, 40)}
+              </a>
+            ))}
+            {(cluster.calculators ?? []).map((calc) => (
+              <a href={calc} class="inline-flex items-center gap-1.5 text-sm font-semibold text-gray-700 bg-gray-100 hover:bg-gray-200 px-3.5 py-2 rounded-lg transition-colors">
+                🧮 {calc.split('/').pop()?.replace(/-/g, ' ')}
+              </a>
+            ))}
+          </div>
+        )}
+
+        <!-- Top offers -->
+        {clusterOffers.length > 0 && (
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mb-8">
+            {clusterOffers.slice(0, 3).map((offer, i) => (
+              <OfferCard offer={offer} rank={i + 1} problemSlug={cluster.slug} variant="full" />
+            ))}
+          </div>
+        )}
+
+        <!-- Articles -->
+        {clusterArticles.length > 0 && (
+          <div class="grid gap-4 sm:grid-cols-2">
+            {clusterArticles.map((a) => (
+              <ArticleCard
+                title={a.data.title}
+                description={a.data.description}
+                category={a.data.category}
+                slug={articleSlug(a)}
+                author={a.data.author}
+                date={a.data.date}
+                readTime={a.data.readTime}
+                sponsored={a.data.sponsored}
+                variant="horizontal"
+              />
+            ))}
+          </div>
+        )}
+
+        {clusterProblems.length === 0 && clusterOffers.length === 0 && clusterArticles.length === 0 && (
+          <p class="text-gray-400 italic">Content coming soon for this cluster.</p>
+        )}
+      </section>
+    ))}
+  </div>
+
+  <Newsletter />
+</BaseLayout>
