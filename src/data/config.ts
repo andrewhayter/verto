@@ -16,11 +16,6 @@ export const MB_AFFILIATE_HOSTS = ['afflat3e1.com', 'afflat3e2.com', 'afflat3e3.
 // Pages project instead, which needs no code). TODO(owner): paste token when available.
 export const CF_WEB_ANALYTICS_TOKEN = '';
 
-// Microsoft Clarity project ID. Get it from:
-//   clarity.microsoft.com → Your project → Settings → "Tracking Code" → the `i` param value.
-// Leave empty to disable (no script loads). TODO(owner): paste ID when available.
-export const CLARITY_PROJECT_ID = '';
-
 // The `k=` parameter is a cryptographic key unique per offer — it must come from
 // your MaxBounty dashboard (Offer → Get Link). You cannot construct it from the offer ID alone.
 //
