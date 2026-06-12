@@ -5,17 +5,38 @@ import { offersByProblem } from '../../data/offers';
 ---
 
 <BaseLayout
-  title="Solution Finder — Verto"
-  description="Find the best solution for your specific problem. Expert guides on weight loss, loans, men's health, online privacy, and more."
+  title={`${problems.length} Problem-Solution Guides — Weight Loss, Loans, Privacy & More | Verto`}
+  description={`${problems.length} expert guides comparing verified affiliate offers for specific consumer problems. GLP-1 weight loss ($179/mo), personal loans up to $100K, VPNs under $5/month, and more.`}
 >
-  <!-- Hero -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://verto.pages.dev/best#webpage",
+        "name": `${problems.length} Problem-Solution Guides`,
+        "description": `${problems.length} expert guides comparing verified affiliate offers for health, finance, legal, and lifestyle problems.`,
+        "url": "https://verto.pages.dev/best",
+        "isPartOf": { "@id": "https://verto.pages.dev/#website" },
+        "publisher": { "@id": "https://verto.pages.dev/#organization" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://verto.pages.dev" },
+          { "@type": "ListItem", "position": 2, "name": "Solution Guides", "item": "https://verto.pages.dev/best" }
+        ]
+      }
+    ]
+  })} />
+
   <div class="bg-slate-900 py-14">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <h1 class="font-display text-4xl md:text-5xl font-bold text-white mb-3">
-        Find Your Solution
+        {problems.length} Problem-Solution Guides — Each with Verified Offers Compared
       </h1>
       <p class="text-white/60 text-lg max-w-xl">
-        Tell us what problem you're trying to solve. We'll show you the best-rated options, compared honestly.
+        Each guide compares the top affiliate offers for one specific problem — with pricing, eligibility, clinical evidence, and FAQs.
       </p>
     </div>
   </div>
@@ -27,7 +48,7 @@ import { offersByProblem } from '../../data/offers';
         const topOffer = problemOffers[0];
         return (
           <a
-            href={`/solve/${problem.slug}`}
+            href={`/best/${problem.slug}`}
             class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200 transition-all overflow-hidden flex flex-col"
           >
             <div class="h-28 flex items-center justify-start px-6 relative" style={`background: ${problem.gradient}`}>

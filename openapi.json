@@ -1,0 +1,2596 @@
+{
+  "openapi": "3.0.2",
+  "info": {
+    "title": "MaxBounty Affiliate API",
+    "version": "v1",
+    "description": "This is the documentation for the MaxBounty Affiliate API for use by MaxBounty affiliates.",
+    "contact": {
+      "name": "API Support",
+      "email": "ajitt@maxbounty.com",
+      "url": "https://affiliates.maxbounty.com"
+    }
+  },
+  "paths": {
+    "/authentication": {
+      "post": {
+        "summary": "/authentication",
+        "description": "Returns the authorization token required to access protected resources. [EXPIRES every 2 hours]",
+        "requestBody": {
+          "description": "Provide your MaxBounty credentials.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "email",
+                  "password"
+                ],
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "description": "Your MaxBounty email address.",
+                    "format": "email"
+                  },
+                  "password": {
+                    "type": "string",
+                    "description": "Your MaxBounty password."
+                  }
+                }
+              },
+              "examples": {
+                "affiliate": {
+                  "summary": "Email/Password Authentication",
+                  "value": {
+                    "email": "youremail@domain.com",
+                    "password": "your_password"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "API Token.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "mb-api-token": {
+                      "type": "string",
+                      "description": "The secret API token used for making requests to MaxBounty's API"
+                    },
+                    "mb-app-token": {
+                      "type": "string",
+                      "description": "The token used by MaxBounty applications to save session information."
+                    },
+                    "mb-aid": {
+                      "type": "integer",
+                      "example": 12345
+                    },
+                    "mb-ld": {
+                      "type": "integer"
+                    },
+                    "mb-oid": {
+                      "type": "integer"
+                    },
+                    "mb-r": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/affiliate": {
+      "get": {
+        "summary": "/affiliate",
+        "description": "Returns the affiliate details.",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "description": "The 'mb-api-token' returned from the Authentication resource.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Affiliate details",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "publisher_id": {
+                      "type": "integer",
+                      "example": 12345
+                    },
+                    "affiliate_personal_information": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "example": "John Smith"
+                        },
+                        "company": {
+                          "type": "string",
+                          "example": "Company Name"
+                        },
+                        "status": {
+                          "type": "string",
+                          "example": "A"
+                        },
+                        "email": {
+                          "type": "string",
+                          "example": "youremail@domain.com"
+                        },
+                        "mobile_phone": {
+                          "type": "string",
+                          "example": "123-123-4567"
+                        },
+                        "phone": {
+                          "type": "string",
+                          "example": "123-123-4567"
+                        },
+                        "time_zone": {
+                          "type": "string",
+                          "example": "5, -9"
+                        },
+                        "contact_time": {
+                          "type": "object",
+                          "properties": {
+                            "value": {
+                              "type": "integer",
+                              "example": "1"
+                            },
+                            "text": {
+                              "type": "string",
+                              "example": "Early Morning"
+                            }
+                          }
+                        },
+                        "im_handle": {
+                          "type": "string",
+                          "example": "SkypeHandle"
+                        }
+                      }
+                    },
+                    "affiliate_address": {
+                      "type": "object",
+                      "properties": {
+                        "address1": {
+                          "type": "string",
+                          "example": "1234 Albert Street"
+                        },
+                        "address2": {
+                          "type": "string",
+                          "example": ""
+                        },
+                        "city": {
+                          "type": "string",
+                          "example": "New York"
+                        },
+                        "state": {
+                          "type": "string",
+                          "example": "NY"
+                        },
+                        "country_code": {
+                          "type": "string",
+                          "example": "USA"
+                        },
+                        "zipcode": {
+                          "type": "string",
+                          "example": "12345"
+                        }
+                      }
+                    },
+                    "promotional_methods": {
+                      "type": "object",
+                      "properties": {
+                        "description": {
+                          "type": "string",
+                          "example": "The purpose of this site is to drive traffic to my campaigns."
+                        },
+                        "url": {
+                          "type": "string",
+                          "example": "https://mywebsite.com"
+                        },
+                        "incentive": {
+                          "type": "string",
+                          "example": "N"
+                        },
+                        "incentive_description": {
+                          "type": "string"
+                        },
+                        "global_callback_code": {
+                          "type": "string"
+                        },
+                        "global_callback_type": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "payment_information": {
+                      "type": "object",
+                      "properties": {
+                        "platform": {
+                          "type": "string",
+                          "example": "Payoneer"
+                        },
+                        "method": {
+                          "type": "string",
+                          "example": "Wire"
+                        },
+                        "payee": {
+                          "type": "string",
+                          "example": "Your Company or Name"
+                        }
+                      }
+                    },
+                    "email_preferences": {
+                      "type": "object",
+                      "properties": {
+                        "general_mailings": {
+                          "type": "string",
+                          "example": "Y"
+                        },
+                        "campaign_notices": {
+                          "type": "string",
+                          "example": "Y"
+                        }
+                      }
+                    },
+                    "affiliate_manager": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "example": "Adam Harrison"
+                        },
+                        "email": {
+                          "type": "string",
+                          "example": "Y"
+                        },
+                        "phone": {
+                          "type": "string",
+                          "example": "1-613-834-3955 x231"
+                        },
+                        "im_handle": {
+                          "type": "string",
+                          "example": "maxbountyadamh"
+                        }
+                      }
+                    },
+                    "maxmoney_points": {
+                      "type": "integer",
+                      "example": 50
+                    },
+                    "open_campaign_requests": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "campaign_id": {
+                            "type": "integer",
+                            "example": 123456
+                          },
+                          "name": {
+                            "type": "string",
+                            "example": "Campaign Name"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/affiliate/globalPostback": {
+      "post": {
+        "summary": "/affiliate/globalPostback",
+        "description": "Updates the affiliate's global postback.",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "description": "The 'mb-api-token' returned from the Authentication resource.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Provide the values to be updated.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "description": "They type of postback. (L = url, I=html, S=server)."
+                  },
+                  "code": {
+                    "type": "string",
+                    "description": "The postback html code."
+                  }
+                }
+              },
+              "examples": {
+                "globalPostback": {
+                  "summary": "Global Postback",
+                  "value": {
+                    "type": "I",
+                    "code": "<script>Script here.</script>"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Update global postback.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "message": {
+                      "type": "string",
+                      "example": "Global postback updated."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/campaign/{Campaign ID}": {
+      "get": {
+        "summary": "/campaign/{Campaign ID}",
+        "description": "Get the campaign details.",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "description": "The 'mb-api-token' returned from the Authentication resource.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "Campaign ID",
+            "description": "The campaign ID.",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Campaign Details.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "campaign_id": {
+                      "type": "integer",
+                      "example": 12345
+                    },
+                    "details": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "example": "Personal Loan Campaign"
+                        },
+                        "description": {
+                          "type": "string",
+                          "description": "The campaign's description.",
+                          "example": "This Personal Loan Campaign converts on an e-mail submit."
+                        },
+                        "keywords": {
+                          "type": "string",
+                          "description": "A list of keywords that match this campaign.",
+                          "example": "email, loan, finance, low income, personal"
+                        },
+                        "tracking_type": {
+                          "type": "string",
+                          "description": "Tracking type. S = server, I = iFrame, L = pixel",
+                          "example": "S"
+                        },
+                        "epc": {
+                          "type": "integer",
+                          "description": "Network earnings per click.",
+                          "example": 5.21
+                        },
+                        "geo_filtering": {
+                          "type": "string",
+                          "description": "If this value is 'Y', only countries in the allowed_countries list are allowed to convert.",
+                          "example": "Y"
+                        },
+                        "os_filtering": {
+                          "type": "string",
+                          "description": "If this value is 'Y', only devices in the os_list are allowed to convert.",
+                          "example": "N"
+                        },
+                        "desktop_traffic": {
+                          "type": "string",
+                          "description": "Whether or not desktop traffic is allowed.",
+                          "example": "Y"
+                        },
+                        "mobile_traffic": {
+                          "type": "string",
+                          "description": "Whether or not mobile traffic is allowed.",
+                          "example": "Y"
+                        },
+                        "status": {
+                          "type": "string",
+                          "description": "The status of the campaign.",
+                          "example": "Active"
+                        },
+                        "affiliate_campaign_status": {
+                          "type": "string",
+                          "description": "The affiliate's status on the campaign.",
+                          "example": "Approved"
+                        },
+                        "landing_page_sample": {
+                          "type": "string",
+                          "description": "A sample of what the landing page will look like.",
+                          "example": "https://campaignlangingpage.com"
+                        },
+                        "daily_cap": {
+                          "type": "string",
+                          "description": "Describes the default cap for the campaign.",
+                          "example": "This campaign does not have a daily cap."
+                        },
+                        "expiry_date": {
+                          "type": "string",
+                          "description": "The expiry date for the campaign - if any.",
+                          "example": "No expiry"
+                        },
+                        "thumbnail": {
+                          "type": "string",
+                          "description": "The thumbnail of the main landing page.",
+                          "example": "https://imagelink.com"
+                        }
+                      }
+                    },
+                    "allowed_countries": {
+                      "type": "array",
+                      "description": "Country codes for countries from which traffic is allowed. Only applies if geo_filtering is 'Y'",
+                      "items": {
+                        "type": "string"
+                      },
+                      "example": [
+                        "US",
+                        "CA",
+                        "GB",
+                        "FR",
+                        "GB"
+                      ]
+                    },
+                    "allowed_traffic_types": {
+                      "type": "object",
+                      "description": "Allowed traffic types",
+                      "properties": {
+                        "contextual_traffic": {
+                          "type": "string",
+                          "example": "Y"
+                        },
+                        "display_traffic": {
+                          "type": "string",
+                          "example": "Y"
+                        },
+                        "search_traffic": {
+                          "type": "string",
+                          "example": "Y"
+                        },
+                        "social_media_traffic": {
+                          "type": "string",
+                          "example": "Y"
+                        },
+                        "native_traffic": {
+                          "type": "string",
+                          "example": "Y"
+                        },
+                        "mobile_traffic": {
+                          "type": "string",
+                          "example": "Y"
+                        },
+                        "email_traffic": {
+                          "type": "string",
+                          "example": "Y"
+                        },
+                        "incentive_traffic": {
+                          "type": "string",
+                          "example": "Y"
+                        },
+                        "brand_bid_traffic": {
+                          "type": "string",
+                          "example": "Y"
+                        }
+                      }
+                    },
+                    "commission": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "example": "EmailSubmit"
+                        },
+                        "rate": {
+                          "type": "integer",
+                          "example": 72
+                        },
+                        "rate_type": {
+                          "type": "string",
+                          "description": "Fixed or Revshare.",
+                          "example": "Fixed"
+                        },
+                        "default_rate": {
+                          "type": "string",
+                          "description": "Whether or not this is the default rate.",
+                          "example": "Y"
+                        },
+                        "description": {
+                          "type": "string",
+                          "description": "A description of how the rate converts.",
+                          "example": "User submits their email."
+                        },
+                        "status": {
+                          "type": "string",
+                          "description": "The rate's status.",
+                          "example": "Active"
+                        },
+                        "conversion_type": {
+                          "type": "string",
+                          "description": "The type of action that causes the conversion.",
+                          "example": "EMAIL SUBMIT"
+                        }
+                      }
+                    },
+                    "search_restriction": {
+                      "type": "string",
+                      "description": "Describes any restrictions on search traffic.",
+                      "example": "No bidding on specific terms."
+                    },
+                    "email_restrictions": {
+                      "type": "object",
+                      "properties": {
+                        "rules": {
+                          "type": "string"
+                        },
+                        "subject_lines": {
+                          "type": "string"
+                        },
+                        "from_lines": {
+                          "type": "string"
+                        },
+                        "suppression": {
+                          "type": "string",
+                          "description": "Whether or not there is a suppression list for this campaign."
+                        },
+                        "suppression_list": {
+                          "type": "string",
+                          "description": "A GET request to this url with the authentication header will provide the suppression list in JSON format."
+                        }
+                      }
+                    },
+                    "landing_pages": {
+                      "type": "array",
+                      "description": "An array of the available landing pages.",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "landing_page_id": {
+                            "type": "integer",
+                            "example": 12345
+                          },
+                          "name": {
+                            "type": "string",
+                            "example": "Target Landing Page"
+                          },
+                          "default_lp": {
+                            "type": "string",
+                            "example": "Y"
+                          },
+                          "landing_url": {
+                            "type": "string",
+                            "example": "https://landingpageurl.com/"
+                          },
+                          "thumbnail": {
+                            "type": "string",
+                            "description": "The thumbnail of the main landing page.",
+                            "example": "https://imagelink.com"
+                          }
+                        }
+                      }
+                    },
+                    "creatives": {
+                      "type": "array",
+                      "description": "An array of the available creatives.",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "creative_id": {
+                            "type": "integer",
+                            "example": 12345
+                          },
+                          "type": {
+                            "type": "string",
+                            "description": "They type of creative.",
+                            "example": "Banner"
+                          },
+                          "width": {
+                            "type": "integer",
+                            "example": 50
+                          },
+                          "height": {
+                            "type": "integer",
+                            "example": 50
+                          }
+                        }
+                      }
+                    },
+                    "os_list": {
+                      "type": "array",
+                      "description": "Operating systems from which traffic is allowed. Only applies if os_filtering_flag is 'Y'",
+                      "items": {
+                        "type": "string"
+                      },
+                      "example": [
+                        "ios",
+                        "android"
+                      ]
+                    },
+                    "postback": {
+                      "type": "object",
+                      "description": "The campaign level postback, if any.",
+                      "properties": {
+                        "code": {
+                          "type": "string",
+                          "description": "The code to be run after a lead is generated.",
+                          "example": "<script>Postback Code</script>"
+                        },
+                        "type": {
+                          "type": "string",
+                          "description": "The postback type",
+                          "example": "I"
+                        }
+                      }
+                    },
+                    "is_bookmarked": {
+                      "type": "boolean",
+                      "description": "Whether or not this campaign has been bookmarked.",
+                      "example": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/campaign/{Campaign ID}/postback": {
+      "post": {
+        "summary": "/campaign/{Campaign ID}/postback",
+        "description": "Updates the campaign level postback.",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "description": "The 'mb-api-token' returned from the Authentication resource.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "Campaign ID",
+            "description": "The campaign for which the postback will be updated.",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Provide the values to be updated.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "description": "They type of postback. (L = url, I=html, S=server)."
+                  },
+                  "code": {
+                    "type": "string",
+                    "description": "The postback html code."
+                  }
+                }
+              },
+              "examples": {
+                "postback": {
+                  "summary": "Campaign Level Postback",
+                  "value": {
+                    "type": "I",
+                    "code": "<script>Script here.</script>"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Update campaign level postback.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "message": {
+                      "type": "string",
+                      "example": "Your postback has been saved."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/campaign/{Campaign ID}/addBookmark": {
+      "post": {
+        "summary": "/campaign/{Campaign ID}/addBookmark",
+        "description": "Add a campaign to bookmarks.",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "description": "The 'mb-api-token' returned from the Authentication resource.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "Campaign ID",
+            "description": "The campaign ID to be bookmarked.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully make the request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "message": {
+                      "type": "string",
+                      "example": "Campaign bookmarked."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/campaign/{Campaign ID}/removeBookmark": {
+      "post": {
+        "summary": "/campaign/{Campaign ID}/removeBookmark",
+        "description": "Remove a campaign from bookmarks.",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "description": "The 'mb-api-token' returned from the Authentication resource.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "Campaign ID",
+            "description": "The campaign ID to be removed from bookmarks.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully make the request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "message": {
+                      "type": "string",
+                      "example": "Campaign bookmark removed."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/trackinglink": {
+      "post": {
+        "summary": "/trackinglink",
+        "description": "Returns the tracking link for the requested campaign.",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "description": "The 'mb-api-token' returned from the Authentication resource.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Provide the traffic and creative types user selected.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "campaign_id"
+                ],
+                "properties": {
+                  "campaign_id": {
+                    "type": "integer",
+                    "example": 12345
+                  },
+                  "creative_id": {
+                    "type": "integer",
+                    "example": 918277
+                  },
+                  "sub1": {
+                    "type": "string",
+                    "example": "source_one"
+                  },
+                  "sub2": {
+                    "type": "string",
+                    "example": "source_two"
+                  },
+                  "sub3": {
+                    "type": "string",
+                    "example": "source_three"
+                  },
+                  "sub4": {
+                    "type": "string",
+                    "example": "source_four"
+                  },
+                  "sub5": {
+                    "type": "string",
+                    "example": "source_five"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Affiliate tracking link.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "tracking-link": {
+                      "type": "string",
+                      "example": "https://afflat3a1.com/trk/lnk/..."
+                    },
+                    "withTrafficAndCreative": {
+                      "type": "boolean",
+                      "example": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/campaigns/{list}": {
+      "get": {
+        "summary": "/campaigns/{list}",
+        "description": "Get a list of all campaigns, sorted by most recently launched.",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "description": "The 'mb-api-token' returned from the Authentication resource.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "list",
+            "description": "The list of campaigns desired. Options: new, popular, suggested, top, trending, recentlyViewed, recentlyApproved, bookmarked, amPicks",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "page",
+            "description": "The page number for the request.",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "limit",
+            "description": "The desired number of fetched results.",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A list of campaigns.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "campaigns": {
+                      "type": "array",
+                      "description": "A list of campaign objects.",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "campaign_id": {
+                            "type": "integer",
+                            "example": 12345
+                          },
+                          "name": {
+                            "type": "string",
+                            "example": "Personal Loans USA"
+                          },
+                          "default_rate": {
+                            "type": "integer",
+                            "example": 35
+                          },
+                          "status": {
+                            "type": "string",
+                            "example": "Active"
+                          },
+                          "rate_type": {
+                            "type": "string",
+                            "example": "$ per lead"
+                          },
+                          "thumbnail": {
+                            "type": "string",
+                            "example": "https://imagelink.com"
+                          },
+                          "highlight": {
+                            "type": "string",
+                            "description": "Whether or not this campaign is being highlighted.",
+                            "example": "Y"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/campaigns/expired": {
+      "get": {
+        "summary": "/campaigns/expired",
+        "description": "Fetch the campaigns expired in last month.",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "description": "The 'mb-api-token' returned from the Authentication resource.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Return expired campaigns list.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "expired_campaigns": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "campaign_id": {
+                            "type": "integer"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "status_date": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/accountBalance/{year}": {
+      "get": {
+        "summary": "/accountBalance/{year}",
+        "description": "Get a list of the affiliate's account balance transactions.",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "description": "The 'mb-api-token' returned from the Authentication resource.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "year",
+            "description": "The year for the report.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Account balance details.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "message": {
+                      "type": "string",
+                      "example": "No data found for requested year."
+                    },
+                    "available_years": {
+                      "type": "array",
+                      "description": "A list of the available years.",
+                      "items": {
+                        "type": "string",
+                        "example": "2019"
+                      },
+                      "example": [
+                        2019,
+                        2018,
+                        2017,
+                        2016,
+                        2015
+                      ]
+                    },
+                    "starting_balance_by_year": {
+                      "type": "object",
+                      "description": "The starting balance at the beginning of each year.",
+                      "example": {
+                        "2015": 0,
+                        "2016": 10000,
+                        "2017": 12356,
+                        "2018": 15765.2,
+                        "2019": 21263.15
+                      }
+                    },
+                    "account_balances": {
+                      "type": "array",
+                      "description": "A list of the transactions.",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "date": {
+                            "type": "string",
+                            "example": "2019-01-01T01:00:00.000Z"
+                          },
+                          "type": {
+                            "type": "string",
+                            "example": "Earned"
+                          },
+                          "amount": {
+                            "type": "integer",
+                            "example": 12500
+                          },
+                          "notes": {
+                            "type": "string",
+                            "example": "Commissions from 2019/1/1 to 2019/2/1"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/reports/earnings": {
+      "get": {
+        "summary": "/reports/earnings",
+        "description": "Get the earnings report.",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "description": "The 'mb-api-token' returned from the Authentication resource.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "startDate",
+            "description": "The start date for the requested report. If not provided, it default to the start of the current month.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "endDate",
+            "description": "The end date for the requested report. If not provided, it default to the end of the current month.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Earnings report.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "report": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "campaign_id": {
+                            "type": "integer"
+                          },
+                          "clicks": {
+                            "type": "integer"
+                          },
+                          "leads": {
+                            "type": "integer"
+                          },
+                          "earnings": {
+                            "type": "integer"
+                          },
+                          "conversion": {
+                            "type": "integer"
+                          },
+                          "epc": {
+                            "type": "integer"
+                          },
+                          "sales": {
+                            "type": "integer"
+                          }
+                        }
+                      },
+                      "example": [
+                        {
+                          "name": "Personal Loan USA",
+                          "campaign_id": 12345,
+                          "clicks": 6856,
+                          "leads": 1764,
+                          "earnings": 31752,
+                          "conversion": 0.25729288214,
+                          "epc": 4.631271878646441,
+                          "sales": 0
+                        },
+                        {
+                          "name": "Loans - DE",
+                          "campaign_id": 56789,
+                          "clicks": 10597,
+                          "leads": 894,
+                          "earnings": 9834,
+                          "conversion": 0.0843634991,
+                          "epc": 0.9279984901387185,
+                          "sales": 0
+                        }
+                      ]
+                    },
+                    "totals": {
+                      "type": "object",
+                      "properties": {
+                        "clicks": {
+                          "type": "integer"
+                        },
+                        "leads": {
+                          "type": "integer"
+                        },
+                        "earnings": {
+                          "type": "integer"
+                        },
+                        "sales": {
+                          "type": "integer"
+                        },
+                        "epc": {
+                          "type": "integer"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/reports/creatives": {
+      "get": {
+        "summary": "/reports/creatives",
+        "description": "Get the creative report for a specific campaign.",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "description": "The 'mb-api-token' returned from the Authentication resource.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "oid",
+            "description": "The ID of the campaign for the requested creative report.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "startDate",
+            "description": "The start date for the requested report. If not provided, it default to the start of the current month.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "endDate",
+            "description": "The end date for the requested report. If not provided, it default to the end of the current month.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Creative report.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "report": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "clicks": {
+                            "type": "integer"
+                          },
+                          "conversion": {
+                            "type": "integer"
+                          },
+                          "creative_id": {
+                            "type": "string"
+                          },
+                          "creative_name": {
+                            "type": "string"
+                          },
+                          "earnings": {
+                            "type": "integer"
+                          },
+                          "epc": {
+                            "type": "integer"
+                          },
+                          "leads": {
+                            "type": "integer"
+                          },
+                          "sales": {
+                            "type": "integer"
+                          },
+                          "width": {
+                            "type": "integer"
+                          },
+                          "height": {
+                            "type": "integer"
+                          }
+                        }
+                      },
+                      "example": [
+                        {
+                          "creative_id": 1,
+                          "creative_type": null,
+                          "width": null,
+                          "height": null,
+                          "clicks": 0,
+                          "leads": 43,
+                          "earnings": 774,
+                          "conversion": 0,
+                          "sales": 0,
+                          "epc": 0
+                        },
+                        {
+                          "creative_id": 918277,
+                          "creative_type": null,
+                          "width": null,
+                          "height": null,
+                          "clicks": 163,
+                          "leads": 11,
+                          "earnings": 198,
+                          "conversion": 0.06748466257,
+                          "sales": 0,
+                          "epc": 1.2147239263803682
+                        }
+                      ]
+                    },
+                    "totals": {
+                      "type": "object",
+                      "properties": {
+                        "clicks": {
+                          "type": "integer"
+                        },
+                        "leads": {
+                          "type": "integer"
+                        },
+                        "earnings": {
+                          "type": "integer"
+                        },
+                        "sales": {
+                          "type": "integer"
+                        },
+                        "epc": {
+                          "type": "integer"
+                        }
+                      }
+                    },
+                    "campaign": {
+                      "type": "object",
+                      "properties": {
+                        "campaign_id": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/reports/subid": {
+      "get": {
+        "summary": "/reports/subid",
+        "description": "Get the subid report for a specific campaign. You can omit the campaign ID to get the subid report across all campaigns.",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "description": "The 'mb-api-token' returned from the Authentication resource.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "oid",
+            "description": "The ID of the campaign for the requested subid report. You can omit the campaign ID to get the subid report across all campaigns.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "startDate",
+            "description": "The start date for the requested report. If not provided, it default to the start of the current month.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "endDate",
+            "description": "The end date for the requested report. If not provided, it default to the end of the current month.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Subid Report.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "report": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "subid1": {
+                            "type": "string"
+                          },
+                          "clicks": {
+                            "type": "integer"
+                          },
+                          "leads": {
+                            "type": "integer"
+                          },
+                          "earnings": {
+                            "type": "integer"
+                          },
+                          "conversion": {
+                            "type": "integer"
+                          },
+                          "epc": {
+                            "type": "integer"
+                          },
+                          "sales": {
+                            "type": "integer"
+                          }
+                        }
+                      },
+                      "example": [
+                        {
+                          "subid1": "facebook",
+                          "clicks": 5164,
+                          "leads": 1313,
+                          "earnings": 23634,
+                          "conversion": 0.25426026336,
+                          "sales": 0,
+                          "epc": 4.576684740511231
+                        },
+                        {
+                          "subid1": "internal",
+                          "clicks": 1325,
+                          "leads": 355,
+                          "earnings": 6390,
+                          "conversion": 0.2679245283,
+                          "sales": 0,
+                          "epc": 4.8226415094339625
+                        }
+                      ]
+                    },
+                    "totals": {
+                      "type": "object",
+                      "properties": {
+                        "clicks": {
+                          "type": "integer"
+                        },
+                        "leads": {
+                          "type": "integer"
+                        },
+                        "earnings": {
+                          "type": "integer"
+                        },
+                        "sales": {
+                          "type": "integer"
+                        },
+                        "epc": {
+                          "type": "integer"
+                        }
+                      }
+                    },
+                    "campaign": {
+                      "type": "object",
+                      "properties": {
+                        "campaign_id": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/reports/landingPages": {
+      "get": {
+        "summary": "/reports/landingPages",
+        "description": "Get the landing page report for a specific campaign.",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "description": "The 'mb-api-token' returned from the Authentication resource.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "oid",
+            "description": "The campaign ID for the landing pages report.",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "startDate",
+            "description": "The start date for the requested report. If not provided, it default to the start of the current month.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "endDate",
+            "description": "The end date for the requested report. If not provided, it default to the end of the current month.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Landing Pages Report.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "report": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "landing_page_id": {
+                            "type": "string"
+                          },
+                          "clicks": {
+                            "type": "integer"
+                          },
+                          "leads": {
+                            "type": "integer"
+                          },
+                          "earnings": {
+                            "type": "integer"
+                          },
+                          "conversion": {
+                            "type": "integer"
+                          },
+                          "epc": {
+                            "type": "integer"
+                          },
+                          "sales": {
+                            "type": "integer"
+                          },
+                          "thumbnail": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "example": [
+                        {
+                          "landing_page_id": 9693,
+                          "clicks": 0,
+                          "leads": 43,
+                          "sales": 0,
+                          "earnings": 774,
+                          "conversion": 0,
+                          "epc": 0,
+                          "thumbnail": "https://www.maxbounty.com/getlp.asp?m=4020&o=9964&l=9693&s=thumb"
+                        },
+                        {
+                          "landing_page_id": 9694,
+                          "clicks": 6856,
+                          "leads": 1721,
+                          "sales": 0,
+                          "earnings": 30978,
+                          "conversion": 0.2510210035,
+                          "epc": 4.518378063010502,
+                          "thumbnail": "https://www.maxbounty.com/getlp.asp?m=4020&o=9964&l=9694&s=thumb"
+                        }
+                      ]
+                    },
+                    "totals": {
+                      "type": "object",
+                      "properties": {
+                        "clicks": {
+                          "type": "integer"
+                        },
+                        "leads": {
+                          "type": "integer"
+                        },
+                        "earnings": {
+                          "type": "integer"
+                        },
+                        "sales": {
+                          "type": "integer"
+                        },
+                        "epc": {
+                          "type": "integer"
+                        }
+                      }
+                    },
+                    "campaign": {
+                      "type": "object",
+                      "properties": {
+                        "campaign_id": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/reports/clicks": {
+      "get": {
+        "summary": "/reports/clicks",
+        "description": "Get the click report for a specific campaign by landing page, creative, subid.",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "description": "The 'mb-api-token' returned from the Authentication resource.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "oid",
+            "description": "The ID of the campaign for the requested click report.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "lpid",
+            "description": "The ID of the landing page for the requested click report.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "cid",
+            "description": "The ID of the creative for the requested click report.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "subid",
+            "description": "The Sub ID for the requested click report.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "startDate",
+            "description": "The start date for the requested report. If not provided, it default to the start of the current month.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "endDate",
+            "description": "The end date for the requested report. If not provided, it default to the end of the current month.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Click Report.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "report": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "date": {
+                            "type": "string"
+                          },
+                          "clicks": {
+                            "type": "integer"
+                          },
+                          "leads": {
+                            "type": "integer"
+                          },
+                          "earnings": {
+                            "type": "integer"
+                          },
+                          "conversion": {
+                            "type": "integer"
+                          },
+                          "epc": {
+                            "type": "integer"
+                          },
+                          "sales": {
+                            "type": "integer"
+                          }
+                        }
+                      },
+                      "example": [
+                        {
+                          "date": "2019-04-01T00:00:00.000Z",
+                          "clicks": 222,
+                          "leads": 59,
+                          "earnings": 1062,
+                          "conversion": 0.26576576576,
+                          "sales": 0,
+                          "epc": 4.783783783783784
+                        },
+                        {
+                          "date": "2019-04-02T00:00:00.000Z",
+                          "clicks": 396,
+                          "leads": 103,
+                          "earnings": 1854,
+                          "conversion": 0.2601010101,
+                          "sales": 0,
+                          "epc": 4.681818181818182
+                        },
+                        {
+                          "date": "2019-04-03T00:00:00.000Z",
+                          "clicks": 432,
+                          "leads": 110,
+                          "earnings": 1980,
+                          "conversion": 0.25462962962,
+                          "sales": 0,
+                          "epc": 4.583333333333333
+                        }
+                      ]
+                    },
+                    "totals": {
+                      "type": "object",
+                      "properties": {
+                        "clicks": {
+                          "type": "integer"
+                        },
+                        "leads": {
+                          "type": "integer"
+                        },
+                        "earnings": {
+                          "type": "integer"
+                        },
+                        "sales": {
+                          "type": "integer"
+                        },
+                        "epc": {
+                          "type": "integer"
+                        }
+                      }
+                    },
+                    "campaign": {
+                      "type": "object",
+                      "properties": {
+                        "campaign_id": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/reports/conversions": {
+      "get": {
+        "summary": "/reports/conversions",
+        "description": "Get the conversion report for a specific campaign. The Campaign ID can be ommitted to get a list of conversions across all campaigns.",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "description": "The 'mb-api-token' returned from the Authentication resource.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "oid",
+            "description": "The ID of the campaign for the requested conversion report. The Campaign ID can be ommitted to get a list of conversions across all campaigns.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "cid",
+            "description": "The creative id for specific response.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "lpid",
+            "description": "The landing page id for landing page specific conversions.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "subid",
+            "description": "The sub id for subid specific conversions.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "page",
+            "description": "The page number of the request. Each page will show a maximum of 50 results at a time.",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "startDate",
+            "description": "The start date for the requested report. If not provided, it default to the start of the current month.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "endDate",
+            "description": "The end date for the requested report. If not provided, it default to the end of the current month.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Conversion Report.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "report": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "campaign_id": {
+                            "type": "integer"
+                          },
+                          "date": {
+                            "type": "string"
+                          },
+                          "earnings": {
+                            "type": "integer"
+                          },
+                          "ip_address": {
+                            "type": "string"
+                          },
+                          "ip_city": {
+                            "type": "string"
+                          },
+                          "ip_country": {
+                            "type": "string"
+                          },
+                          "ip_region": {
+                            "type": "string"
+                          },
+                          "ip_location": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "city": {
+                                  "type": "string"
+                                },
+                                "country": {
+                                  "type": "string"
+                                },
+                                "region": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          },
+                          "key_id": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "rate_type": {
+                            "type": "string"
+                          },
+                          "sales": {
+                            "type": "integer"
+                          },
+                          "status": {
+                            "type": "string"
+                          },
+                          "subid1": {
+                            "type": "string"
+                          },
+                          "subid2": {
+                            "type": "string"
+                          },
+                          "subid3": {
+                            "type": "string"
+                          },
+                          "subid4": {
+                            "type": "string"
+                          },
+                          "subid5": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "example": [
+                        {
+                          "date": "2019-04-17T03:10:05.347Z",
+                          "campaign_id": 9964,
+                          "earnings": 18,
+                          "ip_address": "xxx.xxx.xxx.xxx",
+                          "ip_city": "Toronto",
+                          "ip_country": "Canada",
+                          "ip_location": {
+                            "city": "Toronto",
+                            "country": "Canada",
+                            "region": "Ontario"
+                          },
+                          "ip_region": "Ontario",
+                          "key_id": "NX4RZEuNy",
+                          "name": "NationalFamily.com - Life Insurance - US",
+                          "rate_type": "$ per lead",
+                          "sales": 0,
+                          "status": "Payable",
+                          "subid1": "",
+                          "subid2": "454678",
+                          "subid3": "",
+                          "subid4": "",
+                          "subid5": ""
+                        },
+                        {
+                          "date": "2019-04-17T03:10:05.347Z",
+                          "campaign_id": 9964,
+                          "earnings": 18,
+                          "ip_address": "xxx.xxx.xxx.xxx",
+                          "ip_city": "Toronto",
+                          "ip_country": "Canada",
+                          "ip_location": {
+                            "city": "Toronto",
+                            "country": "Canada",
+                            "region": "Ontario"
+                          },
+                          "ip_region": "Ontario",
+                          "key_id": "NX4RZEuNy",
+                          "name": "NationalFamily.com - Life Insurance - US",
+                          "rate_type": "$ per lead",
+                          "sales": 0,
+                          "status": "Payable",
+                          "subid1": "",
+                          "subid2": "454678",
+                          "subid3": "",
+                          "subid4": "",
+                          "subid5": ""
+                        },
+                        {
+                          "date": "2019-04-17T03:10:05.347Z",
+                          "campaign_id": 9964,
+                          "earnings": 18,
+                          "ip_address": "xxx.xxx.xxx.xxx",
+                          "ip_city": "Toronto",
+                          "ip_country": "Canada",
+                          "ip_location": {
+                            "city": "Toronto",
+                            "country": "Canada",
+                            "region": "Ontario"
+                          },
+                          "ip_region": "Ontario",
+                          "key_id": "NX4RZEuNy",
+                          "name": "NationalFamily.com - Life Insurance - US",
+                          "rate_type": "$ per lead",
+                          "sales": 0,
+                          "status": "Payable",
+                          "subid1": "",
+                          "subid2": "454678",
+                          "subid3": "",
+                          "subid4": "",
+                          "subid5": ""
+                        }
+                      ]
+                    },
+                    "page": {
+                      "type": "integer",
+                      "example": 5
+                    },
+                    "total_pages": {
+                      "type": "integer",
+                      "example": 39
+                    },
+                    "campaign": {
+                      "type": "object",
+                      "properties": {
+                        "campaign_id": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/reports/reversals": {
+      "get": {
+        "summary": "/reports/reversals",
+        "description": "Get the reversal report.",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "description": "The 'mb-api-token' returned from the Authentication resource.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "page",
+            "description": "The page number of the request. Each page will show a maximum of 50 results at a time.",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "startDate",
+            "description": "The start date for the requested report. If not provided, it default to the start of the current month.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "endDate",
+            "description": "The end date for the requested report. If not provided, it default to the end of the current month.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Reversals Report.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "report": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "campaign_id": {
+                            "type": "integer"
+                          },
+                          "earnings": {
+                            "type": "integer"
+                          },
+                          "ip_address": {
+                            "type": "string"
+                          },
+                          "lead_date": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "rate_type": {
+                            "type": "string"
+                          },
+                          "reverse_date": {
+                            "type": "string"
+                          },
+                          "sales": {
+                            "type": "integer"
+                          },
+                          "status": {
+                            "type": "string"
+                          },
+                          "subid1": {
+                            "type": "string"
+                          },
+                          "subid2": {
+                            "type": "string"
+                          },
+                          "subid3": {
+                            "type": "string"
+                          },
+                          "subid4": {
+                            "type": "string"
+                          },
+                          "subid5": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "example": [
+                        {
+                          "campaign_id": 6757,
+                          "earnings": 8,
+                          "ip_address": "111.111.111.111",
+                          "lead_date": "2019-03-07T18:05:15.747Z",
+                          "name": "Blue Sky Auto Finance",
+                          "rate_type": "$ per lead",
+                          "reverse_date": "2019-04-03T14:01:46.767Z",
+                          "sales": 0,
+                          "status": "Reversal",
+                          "subid1": "",
+                          "subid2": "",
+                          "subid3": "",
+                          "subid4": "",
+                          "subid5": ""
+                        },
+                        {
+                          "campaign_id": 6757,
+                          "earnings": 8,
+                          "ip_address": "111.111.111.111",
+                          "lead_date": "2019-03-07T18:05:15.747Z",
+                          "name": "Blue Sky Auto Finance",
+                          "rate_type": "$ per lead",
+                          "reverse_date": "2019-04-03T14:01:46.767Z",
+                          "sales": 0,
+                          "status": "Reversal",
+                          "subid1": "",
+                          "subid2": "",
+                          "subid3": "",
+                          "subid4": "",
+                          "subid5": ""
+                        },
+                        {
+                          "campaign_id": 6757,
+                          "earnings": 8,
+                          "ip_address": "111.111.111.111",
+                          "lead_date": "2019-03-07T18:05:15.747Z",
+                          "name": "Blue Sky Auto Finance",
+                          "rate_type": "$ per lead",
+                          "reverse_date": "2019-04-03T14:01:46.767Z",
+                          "sales": 0,
+                          "status": "Reversal",
+                          "subid1": "",
+                          "subid2": "",
+                          "subid3": "",
+                          "subid4": "",
+                          "subid5": ""
+                        }
+                      ]
+                    },
+                    "page": {
+                      "type": "integer",
+                      "example": 5
+                    },
+                    "total_pages": {
+                      "type": "integer",
+                      "example": 39
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/reports/referrals": {
+      "get": {
+        "summary": "/reports/referrals",
+        "description": "Get the referral report.",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "description": "The 'mb-api-token' returned from the Authentication resource.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Referral Report.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "report": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "affiliates": {
+                            "type": "integer"
+                          },
+                          "referral_date": {
+                            "type": "string"
+                          },
+                          "referral_income": {
+                            "type": "integer"
+                          }
+                        }
+                      },
+                      "example": [
+                        {
+                          "affiliates": 55,
+                          "referral_date": "2019-04-16T00:00:00.000Z",
+                          "referral_income": 125.23
+                        },
+                        {
+                          "affiliates": 23,
+                          "referral_date": "2019-04-15T00:00:00.000Z",
+                          "referral_income": 305.5
+                        },
+                        {
+                          "affiliates": 13,
+                          "referral_date": "2019-04-14T00:00:00.000Z",
+                          "referral_income": 87.25
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/news": {
+      "get": {
+        "summary": "/news",
+        "description": "Fetch news and updates.",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "description": "The 'mb-api-token' returned from the Authentication resource.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Affiliate news and updates.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "news_updates": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "key_id": {
+                            "type": "string",
+                            "example": "xCWI98s"
+                          },
+                          "news": {
+                            "type": "string",
+                            "example": "<a href='https://blog.maxbounty.com/.../'>MaxBounty Becomes EXCLUSIVE North American Media Buyer of Booking.com</a>"
+                          },
+                          "news_date": {
+                            "type": "string",
+                            "example": "2019-04-11T14:54:26.967Z"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/resources": {
+      "get": {
+        "summary": "/resources",
+        "description": "Fetch the resources.",
+        "responses": {
+          "200": {
+            "description": "Resources.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "resources": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "URL": {
+                            "type": "string",
+                            "example": "https://test.com/test123"
+                          },
+                          "category_name": {
+                            "type": "string",
+                            "example": "Tracking"
+                          },
+                          "description": {
+                            "type": "string",
+                            "example": "increase field size and auto-increment id."
+                          },
+                          "image_name": {
+                            "type": "string",
+                            "example": "abc"
+                          },
+                          "key_id": {
+                            "type": "string",
+                            "example": "fgdhfh3r3fdj"
+                          },
+                          "name": {
+                            "type": "string",
+                            "example": "abc"
+                          },
+                          "promo_code": {
+                            "type": "string",
+                            "example": "CODEABC"
+                          },
+                          "promo_description": {
+                            "type": "string",
+                            "example": "10% off on initial deposit."
+                          },
+                          "resource_category_id": {
+                            "type": "integer",
+                            "example": 1
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "servers": [
+    {
+      "url": "https://api.maxbounty.com/affiliates/api",
+      "description": "Affiliate API"
+    }
+  ],
+  "components": {}
+}

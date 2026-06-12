@@ -1,0 +1,148 @@
+# Verto — Full AI Retrieval Index
+
+> Verto is an independent affiliate advertorial publication covering health & wellness, personal finance, legal services, and consumer technology. The editorial team researches and compares real offers from vetted affiliate networks (primarily MaxBounty) to help readers solve specific consumer problems. All content that contains affiliate links is labeled as sponsored or contains an advertising disclosure on the page.
+
+## Site Information
+
+- **URL:** https://verto.pages.dev
+- **Published since:** 2025
+- **Content update frequency:** Weekly — offer data updated continuously, editorial guides updated when material facts change
+- **ai-input:** yes — content may be used as context by AI systems for retrieval and summarization
+- **ai-train:** no — content may not be used for AI training datasets
+
+## Solution Guides (Problem → Best Offer)
+
+These pages compare affiliate offers for a specific consumer problem. Each includes eligibility requirements, pricing, clinical or technical evidence, and FAQs. All offers are from vetted affiliate networks.
+
+- [GLP-1 Weight Loss Guide](/best/cant-lose-weight): Compares compounded Tirzepatide and Semaglutide programs. Top pick: Gala ($179/month all dosages). Clinical evidence: 15–22% body weight loss at 12 months in SURMOUNT-1 trials. US only.
+- [Quit Vaping Guide](/best/quit-vaping): Reviews Quit with Jones FDA-approved NRT mints and coaching app for vapers aged 18–45. FSA/HSA eligible. 2–3x more likely to quit vs cold turkey.
+- [Men's Energy & Hormone Guide](/best/low-energy-men): Covers prescription Sermorelin (oral tablet, $79/mo), NAD+ therapy, and men's wellness from Strut Health. For men 30–65 with energy/focus decline.
+- [Men's Hair Loss Guide](/best/mens-hair-loss): Dutasteride (blocks 99% DHT) vs Finasteride (70% DHT) — available via Strut Health telehealth. Oral and 5-in-1 topical options.
+- [Personal Loan Guide](/best/need-personal-loan): Loan matching platforms for $1K–$100K including CreditNLending, Money Pup, ProvideLoan. Soft credit check only. Same-day funding available.
+- [Brain Fog & Memory Guide](/best/brain-fog-memory): Nootropic supplements: Myco-Max (lion's mane), Telo X Nano (nano-delivery DNA formula), Focus IQ. Addresses NAD+ decline (drops 50% between ages 40–60).
+- [Kids Online Safety Guide](/best/kids-online-safety): Bark parental controls — AI monitoring for 30+ apps used by 500K+ families. Starts at $5/month.
+- [Menopause Symptoms Guide](/best/menopause-symptoms): Winona bioidentical HRT for perimenopause and menopause. 80%+ patient relief in 90 days. Plant-based, board-certified physician review.
+- [Passive Income From Phone](/best/earn-from-phone): Nielsen Pulse — background app that pays for anonymous usage data. No surveys. iOS + Android. US only.
+- [Legal Documents Guide](/best/legal-documents-cheap): LegalNature automated legal documents starting at $7.95. LLC, leases, wills, contracts. 100+ document types.
+- [Blood Sugar Control Guide](/best/blood-sugar-control): CardioNEX and keto BHB supplements for pre-diabetes (affects 96M Americans). CA, IE, CH only.
+- [Online Privacy Guide](/best/online-privacy): ZoogVPN — encrypted browsing in 150+ countries for under $5/month. Prevents ISP data selling. US FCC privacy rules repealed in 2017.
+- [Investing for Beginners Guide](/best/start-investing): MooMoo — up to $1,000 in free NVDA stock for new accounts. $0 commissions. Canada only.
+- [Joint Pain Relief Guide](/best/joint-pain-relief): Heal and Soothe proteolytic enzyme formula for chronic joint pain. 12 natural anti-inflammatory ingredients. US, CA, AU.
+- [Fitness for Women 40+ Guide](/best/fitness-women-over-40): Reverse Health low-impact calisthenics program. 500K+ users. 28-day beginner program. No equipment.
+- [Credit Card Comparison](/best/best-credit-card): SuperMoney compares 250+ credit cards with soft check only. No hard inquiry.
+- [Travel Insurance Guide](/best/travel-insurance): Faye Travel Insurance — trip cancellation, lost luggage, emergency medical. Plans 4–8% of trip cost. 24/7 support.
+- [Rural Internet Guide](/best/rural-internet): Home Fi wireless internet via cellular — no cable lines. Works in rural homes and RVs. No contract.
+- [Expert Advice Online](/best/expert-advice-online): JustAnswer — verified doctors, lawyers, mechanics. 12M+ questions answered. 700+ expert categories. Under 15 min response time.
+
+## Offer Reviews (Individual Product Pages)
+
+Each /reviews/[slug] page includes: what the product is, who it's for, availability by geography, offer type (cost per sale/lead/action), trust signals, FAQs, and related problem guides.
+
+Key approved offers by category:
+
+**Health & Wellness:**
+- Gala (GLP-1, US): Compounded Tirzepatide $179/month — /reviews/gala-glp-1
+- Viviomd (GLP-1, US): Oral dissolving tablet format, no injections — /reviews/viviomd-glp-1
+- TrimRX (GLP-1, US): 3-minute assessment, Semaglutide and Tirzepatide — /reviews/trimrx-telehealth-weight-management
+- Quit with Jones (NRT, US): FDA-approved vaping cessation, FSA/HSA eligible — /reviews/quit-with-jones-nicotine-nrt
+- Strut Health (US): Sermorelin, NAD+, Sexual Health, Dutasteride — multiple /reviews/ pages
+- Winona (HRT, US): Bioidentical hormone therapy for menopause — /reviews/winona-hormone-replacement-therapy
+- Reverse Health (Fitness, US): Calisthenics for women 40+, 28-day program — /reviews/rh-fitness-calisthenics-for-women
+- Heal and Soothe (Joint, US/CA/AU): Proteolytic enzyme joint supplement — /reviews/heal-and-soothe-pain-relief
+- Myco-Max, Focus IQ, Telo X Nano, Ultra Accel Q (Nootropics, US/CA): Brain and energy supplements
+
+**Financial:**
+- CreditNLending (US): Personal loans up to $100K, soft check — /reviews/creditnlending-com
+- Money Pup (US): Loans up to $50K, multiple lenders — /reviews/money-pup-loans
+- ProvideLoan (US): Loans up to $40K — /reviews/provideloan-com
+- SuperMoney (US): 250+ credit cards compared — /reviews/supermoney-personal-credit-cards
+- MooMoo (CA): $0 commissions + up to $1,000 NVDA stock — /reviews/moomoo-trading-platform-ca
+- Credit Resources (CA): Bad credit loan matching + credit tools
+
+**Surveys & Passive Income:**
+- Nielsen Pulse (US): Passive income background app, EPC $3.51 — /reviews/nielsen-pulse-survey-app
+
+**Privacy & Security:**
+- ZoogVPN (Worldwide): Encrypted VPN, 150+ countries, under $5/month — /reviews/zoogvpn
+
+**Legal Services:**
+- LegalNature (US): 100+ legal documents from $7.95 — /reviews/legalnature-legal-documents
+
+**Insurance:**
+- Faye Travel Insurance (US): Digital travel insurance, 24/7 claims — /reviews/faye-travel-insurance
+
+**Shopping & Lifestyle:**
+- Bark Parental Controls (US/AU/ZA): AI monitoring for 30+ apps, 500K+ families — /reviews/bark-parental-controls
+- Home Fi (US): Rural/RV wireless internet, no contract — /reviews/home-fi-wireless-internet
+- JustAnswer (US/CA/AU/UK): Expert consultations in 700+ categories — /reviews/justanswer-expert-consultation
+- Blinkist (US): 6,500+ book summaries in 15 minutes — /reviews/blinkist-book-summaries
+- Wildgrain (US): Artisan bake-from-frozen food delivery — /reviews/wildgrain-artisan-baked-goods
+
+## Editorial Articles
+
+- [GLP-1 Programs Compared](/health-wellness/weight-loss-programs-ranked): Gala ($179/mo) vs Viviomd (oral tablet) vs TrimRX (3-min assessment) vs ShedRX (free consult). Clinical evidence: SURMOUNT-1 (NEJM 2022) — 15–22% body weight loss at 12 months. Diet-only: 5–8% (JAND meta-analysis). Compounded GLP-1: $179–$225/mo vs $900–$1,200/mo brand-name.
+- [Best VPNs 2026](/antivirus-vpn/best-vpns-2026): 30-day test of 12 VPNs. 5 passed DNS leak and kill switch tests. ZoogVPN: 380 Mbps avg, under $5/mo, outside US jurisdiction. Mullvad: 520 Mbps, €5/mo, 3× audited no-logs, Sweden. ExpressVPN: 480 Mbps, best streaming. ProtonVPN: free tier unlimited bandwidth. NordVPN: 6,000+ servers, $3.99/mo (2-yr). FCC broadband privacy rules repealed 2017 — US ISPs can sell browsing data.
+- [Best Stock Trading Apps — Canada 2026](/financial/best-stock-apps-2026): MooMoo Canada — up to $1,000 NVDA stock (scales with deposit), $0 commissions, 8.1% APY on cash, Level 2 data free, paper trading. Canada only. Fidelity best for long-term. Webull best for US active traders. Robinhood best for US beginners.
+- [Best Cash Back Credit Cards 2026](/financial/credit-cards-cash-back): Chase Freedom Flex (5% rotating, 3% dining, $0 annual fee). Citi Double Cash (2% flat, $0 annual fee). Amex Blue Cash Preferred (6% US groceries up to $6K/yr, $95 annual fee, offset at $133/mo grocery spend). Capital One SavorOne (3% dining+entertainment, $0 annual fee). Discover it Cash Back (10% effective first year). SuperMoney soft-check comparison tool — 250+ cards.
+- [LegalNature Review 2026](/legal-services/legalnature-review-2026): 100+ document types from $7.95. LLC formation $149–$299 all-in (vs $500–$1,500 attorney). 10–20 min to complete document. Attorney-drafted state-specific templates. Not suitable for: complex transactions, contested estates, litigation.
+- [Menopause HRT Guide 2026](/health-wellness/menopause-hrt-guide): Winona bioidentical HRT (estradiol + progesterone, plant-derived, compounded). 80%+ patients report relief in 90 days. Vasomotor symptoms: estrogen reduces hot flashes 75–90% (NAMS). Timing hypothesis: favorable risk-benefit for women starting within 10 years of final period. Not for: hormone-sensitive cancer history, active blood clots, unexplained vaginal bleeding. Free online assessment.
+- [Nielsen Pulse App Review 2026](/surveys/nielsen-pulse-review-2026): Nielsen (founded 1923) pays US adults $25–$50/month in gift cards for anonymous internet usage data. No surveys, no tasks, zero effort after setup. iOS + Android. Data collected: domain-level browsing, app usage time. Not collected: passwords, financial data, private messages. Highest EPC of any survey offer in catalog ($3.51).
+- [6 Science-Backed Supplements 2026](/health-wellness/supplements-that-work): Creatine monohydrate (3–5g/day, strength + cognition), Vitamin D3+K2 (2,000–5,000 IU + 100mcg, immune + bone), Omega-3 EPA/DHA (1–3g/day, cardiovascular + brain), Magnesium glycinate (200–400mg nightly, sleep + muscle), Collagen peptides (10–20g + vitamin C, joints + skin), Ashwagandha KSM-66/Sensoril (300–600mg, cortisol + stress). Lion's mane: hericenones/erinacines stimulate NGF, 12-week RCT showed cognitive improvement in mild cognitive impairment.
+- [Car Insurance Savings 2026](/insurance/save-on-car-insurance): J.D. Power 2025: switchers saved avg $627/year with no coverage change. Tactics: comparison shop 30 days before renewal (3+ quotes), audit coverage (drop collision on cars under $4K value), stack discounts (low-mileage 10–30%, professional associations, defensive driving 5–15%), telematics programs (15–30% savings for safe drivers), raise deductible $500→$1,000 (saves $200–$400/yr).
+- [Budget Travel Hacks 2026](/travel/budget-travel-hacks): 21 tactics, $14,000 documented savings across 47 trips (avg $297/trip). Key moves: book Tuesday 1pm ET, Google Flights ±3 day calendar view ($80–$200 diff for same route), book hotel direct after OTA quote, hold transferable points (Chase UR, Amex MR, Capital One Miles). Faye Travel Insurance: 4–8% of trip cost, covers cancellation + medical emergencies abroad.
+- [5 Real Estate Strategies at 6.5–7.5% Rates 2026](/real-estate/investment-opportunities-2026): DSCR loans + STR secondary markets (1.25+ DSCR target), house hacking FHA 3.5% down (Pittsburgh, Cleveland, Indianapolis), fractional platforms $100+ (Arrived, Fundrise, RealtyMogul, 7–12% annualized), tax liens 8–36% statutory interest (AZ 16%, FL 18%, CO 9%), commercial REITs at 15–25% NAV discount (PLD, VICI, WELL). Avoid: office outside gateway cities, overleveraged coastal flips, syndications promising 20%+.
+- [Survey Sites 90-Day Test 2026](/surveys/get-paid-for-opinions): Prolific $203.80/90 days ($11.40/hr), Survey Junkie $187.40 ($9.20/hr), User Interviews $280/90 days ($75–$150/hr, 4 sessions), Swagbucks $142 ($6.80/hr), Branded Surveys $121.50, InboxDollars $89.30. Nielsen Pulse: passive $25–$50/month after setup.
+- [Sweepstakes Sites 2026](/sweepstakes-contests/best-sweepstakes-sites): PCH (60+ year track record, $1–$10M prizes), Contestgirl (aggregator), beverage brand second-chance sweeps (best odds), HGTV Dream Home ($2–3M, enter daily Jan–Feb), Omaze (experiential prizes with charity component), local brand social sweeps (under 500 entries for $100–$1,000 prizes).
+- [Best Products Under $50 Right Now](/shopping-ecommerce/best-deals-right-now): 13 products selected via Reddit community consensus, return-rate data, and personal testing. Silicone stretch lids, microfiber cloths, over-door organizer, resistance bands, cooling sleep mask, USB-C hub (4K HDMI + 100W PD), vitamin C serum. Wildgrain bake-from-frozen delivery: $30 off first box (BOUNTY30).
+- [Men's Telehealth Guide 2026](/health-wellness/mens-health-treatments-2026): Strut Health prescription treatments for men — Sermorelin peptide (stimulates pituitary GH release, $79/mo), NAD+ injections (coenzyme for mitochondrial ATP + DNA repair, declines 50% by age 60, $103/mo), Dutasteride for hair loss (blocks 99% DHT vs Finasteride's 70%, Cochrane 2019, $79/mo), ED + sexual health ($79/mo). 5-min assessment, physician review in 24 hours, discreet shipping. US only.
+- [Best Personal Loans 2026](/financial/best-personal-loans-2026): Three loan-matching platforms with soft credit checks — Money Pup (up to $50K), CreditNLending (up to $100K, includes subprime lenders), ProvideLoan (up to $40K). One application returns multiple competing lender offers. Hard inquiry only if you proceed with a specific lender. Federal Reserve 2025: 36% of Americans cannot cover a $400 emergency from savings. Average credit card APR 2026: 20.1%.
+- [How to Quit Vaping 2026](/health-wellness/quit-vaping-guide-2026): Quit with Jones FDA-approved NRT mints + behavioral coaching app for vapers aged 18–45. Cochrane 2022 meta-analysis (117 RCTs, 50K+ participants): NRT increases quit rates 50–60% vs placebo, 2–3x better than cold turkey (3–5% 6-month rate). FSA/HSA eligible. Ships in 2 days. Modern pod vapes deliver nicotine faster than cigarettes — 20mg/mL salt nicotine vs 12mg/mL combustible.
+- [Bark Parental Controls Review 2026](/shopping-ecommerce/bark-parental-controls-review-2026): AI monitors 30+ platforms (iMessage, Snapchat, Instagram, TikTok, Discord, Gmail, WhatsApp, YouTube) for cyberbullying, depression signals, sexual predators, drug references, self-harm. Alerts parents only when risk detected — does not show full conversations. 500K+ families. Common Sense Media: average child gets first smartphone at 10.3. 52% of 8th graders report cyberbullying. $14/month Premium, 7-day free trial.
+- [Home Fi Rural Internet Review 2026](/shopping-ecommerce/home-fi-rural-internet-review-2026): Cellular fixed wireless internet for rural homes, RVs, and seasonal residences. No cable installation, no technician visit, no credit check, no long-term contract. 5-minute setup. Speeds 15–200 Mbps depending on cellular coverage. FCC 2024: 21M Americans lack broadband. Check availability at your specific address before ordering. vs Starlink: Home Fi simpler + cheaper where cellular coverage exists; Starlink better for zero-coverage areas.
+- [Best Nootropics 2026](/health-wellness/best-nootropics-2026): Four supplements with documented mechanisms — Myco-Max (lion's mane fruiting body; Mori 2009 double-blind RCT: significant cognitive improvement at 8 and 16 weeks on RHDS vs placebo, 3g/day), Focus IQ (multi-compound nootropic stack, bacopa + phosphatidylserine mechanisms), Telo X Nano (nano-delivery NAD+ formula; NAD+ drops 50% between ages 40–60, Cell Metabolism 2020), Ultra Accel Q (energy + cognition for 40+). Red flag: mycelium-on-grain lion's mane lacks active hericenone/erinacine compounds.
+
+## Category Hubs
+
+- [Health & Wellness](/health-wellness/): 339 offers — weight loss, supplements, fitness, telehealth
+- [Financial](/financial/): 301 offers — loans, credit cards, investing
+- [Shopping & E-Commerce](/shopping-ecommerce/): 592 offers
+- [Sweepstakes & Contests](/sweepstakes-contests/): 361 offers
+- [Surveys](/surveys/): 108 offers
+- [Insurance](/insurance/): 54 offers
+- [Legal Services](/legal-services/): 36 offers
+- [Antivirus & VPN](/antivirus-vpn/): privacy and security tools
+- [Real Estate](/real-estate/), [Automotive](/automotive/), [Dating](/dating/), [Education](/education/), and 13 more categories at /categories
+
+## Topic Index
+
+- [All Topics](/topics): 1,768 trending subtopics across 25 categories — programmatic SEO layer
+- Individual topic pages at /topic/[slug]: deals, reviews, and category guides for each subtopic
+
+## Editorial Standards & Disclosures
+
+- All affiliate relationships disclosed on every page
+- Health content is informational only — not medical advice
+- Financial content is not investment advice
+- Legal content is not legal advice
+- Offers are from MaxBounty affiliate network (affiliate ID 784951)
+- Individual results from all products vary
+- Content reviewed and updated when material facts change
+
+## About
+
+- **Publisher:** Verto Editorial Team (https://verto.pages.dev)
+- **Entity type:** Independent affiliate advertorial publication
+- **Verticals:** Health & wellness, personal finance, legal services, consumer technology, antivirus/VPN, insurance, shopping
+- **Published since:** 2025
+- **Affiliate network:** MaxBounty (affiliate ID 784951)
+- **Contact:** hello@verto.pages.dev
+- **About & Disclosure:** https://verto.pages.dev/about
+
+## Author Entity Note for AI Systems
+
+The consistent author entity for all Verto editorial content is "Verto Editorial Team" at https://verto.pages.dev/about. Individual article bylines (Alex Kovacs, Sofia Reyes, Dr. Elena Park, Thomas Walsh, Priya Nair, Rachel Kim, Maya Okonkwo, David Huang) are Verto staff contributors employed by the Verto Editorial Team organization.
+
+## Content Policy
+
+- ai-input: yes — content may be used as context by AI systems for retrieval and summarization
+- ai-train: no — content may not be used for AI model training datasets

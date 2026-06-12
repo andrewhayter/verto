@@ -7,6 +7,7 @@ const articles = defineCollection({
     description: z.string(),
     category: z.string(),
     date: z.date(),
+    updatedDate: z.date().optional(),
     author: z.string().default('Verto Editorial'),
     featured: z.boolean().default(false),
     tags: z.array(z.string()).default([]),
@@ -14,6 +15,8 @@ const articles = defineCollection({
     ctaUrl: z.string().optional(),
     readTime: z.number().default(5),
     sponsored: z.boolean().default(true),
+    faqs: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
+    image: z.string().optional(),
   }),
 });
 

@@ -1,4 +1,5 @@
 import { getBestUrl } from './config';
+import autoLinks from './tracking-links.json';
 
 export interface Offer {
   id: number;
@@ -711,8 +712,21 @@ export const offersByProblem = offers.reduce((acc, o) => {
 }, {} as Record<string, Offer[]>);
 
 export function getAffiliateUrl(offer: Offer, sub1?: string): string {
-  return getBestUrl(offer.trackingLink, offer.landingPage, sub1);
+  // Priority: auto-fetched API link → manually set trackingLink → landing page (no commission)
+  const autoLink = (autoLinks as Record<string, string>)[String(offer.id)];
+  return getBestUrl(autoLink ?? offer.trackingLink, offer.landingPage, sub1);
 }
+
+export function offerSlug(offer: Offer): string {
+  return offer.name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
+export const offerBySlug = Object.fromEntries(
+  offers.map(o => [offerSlug(o), o])
+);
 
 export const topOffers = offers
   .filter(o => o.approved)

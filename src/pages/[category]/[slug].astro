@@ -26,10 +26,13 @@ const { Content } = await render(article);
   category={article.data.category}
   author={article.data.author}
   date={article.data.date}
+  updatedDate={article.data.updatedDate}
   readTime={article.data.readTime}
   ctaText={article.data.ctaText}
   ctaUrl={article.data.ctaUrl}
   sponsored={article.data.sponsored}
+  faqs={article.data.faqs}
+  image={article.data.image}
 >
   <Content />
 </ArticleLayout>

@@ -22,8 +22,8 @@ export interface Problem {
 export const problems: Problem[] = [
   {
     slug: 'cant-lose-weight',
-    headline: 'Struggling to Lose Weight? The Medical Solution Most People Don\'t Know About',
-    subheadline: 'GLP-1 medications that helped over 2 million Americans lose 15–22% of body weight — now available without the $1,500/month price tag',
+    headline: 'GLP-1 Medications Produce 15–22% Body Weight Loss — Now Available for $179/Month Without Insurance',
+    subheadline: 'Compounded Tirzepatide and Semaglutide deliver the same active ingredients as Ozempic and Mounjaro — through telehealth platforms for a fraction of the brand-name cost',
     hook: 'I\'ve tried everything. Diet after diet, the gym, cutting carbs. Nothing sticks. Sound familiar?',
     description: 'If traditional diets and exercise alone haven\'t worked, you\'re not failing — the science has changed. GLP-1 medications (like Semaglutide and Tirzepatide, the active ingredients in Ozempic and Mounjaro) are now available from telehealth providers for a fraction of the brand-name cost.',
     emoji: '⚖️',
@@ -64,8 +64,8 @@ export const problems: Problem[] = [
   },
   {
     slug: 'quit-vaping',
-    headline: 'Can\'t Quit Vaping? FDA-Approved NRT That\'s Designed Specifically for Vapers',
-    subheadline: 'Not gum. Not patches. A stigma-free nicotine replacement mint paired with a coaching app — made for the generation that vapes',
+    headline: 'FDA-Approved Nicotine Replacement Therapy Built Specifically for Vapers — Not Cigarette Smokers',
+    subheadline: 'A discreet NRT mint paired with a behavioral coaching app — designed for the 25–34 demographic that vapes, not the products made for smokers who quit in the 1990s',
     hook: 'You\'ve tried to quit. You know you should. But vaping is different from cigarettes — and most quit-smoking products weren\'t built for vapers.',
     description: 'Quit with Jones uses FDA-approved nicotine replacement therapy (NRT) lozenges in a discreet, lifestyle-aligned format — no medical-looking packaging, no judgment. Paired with behavioral coaching delivered via app and SMS, the program is designed specifically for 25–34 year old vapers.',
     emoji: '🚭',
@@ -262,8 +262,8 @@ export const problems: Problem[] = [
   },
   {
     slug: 'kids-online-safety',
-    headline: 'What Is Your Child Actually Doing Online? 500,000 Parents Found Out — and Changed How They Parent',
-    subheadline: 'AI-powered monitoring that works silently in the background, alerts you to real dangers, and respects your teen\'s privacy',
+    headline: '500,000 Families Use Bark to Monitor 30+ Apps for Cyberbullying, Predators, and Depression — Without Reading Every Message',
+    subheadline: 'AI-powered monitoring that alerts parents to genuine risks without invading a teen\'s privacy — starting at $5/month',
     hook: 'You give your kid a phone because they need it. Then you spend every day wondering what they\'re doing on it.',
     description: 'Bark monitors texts, apps, emails, and social media for signs of cyberbullying, depression, self-harm, and inappropriate content — without reading every message. The AI surfaces only what matters, so you don\'t have to invade your child\'s privacy or spend hours scrolling through their phone.',
     emoji: '🛡️',
@@ -503,6 +503,293 @@ export const problems: Problem[] = [
     seoTitle: 'Best VPN for Privacy 2026 — ZoogVPN Review: Stop Your ISP From Tracking You',
     seoDescription: 'ZoogVPN encrypts your internet traffic and hides your browsing from your ISP. Works in 150+ countries. 75% RevShare program. Under $5/month.',
     facebookHook: 'Your internet provider is legally selling your browsing history — here\'s the 60-second fix',
+  },
+  // ─── start-investing ───────────────────────────────────────────────────────
+  {
+    slug: 'start-investing',
+    headline: 'Never Invested Before? Get Up to $1,000 in Free Stock When You Open an Account',
+    subheadline: 'Commission-free trading, 24/7 markets, and a free NVDA stock bonus for new accounts — available for Canadian investors',
+    hook: 'I always thought investing was for rich people or finance bros. I was wrong.',
+    description: 'MooMoo offers Canadian investors commission-free stock, ETF, and options trading with real-time data and a welcome bonus of up to $1,000 in NVDA stock for new funded accounts. Paper trading mode lets you practice risk-free before committing real money. No minimums. 24M+ users worldwide.',
+    emoji: '📈',
+    gradient: 'linear-gradient(135deg, #1d4ed8, #1e3a8a)',
+    category: 'financial',
+    audience: 'Canadian adults 18+ who want to start investing — available in Canada only',
+    topOfferIds: [29920],
+    faqs: [
+      {
+        q: 'How much money do I need to start investing?',
+        a: 'You can start with as little as $1 on most modern platforms. MooMoo has no minimum deposit requirement for opening an account. The key is to start early — even small, consistent contributions compound significantly over time.',
+      },
+      {
+        q: 'Is investing safe for beginners?',
+        a: 'All investing involves risk — markets go up and down. But modern apps like MooMoo include paper trading (practice with fake money) so you can learn before risking real money. Diversified ETFs are typically considered the lowest-risk starting point for most beginners.',
+      },
+      {
+        q: 'What is the free stock promotion?',
+        a: 'MooMoo offers new users free stock valued between $3 and $2,000 when you open and fund an account. The exact value is random — but it\'s real stock in real companies, not a gift card. Terms apply; check MooMoo\'s current promotion for details.',
+      },
+    ],
+    trustStats: [
+      { stat: '21M+', label: 'Users on Moo Moo globally' },
+      { stat: '$0', label: 'Commission on US stock trades' },
+      { stat: 'Up to $2K', label: 'Free stock for new accounts' },
+    ],
+    seoTitle: 'How to Start Investing in Canada 2026 — MooMoo Free Stock Bonus | Verto',
+    seoDescription: 'MooMoo gives Canadian investors up to $1,000 in free NVDA stock for new funded accounts. Zero commissions, paper trading, 24M+ users. Canada only.',
+    facebookHook: 'This app is giving away free NVDA stock for Canadian investors — here\'s exactly how to get yours',
+  },
+
+  // ─── joint-pain-relief ──────────────────────────────────────────────────────
+  {
+    slug: 'joint-pain-relief',
+    headline: 'Joint Pain Ruining Your Day? The Natural Formula That\'s Helping Thousands Move Again',
+    subheadline: 'No prescription. No steroids. Just clinically-studied enzymes and herbs that target the real cause of joint inflammation',
+    hook: 'I stopped being able to do the things I love — hiking, picking up my grandkids — because of joint pain. I didn\'t want to just mask it with pills forever.',
+    description: 'Chronic joint pain is one of the most common complaints in adults over 40. Most people reach for NSAIDs (like ibuprofen) which only mask the pain without addressing inflammation at the source. Heal and Soothe uses a combination of proteolytic enzymes, turmeric, ginger, and other studied natural ingredients to target systemic inflammation — the root driver of most joint pain.',
+    emoji: '🦵',
+    gradient: 'linear-gradient(135deg, #dc2626, #7f1d1d)',
+    category: 'health-wellness',
+    audience: 'Adults 40+ dealing with knee, back, hip, or joint pain',
+    topOfferIds: [17722],
+    faqs: [
+      {
+        q: 'What causes chronic joint pain?',
+        a: 'Chronic joint pain is most commonly caused by systemic inflammation — your body\'s immune response that, when chronic, attacks joint tissue. Conditions like osteoarthritis, tendonitis, and bursitis all involve inflammation. Addressing inflammation at the source (not just masking pain signals) is the approach most integrative physicians now recommend.',
+      },
+      {
+        q: 'Are natural joint supplements effective?',
+        a: 'The evidence is mixed but promising for specific ingredients. Proteolytic enzymes (like serrapeptase and bromelain), turmeric/curcumin, boswellia, and omega-3s all have peer-reviewed studies showing anti-inflammatory effects. Results vary by individual — as with all supplements, give it 4–8 weeks for fair evaluation.',
+      },
+      {
+        q: 'Is Heal and Soothe safe to take with other medications?',
+        a: 'Consult your physician before starting any supplement, especially if you take blood thinners, NSAIDs, or other prescription medications. Some enzymes can interact with anticoagulants. Always disclose supplements to your healthcare provider.',
+      },
+    ],
+    trustStats: [
+      { stat: '50M+', label: 'Americans live with chronic joint pain' },
+      { stat: '12', label: 'Natural anti-inflammatory ingredients' },
+      { stat: '4–8 wk', label: 'Typical timeframe to feel results' },
+    ],
+    seoTitle: 'Natural Joint Pain Relief 2026 — What Actually Works (Without Prescriptions) | Verto',
+    seoDescription: 'Heal and Soothe uses proteolytic enzymes and anti-inflammatory herbs to target joint pain at the source. No steroids, no prescription needed.',
+    facebookHook: 'My knees felt 10 years younger after 6 weeks — here\'s the one thing I changed',
+  },
+
+  // ─── fitness-women-over-40 ──────────────────────────────────────────────────
+  {
+    slug: 'fitness-women-over-40',
+    headline: 'Fitness After 40: The Workout Plan Built for How Women\'s Bodies Actually Change',
+    subheadline: 'Low-impact, joint-friendly workouts designed around hormonal changes — not the punishing routines that stop working in your 40s',
+    hook: 'Every fitness plan I found was designed for 25-year-olds. I needed something that worked with my body, not against it.',
+    description: 'After 40, women experience declining estrogen, slower muscle recovery, increased joint sensitivity, and metabolic shifts. Generic workout plans ignore these realities. Reverse Health builds personalized calisthenics and low-impact strength programs specifically around these changes — helping women build lean muscle, improve mobility, and lose fat without risking injury or burnout.',
+    emoji: '💪',
+    gradient: 'linear-gradient(135deg, #db2777, #881337)',
+    category: 'health-wellness',
+    audience: 'Women 40–65 looking for sustainable, age-appropriate fitness',
+    topOfferIds: [29132],
+    faqs: [
+      {
+        q: 'Why does exercise feel harder after 40?',
+        a: 'Declining estrogen affects muscle protein synthesis, bone density, and fat distribution. Your body also takes longer to recover between workouts. Exercise is still highly effective — but the type, intensity, and recovery approach should adapt to these changes rather than fighting against them.',
+      },
+      {
+        q: 'What is calisthenics and why is it good for women over 40?',
+        a: 'Calisthenics uses bodyweight movements (squats, push-ups, planks, hinges) instead of heavy equipment. This reduces joint stress while still building lean muscle. It\'s also highly accessible — you can do it at home, at any fitness level, without gym memberships.',
+      },
+      {
+        q: 'How quickly will I see results?',
+        a: 'Most Reverse Health users report noticeable changes in energy and body composition within 4–6 weeks with consistent effort (3–4 sessions per week). Sustainable changes — not crash-workout results — are the goal.',
+      },
+    ],
+    trustStats: [
+      { stat: '500K+', label: 'Women using Reverse Health programs' },
+      { stat: '28-day', label: 'Structured beginner program included' },
+      { stat: 'Low-impact', label: 'Joint-friendly by design' },
+    ],
+    seoTitle: 'Best Workout Plan for Women Over 40 — Reverse Health Review 2026 | Verto',
+    seoDescription: 'Reverse Health builds low-impact calisthenics programs designed for how women\'s bodies change after 40. No gym required, results in 4–6 weeks.',
+    facebookHook: 'The reason your workouts stopped working after 40 — and what to do instead',
+  },
+
+  // ─── best-credit-card ───────────────────────────────────────────────────────
+  {
+    slug: 'best-credit-card',
+    headline: 'Find the Best Credit Card for Your Wallet — In Under 3 Minutes',
+    subheadline: 'Compare hundreds of cards side-by-side: cashback, travel rewards, balance transfer, and no-annual-fee options — then apply directly',
+    hook: 'I had the same credit card for 8 years and left hundreds of dollars in rewards on the table every year. No more.',
+    description: 'Most people pick a credit card once and stick with it forever — often missing out on significantly better rewards, lower APR, or bonuses available to them. SuperMoney\'s comparison platform lets you see cards matched to your credit profile (without a hard pull), compare real rates, and identify the card that fits your actual spending habits.',
+    emoji: '💳',
+    gradient: 'linear-gradient(135deg, #7c3aed, #4c1d95)',
+    category: 'financial',
+    audience: 'Adults looking to maximize credit card rewards or reduce interest costs',
+    topOfferIds: [20484],
+    faqs: [
+      {
+        q: 'Will comparing credit cards hurt my credit score?',
+        a: 'Checking your options on a comparison platform like SuperMoney uses a soft inquiry, which does NOT affect your credit score. A hard inquiry only happens when you formally apply for a card. You can compare dozens of offers safely before committing.',
+      },
+      {
+        q: 'What credit score do I need for the best reward cards?',
+        a: 'Premium travel and cashback cards typically require a credit score of 700+ (good to excellent). There are strong options for credit scores 580–699 as well — secured cards and cards designed to help rebuild credit. SuperMoney surfaces options appropriate for your range.',
+      },
+      {
+        q: 'Cashback vs. travel rewards — which is better?',
+        a: 'Cashback cards are simpler and more flexible — you earn a percentage back on every purchase with no redemption complexity. Travel cards can offer higher value per point IF you actually travel and are willing to optimize redemptions. For most people, a flat-rate cashback card is the best starting point.',
+      },
+    ],
+    trustStats: [
+      { stat: '250+', label: 'Cards compared on SuperMoney' },
+      { stat: 'No hard pull', label: 'Soft check only to compare' },
+      { stat: '$500+', label: 'Average annual value of a matched card' },
+    ],
+    seoTitle: 'Best Credit Cards 2026 — Compare Cashback & Rewards in Minutes | Verto',
+    seoDescription: 'SuperMoney compares 250+ credit cards to find the best match for your credit score and spending habits. Soft check only — won\'t hurt your score.',
+    facebookHook: 'I switched credit cards and made an extra $680 in rewards last year — here\'s the comparison tool I used',
+  },
+
+  // ─── travel-insurance ───────────────────────────────────────────────────────
+  {
+    slug: 'travel-insurance',
+    headline: 'One Cancelled Flight Cost Me $1,400. Now I Always Get Travel Insurance First.',
+    subheadline: 'Trip cancellation, medical emergencies, lost luggage, and flight delays — covered for less than you\'d spend on airport food',
+    hook: 'My flight was cancelled 2 hours before departure. The hotel was non-refundable. The airline offered a $200 voucher. Total loss: $1,400. I\'ll never travel uninsured again.',
+    description: 'Most credit cards offer minimal travel protection — and airline vouchers won\'t cover your hotel, tours, or lost wages. Faye Travel Insurance covers trip cancellation, emergency medical care abroad, lost/delayed luggage, and flight delays — with a modern app-based claims process and 24/7 support. Plans typically cost 4–8% of your trip value.',
+    emoji: '✈️',
+    gradient: 'linear-gradient(135deg, #0369a1, #0c4a6e)',
+    category: 'insurance',
+    audience: 'Travelers booking trips worth $500+, especially international',
+    topOfferIds: [26732],
+    faqs: [
+      {
+        q: 'Does travel insurance cover COVID cancellations?',
+        a: 'It depends on the specific policy and reason for cancellation. "Cancel for Any Reason" (CFAR) add-ons provide the broadest coverage, including COVID-related cancellations. Standard trip cancellation typically covers illness requiring a doctor\'s note. Check Faye\'s current policy terms for specific COVID coverage language.',
+      },
+      {
+        q: 'When should I buy travel insurance?',
+        a: 'Buy as soon as you book — not at the airport. Purchasing within 14 days of your initial trip deposit usually unlocks the most benefits, including pre-existing condition waivers and CFAR eligibility. Waiting until departure day significantly limits your coverage options.',
+      },
+      {
+        q: 'Is travel insurance worth it for a domestic trip?',
+        a: 'For short domestic trips under $500, it\'s borderline. For anything over $1,000 in non-refundable bookings, or any international travel, it\'s almost always worth it. Medical emergencies abroad — especially hospitalizations — can cost $20,000–$100,000+ without insurance.',
+      },
+    ],
+    trustStats: [
+      { stat: '$20K+', label: 'Medical emergency abroad can cost without insurance' },
+      { stat: '4–8%', label: 'Typical trip insurance cost' },
+      { stat: '24/7', label: 'Faye emergency support line' },
+    ],
+    seoTitle: 'Best Travel Insurance 2026 — Faye Review: Is It Worth It? | Verto',
+    seoDescription: 'Faye Travel Insurance covers trip cancellation, lost luggage, and medical emergencies abroad. Plans from 4–8% of trip cost with app-based claims.',
+    facebookHook: 'The $8 travel insurance decision that saved me $1,400 last summer — here\'s exactly what I bought',
+  },
+
+  // ─── rural-internet ─────────────────────────────────────────────────────────
+  {
+    slug: 'rural-internet',
+    headline: 'No Cable, No DSL, No Problem — Fast Home Internet That Works Anywhere',
+    subheadline: 'Wireless home internet that doesn\'t require cable lines — works in rural areas, RVs, and places the big ISPs don\'t serve',
+    hook: 'I moved to a rural property and discovered that my only internet option was slow DSL at $89/month. I found a much better solution.',
+    description: 'Millions of Americans live in areas where cable and fiber internet simply aren\'t available. Home Fi delivers wireless home internet using cellular networks — no cable lines, no contracts, no technician visits. It works in rural homes, vacation properties, RVs, and anywhere with cellular signal. Plans include a portable router that travels with you.',
+    emoji: '📡',
+    gradient: 'linear-gradient(135deg, #059669, #064e3b)',
+    category: 'shopping-ecommerce',
+    audience: 'Rural residents, RV owners, and anyone without cable/fiber access',
+    topOfferIds: [31456],
+    faqs: [
+      {
+        q: 'How fast is Home Fi wireless internet?',
+        a: 'Home Fi uses 4G LTE and 5G cellular networks. Speeds vary by location and network congestion, but most users see 25–100+ Mbps download speeds — sufficient for streaming, video calls, and remote work. Speed tests at your address are the best way to estimate your specific performance.',
+      },
+      {
+        q: 'Does it work for RV travel?',
+        a: 'Yes — that\'s one of Home Fi\'s most popular use cases. The portable router works anywhere with cellular coverage. You can take it camping, use it in an RV park, or run it in a vacation rental without setting up new service.',
+      },
+      {
+        q: 'Is there a data cap?',
+        a: 'Home Fi offers unlimited plans on major cellular networks. During peak congestion periods, some plans may experience reduced speeds after high data usage (deprioritization). Check current plan terms on the Home Fi website for specifics.',
+      },
+    ],
+    trustStats: [
+      { stat: '21M', label: 'Rural Americans without broadband access' },
+      { stat: 'No cable', label: 'Required — works on cellular signal' },
+      { stat: 'No contract', label: 'Month-to-month plans available' },
+    ],
+    seoTitle: 'Best Rural Internet Options 2026 — Home Fi Wireless Review | Verto',
+    seoDescription: 'Home Fi delivers wireless home internet via cellular networks — no cable lines needed. Works in rural areas, RVs, and vacation homes.',
+    facebookHook: 'If you live outside the city and hate your slow internet options, read this before paying another cable bill',
+  },
+
+  // ─── expert-advice-online ───────────────────────────────────────────────────
+  {
+    slug: 'expert-advice-online',
+    headline: 'Skip the $300 Consultation — Get Expert Answers Online in Minutes',
+    subheadline: 'Real doctors, lawyers, mechanics, and financial advisors answer your questions for a fraction of the cost — typically within minutes',
+    hook: 'I needed a lawyer\'s opinion on a rental contract. A local consultation would have cost $350. I got a clear answer in 15 minutes for far less.',
+    description: 'Professional consultations — doctors, lawyers, accountants, mechanics — can easily cost hundreds of dollars and take days to schedule. JustAnswer connects you with verified, credentialed experts across 700+ categories who answer your specific question in real time. It\'s not a replacement for ongoing care or representation, but for a one-off question or second opinion, it\'s dramatically more accessible.',
+    emoji: '🧑‍💼',
+    gradient: 'linear-gradient(135deg, #0891b2, #164e63)',
+    category: 'shopping-ecommerce',
+    audience: 'Adults with one-off legal, medical, financial, or technical questions',
+    topOfferIds: [28149],
+    faqs: [
+      {
+        q: 'Are JustAnswer experts actually qualified?',
+        a: 'JustAnswer verifies credentials for all experts on the platform — including license numbers, board certifications, and professional history. Doctors are MD/DO, lawyers are bar members, and so on. You can view an expert\'s credentials before asking your question.',
+      },
+      {
+        q: 'Is it a replacement for seeing a doctor or lawyer in person?',
+        a: 'No — and JustAnswer is transparent about this. It\'s best for: getting a second opinion, understanding if your situation warrants an in-person visit, quick clarifying questions, or situations where access to a professional is delayed or cost-prohibitive.',
+      },
+      {
+        q: 'How fast will I get an answer?',
+        a: 'Most questions receive a response within minutes during peak hours. Simpler questions in high-demand categories (general medicine, law, vet) are typically answered in under 10 minutes.',
+      },
+    ],
+    trustStats: [
+      { stat: '12M+', label: 'Questions answered on JustAnswer' },
+      { stat: '700+', label: 'Expert categories available' },
+      { stat: '<15 min', label: 'Average response time' },
+    ],
+    seoTitle: 'Get Expert Advice Online 2026 — JustAnswer Review: Worth It? | Verto',
+    seoDescription: 'JustAnswer connects you with verified doctors, lawyers, and experts who answer your questions in minutes — for a fraction of in-office costs.',
+    facebookHook: 'I needed a lawyer\'s opinion on a document. Got it in 12 minutes for under $30. Here\'s how.',
+  },
+
+  // ─── self-improvement ────────────────────────────────────────────────────────
+  {
+    slug: 'self-improvement',
+    headline: 'Read 1 Book a Week Without Actually Reading (And Retain More Than You Think)',
+    subheadline: 'The key ideas from 6,500+ nonfiction books — in 15-minute audio and text summaries you can finish on your commute',
+    hook: 'I have a stack of 20 unread books on my nightstand. I finally finished all of them — by not reading any of them.',
+    description: 'Blinkist distills the core concepts from bestselling nonfiction — business, psychology, science, health, productivity — into focused 15-minute reads or listens. It\'s not a replacement for reading a book cover to cover, but it\'s transformed how thousands of people find ideas, decide what to read in full, and keep learning despite busy schedules.',
+    emoji: '📚',
+    gradient: 'linear-gradient(135deg, #f59e0b, #92400e)',
+    category: 'shopping-ecommerce',
+    audience: 'Ambitious adults 25–55 who want to keep learning but have limited time',
+    topOfferIds: [25673],
+    faqs: [
+      {
+        q: 'Is Blinkist worth it if I already read a lot?',
+        a: 'Yes — for discovery. Blinkist is excellent for scanning a wide range of ideas quickly and identifying which full books merit your time. Many avid readers use it as a "triage" tool: read the Blink first, then decide if the full book is worth 8+ hours.',
+      },
+      {
+        q: 'How many books does Blinkist have?',
+        a: 'Blinkist currently has 6,500+ titles across 27 categories, with new Blinks added weekly. The catalog skews toward popular nonfiction — self-help, business, psychology, science, history, and productivity.',
+      },
+      {
+        q: 'Can I listen on my commute?',
+        a: 'Yes — every Blink has both text and audio versions. The audio narration is professionally recorded (not AI-generated text-to-speech). A 15-minute Blink fits perfectly in a commute, walk, or gym session.',
+      },
+    ],
+    trustStats: [
+      { stat: '26M+', label: 'Blinkist users worldwide' },
+      { stat: '6,500+', label: 'Books summarized in 15 minutes' },
+      { stat: '15 min', label: 'Average time to finish a Blink' },
+    ],
+    seoTitle: 'Blinkist Review 2026 — Is It Worth It? Read 1 Book a Week | Verto',
+    seoDescription: 'Blinkist summarizes 6,500+ nonfiction books into 15-minute reads and listens. Perfect for busy people who want to keep learning without the time commitment.',
+    facebookHook: 'I \'read\' 52 books last year in 15 minutes each — here\'s the app that made it possible',
   },
 ];
 

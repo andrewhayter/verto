@@ -11,10 +11,13 @@ interface Props {
   category: string;
   author: string;
   date: Date;
+  updatedDate?: Date;
   readTime: number;
   ctaText?: string;
   ctaUrl?: string;
   sponsored?: boolean;
+  faqs?: Array<{ q: string; a: string }>;
+  image?: string;
 }
 
 const {
@@ -23,10 +26,13 @@ const {
   category,
   author,
   date,
+  updatedDate,
   readTime,
   ctaText,
   ctaUrl,
   sponsored = true,
+  faqs,
+  image,
 } = Astro.props;
 
 const cat = categoryBySlug[category];
@@ -42,6 +48,60 @@ const related = allArticles
 ---
 
 <BaseLayout title={title} description={description}>
+  <!-- Article schema -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": title,
+        "description": description,
+        "datePublished": date.toISOString().split('T')[0],
+        "dateModified": (updatedDate ?? date).toISOString().split('T')[0],
+        "image": {
+          "@type": "ImageObject",
+          "url": image ?? `https://verto.pages.dev/og/${category}.png`,
+          "width": 1200,
+          "height": 628
+        },
+        "author": {
+          "@type": "Person",
+          "name": author,
+          "url": "https://verto.pages.dev/about"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Verto",
+          "url": "https://verto.pages.dev",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://verto.pages.dev/favicon.svg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": Astro.url.href
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://verto.pages.dev" },
+          { "@type": "ListItem", "position": 2, "name": cat?.name ?? "Articles", "item": `https://verto.pages.dev/${category}/` },
+          { "@type": "ListItem", "position": 3, "name": title.substring(0, 60), "item": Astro.url.href }
+        ]
+      },
+      ...(faqs && faqs.length > 0 ? [{
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(f => ({
+          "@type": "Question",
+          "name": f.q,
+          "acceptedAnswer": { "@type": "Answer", "text": f.a }
+        }))
+      }] : [])
+    ]
+  })} />
+
   <!-- Article Header -->
   <div class="relative" style={`background: ${gradient}`}>
     <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60"></div>
@@ -130,7 +190,7 @@ const related = allArticles
               </h3>
               <p class="text-sm text-gray-500 mb-4">{cat.description}</p>
               <a
-                href={`/category/${cat.slug}`}
+                href={`/${cat.slug}/`}
                 class="text-sm font-semibold text-brand hover:text-brand-dark transition-colors"
               >
                 Browse {cat.offsCount} offers →

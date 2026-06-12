@@ -8,3 +8,15 @@ node_modules/
 .env.*
 !.env.example
 *.tsbuildinfo
+
+# Raw API data dumps — regenerate with scripts/
+maxbounty-all-campaigns.json
+maxbounty-top50.json
+maxbounty-top50.md
+
+# Session working files
+content-optimizer-*.md
+
+# macOS
+.DS_Store
+src/.DS_Store

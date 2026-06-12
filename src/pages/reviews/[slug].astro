@@ -1,0 +1,327 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import { offers, offerSlug, getAffiliateUrl } from '../../data/offers';
+import { catalogOffers } from '../../data/catalog';
+import { problemBySlug } from '../../data/problems';
+import { categoryBySlug } from '../../data/categories';
+
+// ── Build static paths from BOTH editorial and catalog offers ──────────────────
+export function getStaticPaths() {
+  const editorialPaths = offers
+    .filter(o => o.approved)
+    .map(o => ({
+      params: { slug: offerSlug(o) },
+      props: { type: 'editorial' as const, editorialOffer: o, catalogOffer: null },
+    }));
+
+  const catalogPaths = catalogOffers.map(o => ({
+    params: { slug: o.slug },
+    props: { type: 'catalog' as const, editorialOffer: null, catalogOffer: o },
+  }));
+
+  return [...editorialPaths, ...catalogPaths];
+}
+
+const { type, editorialOffer, catalogOffer } = Astro.props;
+
+// ── Normalise to a display shape that works for both types ─────────────────────
+const isEditorial = type === 'editorial';
+const o = isEditorial ? editorialOffer! : catalogOffer!;
+
+const shortName   = isEditorial ? editorialOffer!.shortName   : catalogOffer!.name.split(' - ')[0].trim();
+const description = isEditorial ? editorialOffer!.description : catalogOffer!.description ?? '';
+const geos        = o.geos;
+const rateType    = isEditorial ? editorialOffer!.rateType     : catalogOffer!.payoutType;
+
+// tagline: editorial has it; catalog synthesises from name
+const tagline = isEditorial
+  ? editorialOffer!.tagline
+  : catalogOffer!.name.includes(' - ')
+    ? catalogOffer!.name.split(' - ').slice(1).join(' - ')
+    : catalogOffer!.description?.split('.')[0] ?? catalogOffer!.name;
+
+const badge       = isEditorial ? editorialOffer!.badge       : undefined;
+const trustSignal = isEditorial ? editorialOffer!.trustSignal : undefined;
+const ctaText     = isEditorial ? editorialOffer!.ctaText     : `Visit ${shortName}`;
+const ctaSubtext  = isEditorial ? editorialOffer!.ctaSubtext  : undefined;
+
+// Affiliate URL
+const affiliateUrl = isEditorial
+  ? getAffiliateUrl(editorialOffer!)
+  : catalogOffer!.trackingUrl;
+
+// Related problem pages (editorial only)
+const relatedProblems = isEditorial
+  ? editorialOffer!.problems.map(p => problemBySlug[p]).filter(Boolean).slice(0, 3)
+  : [];
+
+// Category
+const catSlug = isEditorial ? editorialOffer!.categories[0] : catalogOffer!.categorySlug;
+const cat = categoryBySlug[catSlug];
+
+const rateLabel: Record<string, string> = {
+  cps: 'per sale',
+  cpl: 'per lead',
+  cpa: 'per action',
+  revshare: 'revenue share',
+};
+
+const geoDisplay = geos.includes('WW') || geos.length === 0
+  ? 'Worldwide'
+  : geos.slice(0, 6).join(', ');
+
+const faqs = [
+  {
+    q: `Is ${shortName} legit?`,
+    a: `Yes. ${shortName} is a vetted partner offer verified through the MaxBounty affiliate network. We only feature approved offers from our affiliate network. Always review full terms on the provider's site before signing up.`,
+  },
+  {
+    q: `How does ${shortName} work?`,
+    a: description || `${shortName} is a partner offer available through the Verto affiliate catalog.`,
+  },
+  {
+    q: `Is there a commitment or cancellation fee?`,
+    a: `Terms vary by provider. Visit the ${shortName} website for full pricing and cancellation policy details before signing up.`,
+  },
+].filter(f => f.a.trim());
+
+const seoTitle    = `${shortName} Review 2026 — ${tagline.substring(0, 55)} | Verto`;
+const seoDescription = `${shortName}: ${tagline}. Available in ${geoDisplay}. See how it works, who it's for, and how it compares.`;
+---
+
+<BaseLayout title={seoTitle} description={seoDescription}>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": `${shortName} Review 2026`,
+        "description": seoDescription,
+        "datePublished": "2026-05-01",
+        "dateModified": "2026-06-11",
+        "image": {
+          "@type": "ImageObject",
+          "url": `https://verto.pages.dev/og/${catSlug}.png`,
+          "width": 1200, "height": 628
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Verto Editorial Team",
+          "url": "https://verto.pages.dev/about",
+          "worksFor": { "@type": "Organization", "name": "Verto", "url": "https://verto.pages.dev" }
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Verto",
+          "url": "https://verto.pages.dev",
+          "logo": { "@type": "ImageObject", "url": "https://verto.pages.dev/favicon.svg" }
+        },
+        "mainEntityOfPage": { "@type": "WebPage", "@id": Astro.url.href },
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(f => ({
+          "@type": "Question",
+          "name": f.q,
+          "acceptedAnswer": { "@type": "Answer", "text": f.a }
+        })),
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home",   "item": "https://verto.pages.dev" },
+          { "@type": "ListItem", "position": 2, "name": "Reviews", "item": "https://verto.pages.dev/reviews" },
+          cat ? { "@type": "ListItem", "position": 3, "name": cat.name, "item": `https://verto.pages.dev/${catSlug}/` } : null,
+          { "@type": "ListItem", "position": cat ? 4 : 3, "name": shortName, "item": Astro.url.href },
+        ].filter(Boolean),
+      },
+    ],
+  })} />
+
+  <!-- Disclosure banner -->
+  <div class="bg-amber-50 border-b border-amber-100">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-2 text-center">
+      <p class="text-xs text-amber-700">
+        <strong>Advertising Disclosure:</strong> Verto may earn a commission when you click links on this page, at no extra cost to you.
+        <a href="/about#disclosure" class="underline hover:text-amber-900">Learn more</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="bg-slate-900 py-12 md:py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <nav class="flex items-center gap-2 text-white/40 text-xs mb-6 flex-wrap">
+        <a href="/" class="hover:text-white transition-colors">Home</a>
+        <span>/</span>
+        <a href="/reviews" class="hover:text-white transition-colors">Reviews</a>
+        {cat && <><span>/</span><a href={`/${catSlug}/`} class="hover:text-white transition-colors">{cat.name}</a></>}
+        <span>/</span>
+        <span class="text-white/60">{shortName}</span>
+      </nav>
+
+      <div class="flex items-start gap-3 mb-4 flex-wrap">
+        {badge && (
+          <span class="bg-brand text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wide">
+            {badge}
+          </span>
+        )}
+        <span class="text-white/40 text-sm font-medium uppercase tracking-widest pt-0.5">
+          {cat?.name ?? 'Offer'} · Verto Review
+        </span>
+      </div>
+
+      <h1 class="font-display text-3xl md:text-4xl font-black text-white mb-3 leading-tight">
+        {shortName}: {tagline.length > 80 ? tagline.substring(0, 80) + '…' : tagline}
+      </h1>
+      <p class="text-white/60 text-lg mb-8 max-w-2xl leading-relaxed">
+        {description ? description.split('.')[0] + '.' : tagline}
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <a
+          href={affiliateUrl}
+          rel="sponsored noopener"
+          target="_blank"
+          class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-bold px-7 py-3.5 rounded-xl transition-colors text-base"
+        >
+          {ctaText}
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+        </a>
+        {ctaSubtext && <p class="text-white/40 text-sm">{ctaSubtext}</p>}
+      </div>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-12">
+
+    <!-- Quick stats -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-12 p-6 bg-gray-50 rounded-2xl border border-gray-100">
+      <div class="text-center">
+        <p class="text-xs text-gray-400 uppercase tracking-widest font-medium mb-1">Category</p>
+        <p class="font-semibold text-gray-800 text-sm">{cat?.name ?? catSlug}</p>
+      </div>
+      <div class="text-center">
+        <p class="text-xs text-gray-400 uppercase tracking-widest font-medium mb-1">Available In</p>
+        <p class="font-semibold text-gray-800 text-sm">{geoDisplay}</p>
+      </div>
+      <div class="text-center">
+        <p class="text-xs text-gray-400 uppercase tracking-widest font-medium mb-1">Offer Type</p>
+        <p class="font-semibold text-gray-800 text-sm capitalize">{rateLabel[rateType] ?? rateType}</p>
+      </div>
+    </div>
+
+    <!-- Description -->
+    <div class="mb-10">
+      <h2 class="font-display font-bold text-2xl text-gray-900 mb-4">What is {shortName}?</h2>
+      <p class="text-gray-600 text-lg leading-relaxed">
+        {description || `${shortName} is a partner offer available in ${geoDisplay}.`}
+      </p>
+      {trustSignal && (
+        <div class="mt-5 flex items-center gap-3 p-4 bg-brand/5 border border-brand/20 rounded-xl">
+          <svg class="w-5 h-5 text-brand shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <p class="text-gray-700 font-medium">{trustSignal}</p>
+        </div>
+      )}
+    </div>
+
+    <!-- Inline CTA -->
+    <div class="flex items-center justify-between gap-4 p-5 bg-white border border-gray-200 rounded-2xl shadow-sm mb-12">
+      <div>
+        <p class="font-display font-bold text-gray-900">{shortName}</p>
+        <p class="text-sm text-gray-500 line-clamp-1">{tagline}</p>
+      </div>
+      <a
+        href={affiliateUrl}
+        rel="sponsored noopener"
+        target="_blank"
+        class="shrink-0 bg-brand hover:bg-brand-dark text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-colors whitespace-nowrap"
+      >
+        {ctaText} →
+      </a>
+    </div>
+
+    <!-- Related problem pages (editorial offers only) -->
+    {relatedProblems.length > 0 && (
+      <div class="mb-12">
+        <h2 class="font-display font-bold text-2xl text-gray-900 mb-2">
+          Common Reasons People Choose {shortName}
+        </h2>
+        <p class="text-gray-500 mb-6">See our full guides — with comparisons and alternatives.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {relatedProblems.map(problem => (
+            <a
+              href={`/best/${problem.slug}`}
+              class="group p-5 bg-white border border-gray-100 rounded-2xl hover:border-brand/30 hover:shadow-md transition-all"
+            >
+              <div class="text-2xl mb-2">{problem.emoji}</div>
+              <p class="font-semibold text-gray-900 group-hover:text-brand transition-colors text-sm leading-snug">
+                {problem.headline.split('?')[0]}?
+              </p>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- FAQ -->
+    <div class="mb-12">
+      <h2 class="font-display font-bold text-2xl text-gray-900 mb-6">
+        Frequently Asked Questions about {shortName}
+      </h2>
+      <div class="flex flex-col gap-4">
+        {faqs.map(faq => (
+          <details class="group bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+            <summary class="flex items-center justify-between gap-4 p-5 cursor-pointer list-none hover:bg-gray-50 transition-colors">
+              <h3 class="font-semibold text-gray-900 text-base leading-snug">{faq.q}</h3>
+              <svg class="w-5 h-5 text-gray-400 shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div class="px-5 pb-5">
+              <p class="text-gray-600 leading-relaxed">{faq.a}</p>
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="rounded-3xl bg-slate-900 p-8 md:p-10 text-center mb-12">
+      <p class="text-white/50 text-sm uppercase tracking-widest font-semibold mb-2">Ready to try it?</p>
+      <h2 class="font-display font-bold text-2xl md:text-3xl text-white mb-3">{shortName}</h2>
+      <p class="text-white/60 mb-6 line-clamp-2">{tagline}</p>
+      <a
+        href={affiliateUrl}
+        rel="sponsored noopener"
+        target="_blank"
+        class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-2xl text-base transition-colors"
+      >
+        {ctaText}
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+      </a>
+      {ctaSubtext && <p class="text-white/40 text-sm mt-3">{ctaSubtext}</p>}
+    </div>
+
+    <Newsletter />
+
+    <!-- Legal -->
+    <div class="mt-10 p-5 bg-gray-50 rounded-2xl border border-gray-100">
+      <p class="text-xs text-gray-400 leading-relaxed">
+        <strong class="text-gray-500">Advertising Disclosure:</strong> This page contains affiliate links. Verto may receive a commission when you purchase through these links, at no additional cost to you. We only feature offers we believe provide genuine value. Individual results vary. Always review full terms on the provider's website before completing any purchase or registration.
+      </p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  details[open] summary { background-color: rgb(249 250 251); }
+</style>

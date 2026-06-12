@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import FeaturedHero from '../components/FeaturedHero.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import OfferCard from '../components/OfferCard.astro';
 import Newsletter from '../components/Newsletter.astro';
@@ -33,17 +32,27 @@ const featuredTopOffers = topOffers.slice(0, 5);
 ---
 
 <BaseLayout
-  title="Verto — Find the Best Solution for Your Problem"
-  description="Verto matches you with the best-rated offers for health, finance, legal, and lifestyle needs. Expert guides, real comparisons, genuine solutions."
+  title="Verto — Expert-Reviewed Offers for Health, Finance & Lifestyle"
+  description="Compare the top-rated offers for weight loss, personal loans, legal documents, VPNs, and more. Verto reviews affiliate offers from vetted networks so you don't have to."
 >
   <!-- Schema for homepage -->
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Verto — Find the Best Solution for Your Problem",
-    "description": "Verto matches you with the best-rated offers for health, finance, legal, and lifestyle needs.",
+    "@id": "https://verto.pages.dev/#webpage",
+    "name": "Verto — Expert-Reviewed Offers for Health, Finance & Lifestyle",
+    "description": "Compare the top-rated offers for weight loss, personal loans, legal documents, VPNs, and more. Verto reviews affiliate offers from vetted networks so you don't have to.",
     "url": "https://verto.pages.dev",
-    "breadcrumb": { "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://verto.pages.dev" }] }
+    "isPartOf": { "@id": "https://verto.pages.dev/#website" },
+    "about": { "@id": "https://verto.pages.dev/#organization" },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["h1", ".ticker-bar"]
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://verto.pages.dev" }]
+    }
   })} />
 
   <!-- Ticker bar -->
@@ -52,7 +61,7 @@ const featuredTopOffers = topOffers.slice(0, 5);
       <span class="uppercase tracking-widest shrink-0 mr-3 opacity-80">Trending:</span>
       <div class="flex gap-8 overflow-x-auto category-nav">
         {spotlightProblems.map(p => (
-          <a href={`/solve/${p.slug}`} class="whitespace-nowrap hover:underline opacity-90">
+          <a href={`/best/${p.slug}`} class="whitespace-nowrap hover:underline opacity-90">
             {p.emoji} {p.headline.split('—')[0].trim().substring(0, 55)}
           </a>
         ))}
@@ -66,10 +75,10 @@ const featuredTopOffers = topOffers.slice(0, 5);
     <div class="mb-14">
       <div class="text-center max-w-3xl mx-auto mb-10">
         <h1 class="font-display text-4xl md:text-5xl font-black text-gray-900 leading-tight mb-4">
-          What problem are you<br class="hidden sm:block" /> trying to solve today?
+          The highest-rated offers for {problems.length} specific health, finance, and lifestyle problems — verified and compared
         </h1>
         <p class="text-gray-500 text-lg">
-          Verto finds the best-rated solution for your specific situation — verified offers, honest comparisons, real results.
+          Each guide compares the top offers for one problem — with pricing, eligibility, clinical evidence, and FAQs. No generic lists. No sponsored rankings.
         </p>
       </div>
 
@@ -108,7 +117,7 @@ const featuredTopOffers = topOffers.slice(0, 5);
       </div>
 
       <div class="text-center">
-        <a href="/solve" class="inline-flex items-center gap-2 text-brand hover:text-brand-dark font-semibold text-sm transition-colors">
+        <a href="/best" class="inline-flex items-center gap-2 text-brand hover:text-brand-dark font-semibold text-sm transition-colors">
           Browse all problem guides
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -176,7 +185,7 @@ const featuredTopOffers = topOffers.slice(0, 5);
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
         {categories.map(cat => (
           <a
-            href={`/category/${cat.slug}`}
+            href={`/${cat.slug}/`}
             class="group flex flex-col items-center gap-3 p-5 bg-white rounded-2xl shadow-sm border border-gray-100 hover:border-gray-200 hover:shadow-md transition-all text-center"
           >
             <div

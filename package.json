@@ -6,7 +6,10 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "fetch-links": "node --env-file=.env scripts/fetch-tracking-links.mjs",
+    "discover": "node --env-file=.env scripts/fetch-tracking-links.mjs --discover",
+    "deploy": "node --env-file=.env scripts/fetch-tracking-links.mjs && astro build && npx wrangler pages deploy ./dist"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.0",

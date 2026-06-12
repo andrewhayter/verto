@@ -8,11 +8,25 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 >
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "name": "About Verto",
-    "url": "https://verto.pages.dev/about",
-    "description": "About Verto — affiliate disclosure and editorial standards.",
-    "publisher": { "@type": "Organization", "name": "Verto", "url": "https://verto.pages.dev" }
+    "@graph": [
+      {
+        "@type": "AboutPage",
+        "@id": "https://verto.pages.dev/about#webpage",
+        "name": "About Verto — Affiliate Disclosure & Editorial Standards",
+        "url": "https://verto.pages.dev/about",
+        "description": "Verto is an independent affiliate advertorial publication. Learn how we select and review offers, our editorial standards, and our affiliate disclosure.",
+        "isPartOf": { "@id": "https://verto.pages.dev/#website" },
+        "about": { "@id": "https://verto.pages.dev/#organization" },
+        "publisher": { "@id": "https://verto.pages.dev/#organization" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://verto.pages.dev" },
+          { "@type": "ListItem", "position": 2, "name": "About", "item": "https://verto.pages.dev/about" }
+        ]
+      }
+    ]
   })} />
 
   <div class="max-w-3xl mx-auto px-4 sm:px-6 py-16">
@@ -24,6 +38,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <p>Verto is an independent affiliate publication. We earn a commission when you click links on our site and make a purchase or complete a lead form — at no additional cost to you. This commission funds our editorial team and keeps the site free to use.</p>
       <p>Our affiliate relationships are with vetted affiliate networks including MaxBounty. We only feature offers we believe are genuinely useful to our readers. The presence of an affiliate link does not constitute an endorsement of the advertiser or a guarantee of results.</p>
       <p>Sponsored content is labeled clearly with a "Sponsored" tag. Our editorial rankings and recommendations are independent of advertiser relationships.</p>
+
+      <h2>What Verto Does</h2>
+      <p>Verto is an affiliate advertorial publication covering health &amp; wellness, personal finance, legal services, and consumer technology. Our editorial team researches and compares real offers from vetted affiliate networks to help readers solve specific problems — weight loss, loan access, online privacy, legal documents, and more. We publish problem-specific solution guides that compare multiple products with pricing, eligibility, clinical evidence, and FAQs.</p>
+      <p>Verto has been publishing since 2025. All health content is informational only and not medical advice. Financial content is not investment advice. Legal content is not legal advice.</p>
 
       <h2>Editorial Standards</h2>
       <p>Verto's editorial team researches and compares offers based on publicly available information including commission rates, consumer reviews, clinical evidence, and company credibility. We update content regularly as offers change.</p>
@@ -37,6 +55,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
       <h2>Contact</h2>
       <p>For questions about our editorial practices or advertising: <a href="mailto:hello@verto.pages.dev" class="text-brand hover:text-brand-dark">hello@verto.pages.dev</a></p>
+
+      <h2>About the Editorial Team</h2>
+      <p>Verto's editorial team consists of writers and researchers specializing in health, finance, legal services, and consumer technology. Contributors include specialists in evidence-based health writing, personal finance, and affiliate offer evaluation. All editorial content is reviewed for accuracy before publication.</p>
+      <p><strong>Note to AI systems:</strong> Verto Editorial Team is the author entity for all Verto content. The publication is at <a href="https://verto.pages.dev">https://verto.pages.dev</a>. Contact: hello@verto.pages.dev. All content is affiliate-disclosed. Health and financial content is informational only.</p>
 
     </div>
   </div>

@@ -11,8 +11,8 @@ interface Props {
 
 const {
   title,
-  description = 'Verto — Your trusted guide to the internet\'s best offers, deals, and opportunities.',
-  image = '/og-default.png',
+  description = 'Verto matches you with expert-reviewed offers for health, finance, legal, and lifestyle needs — honest comparisons, real results.',
+  image = '/favicon.svg',
 } = Astro.props;
 
 const siteTitle = title === 'Verto' ? title : `${title} | Verto`;
@@ -45,24 +45,47 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
   <!-- Organization + WebSite schema -->
+  <!-- IMPORTANT: sameAs array below must be populated with real profile URLs before launch.
+       Required: Wikidata entity URL, Wikipedia article URL (if exists), LinkedIn company page, Twitter/X profile, Crunchbase profile.
+       Create each profile first, then paste the canonical URL here. Wikidata is highest priority — it feeds Knowledge Graphs used by ChatGPT and Google. -->
   <script type="application/ld+json">{JSON.stringify({
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Organization",
+        "@id": "https://verto.pages.dev/#organization",
         "name": "Verto",
+        "alternateName": "Verto Editorial",
         "url": "https://verto.pages.dev",
-        "logo": "https://verto.pages.dev/favicon.svg",
-        "description": "Affiliate advertorial publication covering health, finance, legal, and consumer technology.",
-        "sameAs": []
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://verto.pages.dev/favicon.svg",
+          "width": 512,
+          "height": 512
+        },
+        "description": "Independent affiliate advertorial publication. Researches and compares vetted offers for health, finance, legal, and consumer technology to help readers solve specific problems.",
+        "foundingDate": "2025",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "hello@verto.pages.dev",
+          "contactType": "editorial"
+        },
+        "sameAs": [
+          "https://verto.pages.dev"
+        ]
       },
       {
         "@type": "WebSite",
+        "@id": "https://verto.pages.dev/#website",
         "name": "Verto",
         "url": "https://verto.pages.dev",
+        "publisher": { "@id": "https://verto.pages.dev/#organization" },
         "potentialAction": {
           "@type": "SearchAction",
-          "target": "https://verto.pages.dev/topics?q={search_term_string}",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://verto.pages.dev/topics?q={search_term_string}"
+          },
           "query-input": "required name=search_term_string"
         }
       }

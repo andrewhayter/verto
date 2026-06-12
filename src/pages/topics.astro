@@ -83,7 +83,7 @@ const trending = [...topics].sort((a, b) => b.frequency - a.frequency).slice(0, 
                 <p class="text-gray-400 text-xs">{catTopics.length} topics</p>
               </div>
             </div>
-            <a href={`/category/${cat.slug}`} class="text-brand hover:text-brand-dark text-sm font-semibold transition-colors">
+            <a href={`/${cat.slug}/`} class="text-brand hover:text-brand-dark text-sm font-semibold transition-colors">
               Browse {cat.offsCount} offers →
             </a>
           </div>
