@@ -93,4 +93,4 @@ Options:
 - **Fidelity Rewards Visa** — 2% into a Fidelity account (any Fidelity account), no annual fee
 - **Wells Fargo Active Cash** — 2% on everything, no annual fee, welcome bonus
 
-Our [cash back card comparison](/articles/financial/credit-cards-cash-back) covers current welcome offers, category breakdowns, and which card structure fits different spending profiles. For a full explanation of how the different reward structures (flat-rate, category, rotating, signup bonus) actually work, see [how cash back credit cards work](/articles/financial/how-cash-back-credit-cards-work).
+Our [cash back card comparison](/financial/credit-cards-cash-back) covers current welcome offers, category breakdowns, and which card structure fits different spending profiles. For a full explanation of how the different reward structures (flat-rate, category, rotating, signup bonus) actually work, see [how cash back credit cards work](/financial/how-cash-back-credit-cards-work).

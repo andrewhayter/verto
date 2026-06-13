@@ -76,7 +76,7 @@ Only consider this if every other option is exhausted. The actual cost often exc
 
 ## Step 3: If You're Getting a Personal Loan
 
-The three platforms in our [personal loan guide](/articles/financial/best-personal-loans-2026) — Money Pup (up to $50K), CreditNLending (up to $100K), and ProvideLoan (up to $40K) — all use soft credit checks, so rate shopping doesn't hurt your score.
+The three platforms in our [personal loan guide](/financial/best-personal-loans-2026) — Money Pup (up to $50K), CreditNLending (up to $100K), and ProvideLoan (up to $40K) — all use soft credit checks, so rate shopping doesn't hurt your score.
 
 **The right approach:**
 1. Submit to at least two platforms to get competing offers
@@ -98,4 +98,4 @@ On a $6,000 balance at 24% APR, minimum payments (~$120/month) take over 7 years
 
 The emergency itself is usually unavoidable. The debt spiral is not.
 
-For a full breakdown of what lenders look at when setting your rate — and how to improve your offer before applying — see [how personal loan rates are set](/articles/financial/how-personal-loan-rates-work).
+For a full breakdown of what lenders look at when setting your rate — and how to improve your offer before applying — see [how personal loan rates are set](/financial/how-personal-loan-rates-work).

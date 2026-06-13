@@ -88,4 +88,4 @@ In a 90-day test: $680 from survey platforms, $75 from Nielsen Pulse passive app
 
 Install Nielsen Pulse today — it costs nothing and starts earning passively. Add Prolific for reliable quality surveys when you have 20–30 minutes. Check User Interviews monthly for session availability.
 
-Our [survey sites review](/articles/surveys/get-paid-for-opinions) covers the full 90-day test data across all six platforms, including earnings breakdown and honest minimums. For a ranked list of the passive apps specifically — those that earn with zero ongoing effort — see [7 passive income apps worth installing](/articles/surveys/passive-income-apps-that-pay).
+Our [survey sites review](/surveys/get-paid-for-opinions) covers the full 90-day test data across all six platforms, including earnings breakdown and honest minimums. For a ranked list of the passive apps specifically — those that earn with zero ongoing effort — see [7 passive income apps worth installing](/surveys/passive-income-apps-that-pay).

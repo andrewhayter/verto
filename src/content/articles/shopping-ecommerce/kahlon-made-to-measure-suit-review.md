@@ -130,7 +130,7 @@ Four months of wear, three cleanings (dry clean), no construction issues. The ha
 
 Kahlon's value case is straightforward: it produces better fit than any off-the-rack option at roughly the same price, without requiring in-person appointments.
 
-For the other permanent men's grooming upgrade that pays back in a similar 6-month window — eliminating $150–$200/year in razor subscriptions — see [I switched from Dollar Shave to Liberty Razors: what actually changed](/articles/shopping-ecommerce/liberty-razors-vs-dollar-shave-review). And if you've struggled with off-the-rack suits specifically, the mechanics behind why they fit wrong — and which problems a tailor can and cannot fix — are explained in [why every off-the-rack suit fits wrong](/articles/shopping-ecommerce/off-rack-suit-fit-problems).
+For the other permanent men's grooming upgrade that pays back in a similar 6-month window — eliminating $150–$200/year in razor subscriptions — see [I switched from Dollar Shave to Liberty Razors: what actually changed](/shopping-ecommerce/liberty-razors-vs-dollar-shave-review). And if you've struggled with off-the-rack suits specifically, the mechanics behind why they fit wrong — and which problems a tailor can and cannot fix — are explained in [why every off-the-rack suit fits wrong](/shopping-ecommerce/off-rack-suit-fit-problems).
 
 ---
 

@@ -103,4 +103,4 @@ Nielsen Pulse is the only app tested that delivered its stated $25–$50/month i
 
 Combined passive income without any surveys or active participation: **$40–$80/month** for a one-time 20-minute setup investment.
 
-To reach $200–$400/month, add active survey participation. Our [survey site comparison](/articles/surveys/get-paid-for-opinions) covers the six platforms that paid out reliably over 90 days of testing. For the full framework — passive apps, active surveys, and occasional high-pay focus groups — see [how to make an extra $200–$500/month from home without starting a business](/articles/surveys/how-to-make-extra-money-from-home).
+To reach $200–$400/month, add active survey participation. Our [survey site comparison](/surveys/get-paid-for-opinions) covers the six platforms that paid out reliably over 90 days of testing. For the full framework — passive apps, active surveys, and occasional high-pay focus groups — see [how to make an extra $200–$500/month from home without starting a business](/surveys/how-to-make-extra-money-from-home).

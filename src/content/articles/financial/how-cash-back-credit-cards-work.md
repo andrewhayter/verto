@@ -96,4 +96,4 @@ Interest charges at credit card rates erase years of cash back within weeks. Cas
 
 If you carry a balance, a low-APR no-rewards card is better than a rewards card until the balance is paid off.
 
-Our [cash back credit card comparison](/articles/financial/credit-cards-cash-back) breaks down the top cards by spending profile — from simple earners to category maximizers — with current signup bonus details. For the numbers on how much most households leave on the table by not optimizing their card, see [you're probably leaving $400–$800 in rewards on the table every year](/articles/financial/stop-leaving-credit-card-rewards-on-table).
+Our [cash back credit card comparison](/financial/credit-cards-cash-back) breaks down the top cards by spending profile — from simple earners to category maximizers — with current signup bonus details. For the numbers on how much most households leave on the table by not optimizing their card, see [you're probably leaving $400–$800 in rewards on the table every year](/financial/stop-leaving-credit-card-rewards-on-table).

@@ -167,7 +167,7 @@ All plans include a physician consultation and prescription. No subscription req
 
 Looking for GLP-1 weight management programs? Strut Health covers metabolic health, but for GLP-1 telehealth specifically (Semaglutide and Tirzepatide at $179–$225/month), see our [GLP-1 programs comparison](/health-wellness/weight-loss-programs-ranked).
 
-Most primary care physicians don't prescribe sermorelin — not because the evidence is weak, but because of a regulatory and training gap. [Why Your Doctor Won't Prescribe Sermorelin](/articles/health-wellness/sermorelin-why-doctors-avoid) explains what's actually behind the avoidance. For the DHT mechanism behind male pattern baldness and why dutasteride outperforms finasteride in head-to-head trials, see [DHT Is Why Your Hair Is Thinning](/articles/health-wellness/dht-hair-loss-truth).
+Most primary care physicians don't prescribe sermorelin — not because the evidence is weak, but because of a regulatory and training gap. [Why Your Doctor Won't Prescribe Sermorelin](/health-wellness/sermorelin-why-doctors-avoid) explains what's actually behind the avoidance. For the DHT mechanism behind male pattern baldness and why dutasteride outperforms finasteride in head-to-head trials, see [DHT Is Why Your Hair Is Thinning](/health-wellness/dht-hair-loss-truth).
 
 For men investing in their physical presentation alongside their health: our [Kahlon made-to-measure suit review](/shopping-ecommerce/kahlon-made-to-measure-suit-review) covers a $299–$599 option that fits your actual body measurements — one-third the price of a traditional tailor, with documented real-world results across three high-stakes wearing occasions.
 

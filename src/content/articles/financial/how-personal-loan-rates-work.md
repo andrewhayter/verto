@@ -77,7 +77,7 @@ Lenders want to see stable employment history (2+ years at same employer is favo
 
 The same borrower — same credit score, same income, same loan request — can receive offers ranging 6–10 percentage points apart from different lenders. Lenders have different risk appetites, different portfolio needs, and price loans differently.
 
-The three comparison platforms in our [personal loan guide](/articles/financial/best-personal-loans-2026) submit your information to multiple lenders simultaneously, using only a soft inquiry (no credit score impact). You see competing offers in one place and choose the best one. Getting three competing offers and picking the lowest APR takes under 5 minutes and routinely saves $1,000–$3,000 on a mid-size loan.
+The three comparison platforms in our [personal loan guide](/financial/best-personal-loans-2026) submit your information to multiple lenders simultaneously, using only a soft inquiry (no credit score impact). You see competing offers in one place and choose the best one. Getting three competing offers and picking the lowest APR takes under 5 minutes and routinely saves $1,000–$3,000 on a mid-size loan.
 
 ## APR vs. Monthly Payment: The Comparison That Matters
 
@@ -89,7 +89,7 @@ Lenders know borrowers often focus on monthly payment rather than total cost. Th
 
 The 60-month 22% APR loan has a monthly payment only $55 higher than the best option — but costs $4,684 more in total interest. Always calculate total interest paid, not just monthly payment.
 
-For a practical guide on navigating a financial emergency specifically — including the cheapest options in order, when to use a loan vs. a card vs. your emergency fund — see [how to handle a $3,000–$15,000 unexpected expense without wrecking your finances](/articles/financial/financial-emergency-personal-loan-guide).
+For a practical guide on navigating a financial emergency specifically — including the cheapest options in order, when to use a loan vs. a card vs. your emergency fund — see [how to handle a $3,000–$15,000 unexpected expense without wrecking your finances](/financial/financial-emergency-personal-loan-guide).
 
 ### What determines my personal loan interest rate?
 

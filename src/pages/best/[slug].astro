@@ -94,6 +94,7 @@ const pageAuthor = categoryAuthor[problem.category] ?? { name: 'Verto Editorial 
   article={{
     publishedTime: "2025-10-01",
     modifiedTime: new Date().toISOString().split('T')[0],
+    author: pageAuthor.name,
     section: cat?.name ?? problem.category,
   }}
 >
@@ -114,8 +115,9 @@ const pageAuthor = categoryAuthor[problem.category] ?? { name: 'Verto Editorial 
         },
         "author": {
           "@type": "Person",
-          "@id": "https://verto.fun/about#editorial-team",
-          "name": "Verto Editorial Team",
+          "@id": `https://verto.fun/about#${pageAuthor.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`,
+          "name": pageAuthor.name,
+          "jobTitle": pageAuthor.jobTitle,
           "url": "https://verto.fun/about",
           "worksFor": { "@type": "Organization", "@id": "https://verto.fun/#organization", "name": "Verto" }
         },

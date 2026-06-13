@@ -88,26 +88,35 @@ const geoDisplay = geos.includes('WW') || geos.length === 0
   ? 'Worldwide'
   : geos.slice(0, 6).join(', ');
 
+const offerTypeLabel: Record<string, string> = {
+  cps: 'a subscription product',
+  cpl: 'a free lead — no purchase required to get started',
+  cpa: 'a one-time purchase',
+  revshare: 'a variable-cost product',
+};
+
 const faqs = [
   {
     q: `Is ${shortName} legit?`,
-    a: `Yes. ${shortName} is a vetted offer verified through our affiliate network. We review all featured offers for legitimacy before listing them. That said, always read the full terms on the provider's site before signing up — pricing, billing cycles, and cancellation policies vary.`,
+    a: `Yes. ${shortName} is a vetted offer verified through our affiliate network — available in ${geoDisplay}. We review all featured offers for legitimacy before listing them. Read the full terms on the provider's site before signing up, as pricing and cancellation terms vary by plan.`,
   },
   {
-    q: `How does ${shortName} work?`,
-    a: description || `${shortName} is a partner offer available through the Verto affiliate catalog.`,
+    q: `What is ${shortName} and how does it work?`,
+    a: description
+      ? `${description} ${trustSignal ? trustSignal + '.' : ''}`
+      : `${shortName} is a partner offer available in ${geoDisplay} through the Verto affiliate catalog.`,
   },
   {
-    q: `Who is ${shortName} best suited for?`,
-    a: `${shortName} is most useful if ${description ? description.split('.')[0].replace(/^[A-Z]/, c => c.toLowerCase()) : 'you need a solution in this category'}. It may not be the right fit if you need an immediate result with no commitment — check the provider's site to confirm it matches your specific situation before proceeding.`,
+    q: `Who should use ${shortName}?`,
+    a: `${shortName} is ${offerTypeLabel[rateType] ?? 'a partner offer'} best suited for people in ${geoDisplay} who ${description ? description.split('.')[0].replace(/^[A-Z]/, c => c.toLowerCase()) : 'need a solution in this category'}. It may not be the right fit if you need an immediate result with no commitment — confirm eligibility on the provider's site first.`,
   },
   {
-    q: `Is there a commitment or cancellation fee?`,
-    a: `Terms vary by provider. Some offers in this category have monthly subscriptions; others are one-time. The safest approach: visit the ${shortName} site, locate the billing and cancellation section, and confirm the terms before entering any payment information.`,
+    q: `Is ${shortName} available in my country?`,
+    a: `${shortName} is currently available in: ${geoDisplay}. If your country isn't listed, the offer is not active for your location. Availability can change — check the provider's site for the most current geographic coverage.`,
   },
   {
-    q: `What should I know before clicking through?`,
-    a: `The link on this page takes you to the current offer page with live pricing — pricing and availability can change. You are not committing to anything by clicking through. Review the offer terms on the provider's site before completing any registration or purchase.`,
+    q: `What should I know before clicking through to ${shortName}?`,
+    a: `The link on this page goes to the current ${shortName} offer page with live pricing. Pricing and availability can change. You are not committing to anything by clicking through. Review the billing and cancellation section on the provider's site before entering any payment information.`,
   },
 ].filter(f => f.a.trim());
 
@@ -115,7 +124,7 @@ const seoTitle    = `${shortName} Review 2026 — ${tagline.substring(0, 55)} | 
 const seoDescription = `${shortName}: ${tagline}. Available in ${geoDisplay}. See how it works, who it's for, and how it compares.`;
 ---
 
-<BaseLayout title={seoTitle} description={seoDescription}>
+<BaseLayout title={seoTitle} description={seoDescription} ogType="article" article={{ publishedTime: "2025-10-01", modifiedTime: new Date().toISOString().split('T')[0], author: "Verto Editorial Team", section: cat?.name ?? catSlug }}>
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@graph": [
@@ -204,7 +213,7 @@ const seoDescription = `${shortName}: ${tagline}. Available in ${geoDisplay}. Se
       </p>
 
       <h1 class="font-display text-3xl md:text-4xl font-black text-white mb-3 leading-tight">
-        {shortName} — Is It Worth It in {new Date().getFullYear()}?
+        {shortName}: {tagline.length > 85 ? tagline.substring(0, 85).replace(/\s\S+$/, '') + '…' : tagline}
       </h1>
       <p class="text-white/75 text-lg mb-4 max-w-2xl leading-relaxed font-medium">
         {tagline.length > 100 ? tagline.substring(0, 100) + '…' : tagline}
@@ -222,7 +231,7 @@ const seoDescription = `${shortName}: ${tagline}. Available in ${geoDisplay}. Se
           target="_blank"
           class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-bold px-7 py-3.5 rounded-xl transition-colors text-base"
         >
-          {isEditorial ? ctaText : `Check Current Pricing →`}
+          {isEditorial ? ctaText : rateType === 'cpl' ? `Check If You Qualify — Free →` : rateType === 'cps' ? `See Current Subscription Pricing →` : `Check Current Pricing →`}
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
           </svg>
@@ -279,7 +288,7 @@ const seoDescription = `${shortName}: ${tagline}. Available in ${geoDisplay}. Se
         target="_blank"
         class="shrink-0 bg-cta hover:bg-cta-dark text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-colors whitespace-nowrap"
       >
-        {isEditorial ? ctaText : `Check Pricing →`}
+        {isEditorial ? ctaText : rateType === 'cpl' ? `Check Eligibility — Free →` : `See Pricing →`}
       </a>
     </div>
 
@@ -392,7 +401,7 @@ const seoDescription = `${shortName}: ${tagline}. Available in ${geoDisplay}. Se
         target="_blank"
         class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-bold px-8 py-4 rounded-2xl text-base transition-colors min-h-[56px]"
       >
-        {isEditorial ? ctaText : `See ${shortName} Pricing and Options →`}
+        {isEditorial ? ctaText : rateType === 'cpl' ? `Check If You Qualify for ${shortName} — Free →` : `See ${shortName} Pricing and Availability →`}
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
         </svg>

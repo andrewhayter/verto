@@ -33,10 +33,10 @@ import { offersByProblem } from '../../data/offers';
   <div class="bg-slate-900 py-14">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <h1 class="font-display text-4xl md:text-5xl font-bold text-white mb-3">
-        {problems.length} Problem-Solution Guides — Each with Verified Offers Compared
+        {problems.length} Consumer Problems Solved — GLP-1 From $179/Mo, Loans to $100K, VPNs Under $5/Month
       </h1>
       <p class="text-white/60 text-lg max-w-xl">
-        Each guide compares the top affiliate offers for one specific problem — with pricing, eligibility, clinical evidence, and FAQs.
+        One guide per problem: ranked offers compared on price, eligibility, and clinical or technical evidence. No fluff, no padding.
       </p>
     </div>
   </div>
@@ -80,6 +80,26 @@ import { offersByProblem } from '../../data/offers';
           </a>
         );
       })}
+    </div>
+
+    <!-- Bottom CTA — catches visitors who browsed without clicking a card -->
+    <div class="mt-14 rounded-3xl overflow-hidden" style="background: linear-gradient(135deg, #14532d, #166534);">
+      <div class="p-8 md:p-10 text-center">
+        <p class="eyebrow text-green-300 mb-2">Not sure which guide fits your situation?</p>
+        <h2 class="font-display font-bold text-2xl md:text-3xl text-white mb-3">
+          Start With the Most Common Problem
+        </h2>
+        <p class="text-green-200 text-sm mb-6 max-w-sm mx-auto">
+          Our GLP-1 guide is the most-read — compounded tirzepatide from $179/month, same active molecule as Mounjaro.
+        </p>
+        <a
+          href="/best/cant-lose-weight"
+          class="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-gray-900 font-bold px-8 py-4 rounded-2xl text-base transition-colors min-h-[56px]"
+        >
+          See GLP-1 Options — From $179/Month →
+        </a>
+        <p class="text-green-300/60 text-xs mt-3">Checking eligibility is free · No commitment</p>
+      </div>
     </div>
   </div>
 </BaseLayout>

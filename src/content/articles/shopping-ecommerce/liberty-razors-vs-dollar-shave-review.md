@@ -92,6 +92,6 @@ Dollar Shave Club won on convenience when I was 28 and didn't want to think abou
 
 *Liberty Razors → [Try Liberty Razors — Premium Safety Razor, Ships Free](https://afflat3e1.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=29393&c=918277&a=784951&k=0&l=33134)*
 
-For the full men's style picture — how a single well-fitted suit compares to a closet of ill-fitting off-the-rack options — see [I wore the same Kahlon suit to a job interview, a wedding, and a funeral](/articles/shopping-ecommerce/kahlon-made-to-measure-suit-review). For the mechanics behind why off-the-rack suits fit wrong and which fit problems a tailor actually can't fix, see [why every off-the-rack suit fits wrong](/articles/shopping-ecommerce/off-rack-suit-fit-problems).
+For the full men's style picture — how a single well-fitted suit compares to a closet of ill-fitting off-the-rack options — see [I wore the same Kahlon suit to a job interview, a wedding, and a funeral](/shopping-ecommerce/kahlon-made-to-measure-suit-review). For the mechanics behind why off-the-rack suits fit wrong and which fit problems a tailor actually can't fix, see [why every off-the-rack suit fits wrong](/shopping-ecommerce/off-rack-suit-fit-problems).
 
 *This article contains affiliate links. If you purchase through our links, Verto earns a commission at no cost to you. Individual results may vary. Always review full terms on the provider's website.*

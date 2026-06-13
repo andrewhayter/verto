@@ -97,7 +97,15 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
           "email": "hello@verto.fun",
           "contactType": "editorial"
         },
-        "sameAs": [],
+        "sameAs": [
+          // POPULATE: Add social profile URLs when accounts are created
+          // Required for AI entity disambiguation and consensus signal:
+          // "https://twitter.com/vertofun",
+          // "https://www.linkedin.com/company/verto-editorial",
+          // "https://www.facebook.com/vertofun",
+          // "https://www.youtube.com/@vertofun",
+          // "https://pinterest.com/vertofun"
+        ],
         "knowsAbout": [
           "health and wellness",
           "GLP-1 weight loss medications",

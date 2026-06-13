@@ -137,6 +137,7 @@ const bridgeOffer = bridgeProblem
     "@graph": [
       {
         "@type": "Article",
+        "@id": `${Astro.url.href}#article`,
         "headline": title,
         "description": description,
         "datePublished": date.toISOString().split('T')[0],

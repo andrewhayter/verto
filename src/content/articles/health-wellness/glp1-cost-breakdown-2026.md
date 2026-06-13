@@ -136,6 +136,6 @@ If you're unsure whether you qualify: most telehealth platforms offer a free eli
 
 ---
 
-*For the mechanism behind how GLP-1 medications work at the hormonal level — why they reduce appetite without willpower — see [What Is Semaglutide? GLP-1 Weight Loss Medications Explained](/articles/health-wellness/what-is-semaglutide-glp1-explained). For why traditional diets produce so much less weight loss than GLP-1s, see [Why Most Diets Fail — The Biology Behind the Rebound](/articles/health-wellness/why-diets-fail).*
+*For the mechanism behind how GLP-1 medications work at the hormonal level — why they reduce appetite without willpower — see [What Is Semaglutide? GLP-1 Weight Loss Medications Explained](/health-wellness/what-is-semaglutide-glp1-explained). For why traditional diets produce so much less weight loss than GLP-1s, see [Why Most Diets Fail — The Biology Behind the Rebound](/health-wellness/why-diets-fail).*
 
-*For men considering GLP-1 alongside other metabolic support — sermorelin or NAD+ therapy — see [Why Your Doctor Won't Prescribe Sermorelin](/articles/health-wellness/sermorelin-why-doctors-avoid).*
+*For men considering GLP-1 alongside other metabolic support — sermorelin or NAD+ therapy — see [Why Your Doctor Won't Prescribe Sermorelin](/health-wellness/sermorelin-why-doctors-avoid).*

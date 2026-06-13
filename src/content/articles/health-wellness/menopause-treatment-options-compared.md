@@ -110,4 +110,4 @@ If HRT is contraindicated or not your preference, fezolinetant is the most effec
 
 Supplements are low-risk, low-cost starting points but should be understood as modest-effect interventions.
 
-Our [full Winona HRT review](/articles/health-wellness/menopause-hrt-guide) covers the specifics of bioidentical treatment protocols, what the first 90 days looks like, and the complete safety picture. If you're in the years leading up to menopause and wondering whether your symptoms are hormonal, see [11 perimenopause signs most doctors miss](/articles/health-wellness/perimenopause-signs-you-might-miss).
+Our [full Winona HRT review](/health-wellness/menopause-hrt-guide) covers the specifics of bioidentical treatment protocols, what the first 90 days looks like, and the complete safety picture. If you're in the years leading up to menopause and wondering whether your symptoms are hormonal, see [11 perimenopause signs most doctors miss](/health-wellness/perimenopause-signs-you-might-miss).

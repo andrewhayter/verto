@@ -94,4 +94,4 @@ A physician consultation — including FSH and estradiol blood work and a sympto
 
 Winona offers a free online assessment with board-certified physicians specializing in hormone health, with treatment shipped directly to you. Over 80% of patients report meaningful relief within 90 days.
 
-Our full [HRT guide for menopause and perimenopause](/articles/health-wellness/menopause-hrt-guide) covers the evidence for bHRT, safety considerations, and what to expect from treatment. For a clinical comparison of all available treatment options — bioidentical HRT, fezolinetant, SSRIs, and supplements — with efficacy data for each, see [menopause treatment options compared](/articles/health-wellness/menopause-treatment-options-compared).
+Our full [HRT guide for menopause and perimenopause](/health-wellness/menopause-hrt-guide) covers the evidence for bHRT, safety considerations, and what to expect from treatment. For a clinical comparison of all available treatment options — bioidentical HRT, fezolinetant, SSRIs, and supplements — with efficacy data for each, see [menopause treatment options compared](/health-wellness/menopause-treatment-options-compared).

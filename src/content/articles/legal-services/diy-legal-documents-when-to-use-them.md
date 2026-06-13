@@ -100,4 +100,4 @@ For most single-member LLCs and straightforward multi-member LLCs, yes. LLC form
 
 **Know the limits:** If circumstances change (divorce, major assets, business dispute), a document created for simpler circumstances may not adequately protect you. Review important documents when your situation changes significantly.
 
-Our [LegalNature review](/articles/legal-services/legalnature-review-2026) covers the platform's document library, pricing, and how it compares to LegalZoom for common document types — including which states have the most complete document coverage. For a specific breakdown of what an LLC legally does and does not protect you from, see [what an LLC actually does](/articles/legal-services/what-does-an-llc-actually-do).
+Our [LegalNature review](/legal-services/legalnature-review-2026) covers the platform's document library, pricing, and how it compares to LegalZoom for common document types — including which states have the most complete document coverage. For a specific breakdown of what an LLC legally does and does not protect you from, see [what an LLC actually does](/legal-services/what-does-an-llc-actually-do).

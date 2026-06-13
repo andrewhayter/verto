@@ -82,4 +82,4 @@ Telehealth platforms dedicated to men's health (Hims, Roman, LifeMD, and others)
 
 This friction reduction has meaningfully increased treatment-seeking for these conditions among men who would not have pursued in-office care.
 
-Our [men's telehealth comparison](/articles/health-wellness/mens-health-treatments-2026) covers the current platforms, what each offers, and pricing for sermorelin, NAD+, hair loss treatment, and ED management. For a broader look at supplements that have real clinical backing for performance and recovery — separate from the telehealth prescription stack — see [supplements that actually work](/articles/health-wellness/supplements-that-work).
+Our [men's telehealth comparison](/health-wellness/mens-health-treatments-2026) covers the current platforms, what each offers, and pricing for sermorelin, NAD+, hair loss treatment, and ED management. For a broader look at supplements that have real clinical backing for performance and recovery — separate from the telehealth prescription stack — see [supplements that actually work](/health-wellness/supplements-that-work).

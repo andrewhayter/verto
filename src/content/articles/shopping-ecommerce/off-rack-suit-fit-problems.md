@@ -103,8 +103,8 @@ For men who've tried and failed to find a suit that looks right off the rack, th
 
 ---
 
-For a first-person account of how Kahlon's made-to-measure process actually works across three high-stakes events — job interview, wedding, and funeral — see [I wore the same Kahlon suit to a job interview, a wedding, and a funeral](/articles/shopping-ecommerce/kahlon-made-to-measure-suit-review).
+For a first-person account of how Kahlon's made-to-measure process actually works across three high-stakes events — job interview, wedding, and funeral — see [I wore the same Kahlon suit to a job interview, a wedding, and a funeral](/shopping-ecommerce/kahlon-made-to-measure-suit-review).
 
-For the grooming upgrade that pairs with a well-fitted suit — and pays back in under six months — see [I switched from Dollar Shave to Liberty Razors: what actually changed](/articles/shopping-ecommerce/liberty-razors-vs-dollar-shave-review).
+For the grooming upgrade that pairs with a well-fitted suit — and pays back in under six months — see [I switched from Dollar Shave to Liberty Razors: what actually changed](/shopping-ecommerce/liberty-razors-vs-dollar-shave-review).
 
 *This article contains affiliate links. If you purchase through our links, Verto earns a commission at no cost to you. Individual results may vary. Always review current pricing and availability on the provider's website before ordering.*
