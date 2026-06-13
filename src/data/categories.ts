@@ -20,7 +20,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #2563eb, #1e40af)",
     textColor: "#1d4ed8",
     badgeColor: "bg-blue-100 text-blue-800",
-    emoji: "🛡️",
+    emoji: "",
   },
   {
     id: 15,
@@ -31,7 +31,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #dc2626, #991b1b)",
     textColor: "#dc2626",
     badgeColor: "bg-red-100 text-red-800",
-    emoji: "🚗",
+    emoji: "",
   },
   {
     id: 140,
@@ -42,7 +42,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #475569, #1e293b)",
     textColor: "#475569",
     badgeColor: "bg-slate-100 text-slate-800",
-    emoji: "💼",
+    emoji: "",
   },
   {
     id: 178,
@@ -53,7 +53,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #7c3aed, #4c1d95)",
     textColor: "#7c3aed",
     badgeColor: "bg-violet-100 text-violet-800",
-    emoji: "🔍",
+    emoji: "",
   },
   {
     id: 87,
@@ -64,7 +64,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #059669, #064e3b)",
     textColor: "#059669",
     badgeColor: "bg-emerald-100 text-emerald-800",
-    emoji: "📈",
+    emoji: "",
   },
   {
     id: 22,
@@ -75,7 +75,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #ec4899, #9d174d)",
     textColor: "#ec4899",
     badgeColor: "bg-pink-100 text-pink-800",
-    emoji: "❤️",
+    emoji: "",
   },
   {
     id: 27,
@@ -86,7 +86,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #d97706, #92400e)",
     textColor: "#d97706",
     badgeColor: "bg-amber-100 text-amber-800",
-    emoji: "🎓",
+    emoji: "",
   },
   {
     id: 39,
@@ -97,7 +97,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #f97316, #c2410c)",
     textColor: "#f97316",
     badgeColor: "bg-orange-100 text-orange-800",
-    emoji: "📧",
+    emoji: "",
   },
   {
     id: 31,
@@ -108,7 +108,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #16a34a, #14532d)",
     textColor: "#16a34a",
     badgeColor: "bg-green-100 text-green-800",
-    emoji: "💰",
+    emoji: "",
   },
   {
     id: 147,
@@ -119,7 +119,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #9333ea, #581c87)",
     textColor: "#9333ea",
     badgeColor: "bg-purple-100 text-purple-800",
-    emoji: "🎰",
+    emoji: "",
   },
   {
     id: 66,
@@ -130,7 +130,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #6d28d9, #3b0764)",
     textColor: "#6d28d9",
     badgeColor: "bg-violet-100 text-violet-800",
-    emoji: "🎮",
+    emoji: "",
   },
   {
     id: 58,
@@ -141,7 +141,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #0d9488, #134e4a)",
     textColor: "#0d9488",
     badgeColor: "bg-teal-100 text-teal-800",
-    emoji: "💊",
+    emoji: "",
   },
   {
     id: 10,
@@ -152,7 +152,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #0284c7, #0c4a6e)",
     textColor: "#0284c7",
     badgeColor: "bg-sky-100 text-sky-800",
-    emoji: "🏥",
+    emoji: "",
   },
   {
     id: 105,
@@ -163,7 +163,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #4b5563, #111827)",
     textColor: "#4b5563",
     badgeColor: "bg-gray-100 text-gray-800",
-    emoji: "⚖️",
+    emoji: "",
   },
   {
     id: 122,
@@ -174,7 +174,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #0891b2, #0e7490)",
     textColor: "#0891b2",
     badgeColor: "bg-cyan-100 text-cyan-800",
-    emoji: "📱",
+    emoji: "",
   },
   {
     id: 183,
@@ -185,7 +185,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #f59e0b, #b45309)",
     textColor: "#f59e0b",
     badgeColor: "bg-amber-100 text-amber-800",
-    emoji: "🐾",
+    emoji: "",
   },
   {
     id: 107,
@@ -196,7 +196,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #0f766e, #042f2e)",
     textColor: "#0f766e",
     badgeColor: "bg-teal-100 text-teal-800",
-    emoji: "🏠",
+    emoji: "",
   },
   {
     id: 71,
@@ -207,7 +207,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #e11d48, #881337)",
     textColor: "#e11d48",
     badgeColor: "bg-rose-100 text-rose-800",
-    emoji: "🎄",
+    emoji: "",
   },
   {
     id: 91,
@@ -218,7 +218,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #a21caf, #701a75)",
     textColor: "#a21caf",
     badgeColor: "bg-fuchsia-100 text-fuchsia-800",
-    emoji: "🛍️",
+    emoji: "",
   },
   {
     id: 23,
@@ -229,7 +229,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #3b82f6, #1e3a8a)",
     textColor: "#3b82f6",
     badgeColor: "bg-blue-100 text-blue-800",
-    emoji: "💿",
+    emoji: "",
   },
   {
     id: 126,
@@ -240,7 +240,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #8b5cf6, #4c1d95)",
     textColor: "#8b5cf6",
     badgeColor: "bg-violet-100 text-violet-800",
-    emoji: "🌙",
+    emoji: "",
   },
   {
     id: 148,
@@ -251,7 +251,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #dc2626, #7f1d1d)",
     textColor: "#dc2626",
     badgeColor: "bg-red-100 text-red-800",
-    emoji: "📺",
+    emoji: "",
   },
   {
     id: 78,
@@ -262,7 +262,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #ca8a04, #713f12)",
     textColor: "#ca8a04",
     badgeColor: "bg-yellow-100 text-yellow-800",
-    emoji: "📊",
+    emoji: "",
   },
   {
     id: 83,
@@ -273,7 +273,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #ea580c, #7c2d12)",
     textColor: "#ea580c",
     badgeColor: "bg-orange-100 text-orange-800",
-    emoji: "🏆",
+    emoji: "",
   },
   {
     id: 118,
@@ -284,7 +284,7 @@ export const categories: Category[] = [
     gradient: "linear-gradient(135deg, #0284c7, #075985)",
     textColor: "#0284c7",
     badgeColor: "bg-sky-100 text-sky-800",
-    emoji: "✈️",
+    emoji: "",
   },
 ];
 

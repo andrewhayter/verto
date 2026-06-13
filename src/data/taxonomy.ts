@@ -41,7 +41,7 @@ export const pillars: Pillar[] = [
   {
     slug: 'health',
     name: 'Health & Body',
-    emoji: '💊',
+    emoji: '',
     blurb: 'Weight loss, hormones, focus, and feeling better — backed by real options.',
     gradient: 'linear-gradient(135deg, #0d9488, #134e4a)',
     clusters: [
@@ -93,7 +93,7 @@ export const pillars: Pillar[] = [
   {
     slug: 'money',
     name: 'Money & Credit',
-    emoji: '💰',
+    emoji: '',
     blurb: 'Loans, credit, and investing — the numbers people actually search for.',
     gradient: 'linear-gradient(135deg, #16a34a, #14532d)',
     clusters: [
@@ -124,7 +124,7 @@ export const pillars: Pillar[] = [
   {
     slug: 'travel',
     name: 'Travel',
-    emoji: '✈️',
+    emoji: '',
     blurb: 'Booking, insurance, and getting paid back when flights go wrong.',
     gradient: 'linear-gradient(135deg, #0284c7, #075985)',
     clusters: [
@@ -141,7 +141,7 @@ export const pillars: Pillar[] = [
   {
     slug: 'home',
     name: 'Home & Lifestyle',
-    emoji: '🏠',
+    emoji: '',
     blurb: 'Food, connectivity, and the upgrades that make daily life better.',
     gradient: 'linear-gradient(135deg, #a21caf, #701a75)',
     clusters: [
@@ -164,7 +164,7 @@ export const pillars: Pillar[] = [
   {
     slug: 'earn',
     name: 'Make Money',
-    emoji: '📈',
+    emoji: '',
     blurb: 'Passive income and side hustles that pay without a second job.',
     gradient: 'linear-gradient(135deg, #ca8a04, #713f12)',
     clusters: [
@@ -180,7 +180,7 @@ export const pillars: Pillar[] = [
   {
     slug: 'safety',
     name: 'Safety & Privacy',
-    emoji: '🛡️',
+    emoji: '',
     blurb: 'Protect your family online and lock down your data.',
     gradient: 'linear-gradient(135deg, #2563eb, #1e40af)',
     clusters: [
@@ -203,7 +203,7 @@ export const pillars: Pillar[] = [
   {
     slug: 'legal',
     name: 'Legal & Business',
-    emoji: '⚖️',
+    emoji: '',
     blurb: 'LLCs, legal documents, and answers without lawyer rates.',
     gradient: 'linear-gradient(135deg, #4b5563, #111827)',
     clusters: [
@@ -219,7 +219,7 @@ export const pillars: Pillar[] = [
   {
     slug: 'play',
     name: 'Play & Win',
-    emoji: '🏆',
+    emoji: '',
     blurb: 'Sweepstakes and casino offers worth your time.',
     gradient: 'linear-gradient(135deg, #ea580c, #7c2d12)',
     clusters: [

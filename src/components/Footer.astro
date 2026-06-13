@@ -51,7 +51,6 @@ const featuredGuides = problems
               href={`/best/${p.slug}`}
               class="flex items-center gap-2 text-white/50 hover:text-white text-sm py-1.5 transition-colors group"
             >
-              <span class="text-base shrink-0">{p.emoji}</span>
               <span class="group-hover:underline line-clamp-1 text-xs leading-snug">
                 {p.headline.split('—')[0].split(':')[0].trim().substring(0, 40)}
               </span>
@@ -72,7 +71,6 @@ const featuredGuides = problems
               href={`/${cat.slug}/`}
               class="flex items-center gap-1.5 text-white/50 hover:text-white text-xs py-1 transition-colors group"
             >
-              <span>{cat.emoji}</span>
               <span class="group-hover:underline truncate max-w-[140px]">{cat.name}</span>
             </a>
           ))}

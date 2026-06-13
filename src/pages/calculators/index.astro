@@ -4,7 +4,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 const tools = [
   {
     href: '/calculators/glp1-cost',
-    emoji: '💉',
     title: 'GLP-1 Cost Calculator',
     desc: 'See how much you\'d save with compounded tirzepatide vs brand Ozempic. Shows 12-month cost comparison and which programs you likely qualify for.',
     badge: 'Health',
@@ -13,7 +12,6 @@ const tools = [
   },
   {
     href: '/calculators/flight-delay',
-    emoji: '✈️',
     title: 'EU Flight Delay Compensation Checker',
     desc: 'EC 261/2004 entitles you to €250–€600 per passenger for delays over 3 hours. Enter your route and find out exactly what the airline legally owes you.',
     badge: 'Travel',
@@ -22,7 +20,6 @@ const tools = [
   },
   {
     href: '/calculators/loan-savings',
-    emoji: '💳',
     title: 'Debt Consolidation Savings Calculator',
     desc: 'Enter your credit card balances and APRs. See how much you\'d save in interest consolidating into a personal loan — with real lender matching at the end.',
     badge: 'Finance',
@@ -31,7 +28,6 @@ const tools = [
   },
   {
     href: '/calculators/glp1-quiz',
-    emoji: '🎯',
     title: 'Which GLP-1 Program Fits You?',
     desc: '8-question quiz that matches you to the right GLP-1 program based on budget, speed, medical needs, and location. Routes to the best-fit offer from 3 platforms.',
     badge: 'Health',
@@ -62,7 +58,6 @@ const tools = [
       {tools.map(tool => (
         <a href={tool.href} class="group bg-white rounded-2xl border border-gray-200 hover:border-[#dc2626] hover:shadow-lg transition-all p-6 flex flex-col">
           <div class="flex items-start justify-between mb-4">
-            <span class="text-3xl">{tool.emoji}</span>
             <span class={`text-xs font-semibold px-2 py-1 rounded-full ${tool.badgeColor}`}>{tool.badge}</span>
           </div>
           <h2 class="font-display font-bold text-gray-900 text-lg mb-2 group-hover:text-[#dc2626] transition-colors">{tool.title}</h2>

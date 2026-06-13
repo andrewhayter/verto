@@ -122,7 +122,7 @@ const bridgeOffer = bridgeProblem
 <BaseLayout
   title={title}
   description={description}
-  image={image ?? `https://verto.fun/og/${category}.svg`}
+  image={image ?? `https://verto.fun/images/${category}.jpg`}
   ogType="article"
   article={{
     publishedTime: date.toISOString().split('T')[0],
@@ -144,7 +144,7 @@ const bridgeOffer = bridgeProblem
         "dateModified": (updatedDate ?? date).toISOString().split('T')[0],
         "image": {
           "@type": "ImageObject",
-          "url": image ?? `https://verto.fun/og/${category}.svg`,
+          "url": image ?? `https://verto.fun/images/${category}.jpg`,
           "width": 1200,
           "height": 628
         },
@@ -260,21 +260,20 @@ const bridgeOffer = bridgeProblem
       </div>
     </div>
 
-    <!-- Optional hero image -->
-    {image && (
-      <div class="max-w-3xl mx-auto px-0 sm:px-6 pb-0">
-        <img
-          src={image}
-          alt={title}
-          width="750"
-          height="420"
-          loading="eager"
-          decoding="async"
-          class="w-full sm:rounded-xl object-cover"
-          style="aspect-ratio: 750/420;"
-        />
-      </div>
-    )}
+    <!-- Hero image -->
+    <div class="max-w-3xl mx-auto px-0 sm:px-6 pb-0">
+      <img
+        src={image ?? `/images/${category}.jpg`}
+        alt={title}
+        width="750"
+        height="420"
+        loading="eager"
+        decoding="async"
+        class="w-full sm:rounded-xl object-cover"
+        style="aspect-ratio: 750/420;"
+        onerror="this.src='/images/default.jpg'"
+      />
+    </div>
   </header>
 
   <!-- ============================
@@ -299,7 +298,6 @@ const bridgeOffer = bridgeProblem
           <div class="flex flex-col sm:flex-row sm:items-center gap-4">
             <div class="flex-1 min-w-0">
               <div class="flex items-center gap-2 mb-1">
-                <span class="text-2xl">{bridgeProblem.emoji}</span>
                 <h3 class="font-display font-bold text-gray-900 text-lg leading-snug line-clamp-2">
                   {bridgeProblem.headline.split('—')[0].trim()}
                 </h3>

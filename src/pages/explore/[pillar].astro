@@ -65,7 +65,6 @@ const clusters = pillar.clusters.map((cluster) => {
         <span>/</span>
         <span class="text-white/80">{pillar.name}</span>
       </nav>
-      <div class="text-5xl mb-3">{pillar.emoji}</div>
       <h1 class="font-display font-black text-4xl md:text-5xl text-white mb-3">{pillar.name}</h1>
       <p class="text-white/80 text-lg max-w-2xl">{pillar.blurb}</p>
 
@@ -96,13 +95,12 @@ const clusters = pillar.clusters.map((cluster) => {
           <div class="flex flex-wrap gap-2 mb-6">
             {clusterProblems.map((p) => (
               <a href={`/best/${p.slug}`} class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand bg-brand/5 hover:bg-brand/10 px-3.5 py-2 rounded-lg transition-colors">
-                <span>{p.emoji}</span>
                 {p.headline.split('—')[0].split(':')[0].trim().substring(0, 40)}
               </a>
             ))}
             {(cluster.calculators ?? []).map((calc) => (
               <a href={calc} class="inline-flex items-center gap-1.5 text-sm font-semibold text-gray-700 bg-gray-100 hover:bg-gray-200 px-3.5 py-2 rounded-lg transition-colors">
-                🧮 {calc.split('/').pop()?.replace(/-/g, ' ')}
+                {calc.split('/').pop()?.replace(/-/g, ' ')}
               </a>
             ))}
           </div>

@@ -41,7 +41,7 @@ const { comments, title = 'What Readers Are Saying' } = Astro.props;
           <p class="text-sm text-gray-700 leading-relaxed">{c.text}</p>
           {c.helpful && (
             <p class="text-xs text-gray-400 mt-2 select-none">
-              👍 {c.helpful.toLocaleString()} people found this helpful
+              {c.helpful.toLocaleString()} people found this helpful
             </p>
           )}
         </div>

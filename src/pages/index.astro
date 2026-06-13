@@ -63,7 +63,7 @@ const eyebrowDate = new Intl.DateTimeFormat('en-US', { month: 'long', year: 'num
       <div class="flex gap-8 overflow-x-auto category-nav">
         {spotlightProblems.map(p => (
           <a href={`/best/${p.slug}`} class="whitespace-nowrap hover:underline opacity-90">
-            {p.emoji} {p.headline.split('—')[0].trim().substring(0, 50)}
+            {p.headline.split('—')[0].trim().substring(0, 50)}
           </a>
         ))}
       </div>
@@ -116,14 +116,14 @@ const eyebrowDate = new Intl.DateTimeFormat('en-US', { month: 'long', year: 'num
               </div>
             </div>
 
-            <!-- Right: gradient placeholder -->
-            <div
-              class="h-56 md:h-full min-h-[220px] flex items-center justify-center text-6xl"
-              style={`background: ${categories.find(c => c.slug === featuredArticle.data.category)?.gradient ?? 'linear-gradient(135deg, #1e1b4b, #312e81)'}`}
-            >
-              <div class="text-white/30 text-8xl font-display font-black select-none">
-                {featuredArticle.data.category.charAt(0).toUpperCase()}
-              </div>
+            <!-- Right: hero image -->
+            <div class="h-56 md:h-full min-h-[220px] overflow-hidden">
+              <img
+                src={featuredArticle.data.image ?? `/images/${featuredArticle.data.category}.jpg`}
+                alt={featuredArticle.data.title}
+                class="w-full h-full object-cover"
+                onerror="this.src='/images/default.jpg'"
+              />
             </div>
           </div>
         </a>
@@ -159,7 +159,6 @@ const eyebrowDate = new Intl.DateTimeFormat('en-US', { month: 'long', year: 'num
             >
               <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors"></div>
               <div class="relative z-10">
-                <div class="text-3xl mb-3">{problem.emoji}</div>
                 <h3 class="font-display font-bold text-white text-lg leading-snug line-clamp-2">
                   {problem.headline.split('?')[0].substring(0, 65)}{problem.headline.includes('?') ? '?' : ''}
                 </h3>
@@ -223,7 +222,7 @@ const eyebrowDate = new Intl.DateTimeFormat('en-US', { month: 'long', year: 'num
                   class="w-12 h-12 rounded-xl shrink-0 flex items-center justify-center text-xl"
                   style={`background: ${categories.find(c => c.slug === article.data.category)?.gradient ?? 'linear-gradient(135deg, #e2e8f0, #cbd5e1)'}`}
                 >
-                  {categories.find(c => c.slug === article.data.category)?.emoji ?? '📄'}
+                  <span class="text-sm font-bold text-white">{article.data.category.charAt(0).toUpperCase()}</span>
                 </div>
                 <div class="flex-1 min-w-0">
                   <p class="eyebrow text-brand mb-1">{article.data.category.replace(/-/g, ' ')}</p>
@@ -275,10 +274,10 @@ const eyebrowDate = new Intl.DateTimeFormat('en-US', { month: 'long', year: 'num
             class="group flex flex-col items-center gap-3 p-5 bg-white rounded-2xl shadow-sm border border-gray-100 hover:border-gray-200 hover:shadow-md transition-all text-center"
           >
             <div
-              class="w-12 h-12 rounded-2xl flex items-center justify-center text-2xl"
+              class="w-12 h-12 rounded-2xl flex items-center justify-center text-sm font-bold text-white"
               style={`background: ${cat.gradient}`}
             >
-              {cat.emoji}
+              {cat.name.charAt(0).toUpperCase()}
             </div>
             <div>
               <p class="font-semibold text-sm text-gray-800 group-hover:text-brand transition-colors leading-tight">{cat.name}</p>
