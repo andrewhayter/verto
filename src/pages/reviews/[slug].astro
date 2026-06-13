@@ -1,10 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Newsletter from '../../components/Newsletter.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
 import { offers, offerSlug, getAffiliateUrl } from '../../data/offers';
 import { catalogOffers } from '../../data/catalog';
 import { problemBySlug } from '../../data/problems';
 import { categoryBySlug } from '../../data/categories';
+import { getCollection } from 'astro:content';
 
 // ── Build static paths from BOTH editorial and catalog offers ──────────────────
 export function getStaticPaths() {
@@ -59,6 +61,21 @@ const relatedProblems = isEditorial
 // Category
 const catSlug = isEditorial ? editorialOffer!.categories[0] : catalogOffer!.categorySlug;
 const cat = categoryBySlug[catSlug];
+
+// Related articles from the same category
+const allArticles = await getCollection('articles');
+function articleSlug(a: (typeof allArticles)[number]) {
+  const parts = a.id.split('/');
+  return parts[parts.length - 1].replace(/\.mdx?$/, '');
+}
+const relatedArticles = allArticles
+  .filter(a => a.data.category === catSlug)
+  .sort((a, b) => {
+    if (a.data.featured && !b.data.featured) return -1;
+    if (!a.data.featured && b.data.featured) return 1;
+    return b.data.date.getTime() - a.data.date.getTime();
+  })
+  .slice(0, 3);
 
 const rateLabel: Record<string, string> = {
   cps: 'Subscription',
@@ -382,6 +399,34 @@ const seoDescription = `${shortName}: ${tagline}. Available in ${geoDisplay}. Se
       </a>
       <p class="text-white/30 text-xs mt-3">Sponsored · Clicking through doesn't commit you to a purchase</p>
     </div>
+
+    <!-- Related Reading -->
+    {relatedArticles.length > 0 && (
+      <div class="mt-12 mb-4">
+        <div class="flex items-center justify-between mb-5">
+          <h2 class="font-display font-bold text-2xl text-gray-900">Related Guides</h2>
+          {cat && (
+            <a href={`/${catSlug}/`} class="text-sm font-semibold text-brand hover:text-brand-dark transition-colors">
+              All {cat.name} guides →
+            </a>
+          )}
+        </div>
+        <div class="grid gap-5 sm:grid-cols-3">
+          {relatedArticles.map(a => (
+            <ArticleCard
+              title={a.data.title}
+              description={a.data.description}
+              category={a.data.category}
+              slug={articleSlug(a)}
+              author={a.data.author}
+              date={a.data.date}
+              readTime={a.data.readTime}
+              sponsored={a.data.sponsored}
+            />
+          ))}
+        </div>
+      </div>
+    )}
 
     <Newsletter />
 

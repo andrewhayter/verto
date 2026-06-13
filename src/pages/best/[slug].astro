@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import OfferCard from '../../components/OfferCard.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
 import QuizEntry from '../../components/QuizEntry.astro';
 import SocialProofBlock from '../../components/SocialProofBlock.astro';
 import StickyCtaBar from '../../components/StickyCtaBar.astro';
@@ -8,6 +9,7 @@ import ScrollTracker from '../../components/ScrollTracker.astro';
 import { problems } from '../../data/problems';
 import { offersByProblem, getAffiliateUrl } from '../../data/offers';
 import { categoryBySlug } from '../../data/categories';
+import { getCollection } from 'astro:content';
 import type { Comment } from '../../components/SocialProofBlock.astro';
 
 export async function getStaticPaths() {
@@ -19,6 +21,20 @@ export async function getStaticPaths() {
 
 const { problem } = Astro.props;
 const cat = categoryBySlug[problem.category];
+
+const allArticles = await getCollection('articles');
+function articleSlug(a: (typeof allArticles)[number]) {
+  const parts = a.id.split('/');
+  return parts[parts.length - 1].replace(/\.mdx?$/, '');
+}
+const relatedArticles = allArticles
+  .filter(a => a.data.category === problem.category)
+  .sort((a, b) => {
+    if (a.data.featured && !b.data.featured) return -1;
+    if (!a.data.featured && b.data.featured) return 1;
+    return b.data.date.getTime() - a.data.date.getTime();
+  })
+  .slice(0, 3);
 
 const problemOffers = (offersByProblem[problem.slug] ?? []).filter(o => o.approved);
 const topOffer = problemOffers[0];
@@ -365,6 +381,32 @@ const pageAuthor = categoryAuthor[problem.category] ?? { name: 'Verto Editorial 
             </svg>
           </a>
           <p class="text-white/50 text-sm mt-3">No commitment — checking takes under 2 minutes</p>
+        </div>
+      </div>
+    )}
+
+    <!-- Related Reading -->
+    {relatedArticles.length > 0 && (
+      <div class="mb-12">
+        <div class="flex items-center justify-between mb-5">
+          <h2 class="font-display font-bold text-2xl text-gray-900">Go Deeper</h2>
+          <a href={`/${problem.category}/`} class="text-sm font-semibold text-brand hover:text-brand-dark transition-colors">
+            All {cat?.name ?? 'category'} guides →
+          </a>
+        </div>
+        <div class="grid gap-5 sm:grid-cols-3">
+          {relatedArticles.map(a => (
+            <ArticleCard
+              title={a.data.title}
+              description={a.data.description}
+              category={a.data.category}
+              slug={articleSlug(a)}
+              author={a.data.author}
+              date={a.data.date}
+              readTime={a.data.readTime}
+              sponsored={a.data.sponsored}
+            />
+          ))}
         </div>
       </div>
     )}
