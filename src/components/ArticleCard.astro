@@ -32,7 +32,15 @@ const cat = categoryBySlug[category];
 const gradient = cat?.gradient ?? 'linear-gradient(135deg, #475569, #1e293b)';
 const formattedDate = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).format(date);
 const href = `/${category}/${slug}`;
-const imgSrc = image ?? `/images/${category}.jpg`;
+
+// Deterministic image variety: pick category image or one of 8 pool variants based on slug hash
+const pool = [
+  `/images/${category}.jpg`,
+  '/images/v2.jpg', '/images/v3.jpg', '/images/v4.jpg', '/images/v5.jpg',
+  '/images/v6.jpg', '/images/v7.jpg', '/images/v8.jpg', '/images/v9.jpg',
+];
+const hash = slug.split('').reduce((acc, c) => acc + c.charCodeAt(0), 0);
+const imgSrc = image ?? pool[hash % pool.length];
 ---
 
 {variant === 'horizontal' ? (

@@ -36,7 +36,8 @@ const relatedArticles = allArticles
   })
   .slice(0, 3);
 
-const problemOffers = (offersByProblem[problem.slug] ?? []).filter(o => o.approved);
+// Show all offers for this problem (approved = tracking link, non-approved = direct landingPage)
+const problemOffers = offersByProblem[problem.slug] ?? [];
 const topOffer = problemOffers[0];
 
 const eyebrowDate = new Intl.DateTimeFormat('en-US', { month: 'long', year: 'numeric' }).format(new Date());

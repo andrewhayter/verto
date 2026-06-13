@@ -110,7 +110,7 @@ export const problems: Problem[] = [
     gradient: 'linear-gradient(135deg, #1e40af, #1e3a8a)',
     category: 'health-wellness',
     audience: 'Men aged 30–65 experiencing energy, focus, or performance decline',
-    topOfferIds: [31081, 31080, 31071, 29604, 30427],
+    topOfferIds: [31081, 31080, 31071, 29604, 30427, 30426, 30851, 32272, 32125, 25551],
     faqs: [
       {
         q: 'What causes energy decline in men over 35?',
@@ -190,7 +190,7 @@ export const problems: Problem[] = [
     gradient: 'linear-gradient(135deg, #16a34a, #14532d)',
     category: 'financial',
     audience: 'US adults 20–65 seeking personal loans for any purpose',
-    topOfferIds: [30154, 26642, 30444],
+    topOfferIds: [30154, 26642, 30444, 30445, 21609, 24184],
     faqs: [
       {
         q: 'What is a personal loan matching service?',
@@ -312,7 +312,7 @@ export const problems: Problem[] = [
     gradient: 'linear-gradient(135deg, #ec4899, #9d174d)',
     category: 'health-wellness',
     audience: 'Women aged 35–60 experiencing perimenopause, menopause, or postmenopause symptoms',
-    topOfferIds: [28316],
+    topOfferIds: [28316, 25551],
     faqs: [
       {
         q: 'What is bioidentical hormone replacement therapy (bHRT)?',
@@ -354,7 +354,7 @@ export const problems: Problem[] = [
     gradient: 'linear-gradient(135deg, #ca8a04, #713f12)',
     category: 'surveys',
     audience: 'US adults 18–65 with iOS or Android smartphones',
-    topOfferIds: [32298],
+    topOfferIds: [32298, 28939, 31910],
     faqs: [
       {
         q: 'How does Nielsen Pulse work?',
@@ -438,7 +438,7 @@ export const problems: Problem[] = [
     gradient: 'linear-gradient(135deg, #dc2626, #7f1d1d)',
     category: 'health-wellness',
     audience: 'Adults 45+ with elevated blood sugar, pre-diabetes, or cardiovascular concerns',
-    topOfferIds: [31617, 31613, 31618],
+    topOfferIds: [31617, 31613, 31618, 32072],
     faqs: [
       {
         q: 'What is pre-diabetes and why does it matter?',
@@ -476,7 +476,7 @@ export const problems: Problem[] = [
     gradient: 'linear-gradient(135deg, #2563eb, #1e40af)',
     category: 'antivirus-vpn',
     audience: 'Internet users concerned about privacy, tracking, and geo-restricted content',
-    topOfferIds: [25474],
+    topOfferIds: [25474, 30698],
     faqs: [
       {
         q: 'What does a VPN actually do?',
@@ -587,7 +587,7 @@ export const problems: Problem[] = [
     gradient: 'linear-gradient(135deg, #db2777, #881337)',
     category: 'health-wellness',
     audience: 'Women 40–65 looking for sustainable, age-appropriate fitness',
-    topOfferIds: [29132],
+    topOfferIds: [29132, 25551, 28316],
     faqs: [
       {
         q: 'Why does exercise feel harder after 40?',
@@ -623,7 +623,7 @@ export const problems: Problem[] = [
     gradient: 'linear-gradient(135deg, #7c3aed, #4c1d95)',
     category: 'financial',
     audience: 'Adults looking to maximize credit card rewards or reduce interest costs',
-    topOfferIds: [20484],
+    topOfferIds: [20484, 27618],
     faqs: [
       {
         q: 'Will comparing credit cards hurt my credit score?',
@@ -803,7 +803,7 @@ export const problems: Problem[] = [
     gradient: 'linear-gradient(135deg, #ea580c, #7c2d12)',
     category: 'health-wellness',
     audience: 'Adults in Canada interested in keto weight loss without strict dieting',
-    topOfferIds: [31613],
+    topOfferIds: [31613, 31618],
     faqs: [
       {
         q: 'What are BHB ketones and do they work?',
@@ -875,7 +875,7 @@ export const problems: Problem[] = [
     gradient: 'linear-gradient(135deg, #0f172a, #1e3a5f)',
     category: 'financial',
     audience: 'Adults with fair to poor credit (300–669) seeking personal loans in the US; Canadians with credit challenges',
-    topOfferIds: [26642, 30154, 30444, 31464],
+    topOfferIds: [26642, 30154, 30444, 31464, 30445, 21609, 24184, 27618],
     faqs: [
       {
         q: 'What credit score do I need for a personal loan?',
@@ -915,7 +915,7 @@ export const problems: Problem[] = [
     gradient: 'linear-gradient(135deg, #059669, #064e3b)',
     category: 'financial',
     audience: 'Adults with poor to fair credit (300–669) seeking to repair or rebuild their credit profile',
-    topOfferIds: [26642, 30154, 31464],
+    topOfferIds: [26642, 30154, 31464, 31093],
     faqs: [
       {
         q: 'What actually improves a credit score?',
@@ -974,6 +974,201 @@ export const problems: Problem[] = [
     seoTitle: 'Blinkist Review 2026 — Is It Worth It? Read 1 Book a Week | Verto',
     seoDescription: 'Blinkist summarizes 6,500+ nonfiction books into 15-minute reads and listens. Perfect for busy people who want to keep learning without the time commitment.',
     facebookHook: 'I \'read\' 52 books last year in 15 minutes each — here\'s the app that made it possible',
+  },
+  // --- New problem pages added 2026-06-13 ---
+  {
+    slug: 'digestive-health',
+    headline: 'Chronic Constipation Isn\'t a Laxative Problem — Here\'s What the Research Says About Root-Cause Relief',
+    subheadline: 'A clinical bowel-support formula that targets motility and gut flora — not just symptom masking',
+    hook: 'I used laxatives for three years. Every time I stopped, the constipation came back worse. I didn\'t have a laxative problem. I had a gut problem.',
+    description: 'Chronic constipation affects 1 in 6 Americans and most treatments only mask the symptom. Stimulant laxatives create dependency over time. A clinical bowel-support approach targets gut motility, microbiome balance, and smooth muscle function — addressing the root cause rather than forcing a single evacuation.',
+    emoji: '',
+    gradient: 'linear-gradient(135deg, #16a34a, #14532d)',
+    category: 'health-wellness',
+    audience: 'Adults 35–70 dealing with chronic constipation or irregular bowel movements',
+    topOfferIds: [30833],
+    faqs: [
+      {
+        q: 'Why do laxatives make constipation worse over time?',
+        a: 'Stimulant laxatives (senna, bisacodyl) work by irritating intestinal muscles to force contractions. Repeated use causes the colon to become reliant on that stimulation, reducing its natural motility. This creates a dependency cycle where you need increasing doses just to maintain regularity.',
+      },
+      {
+        q: 'What is gut motility and why does it matter?',
+        a: 'Gut motility refers to the rhythmic muscle contractions (peristalsis) that move food and waste through your digestive tract. Slowed motility is the primary driver of chronic constipation. Factors including low fiber, dehydration, stress, and certain medications all reduce motility.',
+      },
+      {
+        q: 'How long does it take to see results from a bowel support supplement?',
+        a: 'Most people notice improvement within 3–7 days. Unlike laxatives, clinical bowel support formulas work progressively — improving regularity over 2–4 weeks as gut flora and motility normalize.',
+      },
+      {
+        q: 'When should I see a doctor about constipation?',
+        a: 'If you have blood in stool, unexplained weight loss, or constipation that started suddenly after years of normal bowel habits, see a physician. Chronic constipation without those red flags is generally safe to address with lifestyle changes and targeted supplementation first.',
+      },
+    ],
+    trustStats: [
+      { stat: '16%', label: 'Americans with chronic constipation' },
+      { stat: '3–7 days', label: 'Typical time to first noticeable relief' },
+      { stat: '$4.28 EPC', label: 'Network-verified earnings per click' },
+    ],
+    seoTitle: 'Digestive Health & Constipation Relief — What Actually Works | Verto',
+    seoDescription: 'Chronic constipation is not a laxative problem. Learn what gut motility is, why laxatives make it worse, and the clinical formula that addresses the root cause.',
+    facebookHook: 'Laxatives made my constipation worse every time I stopped. Here\'s what actually fixed it — without dependency',
+  },
+  {
+    slug: 'online-therapy',
+    headline: 'Therapy Waiting Lists Are 6–12 Weeks. Here\'s How to Start Online Therapy This Week.',
+    subheadline: 'Licensed therapists available via app within days — for a fraction of the $250/session in-person rate',
+    hook: 'I called three therapists. The earliest appointment was 11 weeks away. I couldn\'t wait 11 weeks.',
+    description: 'Traditional therapy has a supply problem. Licensed therapists in most cities have 6–12 week waitlists, and sessions run $150–$350 without insurance. Online therapy platforms like BetterHelp match you with a licensed therapist within 48 hours, for less than $100/week — and you can switch therapists for free if the fit isn\'t right.',
+    emoji: '',
+    gradient: 'linear-gradient(135deg, #6366f1, #312e81)',
+    category: 'health-wellness',
+    audience: 'Adults 22–55 seeking accessible, affordable mental health support',
+    topOfferIds: [27061, 29683],
+    faqs: [
+      {
+        q: 'Is online therapy as effective as in-person therapy?',
+        a: 'Multiple peer-reviewed studies, including a meta-analysis in World Psychiatry (2021), found that video and text-based therapy produces outcomes equivalent to in-person sessions for anxiety, depression, and stress — the most common reasons people seek therapy.',
+      },
+      {
+        q: 'How does BetterHelp work?',
+        a: 'You complete a short intake questionnaire about your concerns and preferences. BetterHelp matches you with a licensed therapist (LCSW, LPC, psychologist, or LMFT) within 48 hours. Sessions happen via video, phone, or text. You can message your therapist between sessions and switch at any time for free.',
+      },
+      {
+        q: 'What does online therapy cost?',
+        a: 'BetterHelp plans range from $60–$100 per week (billed monthly), which includes unlimited messaging and weekly sessions. This is 60–80% less than typical in-person therapy without insurance.',
+      },
+      {
+        q: 'Can I get medication through online therapy?',
+        a: 'BetterHelp therapists provide talk therapy but cannot prescribe medication. For medication management (SSRI, anti-anxiety, ADHD), you need a psychiatrist or psychiatric nurse practitioner. Platforms like Sesame Care connect you with prescribers.',
+      },
+      {
+        q: 'Is online therapy covered by insurance?',
+        a: 'Some plans cover online therapy through BetterHelp. Check your specific plan. If not covered, the out-of-pocket cost is typically still lower than in-person co-pays plus the opportunity cost of travel and scheduling.',
+      },
+    ],
+    trustStats: [
+      { stat: '6–12 wks', label: 'Average wait for in-person therapist' },
+      { stat: '48 hours', label: 'Average match time on BetterHelp' },
+      { stat: '$60–100/wk', label: 'BetterHelp pricing (vs $250+ in-person)' },
+    ],
+    seoTitle: 'Online Therapy 2026 — Start This Week Without a Waitlist | Verto',
+    seoDescription: 'Can\'t get a therapy appointment for 3 months? Online therapy platforms match you with a licensed therapist in 48 hours for $60–100/week. Here\'s how it works.',
+    facebookHook: 'I called three therapists. The earliest appointment was 11 weeks away. Here\'s what I did instead — and why it worked',
+  },
+  {
+    slug: 'tinnitus-relief',
+    headline: 'The Ringing in Your Ears Has a Name — and It\'s More Treatable Than Your Doctor Told You',
+    subheadline: 'Why "learn to live with it" is not the only answer, and the supplements that address the auditory nerve pathway',
+    hook: 'My audiologist said "there\'s no cure, just learn to live with it." I refused to accept that. Here\'s what I found.',
+    description: 'Tinnitus affects 50 million Americans and is the most common service-connected disability for veterans. Most people are told it\'s permanent. But emerging research on auditory nerve health, circulatory support for the inner ear, and neurological inflammation suggests targeted supplementation can meaningfully reduce perception of tinnitus sounds — even when conventional medicine offers nothing.',
+    emoji: '',
+    gradient: 'linear-gradient(135deg, #0ea5e9, #0c4a6e)',
+    category: 'health-wellness',
+    audience: 'Adults 40–75 experiencing persistent ringing, buzzing, or hissing in the ears',
+    topOfferIds: [28446, 27236],
+    faqs: [
+      {
+        q: 'What causes tinnitus?',
+        a: 'Tinnitus is caused by damage to the hair cells in the cochlea (inner ear) from noise exposure, aging, or circulatory changes — causing the auditory nerve to generate phantom sounds the brain interprets as ringing. Inflammation, poor blood flow to the inner ear, and zinc deficiency are all contributing factors.',
+      },
+      {
+        q: 'Can tinnitus actually be reduced?',
+        a: 'Many people do experience meaningful reduction in tinnitus perception — particularly those whose tinnitus is related to circulatory issues or inflammation rather than complete hair cell loss. The "learn to live with it" advice often reflects the limits of audiology treatment, not the limits of all treatment.',
+      },
+      {
+        q: 'What ingredients in tinnitus supplements are studied?',
+        a: 'The most studied include zinc (deficiency linked to tinnitus severity), Ginkgo biloba (improves inner ear blood flow), vinpocetine (vasodilatory effect on auditory vessels), and niacin. Some formulas include GABA to reduce auditory cortex hyperactivity.',
+      },
+      {
+        q: 'How long does it take for a tinnitus supplement to work?',
+        a: 'Most users report changes within 30–90 days. Circulatory effects tend to emerge faster (2–4 weeks) than nerve-related improvements. Commit to a 90-day trial before evaluating.',
+      },
+    ],
+    trustStats: [
+      { stat: '50M', label: 'Americans with tinnitus' },
+      { stat: '#1', label: 'Service-connected disability for US veterans' },
+      { stat: '15%', label: 'Adults who experience tinnitus regularly' },
+    ],
+    seoTitle: 'Tinnitus Relief 2026 — Why "Learn to Live With It" Isn\'t the Only Answer | Verto',
+    seoDescription: '50 million Americans have tinnitus. Most are told to accept it. Here\'s what auditory nerve research says about supplements that target the root cause.',
+    facebookHook: 'My audiologist told me to "learn to live with the ringing." I didn\'t accept that. Here\'s what actually helped.',
+  },
+  {
+    slug: 'identity-protection',
+    headline: 'Your Personal Information Is Already Compromised — Here\'s How to Stop the Damage',
+    subheadline: 'Dark web monitoring, stolen data alerts, and identity restoration — all-in-one protection that pays if something goes wrong',
+    hook: 'I checked if my email was in a data breach. It was in 14 of them. That\'s when I got serious about identity protection.',
+    description: 'The average American\'s personal information has been exposed in multiple data breaches — Social Security numbers, addresses, login credentials, financial data. Identity theft costs victims an average of $1,100 and 200 hours to resolve. Monitoring services detect misuse of your data in real time, alert you before damage spreads, and include restoration support if you become a victim.',
+    emoji: '',
+    gradient: 'linear-gradient(135deg, #dc2626, #7f1d1d)',
+    category: 'antivirus-vpn',
+    audience: 'Adults 30–65 who want proactive protection against identity theft and data breaches',
+    topOfferIds: [26245, 31331],
+    faqs: [
+      {
+        q: 'What does identity protection software actually monitor?',
+        a: 'Comprehensive services monitor the dark web for your SSN, credit card numbers, email addresses, and passwords; monitor your credit reports for new accounts or hard inquiries you didn\'t authorize; track change-of-address requests; and watch for your information being used in public records.',
+      },
+      {
+        q: 'How is this different from a free credit monitoring service?',
+        a: 'Free credit monitoring (like Credit Karma) only tracks changes to your credit report. Identity protection services add dark web monitoring, breach alerts, identity theft insurance ($1M+), and dedicated restoration specialists — people who handle the paperwork if your identity is stolen.',
+      },
+      {
+        q: 'Is identity theft insurance worth it?',
+        a: 'If your identity is stolen, the average out-of-pocket cost to victims is $1,100 — plus 200 hours of time disputing accounts and dealing with creditors. Identity theft insurance reimburses those costs and pairs with specialists who handle the process for you.',
+      },
+      {
+        q: 'What do I do if my identity is already being misused?',
+        a: 'Contact the FTC at IdentityTheft.gov, place a fraud alert with the three credit bureaus, and request your free credit reports. Then enroll in a monitoring service immediately — existing theft can lead to additional fraud if the data is still being traded.',
+      },
+    ],
+    trustStats: [
+      { stat: '14', label: 'Average data breaches per American\'s email' },
+      { stat: '$1,100', label: 'Average cost to victims of identity theft' },
+      { stat: '200 hrs', label: 'Time to resolve identity theft without help' },
+    ],
+    seoTitle: 'Identity Protection 2026 — Dark Web Monitoring That Alerts Before Damage Spreads | Verto',
+    seoDescription: 'Your data is already in breach databases. Identity protection services monitor the dark web, alert you in real time, and restore your identity if you\'re victimized.',
+    facebookHook: 'I checked if my email was in a data breach. It was in 14 of them. Here\'s the service I use now.',
+  },
+  {
+    slug: 'car-loan-refinance',
+    headline: 'You\'re Probably Overpaying on Your Car Loan — Here\'s How Much a Refinance Could Save',
+    subheadline: 'Interest rates have changed. Your credit score may have improved. Refinancing takes 10 minutes and could save $100+/month',
+    hook: 'I bought my car when rates were high and my credit was fair. Two years later, I refinanced — and dropped my payment by $127/month. I had no idea it was that easy.',
+    description: 'Millions of Americans are carrying car loans at interest rates 3–5% higher than they\'d qualify for today. If your credit score has improved, or market rates have dropped since you financed, refinancing your auto loan can meaningfully lower your monthly payment and total interest paid — often through a 10-minute online process with no impact to your car.',
+    emoji: '',
+    gradient: 'linear-gradient(135deg, #f59e0b, #78350f)',
+    category: 'financial',
+    audience: 'Adults 25–55 with existing car loans who may qualify for better rates today',
+    topOfferIds: [25015],
+    faqs: [
+      {
+        q: 'When does it make sense to refinance a car loan?',
+        a: 'Refinancing makes sense if: your credit score has improved since you financed (even 30 points can unlock a better rate), market interest rates have dropped, or you originally financed through a dealer at a higher rate. Generally worth doing if you can lower your rate by 1.5%+ and have more than 2 years left on the loan.',
+      },
+      {
+        q: 'Does refinancing hurt my credit score?',
+        a: 'The initial hard inquiry typically drops your score 2–5 points temporarily. However, if the refinance lowers your interest rate and you make consistent payments, your score will recover and often improve over 6–12 months. The short-term dip is rarely worth avoiding if the savings are significant.',
+      },
+      {
+        q: 'How much can I save by refinancing?',
+        a: 'It depends on your current rate, new rate, remaining balance, and term. Dropping from 8% to 5.5% on a $25,000 balance with 36 months remaining saves approximately $1,200 in interest. A lower monthly payment improves cash flow immediately.',
+      },
+      {
+        q: 'How long does auto refinancing take?',
+        a: 'Online auto refinancing platforms like iLending can complete the process in as little as 10 minutes for a rate check (soft pull), with final approval in 1–2 business days and funding within a week. Your car doesn\'t move — you just get a new lender.',
+      },
+    ],
+    trustStats: [
+      { stat: '$127/mo', label: 'Average savings for auto refinance customers' },
+      { stat: '10 min', label: 'Time to check your new rate (soft pull)' },
+      { stat: '1.5%+', label: 'Rate drop that makes refinancing worth it' },
+    ],
+    seoTitle: 'Car Loan Refinance 2026 — Save $100+/Month Without Hurting Your Credit | Verto',
+    seoDescription: 'If your credit has improved or rates have dropped since you bought your car, refinancing takes 10 minutes and could save $100+ per month. Here\'s how.',
+    facebookHook: 'I was paying $127/month more than I needed to on my car loan. It took 10 minutes online to fix. Here\'s how.',
   },
 ];
 
