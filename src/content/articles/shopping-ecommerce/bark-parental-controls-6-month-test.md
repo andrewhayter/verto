@@ -40,7 +40,7 @@ Bark's model is this: AI reads everything, surfaces only the flagged items, and 
 
 The pitch from Bark is that it monitors 30+ apps for cyberbullying, predatory contact, suicidal ideation, drug references, and explicit content. The 14 alerts over 6 months is what that looks like in practice.
 
-### H3: What does Bark app alert parents about?
+### What does Bark app alert parents about?
 
 Bark's AI scans children's texts, social media, email, and chat apps for: cyberbullying (being bullied or bullying others), sexual predator grooming patterns, suicidal ideation and self-harm language, depression indicators, drug references, and explicit content. Parents receive alert summaries — not full message logs. The average child generates 0–3 alerts per month under normal circumstances.
 

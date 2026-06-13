@@ -78,7 +78,7 @@ Not a traditional survey platform — User Interviews connects you with companie
 
 If even completing surveys feels like effort, **Nielsen Pulse** requires nothing after setup. Install the app, let it run in the background, and it passively measures your anonymous internet usage patterns for Nielsen's market research. No surveys, no tasks. Payment comes as gift card rewards — most users report equivalent to $25–$50/month. Available on iOS and Android for US adults.
 
-Nielsen has been conducting market research since 1923. The app collects anonymous usage patterns only — not passwords, financial data, or personal conversations. [Install Nielsen Pulse →](https://nielsenpulse.com/)
+Nielsen has been conducting market research since 1923. The app collects anonymous usage patterns only — not passwords, financial data, or personal conversations. [Install Nielsen Pulse →](https://afflat3e1.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=32298&c=918277&a=784951&k=0&l=38111)
 
 ## My Recommended Stack
 

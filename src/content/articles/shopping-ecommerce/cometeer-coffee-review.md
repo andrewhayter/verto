@@ -44,7 +44,7 @@ After 30 days:
 - Net savings: approximately $42/month
 - Drink quality: equivalent or better than what I was buying at the shop
 
-### H3: Is Cometeer coffee actually as good as a coffee shop?
+### Is Cometeer coffee actually as good as a coffee shop?
 
 Cometeer coffee brewed from specialty roasters at professional extraction parameters and flash-frozen typically matches or exceeds the quality of mid-tier coffee shop brewing. Compared to top specialty cafés with highly trained baristas and precise espresso technique, a skilled café may produce slightly better espresso drinks. For drip-style and iced coffee applications, Cometeer's controlled extraction is difficult to beat at any price point.
 

@@ -42,7 +42,7 @@ I've seen JustAnswer ads for years claiming "ask a lawyer in 5 minutes." That cl
 
 For each question, I also asked the same on Reddit's respective communities (r/MechanicAdvice, r/legaladvice, r/AskDocs) and via basic Google search to compare answer quality.
 
-### H3: Is JustAnswer worth the money for legal and medical questions?
+### Is JustAnswer worth the money for legal and medical questions?
 
 JustAnswer provides verified-credentialed expert answers in under 10 minutes for $22.50/question. It produces meaningfully better answers than Reddit for professional categories (law, medicine) because experts provide context, caveats, and follow-up capacity that crowdsourced advice lacks. It's not worth it for simple factual questions Google can answer; it is worth it when the alternative is a $300+ professional consultation for a single factual question.
 

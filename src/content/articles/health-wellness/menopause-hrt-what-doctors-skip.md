@@ -4,7 +4,7 @@ description: "Most women receive inadequate menopause care from their GPs. A lan
 category: "health-wellness"
 date: 2026-06-12
 updatedDate: 2026-06-12
-author: "Dr. Elena Park"
+author: "Elena Park"
 featured: false
 tags: ["menopause", "HRT", "hormone replacement therapy", "bioidentical hormones", "Winona", "GP menopause care", "Women's Health Initiative", "2022 menopause guidelines"]
 ctaText: "Access Winona HRT — No Referral, No Waiting List"
@@ -42,7 +42,7 @@ In essence, the WHI was studying what happens when you give HRT to women who had
 
 Subsequent re-analyses disaggregated the data by age and timing. When the data was isolated to women under 60 who started HRT within 10 years of menopause, the cardiovascular and breast cancer risk signals largely disappeared or reversed. For this population, HRT appeared to be *cardioprotective* — reducing cardiovascular disease risk compared to not taking it.
 
-### H3: Is HRT safe for menopausal women under 60?
+### Is HRT safe for menopausal women under 60?
 
 The 2022 Menopause Society position statement concluded yes: HRT benefits outweigh risks for most healthy women under 60 within 10 years of menopause onset. The breast cancer risk with combined HRT is small in absolute terms — comparable to the risk from drinking 1–2 glasses of wine daily. Bioidentical progesterone shows a lower risk profile than the synthetic progestins used in the original WHI study.
 

@@ -77,7 +77,7 @@ const pageViews = 18400 + Math.abs(problem.slug.length * 137 + problem.headline.
 
 /* Named author per category — mirrors ArticleLayout mapping */
 const categoryAuthor: Record<string, { name: string; jobTitle: string; initials: string; color: string }> = {
-  'health-wellness':  { name: 'Dr. Elena Park',  jobTitle: 'Health & Wellness Editor',           initials: 'EP', color: '#7c3aed' },
+  'health-wellness':  { name: 'Elena Park',      jobTitle: 'Health & Wellness Editor',           initials: 'EP', color: '#7c3aed' },
   financial:          { name: 'Sofia Reyes',      jobTitle: 'Personal Finance Editor',             initials: 'SR', color: '#9333ea' },
   'antivirus-vpn':    { name: 'Alex Kovacs',      jobTitle: 'Security & Technology Editor',        initials: 'AK', color: '#2563eb' },
   insurance:          { name: 'Thomas Walsh',     jobTitle: 'Legal Services & Insurance Editor',   initials: 'TW', color: '#1d4ed8' },
@@ -289,7 +289,7 @@ const pageAuthor = categoryAuthor[problem.category] ?? { name: 'Verto Editorial 
         <div class="flex items-center gap-3 mb-6">
           <div class="w-1 h-7 bg-brand rounded-full"></div>
           <h2 class="font-display font-bold text-2xl text-gray-900">
-            {problemOffers.length} Verified Option{problemOffers.length !== 1 ? 's' : ''} — Ranked by Evidence &amp; Value
+            {problemOffers.length} Option{problemOffers.length !== 1 ? 's' : ''} — Compared on Price, Evidence, and Fit
           </h2>
         </div>
 

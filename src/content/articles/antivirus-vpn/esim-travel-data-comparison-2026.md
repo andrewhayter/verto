@@ -52,7 +52,7 @@ Canada (most recent trip): Purchased Airalo Canada eSIM before departing — 5GB
 
 Mexico: Holafly unlimited data, 7 days, $18. Works through the Telcel network — solid 4G/LTE coverage in urban areas. Used my home SIM for WhatsApp calls and texts.
 
-### H3: Is eSIM worth it for international travel?
+### Is eSIM worth it for international travel?
 
 Yes for any trip over 2 days where your phone supports eSIM. The cost savings versus carrier roaming are 50–80% for most destinations. The convenience advantage over local SIMs (no physical card swap, home number stays active) is significant. For trips under 1–2 days where you'll mostly be on hotel WiFi, carrier roaming's zero-setup convenience may be worth the premium.
 

@@ -4,7 +4,7 @@ description: "Brain fog — the subjective experience of cognitive sluggishness,
 category: "health-wellness"
 date: 2026-06-12
 updatedDate: 2026-06-12
-author: "Dr. Elena Park"
+author: "Elena Park"
 featured: false
 tags: ["brain fog", "cognitive function", "mental clarity", "brain fog causes", "brain fog treatment", "focus problems", "memory problems", "cognitive decline"]
 ctaText: "BrainPill — Nootropic Stack for Mental Clarity and Focus"
@@ -38,7 +38,7 @@ The PFC is unusually sensitive to physiological state compared to other brain re
 
 The clinical approach: identify which physiological systems are most likely impaired, address those first, reassess. Nootropics and cognitive supplements may have a role, but they're secondary interventions if primary physiological causes are unaddressed.
 
-### H3: What are the most common causes of brain fog?
+### What are the most common causes of brain fog?
 
 The six most common identifiable causes: (1) sleep debt or poor sleep architecture; (2) chronic stress and elevated cortisol; (3) nutritional deficiencies, particularly B12, vitamin D, and magnesium; (4) hypothyroidism or subclinical thyroid dysfunction; (5) hormonal changes, particularly in perimenopause/post-menopause in women and low testosterone in men; (6) chronic low-grade inflammation from diet, sedentary behavior, or inflammatory conditions. Most brain fog has more than one contributing factor.
 

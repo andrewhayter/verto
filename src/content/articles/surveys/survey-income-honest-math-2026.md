@@ -50,7 +50,7 @@ Total: 84 hours active, $664 from active platforms, $247 from Nielsen Pulse, $84
 
 The math is clear: active survey platforms pay $3–$13/hour depending on which ones you use and whether you qualify for the studies. Nielsen Pulse pays you for time you're already spending on your phone, with no effort required.
 
-### H3: How much can you realistically make from surveys per month?
+### How much can you realistically make from surveys per month?
 
 With consistent daily effort on quality platforms like Prolific and Survey Junkie, expect $25–$80/month. Nielsen Pulse adds $15–$50/month in passive earnings with zero time investment. Total realistic monthly survey income for a dedicated user: $40–$130/month. Projecting higher requires professional-researcher rates from Respondent.io, which are available only for business decision-makers and medical professionals.
 

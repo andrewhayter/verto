@@ -38,15 +38,15 @@ const eyebrowDate = new Intl.DateTimeFormat('en-US', { month: 'long', year: 'num
 ---
 
 <BaseLayout
-  title="Verto — GLP-1 From $179/Mo · Personal Loans to $100K · VPNs Under $5/Month"
-  description="24 problem-solution guides comparing verified offers for weight loss, personal loans, legal documents, VPNs, and more. Ranked by evidence, updated continuously."
+  title="Verto — We Test the Solutions So You Don't Pay for the Wrong One"
+  description="Guides on weight loss medications, personal loans, VPNs, menopause treatment, and 20+ other problems — with the evidence, the verdict, and the fastest path to the right solution."
 >
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "WebPage",
     "@id": "https://verto.fun/#webpage",
-    "name": "Verto — Expert-Reviewed Offers for Health, Finance & Lifestyle",
-    "description": "Compare the top-rated offers for weight loss, personal loans, legal documents, VPNs, and more.",
+    "name": "Verto — Consumer Intelligence on Health, Finance & Lifestyle",
+    "description": "Guides on weight loss medications, personal loans, VPNs, menopause treatment, and 20+ other problems — with the evidence, the verdict, and the fastest path to the right solution.",
     "url": "https://verto.fun",
     "isPartOf": { "@id": "https://verto.fun/#website" },
     "about": { "@id": "https://verto.fun/#organization" },
@@ -92,9 +92,6 @@ const eyebrowDate = new Intl.DateTimeFormat('en-US', { month: 'long', year: 'num
             <div class="p-8 md:p-10 flex flex-col justify-center">
               <div class="flex items-center gap-2 mb-3">
                 <span class="eyebrow text-brand">{featuredArticle.data.category.replace(/-/g, ' ')}</span>
-                {featuredArticle.data.sponsored && (
-                  <span class="eyebrow bg-amber-50 text-amber-600 px-2 py-0.5 rounded">Sponsored</span>
-                )}
               </div>
               <h2 class="font-display text-2xl md:text-3xl font-black text-gray-900 leading-tight mb-3 group-hover:text-brand transition-colors">
                 {featuredArticle.data.title}
@@ -141,9 +138,9 @@ const eyebrowDate = new Intl.DateTimeFormat('en-US', { month: 'long', year: 'num
         <div>
           <div class="flex items-center gap-3 mb-1">
             <div class="w-1 h-7 bg-brand rounded-full"></div>
-            <h2 class="font-display font-bold text-2xl text-gray-900">One Guide Per Problem — Ranked Offers With Evidence</h2>
+            <h2 class="font-display font-bold text-2xl text-gray-900">One Guide Per Problem — With Pricing, Evidence, and a Verdict</h2>
           </div>
-          <p class="text-sm text-gray-400 pl-4">GLP-1 from $179/mo · Loans to $100K · VPNs under $5/month · bHRT from $0</p>
+          <p class="text-sm text-gray-400 pl-4">Weight loss · Personal loans · Online privacy · Menopause treatment · Brain fog</p>
         </div>
         <a href="/best" class="text-brand hover:text-brand-dark text-sm font-semibold transition-colors whitespace-nowrap">
           All {problems.length} guides →
@@ -248,8 +245,8 @@ const eyebrowDate = new Intl.DateTimeFormat('en-US', { month: 'long', year: 'num
     <section class="mb-14">
       <div class="flex items-center gap-3 mb-4">
         <div class="w-1 h-7 bg-brand rounded-full"></div>
-        <h2 class="font-display font-bold text-2xl text-gray-900">Highest-Value Offers — Ranked by Evidence, Not Commission</h2>
-        <span class="text-xs text-gray-400 hidden sm:block">Ranked by value · Updated daily</span>
+        <h2 class="font-display font-bold text-2xl text-gray-900">What We're Currently Recommending</h2>
+        <span class="text-xs text-gray-400 hidden sm:block">Updated as offers change</span>
       </div>
       <div class="flex flex-col gap-3">
         {featuredTopOffers.map((offer, i) => (
@@ -258,7 +255,7 @@ const eyebrowDate = new Intl.DateTimeFormat('en-US', { month: 'long', year: 'num
       </div>
       <div class="text-center mt-4">
         <a href="/reviews" class="text-sm font-semibold text-brand hover:text-brand-dark transition-colors">
-          Browse all {500}+ reviewed offers →
+          See all current picks →
         </a>
       </div>
     </section>

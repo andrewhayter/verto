@@ -4,7 +4,7 @@ description: "Women lose 3–8% of muscle mass per decade after 30, with acceler
 category: "health-wellness"
 date: 2026-06-12
 updatedDate: 2026-06-12
-author: "Dr. Elena Park"
+author: "Elena Park"
 featured: false
 tags: ["fitness over 40", "women's fitness", "menopause fitness", "muscle loss women", "perimenopause exercise", "Reverse Health", "strength training women", "body composition women"]
 ctaText: "Start Reverse Health 28-Day Program — Designed for Women 40+"
@@ -44,7 +44,7 @@ Here's what changed:
 
 **Recovery is longer.** Post-exercise muscle protein synthesis persists for 24–48 hours in younger women; this window is shorter in perimenopausal and postmenopausal women. Combined with lower-quality sleep (disrupted by hormonal changes), the total repair time increases.
 
-### H3: Why do women's workouts stop working after 40?
+### Why do women's workouts stop working after 40?
 
 Women lose 3–8% of muscle per decade through sarcopenia, with loss accelerating after menopause due to estrogen decline. Estrogen directly stimulates muscle protein synthesis — its decline means the same training volume produces less adaptation. Additionally, exercise-induced fat loss becomes less efficient as visceral fat accumulation shifts (driven by declining estrogen) to the abdominal area, which is less responsive to cardio-focused approaches.
 

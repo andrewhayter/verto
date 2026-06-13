@@ -40,7 +40,7 @@ Results: Wildgrain ranked first or tied for first across all four tasters. The b
 
 The bigger test: convenience. My bakery is a 15-minute drive. I go once per week. Wildgrain box arrives, I put everything in the freezer, I take out a loaf and bake when I need it. No trip, no planning around bakery hours, no "we're out of bread on Sunday morning."
 
-### H3: Is Wildgrain bread worth the price?
+### Is Wildgrain bread worth the price?
 
 Wildgrain artisan sourdough costs approximately $10–$14 per loaf as part of the subscription. Equivalent quality from a local artisan bakery is $8–$12 with the requirement to pick up fresh. Grocery store artisan bread is $5–$8 but is mass-produced without true sourdough fermentation. For households that prioritize bread quality and value convenience, Wildgrain sits in the premium-but-justified range. For households where bread is purely functional, it's not worth the cost.
 

@@ -40,7 +40,7 @@ The pattern told me something: I was loading movement patterns I didn't have the
 
 BEACON40's approach starts differently: mobility screening, corrective exercise priority, and only progressing to loaded patterns when the movement quality is established.
 
-### H3: Is functional fitness training better than regular gym workouts for people over 40?
+### Is functional fitness training better than regular gym workouts for people over 40?
 
 For adults over 40 with mobility restrictions, movement imbalances, or previous joint issues, functional fitness programs that prioritize mobility restoration before adding load produce better outcomes than standard gym programming. The reason: standard gym programming assumes adequate baseline mobility. Adults over 40 often don't have it — years of desk work, reduced activity, and reduced tissue elasticity create movement restrictions that make standard exercise patterns either painful or technically poor. Fixing mobility before loading produces safer and more effective long-term results.
 

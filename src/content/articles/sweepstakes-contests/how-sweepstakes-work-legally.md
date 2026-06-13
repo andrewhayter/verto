@@ -40,7 +40,7 @@ This isn't a loophole or a gray area. It's the established legal framework that 
 
 The key distinction for sweepstakes casinos: the games use virtual currency (Sweeps Coins), not real money. You play casino-style games using coins you've accumulated; those coins can then be redeemed for prizes. You can always accumulate coins without purchasing — making the consideration element absent by law.
 
-### H3: Are sweepstakes casinos legal in the United States?
+### Are sweepstakes casinos legal in the United States?
 
 Sweepstakes casinos are legal in 49 US states under the promotional sweepstakes model. They operate using virtual coins (not real money) and provide free entry methods, removing the "consideration" element that makes gambling illegal. Washington State prohibits them. The model is the same framework as any no-purchase-necessary promotion, applied to casino-style game formats.
 

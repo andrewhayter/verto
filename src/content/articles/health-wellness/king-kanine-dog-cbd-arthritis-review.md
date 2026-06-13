@@ -4,7 +4,7 @@ description: "King Kanine's CBD oil for dogs costs $59–$99 for a 30-day supply
 category: "health-wellness"
 date: 2026-06-11
 updatedDate: 2026-06-11
-author: "Dr. Elena Park"
+author: "Elena Park"
 featured: false
 tags: ["king kanine review", "CBD for dogs", "dog arthritis treatment", "pet CBD 2026", "dog joint pain", "king kanine CBD oil"]
 ctaText: "Try King Kanine KING KALM CBD — Broad-Spectrum, Zero THC, COA-Verified"

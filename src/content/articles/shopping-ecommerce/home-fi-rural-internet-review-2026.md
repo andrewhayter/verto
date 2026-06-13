@@ -106,7 +106,7 @@ The two most common fixed wireless options for rural users are Home Fi and Starl
 
 Home Fi's setup does not require a technician:
 
-1. **Order online** at homefi.info
+1. **Order online** through the [Home Fi availability checker](https://afflat3e1.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=31456&c=918277&a=784951&k=0&l=37008)
 2. **Receive device** (typically 3–5 business days shipping)
 3. **Plug in the device** at your home or RV
 4. **Connect your devices** to the generated Wi-Fi network

@@ -49,7 +49,7 @@ With the Discover It first-year match (100% cash back match at end of year 1), t
 
 Year 2, without the match: $664.
 
-### H3: How much does a cash back credit card earn per year?
+### How much does a cash back credit card earn per year?
 
 At $2,500/month in spending: a flat 2% card earns $600/year with no effort; a two-card setup (flat 2% + rotating 5% category) earns $650–$900/year; first-year new card bonuses add $200–$750 one-time. The most reliable path to $1,000+/year requires either very high spending ($5,000+/month), premium annual-fee cards with travel credits you actually use, or consistent first-year bonus harvesting.
 

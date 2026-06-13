@@ -44,7 +44,7 @@ What I measured:
 
 The comparison: same metrics during a similar-intensity week 6 weeks earlier, before starting Focus IQ.
 
-### H3: Does Focus IQ work for cognitive performance and sustained focus?
+### Does Focus IQ work for cognitive performance and sustained focus?
 
 Focus IQ's primary active compounds (bacopa monnieri, phosphatidylserine) have clinical evidence supporting improved verbal learning, memory retrieval, and sustained attention at the ingredient doses used. Effects are gradual — significant improvements in standardized cognitive tests appear at 8–12 weeks in clinical trials. Subjective focus improvements are typically reported at 4–6 weeks. Not a stimulant; builds adaptively rather than producing acute effects.
 

@@ -4,7 +4,7 @@ description: "Most supplements don't have adequate clinical evidence. A small ca
 category: "health-wellness"
 date: 2026-06-12
 updatedDate: 2026-06-12
-author: "Dr. Elena Park"
+author: "Elena Park"
 featured: false
 tags: ["supplements", "evidence-based supplements", "supplements that work", "vitamin D", "magnesium", "omega-3", "creatine", "best supplements", "supplement research"]
 ctaText: "Try Myco-Max — Medicinal Mushroom Supplements With Standardized Extracts"
@@ -42,7 +42,7 @@ Before the list, the framework I'm using to evaluate supplements:
 
 **Not evidence-supported:** No consistent human evidence. Either no studies or studies showing no effect.
 
-### H3: What are the most evidence-backed supplements?
+### What are the most evidence-backed supplements?
 
 The clearest evidence: creatine monohydrate (muscle strength and mass), omega-3 EPA/DHA (triglycerides, cardiovascular), vitamin D (bone health, immune function, especially for deficient populations), magnesium (sleep, muscle function, mood — particularly for deficient populations), and psyllium fiber (cholesterol, gut health). Each has multiple well-designed RCTs and consistent meta-analyses. Tier 2 evidence: lion's mane mushroom (cognitive function, two RCTs), rhodiola rosea (stress adaptation, several small RCTs), and berberine (blood glucose, cardiovascular — notably strong evidence for this category).
 

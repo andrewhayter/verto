@@ -7,7 +7,7 @@ updatedDate: 2026-06-12
 author: "Thomas Walsh"
 featured: false
 tags: ["emergency fund", "high yield savings", "opportunity cost", "HYSA", "emergency fund calculator", "where to keep emergency fund", "financial planning", "savings account"]
-ctaText: "Open a MooMoo TFSA/Investment Account — $0 Commission Trades"
+ctaText: "Open a MooMoo Account — Put Your Savings Above 6 Months to Work, $0 Commission"
 ctaUrl: "https://afflat3e1.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=29920&c=918277&a=784951&k=0&l=33713"
 readTime: 6
 sponsored: true
@@ -56,7 +56,7 @@ The difference on $15,000 over 5 years (assuming rates stay in the 4–5% range,
 
 **~$3,900 difference over 5 years.** On emergency funds that should be earning this money passively.
 
-### H3: What's the best account for an emergency fund right now?
+### What's the best account for an emergency fund right now?
 
 High-yield savings accounts at online banks (currently 4.5–5.2% APY) are the best option for most emergency funds: FDIC insured up to $250,000, accessible within 1–3 business days, no market risk, and rates far higher than standard bank savings. In Canada, High Interest Savings ETFs (CASH.TO, PSA.TO, HISA.TO) held in a TFSA or FHSA produce similar outcomes — earning ~5% on parked cash with no tax drag.
 
@@ -92,6 +92,6 @@ Common mistakes this math should not inspire:
 
 ---
 
-*Open a MooMoo Investment Account → [Zero Commission Trades, TFSA and RRSP Supported](https://afflat3e1.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=29920&c=918277&a=784951&k=0&l=33713)*
+*Once your emergency fund is fully funded in a HYSA, the next dollar can work harder. [Open a MooMoo Account — $0 commission trades, TFSA and RRSP supported](https://afflat3e1.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=29920&c=918277&a=784951&k=0&l=33713)*
 
 *This article contains affiliate links. Verto earns a commission if you open an account through our link. Interest rates quoted are approximate and current as of June 2026 — verify current rates before opening accounts. Emergency fund guidance reflects general personal finance principles and is not personalized financial advice.*

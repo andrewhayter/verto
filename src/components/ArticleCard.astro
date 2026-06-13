@@ -34,11 +34,7 @@ const href = `/${category}/${slug}`;
 
 {variant === 'horizontal' ? (
   <a href={href} class="article-card group flex gap-4 bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:border-gray-200">
-    <div class="w-32 shrink-0 h-28 relative" style={`background: ${gradient}`}>
-      {sponsored && (
-        <span class="absolute top-1 left-1 text-[9px] font-bold uppercase tracking-widest bg-black/40 text-white px-1.5 py-0.5 rounded">Ad</span>
-      )}
-    </div>
+    <div class="w-32 shrink-0 h-28" style={`background: ${gradient}`}></div>
     <div class="flex flex-col justify-center py-3 pr-4 gap-1.5">
       <CategoryBadge slug={category} size="sm" />
       <h3 class="font-display font-bold text-sm text-gray-900 leading-snug group-hover:text-brand line-clamp-2 transition-colors">{title}</h3>
@@ -57,9 +53,6 @@ const href = `/${category}/${slug}`;
 ) : (
   <a href={href} class="article-card group flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:border-gray-200">
     <div class="relative h-44 w-full" style={`background: ${gradient}`}>
-      {sponsored && (
-        <span class="absolute top-3 left-3 text-[10px] font-bold uppercase tracking-widest bg-black/40 text-white px-2 py-1 rounded-full">Sponsored</span>
-      )}
       <div class="absolute bottom-3 left-3">
         <CategoryBadge slug={category} size="sm" />
       </div>

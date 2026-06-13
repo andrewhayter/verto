@@ -38,7 +38,7 @@ I wasn't sleeping badly — I was sleeping adequately but not well. The Oura Rin
 
 The fork: buy a new mattress ($1,200–$2,500 for a quality queen) or try a topper first.
 
-### H3: Do mattress toppers improve deep sleep?
+### Do mattress toppers improve deep sleep?
 
 Mattress toppers can increase deep sleep duration if the current sleep surface is causing discomfort, pressure points, or heat that disrupts sleep continuity. A cooling gel topper can reduce surface temperature by 2–5°F — significant for hot sleepers since research shows a 2–4°F surface cooling increase deep sleep duration. Pressure relief reduces micro-arousals from pressure point discomfort, which appear as restless periods in sleep tracking data.
 

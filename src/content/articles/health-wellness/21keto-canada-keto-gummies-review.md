@@ -4,7 +4,7 @@ description: "21KETO's BHB gummy supplements claim to raise blood ketone levels 
 category: "health-wellness"
 date: 2026-06-11
 updatedDate: 2026-06-11
-author: "Dr. Elena Park"
+author: "Elena Park"
 featured: false
 tags: ["21keto review", "keto gummies canada", "BHB supplement", "ketone supplements", "keto diet canada", "weight loss supplement 2026"]
 ctaText: "Try 21KETO BHB Gummies — Ships to Canada, Measurable Ketone Elevation"

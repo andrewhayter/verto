@@ -38,7 +38,7 @@ My GP offered two things: "it's normal" and a referral to a gynaecologist with a
 
 I waited three years because the information landscape was confusing. I went to Winona after a friend who'd been on their protocol for a year showed me the 2022 Menopause Society guidelines update — which unambiguously states that HRT benefits outweigh risks for most women under 60 — and told me to stop waiting.
 
-### H3: Does bioidentical HRT actually work for hot flashes and sleep?
+### Does bioidentical HRT actually work for hot flashes and sleep?
 
 Yes. The Menopause Society reports 70–90% reduction in hot flash frequency with HRT for most women. Sleep improvements typically appear within 2–4 weeks of starting progesterone (which has sedative properties via GABA-receptor activity). Full estrogen-level stabilization takes 4–6 weeks. Most women report noticeable improvement within 6–8 weeks of starting a properly titrated HRT protocol.
 

@@ -42,7 +42,7 @@ The problems:
 
 Pura's plug-in diffuser runs on a schedule. It turns on when I wake up and when I get home. It turns off automatically at bedtime. I can check whether it's running from anywhere. No flame, no forgetting.
 
-### H3: Is Pura worth it compared to candles?
+### Is Pura worth it compared to candles?
 
 Pura diffuser vials at $14–$18 each and 30–50 hours of scent output cost approximately $0.30–$0.50/hour of fragrance. Premium candles at $30–$65 for 40–80 hours also run $0.40–$0.80/hour — and require presence, attention, and open flame. Pura's app-controlled, automated operation adds meaningful convenience value on top of comparable economics. For heavy candle users, Pura typically costs less per hour while eliminating the friction.
 

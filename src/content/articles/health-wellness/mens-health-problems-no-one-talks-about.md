@@ -4,7 +4,7 @@ description: "ED, low testosterone, hair loss, and declining physical performanc
 category: "health-wellness"
 date: 2026-06-12
 updatedDate: 2026-06-12
-author: "Dr. Elena Park"
+author: "Elena Park"
 featured: false
 tags: ["men's health", "ED", "low testosterone", "hair loss", "telehealth for men", "mens health treatment", "erectile dysfunction"]
 ctaText: "See Men's Telehealth Treatment Options — From $79/Month"

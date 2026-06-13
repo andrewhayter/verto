@@ -4,7 +4,7 @@ description: "Semaglutide (Ozempic, Wegovy) and Tirzepatide (Mounjaro) are now t
 category: "health-wellness"
 date: 2026-06-12
 updatedDate: 2026-06-12
-author: "Dr. Elena Park"
+author: "Elena Park"
 featured: false
 tags: ["semaglutide", "GLP-1", "Ozempic", "Wegovy", "tirzepatide", "weight loss medication", "telehealth"]
 ctaText: "Check Your GLP-1 Eligibility — From $179/Month"

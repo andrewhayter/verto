@@ -40,7 +40,7 @@ NAD+ (nicotinamide adenine dinucleotide) is required for every one of your cells
 
 Here's what I didn't know: NAD+ levels decline roughly 1–2% per year from your 30s onward. By your mid-40s, you have about 50% of the NAD+ you had at 20. That's not a marginal reduction. That's half the fuel in your cellular engine.
 
-### H3: What is NAD+ and why does it matter for men's energy after 40?
+### What is NAD+ and why does it matter for men's energy after 40?
 
 NAD+ is a coenzyme present in every cell that powers mitochondrial ATP production, DNA repair, and sirtuin activation. Men's NAD+ levels decline approximately 50% between age 20 and age 50, reducing cellular energy output and increasing recovery time from both physical and cognitive demands. Prescription NAD+ therapy replenishes these levels above what OTC supplements can deliver.
 

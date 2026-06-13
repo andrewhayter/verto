@@ -40,7 +40,7 @@ There's a documented phenomenon in SLA (Second Language Acquisition) research ca
 
 I had a 1,200-word Duolingo vocabulary I couldn't access conversationally.
 
-### H3: Is iTalki worth it for learning a language faster?
+### Is iTalki worth it for learning a language faster?
 
 Yes — specifically for closing the comprehension-production gap. Conversation practice with a real native speaker requires you to produce language under communication pressure, which builds retrieval speed and spontaneous grammar use. Language apps build recognition and controlled production. Research on language acquisition consistently shows speaking practice with native speakers is the most effective path to conversational fluency. iTalki's marketplace makes this accessible at $10–$20/hour versus $50–$100+ for equivalent in-person tutoring.
 

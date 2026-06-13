@@ -4,7 +4,7 @@ description: "Tirzepatide (Mounjaro/Zepbound) and semaglutide (Ozempic/Wegovy) a
 category: "health-wellness"
 date: 2026-06-12
 updatedDate: 2026-06-12
-author: "Dr. Elena Park"
+author: "Elena Park"
 featured: false
 tags: ["tirzepatide", "semaglutide", "Mounjaro", "Ozempic", "Wegovy", "Zepbound", "GLP-1", "weight loss medication", "tirzepatide vs semaglutide", "GLP-1 comparison"]
 ctaText: "Start a GLP-1 Program — TrimRX Telehealth, From $179/Month"
@@ -47,7 +47,7 @@ Tirzepatide mimics both GLP-1 at GLP-1 receptors AND GIP (glucose-dependent insu
 
 The dual mechanism is why researchers expected tirzepatide to outperform semaglutide — it's activating two complementary metabolic pathways rather than one.
 
-### H3: Is tirzepatide better than semaglutide for weight loss?
+### Is tirzepatide better than semaglutide for weight loss?
 
 Clinical trial data shows tirzepatide produces approximately 5–6% more absolute body weight loss than semaglutide at comparable doses. The SURMOUNT-1 trial showed 20.9% average weight loss with tirzepatide 15mg; STEP-1 showed 14.9% with semaglutide 2.4mg — a roughly 6-point advantage. Both are significantly more effective than lifestyle interventions alone (~5% with intensive behavioral therapy). For patients who want maximum weight loss outcomes, tirzepatide has the stronger data.
 
@@ -102,7 +102,7 @@ Compounded versions use the same active pharmaceutical ingredient from FDA-regis
 
 **The honest answer for most people:** Starting with semaglutide makes sense — it has the longer track record, both drugs are highly effective, and the lower cost of compounded semaglutide preserves budget for longer treatment duration, which matters more for long-term outcomes than drug choice. Switching to tirzepatide is a rational option if initial semaglutide response is below expectations.
 
-*[For the telehealth process explanation, our [GLP-1 cost breakdown article](/health-wellness/glp1-cost-breakdown-2026) covers what starting a program actually looks like and how to access compounded GLP-1 through licensed providers.]*
+*[For the telehealth process explanation, our [GLP-1 cost breakdown article](/health-wellness/glp1-cost-breakdown-2026) covers what starting a program actually looks like and how to access compounded GLP-1 through licensed providers. For the full clinical side-effect data from STEP 1 and SURMOUNT-1 trials, see [GLP-1 Side Effects: What the Clinical Trials Actually Report](/health-wellness/glp1-side-effects-safety-2026).]*
 
 ---
 

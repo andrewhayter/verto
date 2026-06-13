@@ -4,7 +4,7 @@ description: "Most primary care physicians don't prescribe sermorelin peptide th
 category: "health-wellness"
 date: 2026-06-12
 updatedDate: 2026-06-12
-author: "Dr. Elena Park"
+author: "Elena Park"
 featured: false
 tags: ["sermorelin", "peptide therapy", "growth hormone", "men's health", "anti-aging", "hormone optimization", "Strut Health", "telehealth"]
 ctaText: "Start Your Free Sermorelin Assessment — Strut Health"

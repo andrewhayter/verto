@@ -3,7 +3,7 @@ title: "GLP-1 Weight Loss Programs Compared: Gala vs Viviomd vs TrimRX (2026)"
 description: "Compounded Semaglutide and Tirzepatide are now available for $179–$225/month. We compared the top GLP-1 telehealth platforms on price, eligibility, and clinical results."
 category: "health-wellness"
 date: 2026-06-11
-author: "Dr. Elena Park"
+author: "Elena Park"
 featured: true
 tags: ["GLP-1", "weight loss", "semaglutide", "tirzepatide", "telehealth", "ozempic alternative"]
 ctaText: "Compare GLP-1 Programs — Check Your Eligibility"
@@ -42,7 +42,7 @@ Gala is a direct-to-consumer telehealth platform providing compounded Tirzepatid
 
 **Best for:** Adults with BMI 30+ (or BMI 27+ with a weight-related condition) who want medically supervised weight loss without paying brand-name prices.
 
-- **[Check Gala Eligibility →](https://galaglp1.com/)**
+- **[Check Gala Eligibility →](https://afflat3e3.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=32072&c=918277&a=784951&k=0&l=37601)**
 
 ---
 
@@ -53,7 +53,7 @@ Gala is a direct-to-consumer telehealth platform providing compounded Tirzepatid
 Viviomd connects patients with licensed providers for GLP-1 treatments in Oral Disintegrating Tablet form. The ODT dissolves under your tongue — no syringes, no self-injection. This is the only major telehealth GLP-1 platform currently offering a needle-free format. Founded 2024, Delaware-based.
 
 - **Best for:** Adults 25–60 who want medically supervised weight loss without injectable medications
-- **[See Viviomd Eligibility →](https://viviomd.com/landing-new)**
+- **[See Viviomd Eligibility →](https://afflat3e3.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=31644&c=918277&a=784951&k=0&l=37881)**
 
 ---
 
@@ -64,7 +64,7 @@ Viviomd connects patients with licensed providers for GLP-1 treatments in Oral D
 TrimRX provides medically supervised access to Semaglutide and Tirzepatide via a 3-minute online assessment. Physician review is completed within 24 hours. Designed for US adults who want to start quickly without a long intake process.
 
 - **Best for:** US adults 25–65 seeking immediate access without lengthy enrollment forms
-- **[Start TrimRX Assessment →](https://trimrx.com/glp1)**
+- **[Start TrimRX Assessment →](https://afflat3e1.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=31973&c=918277&a=784951&k=0&l=37882)**
 
 ---
 
@@ -106,3 +106,10 @@ Gala offers compounded Tirzepatide at $179/month including all dosages and physi
 ---
 
 *This article contains affiliate links. Verto earns a commission when you purchase through these links at no extra cost to you. Individual results vary. Consult your physician before starting any prescription medication.*
+
+<!-- SOCIAL HOOKS
+FACEBOOK: GLP-1 medications produce 15–22% body weight loss at 12 months. That's 3–5x what diet programs produce. The only reason most people haven't tried them is cost — but compounded versions now start at $179/month. We compared the three most accessible programs on price, eligibility, and what happens when you actually start.
+REDDIT: Compared Gala vs Viviomd vs TrimRX for compounded GLP-1 — same active ingredient as Ozempic/Mounjaro, starting at $179/mo (r/loseit, r/antiobesity, r/GLP1)
+PINTEREST: GLP-1 programs compared: Gala vs Viviomd vs TrimRX. Starting at $179/month. 15–22% weight loss at 12 months vs 3–5% from diet alone.
+TIKTOK HOOK: I compared three GLP-1 programs that give you the same active ingredient as Ozempic for under $200 a month. Here's what's actually different between them.
+-->

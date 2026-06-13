@@ -4,7 +4,7 @@ description: "Nicotine replacement therapy produces quit rates 2–3x higher tha
 category: "health-wellness"
 date: 2026-06-11
 updatedDate: 2026-06-11
-author: "Dr. Elena Park"
+author: "Elena Park"
 featured: true
 tags: ["quit vaping", "nicotine replacement therapy", "NRT", "quit smoking", "vaping cessation", "jones", "FDA approved", "FSA eligible"]
 ctaText: "Start Quitting Today — Quit with Jones FDA-Approved NRT"
@@ -142,5 +142,9 @@ Jones is designed for vapers aged 18–45 who:
 [Start Quitting Today — Quit with Jones](https://afflat3e1.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=30785&c=918277&a=784951&k=0&l=37156)
 
 Ships within 2 days. FSA/HSA eligible. FDA-approved NRT.
+
+*[Want the personal side? Read how one vaper quit after 3 failed attempts — what was different the fourth time: [I Quit Vaping 3 Times Before This Worked](/health-wellness/quit-vaping-personal-story).]*
+
+*[Compare Quit with Jones against other cessation options at the [quit vaping problem guide](/best/quit-vaping) — with pricing, eligibility, and what the Cochrane evidence supports.]*
 
 *Health content on Verto is informational only and does not constitute medical advice. Consult a physician before beginning any cessation program, particularly if you have cardiovascular conditions or are pregnant. Quit rates cited are population-level outcomes from clinical trials and do not predict individual results.*

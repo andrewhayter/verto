@@ -4,7 +4,7 @@ description: "The supplement industry earns $50 billion annually selling product
 category: "health-wellness"
 date: 2026-05-15
 updatedDate: 2026-06-11
-author: "Dr. Elena Park"
+author: "Elena Park"
 featured: true
 tags: ["supplements", "health", "vitamins", "wellness", "evidence-based"]
 ctaText: "Myco-Max Lion's Mane — Fruiting Body Extract, Clinical-Dose Hericenones"

@@ -43,7 +43,7 @@ Each step significantly increases the strength requirement. A properly structure
 
 RH Fitness structures this progression explicitly in 4-week blocks. Each month introduces the next variation when you've demonstrated competency at the current one.
 
-### H3: Is calisthenics good for building muscle in women over 40?
+### Is calisthenics good for building muscle in women over 40?
 
 Yes — under the condition of progressive overload. A 2017 study found equivalent hypertrophy between bodyweight and machine resistance training when overload intensity was matched. For women over 40, calisthenics offers the additional advantage of joint-friendly loading: the movements self-limit joint stress in ways that barbell loading doesn't, making injury risk lower for women returning to training or managing joint sensitivity from hormonal changes.
 

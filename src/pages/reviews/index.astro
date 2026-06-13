@@ -17,16 +17,16 @@ const catEntries = Object.entries(byCategory).sort((a, b) => b[1].length - a[1].
 ---
 
 <BaseLayout
-  title="All Reviews — Browse Every Deal & Solution | Verto"
-  description={`Browse all ${approved.length} verified offer reviews across health, finance, digital tools, and more. Every offer is reviewed and tracked.`}
+  title="Verto Reviews — Every Product We've Tested and Currently Recommend"
+  description={`Verto's complete product and service index — ${approved.length} offers across health, finance, privacy, legal, and lifestyle. Each one has been assessed and verified before we link to it.`}
 >
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "CollectionPage",
-        "name": `All ${approved.length} Verified Reviews — Verto`,
-        "description": `Browse all ${approved.length} verified affiliate offer reviews across health, finance, legal, and lifestyle categories.`,
+        "name": `Verto Reviews — Products and Services We Currently Recommend`,
+        "description": `Verto's complete index of assessed products and services across health, finance, privacy, legal, and lifestyle categories.`,
         "url": "https://verto.fun/reviews",
         "publisher": { "@type": "Organization", "name": "Verto", "url": "https://verto.fun" }
       },
@@ -42,12 +42,12 @@ const catEntries = Object.entries(byCategory).sort((a, b) => b[1].length - a[1].
 
   <div class="bg-slate-900 py-12 md:py-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <p class="text-brand text-sm font-semibold uppercase tracking-widest mb-3">Full Catalog</p>
+      <p class="text-brand text-sm font-semibold uppercase tracking-widest mb-3">Product Index</p>
       <h1 class="font-display text-3xl md:text-4xl font-black text-white mb-3">
-        All {approved.length} Verified Reviews
+        What Verto Currently Recommends
       </h1>
       <p class="text-white/60 text-lg max-w-xl">
-        Every offer we promote — vetted, reviewed, and tracked. Find what you're looking for or browse by category.
+        Every product and service we cover — tested and assessed before we publish. Browse by category or jump to a guide for a direct verdict.
       </p>
     </div>
   </div>
@@ -80,7 +80,7 @@ const catEntries = Object.entries(byCategory).sort((a, b) => b[1].length - a[1].
             <span class="text-2xl">{cat?.emoji ?? '📦'}</span>
             <div>
               <h2 class="font-display font-bold text-xl text-gray-900">{cat?.name ?? catSlug}</h2>
-              <p class="text-gray-400 text-sm">{catOffers.length} offer{catOffers.length !== 1 ? 's' : ''}</p>
+              <p class="text-gray-400 text-sm">{catOffers.length} reviewed</p>
             </div>
           </div>
 

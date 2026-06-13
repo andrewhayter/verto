@@ -38,7 +38,7 @@ The result: submitting the same financial profile to six lenders produces six me
 
 Shopping personal loans is not optional if you care about paying the lowest rate available to your credit profile. It's financially irrational to accept the first offer.
 
-### H3: How much can you save by comparing personal loan rates?
+### How much can you save by comparing personal loan rates?
 
 On a $10,000 loan, the difference between 12% and 28% APR over 3 years is approximately $2,700 in additional interest. Getting pre-qualified with multiple lenders takes under 10 minutes using soft-inquiry platforms that don't affect your credit score. The 10-minute comparison is one of the highest-value financial activities available.
 

@@ -79,7 +79,7 @@ LegalNature templates are drafted by attorneys and reviewed regularly for compli
 
 For the LLC you've been putting off forming because of cost. For the lease agreement you need before a tenant moves in. For the will you know you should have but haven't gotten around to. LegalNature removes the cost barrier that keeps most people from having proper legal documentation.
 
-**[Create your legal document starting at $7.95 →](https://www.legalnature.com/)**
+**[Create your legal document starting at $7.95 →](https://afflat3e3.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=32356&c=918277&a=784951&k=0&l=38088)**
 
 ---
 

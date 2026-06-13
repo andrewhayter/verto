@@ -40,7 +40,7 @@ This is not a conspiracy theory. It's documented in Comcast's privacy policy, co
 
 I had been assuming my ISP was neutral infrastructure. It is not.
 
-### H3: Can your ISP see your browsing history?
+### Can your ISP see your browsing history?
 
 Without a VPN, yes. ISPs in the US can see every domain you visit (even on HTTPS — they see the destination, not the content), your connection timestamps, and traffic volume. Since 2017, ISPs have the legal right to collect and sell this data without opt-in consent. A VPN routes your traffic through an encrypted tunnel — your ISP sees a connection to a VPN server and encrypted data, nothing more.
 

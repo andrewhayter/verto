@@ -22,7 +22,7 @@ faqs:
     a: "Premium rewards cards (Chase Freedom Flex, Amex Blue Cash Preferred) require good to excellent credit (700+). The Citi Double Cash requires good credit (670+). The Discover it Cash Back accepts fair credit (640+) and matches all cash back earned in year one."
 ---
 
-**Bottom line:** The average household carries a card earning 1% back or less. The best cash back cards earn 2–6% on everyday spending. Use [SuperMoney](https://www.supermoney.com/reviews/personal-credit-cards) to compare 250+ cards and see your approval odds before applying — it uses a soft inquiry that won't affect your credit score.
+**Bottom line:** The average household carries a card earning 1% back or less. The best cash back cards earn 2–6% on everyday spending. Use [SuperMoney](https://afflat3e3.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=20484&c=918277&a=784951&k=0&l=21423) to compare 250+ cards and see your approval odds before applying — it uses a soft inquiry that won't affect your credit score.
 
 A cash back credit card is a rewards card that returns a percentage of every purchase as redeemable cash — either as a statement credit, direct deposit, or gift card. Rates range from 1% flat (most cards) to 6% on specific categories like groceries (Amex Blue Cash Preferred). The difference between a 1% and 2% card on $40,000 of annual spending is $400 per year.
 
@@ -38,7 +38,7 @@ Here's which card earns the most for which spending pattern.
 
 ## How to Compare Without a Hard Credit Pull
 
-Before applying to any card: use [SuperMoney's credit card comparison tool](https://www.supermoney.com/reviews/personal-credit-cards). It runs a soft inquiry to show you cards matched to your credit profile — including approval odds and estimated rewards — with no impact to your score. A hard inquiry only happens when you formally apply. Compare first, commit second.
+Before applying to any card: use [SuperMoney's credit card comparison tool](https://afflat3e3.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=20484&c=918277&a=784951&k=0&l=21423). It runs a soft inquiry to show you cards matched to your credit profile — including approval odds and estimated rewards — with no impact to your score. A hard inquiry only happens when you formally apply. Compare first, commit second.
 
 ## Chase Freedom Flex — Best for Rotating Categories (5%)
 
@@ -90,7 +90,7 @@ The highest-earning combination: **Chase Freedom Flex** for 5% quarterly categor
 
 ## Find Your Card in 2 Minutes
 
-[SuperMoney](https://www.supermoney.com/reviews/personal-credit-cards) compares 250+ personal credit cards — including all five above — and surfaces options matched to your credit profile. Soft check only. No impact to your score until you formally apply.
+[SuperMoney](https://afflat3e3.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=20484&c=918277&a=784951&k=0&l=21423) compares 250+ personal credit cards — including all five above — and surfaces options matched to your credit profile. Soft check only. No impact to your score until you formally apply.
 
 ---
 

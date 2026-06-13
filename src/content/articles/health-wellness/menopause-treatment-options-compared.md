@@ -4,7 +4,7 @@ description: "What works, what doesn't, and who each option is right for — a c
 category: "health-wellness"
 date: 2026-06-12
 updatedDate: 2026-06-12
-author: "Dr. Elena Park"
+author: "Elena Park"
 featured: false
 tags: ["menopause treatment", "HRT alternatives", "bioidentical hormones", "hot flashes treatment", "perimenopause", "Winona", "menopause options"]
 ctaText: "Start Your Winona HRT Assessment — Free Online Consultation"
@@ -44,7 +44,7 @@ The current guidance from the North American Menopause Society: for healthy wome
 
 **Why bHRT is the first-line recommendation for most women:** It addresses the root cause (hormone decline), not just individual symptoms. One treatment protocol improves hot flashes, sleep, mood, bone density, vaginal health, and potentially cardiovascular risk when started early.
 
-**Access:** Winona offers physician-prescribed bHRT through telehealth — free assessment, personalized protocol, treatment shipped to your door. Over 80% of patients report meaningful relief within 90 days.
+**Access:** Winona offers physician-prescribed bHRT through telehealth — free assessment, personalized protocol, treatment shipped to your door. Winona reports over 80% of their patients experience meaningful relief within 90 days (individual results vary).
 
 ## Conventional Synthetic HRT: Comparable Efficacy, Less Favorable Progestin Profile
 
@@ -110,4 +110,4 @@ If HRT is contraindicated or not your preference, fezolinetant is the most effec
 
 Supplements are low-risk, low-cost starting points but should be understood as modest-effect interventions.
 
-Our [full Winona HRT review](/health-wellness/menopause-hrt-guide) covers the specifics of bioidentical treatment protocols, what the first 90 days looks like, and the complete safety picture. If you're in the years leading up to menopause and wondering whether your symptoms are hormonal, see [11 perimenopause signs most doctors miss](/health-wellness/perimenopause-signs-you-might-miss).
+Our [full Winona HRT review](/health-wellness/menopause-hrt-guide) covers the specifics of bioidentical treatment protocols, what the first 90 days looks like, and the complete safety picture. For the full evidence on HRT safety — including what the 2002 WHI study got wrong and what the 2022 re-analysis found — see [Is HRT Safe? What the Evidence Actually Says](/health-wellness/hrt-safety-2026). If you're in the years leading up to menopause and wondering whether your symptoms are hormonal, see [11 perimenopause signs most doctors miss](/health-wellness/perimenopause-signs-you-might-miss).

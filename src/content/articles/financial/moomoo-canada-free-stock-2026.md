@@ -40,7 +40,7 @@ The bonus is tiered and deposit-based. New Canadian accounts that fund within 30
 
 **Realistic expectations:** Most new users make initial deposits in the $500–$2,000 range and receive $50–$200 in bonus stock. That's still real money for 10 minutes of account opening work. Verify the current promotion structure at moomoo.com/ca before opening — bonus structures are updated periodically.
 
-### H3: How much free stock do you get from MooMoo Canada?
+### How much free stock do you get from MooMoo Canada?
 
 MooMoo Canada's welcome bonus awards fractional NVDA shares based on your deposit within 30 days, up to $1,000 at the highest deposit tier. Most users depositing $500–$2,000 receive $50–$200 in bonus stock with a 30-day holding period. The account has $0 trading commissions and no maintenance fees.
 

@@ -4,7 +4,7 @@ description: "Perimenopause begins 8–10 years before the final menstrual perio
 category: "health-wellness"
 date: 2026-06-12
 updatedDate: 2026-06-12
-author: "Dr. Elena Park"
+author: "Elena Park"
 featured: false
 tags: ["perimenopause", "menopause", "HRT", "bioidentical hormones", "women's health", "hormone changes", "Winona", "estrogen decline", "progesterone"]
 ctaText: "Start Winona HRT Assessment — Bioidentical Hormones Delivered to Your Door"
@@ -46,7 +46,7 @@ The reason for the delay isn't mysterious: the early symptoms of perimenopause d
 
 These symptoms predate the hot flashes and night sweats by years — sometimes by a decade.
 
-### H3: What are the earliest signs of perimenopause most women miss?
+### What are the earliest signs of perimenopause most women miss?
 
 The first perimenopausal signs are anxiety, disrupted sleep (especially waking 2–4am), cycle shortening or irregularity, and worsening PMS — all caused by falling progesterone, which drops before estrogen. These symptoms precede hot flashes by 4–8 years. Most women in their late 30s experiencing new-onset anxiety or insomnia are not evaluated for hormonal causes.
 

@@ -90,9 +90,9 @@ export const categories: Category[] = [
   },
   {
     id: 39,
-    name: "Email Submits",
+    name: "Free Trials & Samples",
     slug: "email-submits",
-    description: "Free trials, samples, and exclusive offers for your inbox.",
+    description: "Free trials, product samples, and no-commitment offers worth signing up for.",
     offsCount: 17,
     gradient: "linear-gradient(135deg, #f97316, #c2410c)",
     textColor: "#f97316",

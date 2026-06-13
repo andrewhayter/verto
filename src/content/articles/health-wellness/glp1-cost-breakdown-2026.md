@@ -4,7 +4,7 @@ description: "Brand-name Ozempic costs $935–$1,349/month without insurance. Co
 category: "health-wellness"
 date: 2026-06-12
 updatedDate: 2026-06-12
-author: "Dr. Elena Park"
+author: "Elena Park"
 featured: false
 tags: ["GLP-1", "tirzepatide", "semaglutide", "compounded GLP-1", "weight loss cost", "Ozempic cost", "Gala", "telehealth weight loss"]
 ctaText: "Check GLP-1 Eligibility — Compounded Tirzepatide From $179/Month"
@@ -92,7 +92,7 @@ For context on the clinical cost-effectiveness gap:
 | Structured behavioral program | ~$100–$150 | 5–7% |
 | Tirzepatide (SURMOUNT-1) | ~$179–$1,199 | 20.9% at 72 weeks |
 
-### ### What does a GLP-1 medication cost per pound lost?
+### What does a GLP-1 medication cost per pound lost?
 
 GLP-1 medications typically cost $54–$72 per pound lost when using compounded tirzepatide at $179/month, based on a 15–20% weight reduction over 12 months for a 200-pound person. Diet programs produce lower absolute loss (10–14 pounds on the same baseline), making per-pound cost similar — but the gap in total weight lost is 16–26 pounds.
 
@@ -139,3 +139,11 @@ If you're unsure whether you qualify: most telehealth platforms offer a free eli
 *For the mechanism behind how GLP-1 medications work at the hormonal level — why they reduce appetite without willpower — see [What Is Semaglutide? GLP-1 Weight Loss Medications Explained](/health-wellness/what-is-semaglutide-glp1-explained). For why traditional diets produce so much less weight loss than GLP-1s, see [Why Most Diets Fail — The Biology Behind the Rebound](/health-wellness/why-diets-fail).*
 
 *For men considering GLP-1 alongside other metabolic support — sermorelin or NAD+ therapy — see [Why Your Doctor Won't Prescribe Sermorelin](/health-wellness/sermorelin-why-doctors-avoid).*
+
+
+<!-- SOCIAL HOOKS
+FACEBOOK: Ozempic costs $1,349/month without insurance. Compounded tirzepatide — the same active molecule — starts at $179/month through a US telehealth provider. The annual cost difference is $14,244. Most people who can't afford Ozempic don't know the compounded version exists. We did the math across every realistic access pathway.
+REDDIT: The cost difference between brand-name Ozempic and compounded tirzepatide is $14,244/year — for the same active ingredient (r/antiobesity, r/loseit, r/GLP1)
+PINTEREST: Compounded tirzepatide costs $179/month — Ozempic costs $1,349/month. Same drug, $14,244 annual difference. Here's the full cost breakdown.
+TIKTOK HOOK: Ozempic costs $1,349 a month without insurance. But there's a version with the exact same active ingredient for $179 a month. The difference is $14,000 a year. Here's the math no one shows you.
+-->

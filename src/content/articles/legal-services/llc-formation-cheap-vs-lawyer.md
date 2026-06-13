@@ -52,7 +52,7 @@ The actual difference my attorney provided: a human conversation about my busine
 
 For a standard LLC with no custom provisions, the conversation is the only thing you're paying $2,251 for.
 
-### H3: How much does it cost to form an LLC with LegalNature?
+### How much does it cost to form an LLC with LegalNature?
 
 LegalNature charges $149 for LLC formation, which includes attorney-drafted articles of organization, operating agreement, membership certificates, EIN application guidance, and first-year registered agent service. You also pay your state's filing fee directly, which ranges from $40 to $500 depending on state. Total out-of-pocket is $189–$649 versus $500–$2,500+ for attorney formation of the same standard LLC structure.
 

@@ -50,7 +50,7 @@ You get a small share of the research value your data contributes. Nielsen gets 
 
 Registration takes approximately 10 minutes:
 
-1. Sign up through the web registration flow at [nielsenpulse.com](https://nielsenpulse.com/)
+1. Sign up through the web registration flow at [nielsenpulse.com](https://afflat3e1.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=32298&c=918277&a=784951&k=0&l=38111)
 2. Complete your demographic profile (age, household size, general usage habits)
 3. Install the app on your iOS or Android device
 4. Complete the app setup through to the dashboard
@@ -102,7 +102,7 @@ Nielsen Pulse works for any US adult 18+ with an iOS or Android smartphone who w
 - Anyone who wants income from their phone without completing surveys or tasks
 - Busy adults with limited spare time who've been skeptical of "earn from your phone" claims (this one is legitimate — it's Nielsen)
 
-**[Install Nielsen Pulse and start earning passively →](https://nielsenpulse.com/)**
+**[Install Nielsen Pulse and start earning passively →](https://afflat3e1.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=32298&c=918277&a=784951&k=0&l=38111)**
 
 ---
 

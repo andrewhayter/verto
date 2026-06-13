@@ -47,7 +47,7 @@ This data powers billions of dollars in media buying decisions annually. But Nie
 
 That's where you come in. Nielsen needs a panel. You have a phone. They pay you to be on the panel.
 
-### H3: How does the Nielsen Pulse app work technically?
+### How does the Nielsen Pulse app work technically?
 
 Nielsen Pulse installs a background service on your device that monitors aggregate app and website category usage — not content. When you use a social media app, it records "social media category, 8 minutes" — not which posts you viewed. This anonymized data syncs periodically to Nielsen's servers. The process uses under 5MB/month of data and negligible battery. You earn annually based on continued enrollment.
 

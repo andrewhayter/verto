@@ -54,7 +54,7 @@ const updatedFormatted = updatedDate
 const eyebrowDate = new Intl.DateTimeFormat('en-US', { month: 'long', year: 'numeric' }).format(updatedDate ?? date);
 
 const authorMeta: Record<string, { initials: string; color: string; jobTitle: string; description: string; slug: string }> = {
-  "Dr. Elena Park":  { initials: "EP", color: "#7c3aed", jobTitle: "Health & Wellness Editor",      description: "Evidence-based health writer covering GLP-1 medications, hormone therapy, supplements, and telehealth platforms.",         slug: "elena-park"  },
+  "Elena Park":      { initials: "EP", color: "#7c3aed", jobTitle: "Health & Wellness Editor",      description: "Evidence-based health writer covering GLP-1 medications, hormone therapy, supplements, and telehealth platforms.",         slug: "elena-park"  },
   "Alex Kovacs":     { initials: "AK", color: "#2563eb", jobTitle: "Security & Technology Editor",   description: "Cybersecurity writer specializing in VPNs, password managers, and privacy tools. Tests products against real-world threats.", slug: "alex-kovacs" },
   "Sofia Reyes":     { initials: "SR", color: "#9333ea", jobTitle: "Personal Finance Editor",        description: "Personal finance journalist covering loans, credit cards, and investing platforms.",                                         slug: "sofia-reyes" },
   "Rachel Kim":      { initials: "RK", color: "#be185d", jobTitle: "Consumer Products Editor",       description: "Consumer goods reviewer focused on home products, personal care, and ecommerce platforms.",                                 slug: "rachel-kim"  },
@@ -209,12 +209,6 @@ const bridgeOffer = bridgeProblem
         <span class="eyebrow text-brand">{cat?.name ?? category}</span>
         <span class="text-gray-200">|</span>
         <span class="eyebrow text-gray-400">{eyebrowDate}</span>
-        {sponsored && (
-          <>
-            <span class="text-gray-200">|</span>
-            <span class="eyebrow bg-gray-100 text-gray-400 px-2 py-0.5 rounded">Sponsored</span>
-          </>
-        )}
       </div>
 
       <!-- H1 — UTM-aware swap via JS -->
@@ -362,7 +356,7 @@ const bridgeOffer = bridgeProblem
             <p class="eyebrow text-green-300 mb-2">Today's Top Pick</p>
             <h2 class="font-display font-bold text-2xl text-white mb-2">{ctaText}</h2>
             <p class="text-green-200 text-sm mb-6 max-w-sm mx-auto">
-              Available now — check current pricing and availability.
+              Available now — see if it's right for your situation.
             </p>
             <a
               href={ctaUrl}
@@ -398,7 +392,7 @@ const bridgeOffer = bridgeProblem
                 Free to Check
               </div>
             </div>
-            <p class="text-green-300/60 text-xs mt-3">Sponsored · Checking availability doesn't commit you to anything</p>
+            <p class="text-green-300/60 text-xs mt-3">Verto may earn a commission — it never changes our verdict. Checking availability doesn't commit you to anything.</p>
           </div>
         </div>
       </div>

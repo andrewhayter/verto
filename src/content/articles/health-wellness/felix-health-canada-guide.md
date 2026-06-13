@@ -4,7 +4,7 @@ description: "Felix Health is a Canadian telehealth platform that prescribes Oze
 category: "health-wellness"
 date: 2026-06-11
 updatedDate: 2026-06-11
-author: "Dr. Elena Park"
+author: "Elena Park"
 featured: false
 tags: ["felix health canada", "ozempic online canada", "telehealth canada", "HRT canada", "online prescription canada", "GLP-1 canada 2026"]
 ctaText: "Start a Free Felix Health Assessment — Canada"

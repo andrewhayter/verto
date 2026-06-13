@@ -38,7 +38,7 @@ The cyclist was fine. I was fine. The experience wasn't traumatic — but it was
 
 Shokz OpenRun Pro arrived the following week. I've run 600+ miles in them since.
 
-### H3: Are bone conduction headphones better for running safety?
+### Are bone conduction headphones better for running safety?
 
 Definitively yes for road running. Bone conduction leaves ears fully open — you hear approaching traffic, cyclists, and voices at full ambient volume simultaneously with your audio. Standard earbuds, even at 50% volume, reduce ambient sound detection. Multiple studies and surveys of runners confirm improved safety perception with open-ear headphones; many road races now prohibit earbuds while permitting bone conduction. The safety advantage is the primary reason to choose bone conduction over earbuds for outdoor exercise.
 

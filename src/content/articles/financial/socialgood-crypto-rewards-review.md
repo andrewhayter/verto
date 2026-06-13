@@ -43,7 +43,7 @@ The maximum theoretical stack at the best conditions: 13%+ total return on Amazo
 
 SocialGood's contribution: a few percent of every Amazon purchase in crypto, accumulated passively on purchases I was making anyway.
 
-### H3: Can you really earn crypto just from regular shopping?
+### Can you really earn crypto just from regular shopping?
 
 Yes — SocialGood (and similar platforms like Lolli for Bitcoin rewards) pay cryptocurrency rewards when you shop through their portal links, similar to how traditional cashback portals work. The crypto component adds speculative upside (SG token appreciation) over standard cashback, at the cost of simplicity and predictable USD value. For purchases you'd make anyway and already have a credit card and cashback portal setup, SocialGood adds marginal extra value with no out-of-pocket cost.
 

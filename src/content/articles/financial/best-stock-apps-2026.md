@@ -41,7 +41,7 @@ Platform strengths: Advanced charting, Level 2 data free (worth $30/month at mos
 
 **Best for:** Canadian investors 18+ who want to start with a meaningful bonus while accessing institutional-grade tools.
 
-**[Open MooMoo Canada and Claim Free Stock →](https://www.moomoo.com/ca/events/welcomebonus)**
+**[Open MooMoo Canada and Claim Free Stock →](https://afflat3e3.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=29920&c=918277&a=784951&k=0&l=33713)**
 
 ---
 

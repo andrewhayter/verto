@@ -38,7 +38,7 @@ I'd been to a physiotherapist three times in 3 years for the resulting upper bac
 
 The missing ingredient was daily maintenance. RAD tools replaced what I needed a physio appointment to do: daily fascial release on the specific tissues that tighten from desk posture.
 
-### H3: Can foam rolling and self-release tools fix desk posture tightness?
+### Can foam rolling and self-release tools fix desk posture tightness?
 
 Myofascial release tools improve range of motion and reduce muscle tightness through regular use, with research support for acute ROM improvements and DOMS reduction. For desk posture tightness specifically, the combination of thoracic spine mobilization (using a roller for extension over the thoracic vertebrae) and pec minor release (using a targeted ball at the coracoid process attachment) addresses the two primary contributors to upper crossed syndrome. Results are most significant with daily use of 10–15 minutes on target tissues.
 

@@ -25,7 +25,7 @@ const stripProblems  = rankedProblems.slice(0, 6);   // intent strip
           <span class="text-white">VER</span><span class="text-brand">TO</span>
         </span>
         <span class="hidden sm:block text-white/30 text-[11px] font-medium uppercase tracking-widest border-l border-white/20 pl-3">
-          Your Guide to the Best Offers
+          Consumer Intelligence
         </span>
       </a>
 
@@ -40,7 +40,7 @@ const stripProblems  = rankedProblems.slice(0, 6);   // intent strip
             aria-expanded="false"
             class="flex items-center gap-1.5 text-white/80 hover:text-white text-sm font-semibold px-3.5 py-2 rounded-lg hover:bg-white/10 transition-colors"
           >
-            Explore Solutions
+            Topics
             <svg id="mega-nav-chevron" class="w-3.5 h-3.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
             </svg>
@@ -56,7 +56,7 @@ const stripProblems  = rankedProblems.slice(0, 6);   // intent strip
 
               <!-- Left: Problem guides -->
               <div class="p-5">
-                <p class="eyebrow text-gray-400 mb-3">Top Problem Guides</p>
+                <p class="eyebrow text-gray-400 mb-3">Top Guides</p>
                 <div class="flex flex-col gap-0.5">
                   {intentProblems.map(p => (
                     <a
@@ -131,7 +131,7 @@ const stripProblems  = rankedProblems.slice(0, 6);   // intent strip
           href="/best"
           class="hidden sm:inline-flex items-center gap-1.5 bg-cta hover:bg-cta-dark text-white text-sm font-bold px-4 py-2 rounded-lg transition-colors whitespace-nowrap"
         >
-          Find My Solution →
+          Start Here →
         </a>
         <button
           id="menu-toggle"
@@ -216,7 +216,7 @@ const stripProblems  = rankedProblems.slice(0, 6);   // intent strip
         href="/best"
         class="flex items-center justify-center gap-2 w-full bg-cta hover:bg-cta-dark text-white font-bold py-3.5 rounded-xl mb-8 transition-colors text-sm"
       >
-        Browse All {problems.length} Problem Guides →
+        Browse all {problems.length} guides →
       </a>
 
       <!-- Divider -->
@@ -241,7 +241,7 @@ const stripProblems  = rankedProblems.slice(0, 6);   // intent strip
 
       <!-- Utility links -->
       <nav class="flex flex-col gap-1">
-        <a href="/reviews"    class="text-white/60 hover:text-white text-sm px-3 py-2.5 rounded-xl hover:bg-white/10 transition-colors">All Offer Reviews</a>
+        <a href="/reviews"    class="text-white/60 hover:text-white text-sm px-3 py-2.5 rounded-xl hover:bg-white/10 transition-colors">Reviews</a>
         <a href="/explore"    class="text-white/60 hover:text-white text-sm px-3 py-2.5 rounded-xl hover:bg-white/10 transition-colors">Explore Topics</a>
         <a href="/about"      class="text-white/60 hover:text-white text-sm px-3 py-2.5 rounded-xl hover:bg-white/10 transition-colors">About & Disclosure</a>
       </nav>

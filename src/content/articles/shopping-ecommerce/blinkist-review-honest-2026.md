@@ -42,7 +42,7 @@ I organized my 60 days into three testing categories:
 
 Results across categories shaped my overall verdict.
 
-### H3: Is Blinkist worth the money for book summaries?
+### Is Blinkist worth the money for book summaries?
 
 Blinkist is worth the subscription if you consume 2+ nonfiction books per month and use it for triage before purchasing full books, or if you want to efficiently maintain familiarity with a wide range of ideas. At $7–$8/month on annual plans, two or three saved book purchases per year covers the cost. For active learners wanting to deeply understand complex subjects, Blinkist supplements but doesn't replace full reading.
 

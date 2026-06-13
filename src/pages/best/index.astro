@@ -5,8 +5,8 @@ import { offersByProblem } from '../../data/offers';
 ---
 
 <BaseLayout
-  title={`${problems.length} Problem-Solution Guides — Weight Loss, Loans, Privacy & More | Verto`}
-  description={`${problems.length} expert guides comparing verified affiliate offers for specific consumer problems. GLP-1 weight loss ($179/mo), personal loans up to $100K, VPNs under $5/month, and more.`}
+  title={`Verto Problem Guides — ${problems.length} Consumer Problems with Specific Verdicts`}
+  description={`One guide per problem — weight loss medications, personal loans, online privacy, menopause treatment, and ${problems.length - 4} more. Each guide has the evidence, the verdict, and a direct path to the right solution.`}
 >
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
@@ -15,7 +15,7 @@ import { offersByProblem } from '../../data/offers';
         "@type": "CollectionPage",
         "@id": "https://verto.fun/best#webpage",
         "name": `${problems.length} Problem-Solution Guides`,
-        "description": `${problems.length} expert guides comparing verified affiliate offers for health, finance, legal, and lifestyle problems.`,
+        "description": `One problem guide per consumer question — evidence, verdict, and a direct path to the right solution.`,
         "url": "https://verto.fun/best",
         "isPartOf": { "@id": "https://verto.fun/#website" },
         "publisher": { "@id": "https://verto.fun/#organization" }
@@ -33,7 +33,7 @@ import { offersByProblem } from '../../data/offers';
   <div class="bg-slate-900 py-14">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <h1 class="font-display text-4xl md:text-5xl font-bold text-white mb-3">
-        {problems.length} Consumer Problems Solved — GLP-1 From $179/Mo, Loans to $100K, VPNs Under $5/Month
+        {problems.length} Consumer Problems — One Guide Each, with Pricing, Evidence, and a Verdict
       </h1>
       <p class="text-white/60 text-lg max-w-xl">
         One guide per problem: ranked offers compared on price, eligibility, and clinical or technical evidence. No fluff, no padding.
@@ -55,7 +55,7 @@ import { offersByProblem } from '../../data/offers';
               <div class="absolute inset-0 bg-black/30"></div>
               <div class="relative z-10">
                 <div class="text-4xl mb-1">{problem.emoji}</div>
-                <p class="text-white/70 text-xs font-semibold uppercase tracking-widest">{problemOffers.length} offers available</p>
+                <p class="text-white/70 text-xs font-semibold uppercase tracking-widest">{problemOffers.length} option{problemOffers.length !== 1 ? 's' : ''} compared</p>
               </div>
             </div>
             <div class="p-5 flex-1 flex flex-col">

@@ -4,7 +4,7 @@ description: "NAD+ levels drop 50% between ages 40 and 60. Lion's mane hericenon
 category: "health-wellness"
 date: 2026-06-11
 updatedDate: 2026-06-11
-author: "Dr. Elena Park"
+author: "Elena Park"
 featured: false
 tags: ["nootropics", "brain health", "lion's mane", "NAD+", "cognitive performance", "memory", "focus", "supplements", "myco-max", "focus iq"]
 ctaText: "Try Myco-Max Lion's Mane — Fruiting Body Extract, Not Mycelium"
@@ -66,7 +66,7 @@ Myco-Max is a lion's mane and adaptogenic mushroom formula designed to support m
 
 **Secondary adaptogens:** Myco-Max includes additional adaptogenic mushrooms (the formula is available on the product page). Adaptogens as a class have evidence for cortisol reduction and stress response modulation, though evidence strength varies by compound.
 
-**[Try Myco-Max — Fruiting Body Extract, Risk-Free](https://afflat3e3.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=31922&c=918277&a=784951&k=0&l=37488)**
+**[Try Myco-Max — Fruiting Body Extract (Lion's Mane, Hericenones Included)](https://afflat3e3.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=31922&c=918277&a=784951&k=0&l=37488)**
 
 ---
 
@@ -88,7 +88,7 @@ Focus IQ's specific formulation and dosing should be confirmed on the product pa
 
 Focus IQ is available in the US and Canada.
 
-**[Try Focus IQ — Risk-Free Trial](https://afflat3e1.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=29640&c=918277&a=784951&k=0&l=33265)**
+**[Try Focus IQ — Check Availability and Dosing Details](https://afflat3e1.com/trk/lnk/8A3315A3-62A1-4C51-A6AA-8C3C27C5B9BB/?o=29640&c=918277&a=784951&k=0&l=33265)**
 
 ---
 

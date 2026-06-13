@@ -4,7 +4,7 @@ description: "Men lose 14% of growth hormone output per decade after 30. Four pr
 category: "health-wellness"
 date: 2026-06-11
 updatedDate: 2026-06-11
-author: "Dr. Elena Park"
+author: "Elena Park"
 featured: true
 tags: ["men's health", "sermorelin", "NAD+", "hair loss", "ED treatment", "telehealth", "strut health", "anti-aging", "hormone optimization"]
 ctaText: "Start Your Free Men's Health Assessment — Strut Health"

@@ -40,7 +40,7 @@ What she was missing: phonemic awareness (hearing and manipulating individual so
 
 The reading research community has a name for what she needed: structured literacy, based on the Science of Reading. It's the approach that Oregon, Mississippi, Texas, and 30+ other US states have now mandated in public schools after evidence showed it produces significantly better reading outcomes than whole-language instruction.
 
-### H3: What causes children to struggle with reading?
+### What causes children to struggle with reading?
 
 Approximately 1 in 5 children struggle to learn to read, not because of intelligence but because of phonemic awareness gaps — difficulty hearing and manipulating individual sounds in words. This is the core mechanism in dyslexia but also affects non-dyslexic struggling readers. Systematic phonics instruction, which explicitly teaches letter-sound correspondences and blending, directly addresses the phonological processing skill that reading requires.
 

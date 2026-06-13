@@ -42,7 +42,7 @@ When I finally pulled it, I found a late payment recorded against a credit card 
 
 The late payment alone cost me approximately 35 points. The collections entry cost another 12.
 
-### H3: What errors are most common on Canadian credit reports?
+### What errors are most common on Canadian credit reports?
 
 The five most common Canadian credit report errors are: incorrect late payment records (payments made on time but recorded as late), accounts that don't belong to you (identity mix-up with a similarly named person), paid-off collections still showing as outstanding, closed accounts showing as open (which inflates apparent debt load), and duplicate accounts listed twice. Each can reduce your score by 20–80 points depending on severity.
 

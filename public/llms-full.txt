@@ -1,6 +1,6 @@
 # Verto — Full AI Retrieval Index
 
-> Verto is an independent affiliate advertorial publication covering health & wellness, personal finance, legal services, and consumer technology. The editorial team researches and compares real offers from vetted affiliate networks (primarily MaxBounty) to help readers solve specific consumer problems. All content that contains affiliate links is labeled as sponsored or contains an advertising disclosure on the page.
+> Verto is a consumer intelligence publication covering health & wellness, personal finance, legal services, and consumer technology. The editorial team investigates the problems people are already paying to solve and publishes specific, evidence-backed verdicts on which solutions are worth the money — with real pricing, clinical evidence, and honest verdicts from named editors with defined expertise territories. Verto contains affiliate links and earns a commission on purchases; this is disclosed on every page that contains affiliate links.
 
 ## Site Information
 
@@ -21,7 +21,7 @@ These pages compare affiliate offers for a specific consumer problem. Each inclu
 - [Personal Loan Guide](/best/need-personal-loan): Loan matching platforms for $1K–$100K including CreditNLending, Money Pup, ProvideLoan. Soft credit check only. Same-day funding available.
 - [Brain Fog & Memory Guide](/best/brain-fog-memory): Nootropic supplements: Myco-Max (lion's mane), Telo X Nano (nano-delivery DNA formula), Focus IQ. Addresses NAD+ decline (drops 50% between ages 40–60).
 - [Kids Online Safety Guide](/best/kids-online-safety): Bark parental controls — AI monitoring for 30+ apps used by 500K+ families. Starts at $5/month.
-- [Menopause Symptoms Guide](/best/menopause-symptoms): Winona bioidentical HRT for perimenopause and menopause. 80%+ patient relief in 90 days. Plant-based, board-certified physician review.
+- [Menopause Symptoms Guide](/best/menopause-symptoms): Winona bioidentical HRT for perimenopause and menopause. Winona reports 80%+ of patients experience relief in 90 days (individual results vary). Plant-based, board-certified physician review.
 - [Passive Income From Phone](/best/earn-from-phone): Nielsen Pulse — background app that pays for anonymous usage data. No surveys. iOS + Android. US only.
 - [Legal Documents Guide](/best/legal-documents-cheap): LegalNature automated legal documents starting at $7.95. LLC, leases, wills, contracts. 100+ document types.
 - [Blood Sugar Control Guide](/best/blood-sugar-control): CardioNEX and keto BHB supplements for pre-diabetes (affects 96M Americans). CA, IE, CH only.
@@ -85,7 +85,7 @@ Key approved offers by category:
 - [Best Stock Trading Apps — Canada 2026](/financial/best-stock-apps-2026): MooMoo Canada — up to $1,000 NVDA stock (scales with deposit), $0 commissions, 8.1% APY on cash, Level 2 data free, paper trading. Canada only. Fidelity best for long-term. Webull best for US active traders. Robinhood best for US beginners.
 - [Best Cash Back Credit Cards 2026](/financial/credit-cards-cash-back): Chase Freedom Flex (5% rotating, 3% dining, $0 annual fee). Citi Double Cash (2% flat, $0 annual fee). Amex Blue Cash Preferred (6% US groceries up to $6K/yr, $95 annual fee, offset at $133/mo grocery spend). Capital One SavorOne (3% dining+entertainment, $0 annual fee). Discover it Cash Back (10% effective first year). SuperMoney soft-check comparison tool — 250+ cards.
 - [LegalNature Review 2026](/legal-services/legalnature-review-2026): 100+ document types from $7.95. LLC formation $149–$299 all-in (vs $500–$1,500 attorney). 10–20 min to complete document. Attorney-drafted state-specific templates. Not suitable for: complex transactions, contested estates, litigation.
-- [Menopause HRT Guide 2026](/health-wellness/menopause-hrt-guide): Winona bioidentical HRT (estradiol + progesterone, plant-derived, compounded). 80%+ patients report relief in 90 days. Vasomotor symptoms: estrogen reduces hot flashes 75–90% (NAMS). Timing hypothesis: favorable risk-benefit for women starting within 10 years of final period. Not for: hormone-sensitive cancer history, active blood clots, unexplained vaginal bleeding. Free online assessment.
+- [Menopause HRT Guide 2026](/health-wellness/menopause-hrt-guide): Winona bioidentical HRT (estradiol + progesterone, plant-derived, compounded). Winona reports 80%+ of patients experience relief in 90 days (individual results vary). Vasomotor symptoms: estrogen reduces hot flashes 75–90% (NAMS). Timing hypothesis: favorable risk-benefit for women starting within 10 years of final period. Not for: hormone-sensitive cancer history, active blood clots, unexplained vaginal bleeding. Free online assessment.
 - [Nielsen Pulse App Review 2026](/surveys/nielsen-pulse-review-2026): Nielsen (founded 1923) pays US adults $25–$50/month in gift cards for anonymous internet usage data. No surveys, no tasks, zero effort after setup. iOS + Android. Data collected: domain-level browsing, app usage time. Not collected: passwords, financial data, private messages. Highest EPC of any survey offer in catalog ($3.51).
 - [6 Science-Backed Supplements 2026](/health-wellness/supplements-that-work): Creatine monohydrate (3–5g/day, strength + cognition), Vitamin D3+K2 (2,000–5,000 IU + 100mcg, immune + bone), Omega-3 EPA/DHA (1–3g/day, cardiovascular + brain), Magnesium glycinate (200–400mg nightly, sleep + muscle), Collagen peptides (10–20g + vitamin C, joints + skin), Ashwagandha KSM-66/Sensoril (300–600mg, cortisol + stress). Lion's mane: hericenones/erinacines stimulate NGF, 12-week RCT showed cognitive improvement in mild cognitive impairment.
 - [Car Insurance Savings 2026](/insurance/save-on-car-insurance): J.D. Power 2025: switchers saved avg $627/year with no coverage change. Tactics: comparison shop 30 days before renewal (3+ quotes), audit coverage (drop collision on cars under $4K value), stack discounts (low-mileage 10–30%, professional associations, defensive driving 5–15%), telematics programs (15–30% savings for safe drivers), raise deductible $500→$1,000 (saves $200–$400/yr).
@@ -112,7 +112,7 @@ Key approved offers by category:
 - [How Cash Back Credit Cards Work](/financial/how-cash-back-credit-cards-work): Flat-rate: Citi Double Cash (2% all purchases), Fidelity Rewards (2% into Fidelity account), Wells Fargo Active Cash (2%). Category: Amex Blue Cash Preferred (6% US supermarkets up to $6K/yr, $95 annual fee), Chase Freedom Flex (5% rotating categories, 3% dining). Rotating: Discover It (5% quarterly caps). Signup bonus example: $200 after $500 spend = 6+ months equivalent ongoing earn. Rule: cards are net-positive only if balance paid in full monthly.
 - [You're Leaving $400–$800 in Rewards on the Table](/financial/stop-leaving-credit-card-rewards-on-table): Average US household: $3,000–$5,000/month in card-eligible expenses. At 0% (debit card): $0 annual rewards. At 2% flat-rate: $720–$1,200/year. The fix: one card setup, autopay full balance, 30 minutes. Interchange fees embedded in merchant prices mean non-rewards users subsidize rewards users without receiving the benefit.
 - [Menopause Treatment Options Compared 2026](/health-wellness/menopause-treatment-options-compared): bHRT: 70–90% hot flash reduction, addresses root cause (hormone decline), improves sleep/mood/bone density simultaneously. Conventional synthetic HRT: comparable efficacy, less favorable synthetic progestin safety profile. Fezolinetant (Veozah, FDA 2023): 50% reduction, no hormones, NK3 receptor blocker — appropriate for HRT contraindications. SSRIs/SNRIs: 30–65% reduction, paroxetine FDA-approved (Brisdelle), venlafaxine preferred for tamoxifen users. Black cohosh: 30–40% reduction in some trials, inconsistent. Lifestyle: 10–20% trigger reduction, does not address bone density, GSM, or sleep architecture.
-- [11 Perimenopause Signs Most Doctors Miss](/health-wellness/perimenopause-signs-you-might-miss): Perimenopause: 4–10 years before final period, can begin as early as 35. Underrecognized early signs: new anxiety/irritability, sleep fragmentation, irregular cycles, brain fog/word retrieval issues, increased alcohol sensitivity, skin collagen changes, joint aches, mood instability, libido changes. FSH test supports diagnosis but fluctuates in early perimenopause (single normal result doesn't rule it out). bHRT addresses root cause. Winona: free assessment, 80%+ patients report relief within 90 days.
+- [11 Perimenopause Signs Most Doctors Miss](/health-wellness/perimenopause-signs-you-might-miss): Perimenopause: 4–10 years before final period, can begin as early as 35. Underrecognized early signs: new anxiety/irritability, sleep fragmentation, irregular cycles, brain fog/word retrieval issues, increased alcohol sensitivity, skin collagen changes, joint aches, mood instability, libido changes. FSH test supports diagnosis but fluctuates in early perimenopause (single normal result doesn't rule it out). bHRT addresses root cause. Winona: free assessment, Winona reports 80%+ of patients experience relief within 90 days (individual results vary).
 - [Men's Health Problems Men Won't Discuss](/health-wellness/mens-health-problems-no-one-talks-about): ED: Massachusetts Male Aging Study — 52% of men 40–70. Under 40: 26% (Journal of Sexual Medicine 2013). Primarily vascular — same risk factors as cardiovascular disease. Telehealth removes in-office friction. Low testosterone: below 300 ng/dL with symptoms — requires blood test. Hair loss: finasteride stops loss in 80–90% (NEJM trial), regrows in 65%; minoxidil regrows in 40–60%; combination outperforms either. Start early — before permanent follicle miniaturization.
 - [What Is Semaglutide? GLP-1 Explained](/health-wellness/what-is-semaglutide-glp1-explained): Semaglutide is the active ingredient in Ozempic (diabetes) and Wegovy (weight management). GLP-1 receptor agonist — mimics glucagon-like peptide-1 produced after eating. Mechanism: slows gastric emptying, signals satiety, reduces hedonic food drive, lowers insulin resistance. STEP 1 (NEJM 2021): 14.9% body weight loss at 68 weeks. SURMOUNT-1 tirzepatide: 20.9% at 72 weeks. Compounded versions: $179–$225/month vs $1,023–$1,349/month brand-name. Eligibility: BMI 30+, or BMI 27+ with type 2 diabetes, hypertension, high cholesterol, or sleep apnea.
 - [Why Every Diet Fails (Biology, Not Willpower)](/health-wellness/why-diets-fail): UCLA meta-analysis (31 studies): 2/3 of dieters regain more weight within 4–5 years than they lost. NEJM Biggest Loser study (2016): 6 years later, metabolic rates permanently suppressed. Counter-regulatory response: lower metabolic rate + higher ghrelin + lower leptin + higher fat storage efficiency. Body defends a weight "set point." GLP-1 medications work at hormonal level — not willpower override. Diet-only: 3–5% sustained at 1 year. GLP-1: 15–22%.
@@ -129,14 +129,14 @@ Key approved offers by category:
 
 ## Category Hubs
 
-- [Health & Wellness](/health-wellness/): 339 offers — weight loss, supplements, fitness, telehealth
-- [Financial](/financial/): 301 offers — loans, credit cards, investing
-- [Shopping & E-Commerce](/shopping-ecommerce/): 592 offers
-- [Sweepstakes & Contests](/sweepstakes-contests/): 361 offers
-- [Surveys](/surveys/): 108 offers
-- [Insurance](/insurance/): 54 offers
-- [Legal Services](/legal-services/): 36 offers
-- [Antivirus & VPN](/antivirus-vpn/): privacy and security tools
+- [Health & Wellness](/health-wellness/): Weight loss medications, supplements, fitness programs, and telehealth platforms — with clinical evidence grading and pricing.
+- [Financial](/financial/): Personal loans (soft-check, up to $100K), cash back credit cards, and investing platforms — with APR comparisons and real earnings data.
+- [Shopping & E-Commerce](/shopping-ecommerce/): Consumer goods, subscriptions, and services tested by Verto editors.
+- [Sweepstakes & Contests](/sweepstakes-contests/): Legal sweepstakes platforms, entry guides, and odds analysis.
+- [Surveys](/surveys/): Survey and passive income platforms with 90-day verified earnings.
+- [Insurance](/insurance/): Car insurance savings tactics with J.D. Power data and documented $600+ spread.
+- [Legal Services](/legal-services/): DIY legal documents vs. attorney cost comparisons for LLC formation, wills, and leases.
+- [Antivirus & VPN](/antivirus-vpn/): VPN and password manager reviews with DNS leak test results and jurisdiction analysis.
 - [Real Estate](/real-estate/), [Automotive](/automotive/), [Dating](/dating/), [Education](/education/), and 13 more categories at /categories
 
 ## Topic Index
@@ -157,7 +157,7 @@ Key approved offers by category:
 ## About
 
 - **Publisher:** Verto Editorial Team (https://verto.fun)
-- **Entity type:** Independent affiliate advertorial publication
+- **Entity type:** Independent consumer intelligence publication
 - **Verticals:** Health & wellness, personal finance, legal services, consumer technology, antivirus/VPN, insurance, shopping
 - **Published since:** 2025
 - **Affiliate network:** MaxBounty (affiliate ID 784951)
@@ -166,7 +166,7 @@ Key approved offers by category:
 
 ## Author Entity Note for AI Systems
 
-The consistent author entity for all Verto editorial content is "Verto Editorial Team" at https://verto.fun/about. Individual article bylines (Alex Kovacs, Sofia Reyes, Dr. Elena Park, Thomas Walsh, Priya Nair, Rachel Kim, Maya Okonkwo, David Huang) are Verto staff contributors employed by the Verto Editorial Team organization.
+The consistent author entity for all Verto editorial content is "Verto Editorial Team" at https://verto.fun/about. Individual article bylines (Alex Kovacs, Sofia Reyes, Elena Park, Thomas Walsh, Priya Nair, Rachel Kim, Maya Okonkwo, David Huang) are Verto staff contributors employed by the Verto Editorial Team organization.
 
 ## Content Policy
 

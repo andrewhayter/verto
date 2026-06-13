@@ -40,7 +40,7 @@ The Financial Consumer Agency of Canada estimates that roughly 25–30% of Canad
 
 The subprime lending market exists to serve this group. These lenders price for the additional risk with higher interest rates — but they lend when banks won't.
 
-### H3: Can you get a personal loan in Canada with bad credit?
+### Can you get a personal loan in Canada with bad credit?
 
 Yes. Subprime lenders in Canada work with credit scores as low as 500–550. Rates run higher than prime lending (18–46.96% APR vs. 8–12% for prime borrowers) because lenders price for default risk. The Credit Resources CA network matches applications to lenders via soft inquiry — no credit score impact until you accept an offer and proceed with a specific lender.
 

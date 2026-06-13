@@ -4,7 +4,7 @@ description: "Calorie restriction diets produce 95% regain within 5 years. The b
 category: "health-wellness"
 date: 2026-06-12
 updatedDate: 2026-06-12
-author: "Dr. Elena Park"
+author: "Elena Park"
 featured: false
 tags: ["weight loss", "diets", "obesity", "GLP-1", "metabolism", "willpower", "weight regain"]
 ctaText: "Check GLP-1 Eligibility — Compounded Semaglutide from $179/Month"

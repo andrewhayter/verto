@@ -4,7 +4,7 @@ description: "Perimenopause starts 4–10 years before your last period and begi
 category: "health-wellness"
 date: 2026-06-12
 updatedDate: 2026-06-12
-author: "Dr. Elena Park"
+author: "Elena Park"
 featured: false
 tags: ["perimenopause", "menopause symptoms", "hormones", "womens health", "HRT", "bioidentical hormones", "perimenopause symptoms"]
 ctaText: "Start Your Winona Assessment — Free Online Consultation"
@@ -24,7 +24,7 @@ faqs:
     a: "Perimenopause is the transition period leading up to menopause — it begins when ovarian hormone production starts declining and ends at the final menstrual period. Menopause is defined as 12 consecutive months without a period. Postmenopause is everything after. Perimenopausal symptoms can be more erratic and unpredictable than menopausal symptoms because hormone levels are fluctuating rather than simply declining."
 ---
 
-**Bottom line:** Perimenopause begins 4–10 years before your last period, and its earliest symptoms — anxiety, sleep disruption, irregular cycles, brain fog — are frequently misdiagnosed or dismissed. Recognizing the cluster matters because effective treatment exists: bioidentical HRT produces meaningful symptom relief in 80%+ of patients within 90 days.
+**Bottom line:** Perimenopause begins 4–10 years before your last period, and its earliest symptoms — anxiety, sleep disruption, irregular cycles, brain fog — are frequently misdiagnosed or dismissed. Recognizing the cluster matters because effective treatment exists: Winona reports that bioidentical HRT produces meaningful symptom relief in over 80% of their patients within 90 days (individual results vary).
 
 ---
 
@@ -92,6 +92,6 @@ Anxiety, sleep disruption, and irregular periods are the earliest perimenopausal
 
 A physician consultation — including FSH and estradiol blood work and a symptom review — can confirm whether hormonal transition is the cause. If it is, bioidentical hormone replacement therapy is the most effective treatment for the symptoms above.
 
-Winona offers a free online assessment with board-certified physicians specializing in hormone health, with treatment shipped directly to you. Over 80% of patients report meaningful relief within 90 days.
+Winona offers a free online assessment with board-certified physicians specializing in hormone health, with treatment shipped directly to you. Winona reports over 80% of their patients experience meaningful symptom relief within 90 days (individual results vary).
 
 Our full [HRT guide for menopause and perimenopause](/health-wellness/menopause-hrt-guide) covers the evidence for bHRT, safety considerations, and what to expect from treatment. For a clinical comparison of all available treatment options — bioidentical HRT, fezolinetant, SSRIs, and supplements — with efficacy data for each, see [menopause treatment options compared](/health-wellness/menopause-treatment-options-compared).

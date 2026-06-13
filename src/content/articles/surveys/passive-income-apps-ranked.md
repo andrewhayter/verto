@@ -38,7 +38,7 @@ The only "work" involved: initial installation (10 minutes per app), granting re
 
 Here's what actually happened.
 
-### H3: What passive income apps actually pay in 2026?
+### What passive income apps actually pay in 2026?
 
 Based on 12-month simultaneous testing: Nielsen Pulse leads at ~$247/year for zero active engagement. Honeygain pays ~$92/year by sharing residential internet bandwidth. Apps requiring active participation (Survey Junkie, Prolific, Respondent.io) pay higher hourly rates but require time. For purely passive income on an unused or lightly used device, Nielsen Pulse + Honeygain combination generates approximately $340/year with no ongoing time investment after setup.
 

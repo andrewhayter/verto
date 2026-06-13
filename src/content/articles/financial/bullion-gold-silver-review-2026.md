@@ -53,7 +53,7 @@ The 10-year numbers (2014–2024):
 
 Gold outperformed inflation. Gold significantly underperformed equities. This is roughly what 50-year analysis shows — gold is a real-return store of value, not a return-generating asset.
 
-### H3: Is gold a good investment to buy in 2026?
+### Is gold a good investment to buy in 2026?
 
 Gold has a legitimate role as portfolio insurance (5–10% of a diversified portfolio) against tail-risk scenarios where equities and currencies both suffer. As a primary investment for wealth building, the historical data is unambiguous: equities significantly outperform over any 20+ year horizon. The case for gold is not "get rich" — it's "don't get wiped out in the scenario where everything else fails." That case is real; the marketing overstates it.
 

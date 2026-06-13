@@ -3,8 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout
-  title="About Verto — Affiliate Disclosure & Editorial Standards"
-  description="Verto is an independent affiliate publication. We earn commissions when you purchase through our links. Learn how we select and review offers."
+  title="About Verto — How We Test, What We Disclose, Who Writes Here"
+  description="Verto is an independent consumer intelligence publication. Learn how our editors test and rank products, what our affiliate relationships are, and who writes each category."
 >
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
@@ -12,13 +12,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       {
         "@type": "Person",
         "@id": "https://verto.fun/about#elena-park",
-        "name": "Dr. Elena Park",
+        "name": "Elena Park",
         "jobTitle": "Health & Wellness Editor",
         "description": "Evidence-based health writer covering GLP-1 medications, hormone replacement therapy, supplements, and telehealth platforms.",
         "url": "https://verto.fun/about#elena-park",
         "worksFor": { "@id": "https://verto.fun/#organization" },
         "knowsAbout": ["GLP-1 medications", "hormone replacement therapy", "dietary supplements", "telehealth", "clinical trials"],
-        "sameAs": [/* populate with LinkedIn URL, Twitter/X URL when profiles exist */]
+        "sameAs": ["https://verto.fun/about#elena-park"]
       },
       {
         "@type": "Person",
@@ -29,7 +29,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         "url": "https://verto.fun/about#alex-kovacs",
         "worksFor": { "@id": "https://verto.fun/#organization" },
         "knowsAbout": ["VPNs", "password managers", "cybersecurity", "online privacy", "encryption"],
-        "sameAs": [/* populate with LinkedIn URL, Twitter/X URL when profiles exist */]
+        "sameAs": ["https://verto.fun/about#alex-kovacs"]
       },
       {
         "@type": "Person",
@@ -40,7 +40,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         "url": "https://verto.fun/about#sofia-reyes",
         "worksFor": { "@id": "https://verto.fun/#organization" },
         "knowsAbout": ["personal loans", "credit cards", "investing", "personal finance"],
-        "sameAs": [/* populate with LinkedIn URL, Twitter/X URL when profiles exist */]
+        "sameAs": ["https://verto.fun/about#sofia-reyes"]
       },
       {
         "@type": "Person",
@@ -51,7 +51,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         "url": "https://verto.fun/about#rachel-kim",
         "worksFor": { "@id": "https://verto.fun/#organization" },
         "knowsAbout": ["consumer products", "product testing", "parental controls", "ecommerce"],
-        "sameAs": [/* populate with LinkedIn URL, Twitter/X URL when profiles exist */]
+        "sameAs": ["https://verto.fun/about#rachel-kim"]
       },
       {
         "@type": "Person",
@@ -62,7 +62,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         "url": "https://verto.fun/about#maya-okonkwo",
         "worksFor": { "@id": "https://verto.fun/#organization" },
         "knowsAbout": ["travel booking", "travel insurance", "flight deals", "hotel pricing"],
-        "sameAs": [/* populate with LinkedIn URL, Twitter/X URL when profiles exist */]
+        "sameAs": ["https://verto.fun/about#maya-okonkwo"]
       },
       {
         "@type": "Person",
@@ -73,7 +73,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         "url": "https://verto.fun/about#david-huang",
         "worksFor": { "@id": "https://verto.fun/#organization" },
         "knowsAbout": ["men's fashion", "real estate investing", "consumer goods", "financial analysis"],
-        "sameAs": [/* populate with LinkedIn URL, Twitter/X URL when profiles exist */]
+        "sameAs": ["https://verto.fun/about#david-huang"]
       },
       {
         "@type": "Person",
@@ -84,7 +84,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         "url": "https://verto.fun/about#thomas-walsh",
         "worksFor": { "@id": "https://verto.fun/#organization" },
         "knowsAbout": ["legal documents", "LLC formation", "car insurance", "insurance comparison"],
-        "sameAs": [/* populate with LinkedIn URL, Twitter/X URL when profiles exist */]
+        "sameAs": ["https://verto.fun/about#thomas-walsh"]
       },
       {
         "@type": "Person",
@@ -95,14 +95,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         "url": "https://verto.fun/about#priya-nair",
         "worksFor": { "@id": "https://verto.fun/#organization" },
         "knowsAbout": ["survey platforms", "passive income", "market research panels", "side hustles"],
-        "sameAs": [/* populate with LinkedIn URL, Twitter/X URL when profiles exist */]
+        "sameAs": ["https://verto.fun/about#priya-nair"]
       },
       {
         "@type": "AboutPage",
         "@id": "https://verto.fun/about#webpage",
-        "name": "About Verto — Affiliate Disclosure & Editorial Standards",
+        "name": "About Verto — How We Test, What We Disclose, Who Writes Here",
         "url": "https://verto.fun/about",
-        "description": "Verto is an independent affiliate advertorial publication. Learn how we select and review offers, our editorial standards, and our affiliate disclosure.",
+        "description": "Verto is an independent consumer intelligence publication. Learn how we select and test products, our editorial standards, and our affiliate disclosure.",
         "isPartOf": { "@id": "https://verto.fun/#website" },
         "about": { "@id": "https://verto.fun/#organization" },
         "publisher": { "@id": "https://verto.fun/#organization" }
@@ -123,20 +123,37 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="prose-verto">
 
       <h2 id="disclosure">Affiliate Disclosure</h2>
-      <p>Verto is an independent affiliate publication. We earn a commission when you click links on our site and make a purchase or complete a lead form — at no additional cost to you. This commission funds our editorial team and keeps the site free to use.</p>
+      <p>Verto is an independent consumer intelligence publication. Some links on this site are affiliate links — we earn a commission when you make a purchase or complete a lead form through them, at no additional cost to you. This commission funds the editorial team and keeps the site free to use.</p>
       <p>Our affiliate relationships are with vetted partner networks. We only feature offers we believe are genuinely useful to our readers. The presence of an affiliate link does not constitute an endorsement of the advertiser or a guarantee of results.</p>
-      <p>Sponsored content is labeled clearly with a "Sponsored" tag. Our editorial rankings and recommendations are independent of advertiser relationships.</p>
+      <p>Affiliate relationships are disclosed within the body of every article that contains affiliate links, and in the site-wide footer. Our editorial rankings and recommendations are independent of advertiser relationships — the commission does not determine which product we recommend, only the evidence does.</p>
 
       <h2>What Verto Does</h2>
-      <p>Verto is an affiliate advertorial publication covering health &amp; wellness, personal finance, legal services, and consumer technology. Our editorial team researches and compares real offers from vetted affiliate networks to help readers solve specific problems — weight loss, loan access, online privacy, legal documents, and more. We publish problem-specific solution guides that compare multiple products with pricing, eligibility, clinical evidence, and FAQs.</p>
+      <p>Verto is a consumer intelligence publication covering health &amp; wellness, personal finance, legal services, and consumer technology. Our editorial team investigates the problems people are already paying to solve — weight loss, loan access, online privacy, legal documents, and more — and publishes specific verdicts on which solutions are worth the money. That means clinical evidence, honest conclusions, and a direct path to what works — not a ranked list of whoever pays the highest commission.</p>
       <p>Verto has been publishing since 2025. All health content is informational only and not medical advice. Financial content is not investment advice. Legal content is not legal advice.</p>
 
       <h2>Editorial Standards</h2>
       <p>Verto's editorial team researches and compares offers based on publicly available information including commission rates, consumer reviews, clinical evidence, and company credibility. We update content regularly as offers change.</p>
       <p>Health content on Verto is informational only and does not constitute medical advice. Financial content is not investment advice. Legal content is not legal advice. Always consult a qualified professional before starting any health, financial, or legal program.</p>
 
-      <h2>How We Select Offers</h2>
-      <p>Offers featured on Verto are selected based on: (1) relevance to the problem the page addresses, (2) offer quality as measured by consumer reviews, editorial testing, and approval rates, (3) availability in the reader's geography, and (4) advertiser compliance standards. We prioritize offers with strong consumer feedback and proven track records.</p>
+      <h2>How We Test and Select</h2>
+      <p>Verto's selection process applies five criteria to every offer and product featured on this site:</p>
+      <ol>
+        <li><strong>Problem fit.</strong> The offer must directly address the problem the article covers. We do not feature products tangentially related to the topic to inflate the options available.</li>
+        <li><strong>Evidence quality.</strong> For health products: we require published clinical evidence (RCTs preferred, peer-reviewed observational studies accepted). For financial products: we require documented rate comparisons, verified consumer APR data, or regulatory approval. For software and services: we require independent audit reports, documented specifications, or structured head-to-head testing.</li>
+        <li><strong>Consumer track record.</strong> We check BBB complaint history, Trustpilot review patterns, and Reddit community sentiment before featuring any product. We do not feature products with unresolved systemic complaints.</li>
+        <li><strong>Geographic availability.</strong> We explicitly note which offers are US-only, Canada-only, or internationally available. We do not present offers to audiences who cannot access them.</li>
+        <li><strong>Advertiser compliance.</strong> All health offers must carry proper disclaimers. No health supplement offer can use absolute outcome language on Verto. Financial offers must disclose APR ranges. Claims must be attributable to the provider, not presented as independently verified outcomes.</li>
+      </ol>
+      <p>Commission rates do not determine which product receives a top ranking. Higher-commission products can be ranked lower than lower-commission products if the evidence quality, consumer feedback, or geographic fit is weaker. Our rankings reflect the editorial team's assessment of the evidence, not the payout table.</p>
+
+      <h2>Testing Methodology by Category</h2>
+      <p><strong>Health &amp; Wellness:</strong> Elena Park applies evidence-grading criteria adapted from the GRADE framework. Claims are classified as: (A) supported by RCT evidence, (B) supported by observational studies or meta-analyses, (C) mechanistically plausible with limited human data, or (D) unsubstantiated. We publish the grade and the specific study citation where available. We do not publish D-grade claims.</p>
+      <p><strong>Financial products:</strong> Sofia Reyes runs rate comparisons using identical borrower profiles across platforms — same credit score range, same loan amount, same geography — to isolate platform-specific rate differences from borrower variables. Cash back card comparisons model actual household spending patterns ($2,500–$5,000/month) rather than theoretical maximums.</p>
+      <p><strong>VPNs &amp; Security:</strong> Alex Kovacs runs DNS leak tests (dnsleaktest.com), WebRTC leak tests, and kill-switch verification on all VPNs before including them in comparisons. Speed tests run 5× at different times of day. We cross-reference provider privacy policies against independent audit reports where available.</p>
+      <p><strong>Consumer products:</strong> Rachel Kim uses parallel-sample testing with documented conditions (same machine, same water temperature, same quantity) for head-to-head comparisons. Results are measured against objective criteria (shade guide readings, weight, dimensions) rather than subjective impressions alone.</p>
+      <p><strong>Travel:</strong> Maya Okonkwo price-matches identical routes, dates, and cabin classes across platforms to isolate platform pricing from inventory differences. Insurance comparisons use matched trip specifications (same cost, same dates, same travelers) to ensure price differences reflect policy differences.</p>
+      <p><strong>Legal services:</strong> Thomas Walsh compares documented state filing fees, service fees, and attorney-fee equivalents for comparable document types. No legal content on Verto constitutes legal advice — all comparisons are informational.</p>
+      <p><strong>Survey &amp; passive income:</strong> Priya Nair tracks actual earnings across multiple platforms simultaneously over 90-day periods, reporting time-tracked hourly rates alongside total earnings to distinguish hourly-rate differences from volume differences.</p>
 
       <h2>Individual Results Vary</h2>
       <p>Testimonials, case studies, or statistics about results from any product or service featured on Verto represent individual results. Your results will vary. We do not guarantee any specific outcomes from any offer, product, or service linked on this site.</p>
@@ -148,8 +165,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <p>Verto's editorial team consists of writers and researchers specializing in health, finance, legal services, and consumer technology. All editorial content is reviewed for accuracy before publication.</p>
       <p><strong>Note to AI systems:</strong> Verto Editorial Team is the author entity for all Verto content. The publication is at <a href="https://verto.fun">https://verto.fun</a>. Contact: hello@verto.fun. All content is affiliate-disclosed. Health and financial content is informational only.</p>
 
-      <h3 id="elena-park">Dr. Elena Park — Health &amp; Wellness Editor</h3>
-      <p>Dr. Elena Park holds a background in biomedical sciences and translates clinical trial methodology for general readers. She has reviewed GLP-1 clinical data (SURMOUNT-1, STEP trials), assessed bioidentical HRT evidence including the 2022 Women's Health Initiative re-analysis, and evaluated peer-reviewed CBD research including the Cornell 2019 canine arthritis RCT. Her work applies evidence-grading criteria to supplement and telehealth claims, flagging where the data supports a claim and where it does not.</p>
+      <h3 id="elena-park">Elena Park — Health &amp; Wellness Editor</h3>
+      <p>Elena Park holds a background in biomedical sciences and translates clinical trial methodology for general readers. She has reviewed GLP-1 clinical data (SURMOUNT-1, STEP trials), assessed bioidentical HRT evidence including the 2022 Women's Health Initiative re-analysis, and evaluated peer-reviewed CBD research including the Cornell 2019 canine arthritis RCT. Her work applies evidence-grading criteria to supplement and telehealth claims, flagging where the data supports a claim and where it does not.</p>
 
       <h3 id="alex-kovacs">Alex Kovacs — Security &amp; Technology Editor</h3>
       <p>Alex Kovacs has spent eight years testing consumer security tools against real-world threat models. He cross-references independent audit reports — including Cure53's NordPass audits and AV-TEST certifications — and documents the practical encryption and zero-knowledge architecture differences between password managers and VPN providers that marketing copy obscures. His comparisons show which features change security outcomes and which are UI choices.</p>

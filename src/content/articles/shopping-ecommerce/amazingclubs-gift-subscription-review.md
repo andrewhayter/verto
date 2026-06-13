@@ -40,7 +40,7 @@ faqs:
 
 I tracked what arrived each month and asked each recipient for honest feedback.
 
-### H3: Is AmazingClubs a good gift subscription service?
+### Is AmazingClubs a good gift subscription service?
 
 AmazingClubs is a reliable and well-curated gift subscription service across its major categories. The wine and beer clubs in particular deliver consistent quality with discovery value — recipients get bottles and cans they wouldn't encounter at their local store. Packaging is attractive and designed as a gift presentation, not just shipping. For recipients who are difficult to shop for and who enjoy food and beverage, a 3-month subscription typically lands as one of the better gifts they receive.
 

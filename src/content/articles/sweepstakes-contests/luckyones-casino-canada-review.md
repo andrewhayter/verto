@@ -38,7 +38,7 @@ For provinces other than Ontario, the legal status of offshore-licensed online c
 
 LuckyOnes operates under a Kahnawake Gaming Commission license. The Kahnawake Gaming Commission has regulated online gambling since 1999 and is one of the longer-standing gambling authorities in North America.
 
-### H3: Is online casino gambling legal for Canadians?
+### Is online casino gambling legal for Canadians?
 
 Most Canadian provinces permit residents to play at licensed online casinos. Ontario (since 2022) has its own regulated iGaming market with stricter local licensing requirements. Other provinces are served by Crown-operated sites (like PlayNow in BC/Manitoba) or, in practice, by Kahnawake and Malta-licensed offshore casinos. Always verify your province's current regulations. Gambling involves risk — set limits before you play.
 

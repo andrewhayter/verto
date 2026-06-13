@@ -44,7 +44,7 @@ Lion's mane is one of the better-evidenced mushroom supplements — but "better-
 
 Lion's mane sits in the "moderate" category. That's meaningful — it means there's legitimate scientific reason to think it works, not just marketing. But it also means the effect sizes observed in trials are based on small samples, and replication in larger trials hasn't been published as of 2026.
 
-### H3: What does lion's mane do for the brain?
+### What does lion's mane do for the brain?
 
 Lion's mane stimulates synthesis of nerve growth factor (NGF) — a protein that supports the survival and maintenance of neurons and promotes myelination of nerve fibers. Two human clinical trials found improvements in cognitive function scores in adults with mild cognitive impairment (16-week trial) and concentration/reduced anxiety in younger adults (4-week pilot). Effects require 4–16 weeks of consistent supplementation to appear.
 

@@ -304,8 +304,8 @@ export const problems: Problem[] = [
   },
   {
     slug: 'menopause-symptoms',
-    headline: 'Hot Flashes, Mood Swings, and No Sleep at 2 AM — Why 80% of Women Who Try Bioidentical HRT Feel Better Within 90 Days',
-    subheadline: 'Over 80% of Winona patients report significant relief from hot flashes, mood swings, and sleep disruption within 90 days',
+    headline: 'Hot Flashes, Mood Swings, and No Sleep at 2 AM — Winona Reports 80%+ of Patients Find Relief With Bioidentical HRT Within 90 Days',
+    subheadline: 'Winona reports over 80% of patients experience significant relief from hot flashes, mood swings, and sleep disruption within 90 days (individual results vary)',
     hook: 'Hot flashes at 2 AM. Mood swings that come from nowhere. Feeling like your body is working against you. Menopause symptoms are real — and they\'re treatable.',
     description: 'Winona offers bioidentical hormone replacement therapy (bHRT) using plant-based hormones that are molecularly identical to those your body produces naturally. Board-certified doctors review your health history online and prescribe personalized treatment plans shipped directly to your door.',
     emoji: '🌸',
@@ -336,13 +336,13 @@ export const problems: Problem[] = [
       },
     ],
     trustStats: [
-      { stat: '80%+', label: 'Patients with symptom relief within 90 days' },
+      { stat: '80%+', label: 'Winona patients report relief within 90 days (results vary)' },
       { stat: '14 days', label: 'Some patients see relief in as little as 2 weeks' },
       { stat: 'Plant-based', label: 'Bioidentical hormones identical to yours' },
     ],
     seoTitle: 'Winona HRT Review 2026 — Bioidentical Hormone Therapy for Menopause Delivered to Your Door',
-    seoDescription: 'Winona provides bioidentical HRT for menopause symptoms. 80%+ of patients report relief within 90 days. Board-certified physicians, ships to your door.',
-    facebookHook: '80% of women using this treatment see relief from menopause symptoms in under 90 days',
+    seoDescription: 'Winona provides bioidentical HRT for menopause symptoms. Winona reports 80%+ of patients experience relief within 90 days. Board-certified physicians, ships to your door.',
+    facebookHook: 'Winona reports 80% of their patients experience relief from menopause symptoms within 90 days — individual results vary',
   },
   {
     slug: 'earn-from-phone',

@@ -45,7 +45,7 @@ Porto → Lisbon → Seville → Barcelona → Marseille → Lyon (brief) → Fl
 
 **Total: 21 days × ~$114/day = $2,394**
 
-### H3: What does a budget solo trip to Europe actually cost per day?
+### What does a budget solo trip to Europe actually cost per day?
 
 Budget-focused solo travelers using hostel dorms, cooking 1–2 meals per day, and taking ground transport between cities can realistically target $90–$130/day in Western and Southern Europe (lower in Eastern Europe, higher in Scandinavia and Switzerland). The main variables are accommodation choice (±$30–$40/day between dorm and private room) and restaurant frequency (±$20–$40/day).
 

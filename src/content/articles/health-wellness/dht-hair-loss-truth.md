@@ -4,7 +4,7 @@ description: "95% of male pattern baldness is caused by dihydrotestosterone (DHT
 category: "health-wellness"
 date: 2026-06-12
 updatedDate: 2026-06-12
-author: "Dr. Elena Park"
+author: "Elena Park"
 featured: false
 tags: ["DHT", "hair loss", "dutasteride", "finasteride", "male pattern baldness", "androgenetic alopecia", "Strut Health", "hair regrowth"]
 ctaText: "Get a Prescription Hair Loss Assessment — Strut Health"
