@@ -36,8 +36,7 @@ const featuredGuides = problems
         <nav class="flex flex-col gap-2 text-sm">
           <a href="/best"        class="text-white/50 hover:text-white transition-colors">Solution Guides</a>
           <a href="/reviews"     class="text-white/50 hover:text-white transition-colors">All Reviews</a>
-          <a href="/categories"  class="text-white/50 hover:text-white transition-colors">All Categories</a>
-          <a href="/topics"      class="text-white/50 hover:text-white transition-colors">Trending Topics</a>
+          <a href="/explore"     class="text-white/50 hover:text-white transition-colors">Explore Topics</a>
           <a href="/calculators" class="text-white/50 hover:text-white transition-colors">Free Calculators</a>
           <a href="/about"       class="text-white/50 hover:text-white transition-colors">About & Disclosure</a>
         </nav>
@@ -64,24 +63,21 @@ const featuredGuides = problems
         </a>
       </div>
 
-      <!-- Categories -->
+      <!-- Topics -->
       <div>
-        <h3 class="text-white text-xs font-semibold uppercase tracking-widest mb-4">Categories</h3>
+        <h3 class="text-white text-xs font-semibold uppercase tracking-widest mb-4">Browse by Topic</h3>
         <div class="flex flex-col gap-1">
           {categories.slice(0, 12).map(cat => (
             <a
               href={`/${cat.slug}/`}
-              class="flex items-center justify-between text-white/50 hover:text-white text-xs py-1 transition-colors group"
+              class="flex items-center gap-1.5 text-white/50 hover:text-white text-xs py-1 transition-colors group"
             >
-              <span class="flex items-center gap-1.5">
-                <span>{cat.emoji}</span>
-                <span class="group-hover:underline truncate max-w-[120px]">{cat.name}</span>
-              </span>
-              <span class="text-white/20 text-[10px] shrink-0 ml-1">({cat.offsCount})</span>
+              <span>{cat.emoji}</span>
+              <span class="group-hover:underline truncate max-w-[140px]">{cat.name}</span>
             </a>
           ))}
-          <a href="/categories" class="text-brand hover:text-red-400 text-xs mt-1 transition-colors">
-            +{categories.length - 12} more →
+          <a href="/explore" class="text-brand hover:text-red-400 text-xs mt-1 transition-colors">
+            Explore all topics →
           </a>
         </div>
       </div>

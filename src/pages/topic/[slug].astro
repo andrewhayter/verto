@@ -99,13 +99,13 @@ const description = `Discover the best ${topic.name} deals, reviews, and expert 
                 href={`/${cat.slug}/`}
                 class="inline-flex items-center gap-2 px-4 py-2 bg-brand text-white font-semibold rounded-xl text-sm hover:bg-brand-dark transition-colors"
               >
-                Browse all {cat.offsCount} {cat.name} offers →
+                Browse {cat.name} guides &amp; offers →
               </a>
               <a
-                href="/categories"
+                href="/explore"
                 class="inline-flex items-center gap-2 px-4 py-2 border border-gray-200 text-gray-600 font-semibold rounded-xl text-sm hover:border-brand hover:text-brand transition-colors"
               >
-                All Categories
+                Explore Topics
               </a>
             </div>
           )}
@@ -186,7 +186,7 @@ const description = `Discover the best ${topic.name} deals, reviews, and expert 
               <h3 class="font-display font-bold text-gray-900 mb-1">{cat.name}</h3>
               <p class="text-sm text-gray-500 mb-4 leading-relaxed">{cat.description}</p>
               <a href={`/${cat.slug}/`} class="text-sm font-semibold text-brand hover:text-brand-dark transition-colors">
-                {cat.offsCount} offers available →
+                Browse {cat.name} guides →
               </a>
             </div>
           </div>
@@ -209,8 +209,8 @@ const description = `Discover the best ${topic.name} deals, reviews, and expert 
               ))
             }
           </div>
-          <a href="/topics" class="block text-center text-brand text-sm font-semibold mt-4 hover:text-brand-dark transition-colors">
-            All Topics →
+          <a href="/explore" class="block text-center text-brand text-sm font-semibold mt-4 hover:text-brand-dark transition-colors">
+            Explore All Topics →
           </a>
         </div>
 

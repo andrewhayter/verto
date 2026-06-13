@@ -43,15 +43,15 @@ const categoryProblems = problems
 ---
 
 <BaseLayout
-  title={`${category.name} — ${category.offsCount} Verified Offers Compared | Verto`}
-  description={`Browse ${category.offsCount} vetted ${category.name.toLowerCase()} offers. ${category.description}`}
+  title={`${category.name} — Guides, Reviews & Top Offers | Verto`}
+  description={`${category.description} Explore problem guides, expert reviews, and top offers in the ${category.name.toLowerCase()} category.`}
 >
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "CollectionPage",
-        "name": `${category.name} — ${category.offsCount} Verified Offers`,
+        "name": `${category.name} — Guides & Reviews`,
         "description": category.description,
         "url": Astro.url.href,
         "publisher": { "@type": "Organization", "name": "Verto", "url": "https://verto.fun" }
@@ -74,7 +74,7 @@ const categoryProblems = problems
         <div class="flex items-center gap-3 mb-3">
           <span class="text-4xl">{category.emoji}</span>
           <span class="text-white/60 text-sm font-medium uppercase tracking-widest">
-            {category.offsCount} offers available
+            Guides & Offers
           </span>
         </div>
         <h1 class="font-display text-4xl md:text-5xl font-bold text-white mb-3">
@@ -192,8 +192,8 @@ const categoryProblems = problems
               <h2 class="font-display font-bold text-xl text-gray-900">
                 Trending Topics in {category.name}
               </h2>
-              <a href="/topics" class="text-brand text-sm font-semibold hover:text-brand-dark transition-colors">
-                All Topics →
+              <a href="/explore" class="text-brand text-sm font-semibold hover:text-brand-dark transition-colors">
+                Explore Topics →
               </a>
             </div>
             <div class="flex flex-wrap gap-2">
@@ -224,8 +224,7 @@ const categoryProblems = problems
             <h3 class="font-display font-bold text-gray-900 mb-1">{category.name}</h3>
             <p class="text-sm text-gray-500 mb-3">{category.description}</p>
             <div class="flex items-center gap-2 text-sm">
-              <span class="font-bold text-gray-900">{category.offsCount}</span>
-              <span class="text-gray-400">active offers</span>
+              <span class="text-gray-400">Guides, reviews &amp; offers</span>
             </div>
           </div>
         </div>
@@ -242,15 +241,15 @@ const categoryProblems = problems
                   <span>{cat.emoji}</span>
                   <span class="group-hover:underline">{cat.name}</span>
                 </span>
-                <span class="text-gray-300 text-xs">{cat.offsCount}</span>
+                <span class="text-gray-300 text-xs">→</span>
               </a>
             ))}
           </div>
           <a
-            href="/categories"
+            href="/explore"
             class="block text-center text-brand text-sm font-semibold mt-4 hover:text-brand-dark transition-colors"
           >
-            View All Categories →
+            Explore All Topics →
           </a>
         </div>
       </aside>

@@ -61,10 +61,10 @@ const catSlug = isEditorial ? editorialOffer!.categories[0] : catalogOffer!.cate
 const cat = categoryBySlug[catSlug];
 
 const rateLabel: Record<string, string> = {
-  cps: 'per sale',
-  cpl: 'per lead',
-  cpa: 'per action',
-  revshare: 'revenue share',
+  cps: 'Subscription',
+  cpl: 'Free to try',
+  cpa: 'One-time',
+  revshare: 'Variable',
 };
 
 const geoDisplay = geos.includes('WW') || geos.length === 0
