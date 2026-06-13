@@ -71,6 +71,13 @@ const related = allArticles
   .filter(a => a.data.category === category && `${a.data.category}/${a.slug.split('/').pop()}` !== `${category}/${Astro.url.pathname.split('/').pop()}`)
   .slice(0, 3);
 
+// Internal links to problem pages — articles link forward into /best/ guides
+// Excludes the primary ctaUrl target so it doesn't duplicate the CTA block link
+const relatedProblems = problems
+  .filter(p => p.category === category)
+  .filter(p => !ctaUrl || !ctaUrl.includes(p.slug))
+  .slice(0, 3);
+
 /* Category-specific social proof comments */
 const commentsByCat: Record<string, Comment[]> = {
   'health-wellness': [
@@ -402,6 +409,29 @@ const bridgeOffer = bridgeProblem
         <strong class="text-gray-500">Advertising Disclosure:</strong> This article contains affiliate links. Verto may receive a commission when you purchase through these links, at no additional cost to you. We only feature offers we believe are genuinely useful. Individual results vary. Consult a qualified professional before starting any health, financial, or legal program.
       </p>
     </div>
+
+    <!-- Related Solution Guides — internal links to /best/ problem pages -->
+    {relatedProblems.length > 0 && (
+      <div class="mt-10 pt-10 border-t border-gray-200">
+        <h3 class="font-display font-bold text-gray-900 text-xl mb-4">Related Solution Guides</h3>
+        <div class="flex flex-col gap-3">
+          {relatedProblems.map(p => (
+            <a
+              href={`/best/${p.slug}/`}
+              class="group flex items-center justify-between gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100 hover:border-green-500 hover:bg-green-50 transition-colors"
+            >
+              <div class="min-w-0">
+                <p class="font-semibold text-gray-900 text-sm group-hover:text-green-700 transition-colors leading-snug">{p.headline}</p>
+                <p class="text-gray-500 text-xs mt-1 leading-snug line-clamp-1">{p.subheadline}</p>
+              </div>
+              <svg class="w-5 h-5 text-gray-300 group-hover:text-green-500 shrink-0 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
 
     <!-- Related articles -->
     {related.length > 0 && (

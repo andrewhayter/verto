@@ -130,14 +130,14 @@ const pageAuthor = categoryAuthor[problem.category] ?? { name: 'Verto Editorial 
         },
         "mainEntityOfPage": { "@type": "WebPage", "@id": Astro.url.href }
       },
-      {
+      ...(problem.faqs.length > 0 ? [{
         "@type": "FAQPage",
         "mainEntity": problem.faqs.map(faq => ({
           "@type": "Question",
           "name": faq.q,
           "acceptedAnswer": { "@type": "Answer", "text": faq.a }
         }))
-      },
+      }] : []),
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
